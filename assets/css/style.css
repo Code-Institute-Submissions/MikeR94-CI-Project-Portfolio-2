@@ -19,3 +19,14 @@ body {
   transform: translate(-50%, -50%);
   border-radius: 30px;
 }
+
+.game-bar {
+    width: 700px;
+    height: 60px;
+    background-color: #1b1c27;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
