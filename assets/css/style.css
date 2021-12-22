@@ -83,6 +83,12 @@ button:hover {
   border-radius: 0px 0px 20px 20px;
 }
 
+.menu button {
+  margin: 27px auto;
+  display: grid;
+  align-items: center;
+}
+
 /* Start Game Area */
 
 .start-game-area {
