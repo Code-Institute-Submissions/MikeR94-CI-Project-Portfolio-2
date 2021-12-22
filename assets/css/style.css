@@ -134,4 +134,20 @@ button:hover {
   border-radius: 30px;
 }
 
+.question-main-text {
+  text-align: center;
+  padding: 30px;
+}
+
+.answer-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.answer-buttons button {
+  margin: 10px auto;
+}
+
 
