@@ -107,6 +107,11 @@ button:hover {
   border-radius: 30px;
 }
 
+.category-main-text {
+  padding: 30px;
+  text-align: center;
+}
+
 .category-area-btn {
   display: grid;
 }
