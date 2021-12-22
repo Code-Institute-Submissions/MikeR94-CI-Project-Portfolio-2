@@ -72,8 +72,7 @@ button:hover {
 }
 
 .menu {
-  background-color: yellow;
-  /* background-color: var(--clr-game-canvas); */
+  background-color: var(--clr-game-canvas);
   height: 390px;
   width: 700px;
   margin: 0;
@@ -87,8 +86,7 @@ button:hover {
 /* Start Game Area */
 
 .start-game-area {
-  background-color: red;
-  /* background-color: var(--clr-game-canvas); */
+  background-color: var(--clr-game-canvas);
   height: 450px;
   width: 700px;
   margin: 0;
