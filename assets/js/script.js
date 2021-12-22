@@ -6,6 +6,13 @@ let generalKnowledgeBtn = document.getElementById("general-knowledge-btn").addEv
 let constructorsBtn = document.getElementById("constructors-btn").addEventListener("click", runConstructorQuiz);
 let driversBtn = document.getElementById("drivers-btn").addEventListener("click", runDriverQuiz);
 
+let toggleButton = document.getElementById("hamburger");
+let menu = document.getElementById("menu");
+
+toggleButton.addEventListener("click", () => {
+    menu.classList.toggle("hide");
+});
+
 function toCategoryGameArea() {
   document.getElementById("start-game-area").classList.add("hide");
   document.getElementById("category-game-area").classList.remove("hide");
