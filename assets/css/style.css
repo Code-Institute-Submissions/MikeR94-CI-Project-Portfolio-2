@@ -25,9 +25,10 @@ body {
 
 button {
   background-color: var(--clr-btn);
-  width: 100px;
-  height: 50px;
+  width: 170px;
+  height: 60px;
   border: none;
+  font-size: 16px;
 }
 
 button:hover {
@@ -105,3 +106,12 @@ button:hover {
   transform: translate(-50%, -50%);
   border-radius: 30px;
 }
+
+.category-area-btn {
+  display: grid;
+}
+
+.category-area-btn button {
+  margin: 10px auto;
+}
+
