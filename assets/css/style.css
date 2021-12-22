@@ -71,10 +71,24 @@ button:hover {
   margin-top: 5px;
 }
 
+.menu {
+  background-color: yellow;
+  /* background-color: var(--clr-game-canvas); */
+  height: 390px;
+  width: 700px;
+  margin: 0;
+  position: absolute;
+  top: 56.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0px 0px 20px 20px;
+}
+
 /* Start Game Area */
 
 .start-game-area {
-  background-color: var(--clr-game-canvas);
+  background-color: red;
+  /* background-color: var(--clr-game-canvas); */
   height: 450px;
   width: 700px;
   margin: 0;
