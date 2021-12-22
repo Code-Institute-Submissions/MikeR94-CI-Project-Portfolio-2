@@ -59,6 +59,18 @@ button:hover {
   cursor: pointer;
 }
 
+.hamburger {
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-line {
+  height: 3px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
 /* Start Game Area */
 
 .start-game-area {
