@@ -52,5 +52,16 @@ let goRules = document.getElementsByClassName("rules-btn");
 for (let i = 0; i < goRules.length; i++) {
   goRules[i].addEventListener("click", () => {
     document.getElementById("rules-game-area").classList.remove("hide");
-  })
+    document.getElementById("hiscores-game-area").classList.add("hide");
+    menu[i].classList.toggle("hide");
+  });
+}
+
+let goHiscores = document.getElementsByClassName("hiscores-btn");
+for (let i = 0; i < goHiscores.length; i++) {
+  goHiscores[i].addEventListener("click", () => {
+    document.getElementById("hiscores-game-area").classList.remove("hide");
+    document.getElementById("rules-game-area").classList.add("hide");
+    menu[i].classList.toggle("hide");
+  });
 }
