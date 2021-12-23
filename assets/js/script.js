@@ -47,3 +47,10 @@ for (let i = 0; i < toggleMenu.length && menu.length; i++) {
     menu[i].classList.toggle("hide");
   });
 }
+
+let goRules = document.getElementsByClassName("rules-btn");
+for (let i = 0; i < goRules.length; i++) {
+  goRules[i].addEventListener("click", () => {
+    document.getElementById("rules-game-area").classList.remove("hide");
+  })
+}
