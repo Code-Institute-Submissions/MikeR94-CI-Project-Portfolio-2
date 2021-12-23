@@ -36,6 +36,10 @@ for (let i = 0; i < goHome.length; i++) {
   })
 };
 
+/**
+ * Loop through both "hamburger" and "menu" and add a click event listener to open the menu
+ * if the user clicks the hamburger
+ */
 let toggleMenu = document.getElementsByClassName("hamburger");
 let menu = document.getElementsByClassName("menu");
 for (let i = 0; i < toggleMenu.length && menu.length; i++) {
