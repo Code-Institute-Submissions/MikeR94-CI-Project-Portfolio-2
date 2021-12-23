@@ -36,8 +36,10 @@ for (let i = 0; i < goHome.length; i++) {
   })
 };
 
-let toggleMenu= document.getElementById("hamburger");
-let menu = document.getElementById("menu");
-toggleMenu.addEventListener("click", () => {
-  menu.classList.toggle("hide");
-});
+let toggleMenu = document.getElementsByClassName("hamburger");
+let menu = document.getElementsByClassName("menu");
+for (let i = 0; i < toggleMenu.length && menu.length; i++) {
+  toggleMenu[i].addEventListener("click", () => {
+    menu[i].classList.toggle("hide");
+  });
+}
