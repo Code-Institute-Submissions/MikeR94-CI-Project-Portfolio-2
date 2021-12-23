@@ -1,17 +1,8 @@
 let nextBtn = document.getElementById("next-btn").addEventListener("click", toCategoryGameArea);
-let homeBtn1 = document.getElementById("home-icon-1").addEventListener("click", homeButton);
-let homeBtn2 = document.getElementById("home-icon-2").addEventListener("click", homeButton);
-let homeBtn3 = document.getElementById("home-icon-3").addEventListener("click", homeButton);
 let generalKnowledgeBtn = document.getElementById("general-knowledge-btn").addEventListener("click", runGeneralKnowledgeQuiz);
 let constructorsBtn = document.getElementById("constructors-btn").addEventListener("click", runConstructorQuiz);
 let driversBtn = document.getElementById("drivers-btn").addEventListener("click", runDriverQuiz);
 
-let toggleButton = document.getElementById("hamburger");
-let menu = document.getElementById("menu");
-
-toggleButton.addEventListener("click", () => {
-    menu.classList.toggle("hide");
-});
 
 function toCategoryGameArea() {
   document.getElementById("start-game-area").classList.add("hide");
@@ -33,6 +24,20 @@ function runGeneralKnowledgeQuiz() {
   document.getElementById("question-game-area").classList.remove("hide");
 }
 
-function homeButton() {
-  window.location.reload();
-}
+
+/**
+ * Loop through the "home-icon" class and add a click event listener to refresh the
+ * game and load the home page
+ */
+let goHome = document.getElementsByClassName("home-icon");
+for (let i = 0; i < goHome.length; i++) {
+  goHome[i].addEventListener("click", () => {
+    window.location.reload();
+  })
+};
+
+let toggleMenu= document.getElementById("hamburger");
+let menu = document.getElementById("menu");
+toggleMenu.addEventListener("click", () => {
+  menu.classList.toggle("hide");
+});
