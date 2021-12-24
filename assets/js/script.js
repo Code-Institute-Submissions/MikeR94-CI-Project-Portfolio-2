@@ -32,6 +32,10 @@ function buildConstructorQuestion() {
     answer2.innerHTML = constructorQuestions[currentQuestion].b;
     answer3.innerHTML = constructorQuestions[currentQuestion].c;
     answer4.innerHTML = constructorQuestions[currentQuestion].d;
+    document.getElementById("answer1-btn").onclick = checkConstructorAnswer;
+    document.getElementById("answer2-btn").onclick = checkConstructorAnswer;
+    document.getElementById("answer3-btn").onclick = checkConstructorAnswer;
+    document.getElementById("answer4-btn").onclick = checkConstructorAnswer;
   }
 }
 
@@ -55,6 +59,18 @@ function checkDriverAnswer() {
     answerClicked = true;
     currentQuestion++;
     buildDriverQuestion();
+  }
+}
+function checkConstructorAnswer() {
+  let playerAnswer = this.value;
+  if (playerAnswer === driverQuestions[currentQuestion].answer) {
+    answerClicked = true;
+    currentQuestion++;
+    buildConstructorQuestion();
+  } else {
+    answerClicked = true;
+    currentQuestion++;
+    buildConstructorQuestion();
   }
 }
 
