@@ -4,6 +4,25 @@ let constructorsBtn = document.getElementById("constructors-btn").addEventListen
 let driversBtn = document.getElementById("drivers-btn").addEventListener("click", runDriverQuiz);
 
 
+// Test Code
+
+let answer1 = document.getElementById("answer1-btn");
+let answer2 = document.getElementById("answer2-btn");
+let answer3 = document.getElementById("answer3-btn");
+let answer4 = document.getElementById("answer4-btn");
+let currentQuestion = 0;
+let questionText = document.getElementById("question-text");
+
+function buildDriverQuestion() {
+  for (let i = 0; i < driverQuestions.length; i++) {
+    questionText.innerHTML = driverQuestions[currentQuestion].question;
+    answer1.innerHTML = driverQuestions[currentQuestion].a;
+    answer2.innerHTML = driverQuestions[currentQuestion].b;
+    answer3.innerHTML = driverQuestions[currentQuestion].c;
+    answer4.innerHTML = driverQuestions[currentQuestion].d;
+  }
+}
+
 function toCategoryGameArea() {
   document.getElementById("start-game-area").classList.add("hide");
   document.getElementById("category-game-area").classList.remove("hide");
@@ -12,6 +31,7 @@ function toCategoryGameArea() {
 function runDriverQuiz() {
   document.getElementById("category-game-area").classList.add("hide");
   document.getElementById("question-game-area").classList.remove("hide");
+  buildDriverQuestion();
 }
 
 function runConstructorQuiz() {
