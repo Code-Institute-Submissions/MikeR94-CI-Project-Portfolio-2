@@ -10,6 +10,7 @@ let currentQuestion = 0;
 let questionText = document.getElementById("question-text");
 let answerClicked = false;
 let shuffledQuestions = 0;
+let quizLength = 10;
 
 function toCategoryGameArea() {
   document.getElementById("start-game-area").classList.add("hide");
@@ -39,16 +40,21 @@ function runGeneralKnowledgeQuiz() {
 
 
 function buildDriverQuestion() {
-  for (let i = 0; i < driverQuestions.length; i++) {
-    questionText.innerHTML = driverQuestions[currentQuestion].question;
-    answer1.innerHTML = driverQuestions[currentQuestion].a;
-    answer2.innerHTML = driverQuestions[currentQuestion].b;
-    answer3.innerHTML = driverQuestions[currentQuestion].c;
-    answer4.innerHTML = driverQuestions[currentQuestion].d;
-    document.getElementById("answer1-btn").onclick = checkDriverAnswer;
-    document.getElementById("answer2-btn").onclick = checkDriverAnswer;
-    document.getElementById("answer3-btn").onclick = checkDriverAnswer;
-    document.getElementById("answer4-btn").onclick = checkDriverAnswer;
+  if (currentQuestion >= quizLength) {
+    document.getElementById("results-game-area").classList.remove("hide");
+    document.getElementById("question-game-area").classList.add("hide");
+  } else {
+    for (let i = 0; i < driverQuestions.length; i++) {
+      questionText.innerHTML = driverQuestions[currentQuestion].question;
+      answer1.innerHTML = driverQuestions[currentQuestion].a;
+      answer2.innerHTML = driverQuestions[currentQuestion].b;
+      answer3.innerHTML = driverQuestions[currentQuestion].c;
+      answer4.innerHTML = driverQuestions[currentQuestion].d;
+      document.getElementById("answer1-btn").onclick = checkDriverAnswer;
+      document.getElementById("answer2-btn").onclick = checkDriverAnswer;
+      document.getElementById("answer3-btn").onclick = checkDriverAnswer;
+      document.getElementById("answer4-btn").onclick = checkDriverAnswer;
+    }
   }
 }
 
