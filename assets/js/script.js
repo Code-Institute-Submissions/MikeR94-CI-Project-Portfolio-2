@@ -59,30 +59,40 @@ function buildDriverQuestion() {
 }
 
 function buildConstructorQuestion() {
-  for (let i = 0; i < constructorQuestions.length; i++) {
-    questionText.innerHTML = constructorQuestions[currentQuestion].question;
-    answer1.innerHTML = constructorQuestions[currentQuestion].a;
-    answer2.innerHTML = constructorQuestions[currentQuestion].b;
-    answer3.innerHTML = constructorQuestions[currentQuestion].c;
-    answer4.innerHTML = constructorQuestions[currentQuestion].d;
-    document.getElementById("answer1-btn").onclick = checkConstructorAnswer;
-    document.getElementById("answer2-btn").onclick = checkConstructorAnswer;
-    document.getElementById("answer3-btn").onclick = checkConstructorAnswer;
-    document.getElementById("answer4-btn").onclick = checkConstructorAnswer;
+  if (currentQuestion >= quizLength) {
+    document.getElementById("results-game-area").classList.remove("hide");
+    document.getElementById("question-game-area").classList.add("hide");
+  } else {
+    for (let i = 0; i < constructorQuestions.length; i++) {
+      questionText.innerHTML = constructorQuestions[currentQuestion].question;
+      answer1.innerHTML = constructorQuestions[currentQuestion].a;
+      answer2.innerHTML = constructorQuestions[currentQuestion].b;
+      answer3.innerHTML = constructorQuestions[currentQuestion].c;
+      answer4.innerHTML = constructorQuestions[currentQuestion].d;
+      document.getElementById("answer1-btn").onclick = checkConstructorAnswer;
+      document.getElementById("answer2-btn").onclick = checkConstructorAnswer;
+      document.getElementById("answer3-btn").onclick = checkConstructorAnswer;
+      document.getElementById("answer4-btn").onclick = checkConstructorAnswer;
+    }
   }
 }
 
 function buildGeneralKnowledgeQuestion() {
-  for (let i = 0; i < generalKnowledgeQuestions.length; i++) {
-    questionText.innerHTML = generalKnowledgeQuestions[currentQuestion].question;
-    answer1.innerHTML = generalKnowledgeQuestions[currentQuestion].a;
-    answer2.innerHTML = generalKnowledgeQuestions[currentQuestion].b;
-    answer3.innerHTML = generalKnowledgeQuestions[currentQuestion].c;
-    answer4.innerHTML = generalKnowledgeQuestions[currentQuestion].d;
-    document.getElementById("answer1-btn").onclick = checkGeneralKnowledgeAnswer;
-    document.getElementById("answer2-btn").onclick = checkGeneralKnowledgeAnswer;
-    document.getElementById("answer3-btn").onclick = checkGeneralKnowledgeAnswer;
-    document.getElementById("answer4-btn").onclick = checkGeneralKnowledgeAnswer;
+  if (currentQuestion >= quizLength) {
+    document.getElementById("results-game-area").classList.remove("hide");
+    document.getElementById("question-game-area").classList.add("hide");
+  } else {
+    for (let i = 0; i < generalKnowledgeQuestions.length; i++) {
+      questionText.innerHTML = generalKnowledgeQuestions[currentQuestion].question;
+      answer1.innerHTML = generalKnowledgeQuestions[currentQuestion].a;
+      answer2.innerHTML = generalKnowledgeQuestions[currentQuestion].b;
+      answer3.innerHTML = generalKnowledgeQuestions[currentQuestion].c;
+      answer4.innerHTML = generalKnowledgeQuestions[currentQuestion].d;
+      document.getElementById("answer1-btn").onclick = checkGeneralKnowledgeAnswer;
+      document.getElementById("answer2-btn").onclick = checkGeneralKnowledgeAnswer;
+      document.getElementById("answer3-btn").onclick = checkGeneralKnowledgeAnswer;
+      document.getElementById("answer4-btn").onclick = checkGeneralKnowledgeAnswer;
+    }
   }
 }
 
