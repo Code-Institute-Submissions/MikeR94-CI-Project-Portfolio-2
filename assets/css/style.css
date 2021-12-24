@@ -227,3 +227,22 @@ button:hover {
   margin-top: 10px;
   list-style-type: none;
 }
+
+/* Contact Game Area */
+
+.contact-game-area {
+  background-color: var(--clr-game-canvas);
+  height: 450px;
+  width: 700px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+}
+
+.contact-form {
+  text-align: center;
+  margin-top: 150px;
+}

@@ -53,6 +53,7 @@ for (let i = 0; i < goRules.length; i++) {
   goRules[i].addEventListener("click", () => {
     document.getElementById("rules-game-area").classList.remove("hide");
     document.getElementById("hiscores-game-area").classList.add("hide");
+    document.getElementById("contact-game-area").classList.add("hide")
     menu[i].classList.toggle("hide");
   });
 }
@@ -62,6 +63,17 @@ for (let i = 0; i < goHiscores.length; i++) {
   goHiscores[i].addEventListener("click", () => {
     document.getElementById("hiscores-game-area").classList.remove("hide");
     document.getElementById("rules-game-area").classList.add("hide");
+    document.getElementById("contact-game-area").classList.add("hide")
     menu[i].classList.toggle("hide");
   });
+}
+
+let goContact = document.getElementsByClassName("contact-btn")
+for (let i = 0; i < goContact.length; i++) {
+  goContact[i].addEventListener("click", () => {
+    document.getElementById("contact-game-area").classList.remove("hide")
+    document.getElementById("rules-game-area").classList.add("hide");
+    document.getElementById("hiscores-game-area").classList.add("hide");
+    menu[i].classList.toggle("hide");
+  })
 }
