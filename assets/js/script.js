@@ -11,6 +11,33 @@ let questionText = document.getElementById("question-text");
 let answerClicked = false;
 let shuffledQuestions = 0;
 
+function toCategoryGameArea() {
+  document.getElementById("start-game-area").classList.add("hide");
+  document.getElementById("category-game-area").classList.remove("hide");
+}
+
+function runDriverQuiz() {
+  document.getElementById("category-game-area").classList.add("hide");
+  document.getElementById("question-game-area").classList.remove("hide");
+  shuffledQuestions = driverQuestions.sort(() => Math.random() - 0.5);
+  buildDriverQuestion();
+}
+
+function runConstructorQuiz() {
+  document.getElementById("category-game-area").classList.add("hide");
+  document.getElementById("question-game-area").classList.remove("hide");
+  shuffledQuestions = constructorQuestions.sort(() => Math.random() - 0.5);
+  buildConstructorQuestion();
+}
+
+function runGeneralKnowledgeQuiz() {
+  document.getElementById("category-game-area").classList.add("hide");
+  document.getElementById("question-game-area").classList.remove("hide");
+  shuffledQuestions = generalKnowledgeQuestions.sort(() => Math.random() - 0.5);
+  buildGeneralKnowledgeQuestion();
+}
+
+
 function buildDriverQuestion() {
   for (let i = 0; i < driverQuestions.length; i++) {
     questionText.innerHTML = driverQuestions[currentQuestion].question;
@@ -66,19 +93,6 @@ function checkDriverAnswer() {
   }
 }
 
-function checkGeneralKnowledgeAnswer() {
-  let playerAnswer = this.value;
-  if (playerAnswer === driverQuestions[currentQuestion].answer) {
-    answerClicked = true;
-    currentQuestion++;
-    buildGeneralKnowledgeQuestion();
-  } else {
-    answerClicked = true;
-    currentQuestion++;
-    buildGeneralKnowledgeQuestion();
-  }
-}
-
 function checkConstructorAnswer() {
   let playerAnswer = this.value;
   if (playerAnswer === driverQuestions[currentQuestion].answer) {
@@ -92,32 +106,18 @@ function checkConstructorAnswer() {
   }
 }
 
-function toCategoryGameArea() {
-  document.getElementById("start-game-area").classList.add("hide");
-  document.getElementById("category-game-area").classList.remove("hide");
+function checkGeneralKnowledgeAnswer() {
+  let playerAnswer = this.value;
+  if (playerAnswer === driverQuestions[currentQuestion].answer) {
+    answerClicked = true;
+    currentQuestion++;
+    buildGeneralKnowledgeQuestion();
+  } else {
+    answerClicked = true;
+    currentQuestion++;
+    buildGeneralKnowledgeQuestion();
+  }
 }
-
-function runDriverQuiz() {
-  document.getElementById("category-game-area").classList.add("hide");
-  document.getElementById("question-game-area").classList.remove("hide");
-  shuffledQuestions = driverQuestions.sort(() => Math.random() - 0.5);
-  buildDriverQuestion();
-}
-
-function runConstructorQuiz() {
-  document.getElementById("category-game-area").classList.add("hide");
-  document.getElementById("question-game-area").classList.remove("hide");
-  shuffledQuestions = constructorQuestions.sort(() => Math.random() - 0.5);
-  buildConstructorQuestion();
-}
-
-function runGeneralKnowledgeQuiz() {
-  document.getElementById("category-game-area").classList.add("hide");
-  document.getElementById("question-game-area").classList.remove("hide");
-  shuffledQuestions = generalKnowledgeQuestions.sort(() => Math.random() - 0.5);
-  buildGeneralKnowledgeQuestion();
-}
-
 
 /**
  * Loop through the "home-icon" class and add a click event listener to refresh the
