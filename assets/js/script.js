@@ -37,7 +37,7 @@ for (let i = 0; i < goHome.length; i++) {
 };
 
 /**
- * Loop through both "hamburger" and "menu" and add a click event listener to open the menu
+ * Loop through both "hamburger" and "menu" class and add a click event listener to open the menu
  * if the user clicks the hamburger
  */
 let toggleMenu = document.getElementsByClassName("hamburger");
@@ -48,6 +48,10 @@ for (let i = 0; i < toggleMenu.length && menu.length; i++) {
   });
 }
 
+/**
+ * Loop through the rules button and add a click event listener to open the rules page and hide the
+ * other relevant pages
+ */
 let goRules = document.getElementsByClassName("rules-btn");
 for (let i = 0; i < goRules.length; i++) {
   goRules[i].addEventListener("click", () => {
@@ -58,6 +62,10 @@ for (let i = 0; i < goRules.length; i++) {
   });
 }
 
+/**
+ * Loop through the hiscores button and add a click event listener to open the hiscores page and hide the
+ * other relevant pages
+ */
 let goHiscores = document.getElementsByClassName("hiscores-btn");
 for (let i = 0; i < goHiscores.length; i++) {
   goHiscores[i].addEventListener("click", () => {
@@ -68,6 +76,10 @@ for (let i = 0; i < goHiscores.length; i++) {
   });
 }
 
+/**
+ * Loop through the contact button and add a click event listener to open the contact page and hide the
+ * other relevant pages
+ */
 let goContact = document.getElementsByClassName("contact-btn")
 for (let i = 0; i < goContact.length; i++) {
   goContact[i].addEventListener("click", () => {
