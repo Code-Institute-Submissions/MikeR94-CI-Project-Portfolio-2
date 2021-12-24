@@ -46,6 +46,10 @@ function buildGeneralKnowledgeQuestion() {
     answer2.innerHTML = generalKnowledgeQuestions[currentQuestion].b;
     answer3.innerHTML = generalKnowledgeQuestions[currentQuestion].c;
     answer4.innerHTML = generalKnowledgeQuestions[currentQuestion].d;
+    document.getElementById("answer1-btn").onclick = checkGeneralKnowledgeAnswer;
+    document.getElementById("answer2-btn").onclick = checkGeneralKnowledgeAnswer;
+    document.getElementById("answer3-btn").onclick = checkGeneralKnowledgeAnswer;
+    document.getElementById("answer4-btn").onclick = checkGeneralKnowledgeAnswer;
   }
 }
 
@@ -61,6 +65,20 @@ function checkDriverAnswer() {
     buildDriverQuestion();
   }
 }
+
+function checkGeneralKnowledgeAnswer() {
+  let playerAnswer = this.value;
+  if (playerAnswer === driverQuestions[currentQuestion].answer) {
+    answerClicked = true;
+    currentQuestion++;
+    buildGeneralKnowledgeQuestion();
+  } else {
+    answerClicked = true;
+    currentQuestion++;
+    buildGeneralKnowledgeQuestion();
+  }
+}
+
 function checkConstructorAnswer() {
   let playerAnswer = this.value;
   if (playerAnswer === driverQuestions[currentQuestion].answer) {
