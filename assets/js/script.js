@@ -2,10 +2,6 @@ let nextBtn = document.getElementById("next-btn").addEventListener("click", toCa
 let generalKnowledgeBtn = document.getElementById("general-knowledge-btn").addEventListener("click", runGeneralKnowledgeQuiz);
 let constructorsBtn = document.getElementById("constructors-btn").addEventListener("click", runConstructorQuiz);
 let driversBtn = document.getElementById("drivers-btn").addEventListener("click", runDriverQuiz);
-
-
-// Test Code
-
 let answer1 = document.getElementById("answer1-btn");
 let answer2 = document.getElementById("answer2-btn");
 let answer3 = document.getElementById("answer3-btn");
@@ -23,6 +19,26 @@ function buildDriverQuestion() {
   }
 }
 
+function buildConstructorQuestion() {
+  for (let i = 0; i < constructorQuestions.length; i++) {
+    questionText.innerHTML = constructorQuestions[currentQuestion].question;
+    answer1.innerHTML = constructorQuestions[currentQuestion].a;
+    answer2.innerHTML = constructorQuestions[currentQuestion].b;
+    answer3.innerHTML = constructorQuestions[currentQuestion].c;
+    answer4.innerHTML = constructorQuestions[currentQuestion].d;
+  }
+}
+
+function buildGeneralKnowledgeQuestion() {
+  for (let i = 0; i < generalKnowledgeQuestions.length; i++) {
+    questionText.innerHTML = generalKnowledgeQuestions[currentQuestion].question;
+    answer1.innerHTML = generalKnowledgeQuestions[currentQuestion].a;
+    answer2.innerHTML = generalKnowledgeQuestions[currentQuestion].b;
+    answer3.innerHTML = generalKnowledgeQuestions[currentQuestion].c;
+    answer4.innerHTML = generalKnowledgeQuestions[currentQuestion].d;
+  }
+}
+
 function toCategoryGameArea() {
   document.getElementById("start-game-area").classList.add("hide");
   document.getElementById("category-game-area").classList.remove("hide");
@@ -37,11 +53,13 @@ function runDriverQuiz() {
 function runConstructorQuiz() {
   document.getElementById("category-game-area").classList.add("hide");
   document.getElementById("question-game-area").classList.remove("hide");
+  buildConstructorQuestion();
 }
 
 function runGeneralKnowledgeQuiz() {
   document.getElementById("category-game-area").classList.add("hide");
   document.getElementById("question-game-area").classList.remove("hide");
+  buildGeneralKnowledgeQuestion();
 }
 
 
