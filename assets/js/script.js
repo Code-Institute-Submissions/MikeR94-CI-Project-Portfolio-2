@@ -9,6 +9,7 @@ let answer4 = document.getElementById("answer4-btn");
 let currentQuestion = 0;
 let questionText = document.getElementById("question-text");
 let answerClicked = false;
+let shuffledQuestions = 0;
 
 function buildDriverQuestion() {
   for (let i = 0; i < driverQuestions.length; i++) {
@@ -23,7 +24,6 @@ function buildDriverQuestion() {
     document.getElementById("answer4-btn").onclick = checkDriverAnswer;
   }
 }
-
 
 function buildConstructorQuestion() {
   for (let i = 0; i < constructorQuestions.length; i++) {
@@ -100,18 +100,21 @@ function toCategoryGameArea() {
 function runDriverQuiz() {
   document.getElementById("category-game-area").classList.add("hide");
   document.getElementById("question-game-area").classList.remove("hide");
+  shuffledQuestions = driverQuestions.sort(() => Math.random() - 0.5);
   buildDriverQuestion();
 }
 
 function runConstructorQuiz() {
   document.getElementById("category-game-area").classList.add("hide");
   document.getElementById("question-game-area").classList.remove("hide");
+  shuffledQuestions = constructorQuestions.sort(() => Math.random() - 0.5);
   buildConstructorQuestion();
 }
 
 function runGeneralKnowledgeQuiz() {
   document.getElementById("category-game-area").classList.add("hide");
   document.getElementById("question-game-area").classList.remove("hide");
+  shuffledQuestions = generalKnowledgeQuestions.sort(() => Math.random() - 0.5);
   buildGeneralKnowledgeQuestion();
 }
 
