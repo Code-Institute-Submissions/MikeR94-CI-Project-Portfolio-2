@@ -10,10 +10,6 @@ let shuffledQuestions = 0;
 let quizLength = 10;
 let currentQuestionSet = {};
 
-let categorySelected = document.getElementsByClassName("category-area-btn");
-for (let i = 0; i < categorySelected.length; i++) {
-  categorySelected[i].addEventListener("click", runQuiz);
-}
 
 function runQuiz(event) {
   let category = event.target.value;
@@ -67,6 +63,15 @@ function checkAnswer() {
 function toCategoryGameArea() {
   document.getElementById("start-game-area").classList.add("hide");
   document.getElementById("category-game-area").classList.remove("hide");
+}
+
+
+/**
+ * Loop through the categories and add a click event listener to load the category that the user has selected
+ */
+let categorySelected = document.getElementsByClassName("category-area-btn");
+for (let i = 0; i < categorySelected.length; i++) {
+  categorySelected[i].addEventListener("click", runQuiz);
 }
 
 /**
