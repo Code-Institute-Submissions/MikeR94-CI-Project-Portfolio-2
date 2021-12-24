@@ -8,6 +8,7 @@ let answer3 = document.getElementById("answer3-btn");
 let answer4 = document.getElementById("answer4-btn");
 let currentQuestion = 0;
 let questionText = document.getElementById("question-text");
+let answerClicked = false;
 
 function buildDriverQuestion() {
   for (let i = 0; i < driverQuestions.length; i++) {
@@ -16,8 +17,13 @@ function buildDriverQuestion() {
     answer2.innerHTML = driverQuestions[currentQuestion].b;
     answer3.innerHTML = driverQuestions[currentQuestion].c;
     answer4.innerHTML = driverQuestions[currentQuestion].d;
+    document.getElementById("answer1-btn").onclick = checkDriverAnswer;
+    document.getElementById("answer2-btn").onclick = checkDriverAnswer;
+    document.getElementById("answer3-btn").onclick = checkDriverAnswer;
+    document.getElementById("answer4-btn").onclick = checkDriverAnswer;
   }
 }
+
 
 function buildConstructorQuestion() {
   for (let i = 0; i < constructorQuestions.length; i++) {
@@ -36,6 +42,19 @@ function buildGeneralKnowledgeQuestion() {
     answer2.innerHTML = generalKnowledgeQuestions[currentQuestion].b;
     answer3.innerHTML = generalKnowledgeQuestions[currentQuestion].c;
     answer4.innerHTML = generalKnowledgeQuestions[currentQuestion].d;
+  }
+}
+
+function checkDriverAnswer() {
+  let playerAnswer = this.value;
+  if (playerAnswer === driverQuestions[currentQuestion].answer) {
+    answerClicked = true;
+    currentQuestion++;
+    buildDriverQuestion();
+  } else {
+    answerClicked = true;
+    currentQuestion++;
+    buildDriverQuestion();
   }
 }
 
