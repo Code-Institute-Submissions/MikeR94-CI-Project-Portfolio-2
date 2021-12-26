@@ -76,7 +76,7 @@ function buildQuestions() {
 /**
  * Validates the players answer
  */
-function checkAnswer(element) {
+function checkAnswer() {
   document.getElementById("answer1-btn").disabled = true;
   document.getElementById("answer2-btn").disabled = true;
   document.getElementById("answer3-btn").disabled = true;
