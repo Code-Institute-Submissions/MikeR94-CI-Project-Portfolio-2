@@ -15,7 +15,7 @@ let score = 0;
 
 /**
  * When the user clicks the next button whilst in the question screen, this function will load the next question
- * and reset the answer buttons so that they are not disabled
+ * and reset the answer buttons so that they are not disabled (add description code to new loop)
  */
 function nextQuestion() {
   currentQuestion++;
@@ -24,6 +24,13 @@ function nextQuestion() {
   document.getElementById("answer2-btn").disabled = false;
   document.getElementById("answer3-btn").disabled = false;
   document.getElementById("answer4-btn").disabled = false;
+  let correctAnswer = currentQuestionSet[currentQuestion].answer;
+  let answerButtons = document.getElementsByClassName("answer-btn");
+  for (let i = 0; i < answerButtons.length; i++) {
+    if (answerButtons[i].value === correctAnswer) {
+      answerButtons[i].classList.remove("correct");
+    }
+  }
 }
 
 /**
@@ -74,7 +81,7 @@ function buildQuestions() {
 }
 
 /**
- * Validates the players answer
+ * Validates the players answer (add description code to new loop)
  */
 function checkAnswer() {
   document.getElementById("answer1-btn").disabled = true;
@@ -82,12 +89,21 @@ function checkAnswer() {
   document.getElementById("answer3-btn").disabled = true;
   document.getElementById("answer4-btn").disabled = true;
   let userAnswer = this.value;
-  if (userAnswer === currentQuestionSet[currentQuestion].answer) {
+  let correctAnswer = currentQuestionSet[currentQuestion].answer;
+  if (userAnswer === correctAnswer) {
     answerClicked = true;
     incrementScore();
   } else {
     answerClicked = true;
-  } 
+  }
+  
+  let answerButtons = document.getElementsByClassName("answer-btn");
+  for (let i = 0; i < answerButtons.length; i++) {
+    if (answerButtons[i].value === correctAnswer) {
+      console.log(answerButtons[i]);
+      answerButtons[i].classList.add("correct");
+    }
+  }
 }
 
 /**
