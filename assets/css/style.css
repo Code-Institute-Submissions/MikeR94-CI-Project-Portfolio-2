@@ -191,6 +191,18 @@ button:hover {
   margin: 10px auto;
 }
 
+.next-question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.next-question button {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
 /* Rules Game Area */
 
 .rules-game-area {

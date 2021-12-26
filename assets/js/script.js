@@ -11,11 +11,12 @@ let quizLength = 10;
 let currentQuestionSet = {};
 let score = 0;
 
+
 /**
  * Depending on what difficulty the player selects, this function then randomly shuffles the questions,
  * removes the difficulty screen and displays the question screen. It then calls buildQuestions() to
  * create a list of questions for the player
- * @param {the target value that the user selected} event 
+ * @param {the target value that the user selected} event
  */
 function runQuiz(event) {
   let difficulty = event.target.value;
