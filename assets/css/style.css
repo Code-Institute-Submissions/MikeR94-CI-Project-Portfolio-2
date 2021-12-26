@@ -21,10 +21,10 @@ html {
 }
 
 :root {
-  --clr-game-canvas: #1b1c27;
-  --clr-text: #f8f8ff;
-  --clr-btn: #232145;
-  --clr-btn-hover: #0c085a;
+  --clr-game-canvas: #031227;
+  --clr-text: #FAF9F6;
+  --clr-btn: #107896;
+  --clr-btn-hover: #43abc9;
 }
 
 body {
@@ -37,6 +37,7 @@ button {
   height: 60px;
   border: none;
   font-size: 16px;
+  color: var(--clr-text);
 }
 
 button:hover {
@@ -124,6 +125,8 @@ button:hover {
 .start-input-name input {
   width: 50%;
   height: 40px;
+  background-color: #FAF9F6;
+  color: black;
 }
 
 .start-game-area-btn {
