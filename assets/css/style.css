@@ -22,7 +22,7 @@ html {
 
 :root {
   --clr-game-canvas: #031227;
-  --clr-text: #FAF9F6;
+  --clr-text: #faf9f6;
   --clr-btn: #107896;
   --clr-btn-hover: #43abc9;
 }
@@ -124,7 +124,7 @@ button:hover {
 .start-input-name input {
   width: 50%;
   height: 40px;
-  background-color: #FAF9F6;
+  background-color: #faf9f6;
   color: black;
 }
 

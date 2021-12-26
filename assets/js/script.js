@@ -12,7 +12,6 @@ let quizLength = 10;
 let currentQuestionSet = {};
 let score = 0;
 
-
 /**
  * When the user clicks the next button whilst in the question screen, this function will load the next question
  * and reset the answer buttons so that they are not disabled (add description code to new loop)
@@ -26,8 +25,8 @@ function nextQuestion() {
   document.getElementById("answer4-btn").disabled = false;
   let answerButtons = document.getElementsByClassName("answer-btn");
   for (let i = 0; i < answerButtons.length; i++) {
-      answerButtons[i].classList.remove("correct");
-      answerButtons[i].classList.remove("wrong");
+    answerButtons[i].classList.remove("correct");
+    answerButtons[i].classList.remove("wrong");
   }
 }
 
@@ -101,7 +100,7 @@ function checkAnswer() {
       answerButtons[i].classList.add("correct");
     } else if (userAnswer !== correctAnswer) {
       this.classList.add("wrong");
-    } 
+    }
   }
 }
 
