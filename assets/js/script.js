@@ -30,8 +30,8 @@ function runQuiz(event) {
  
 function buildQuestions() {
   if (currentQuestion >= quizLength) {
-    document.getElementById("question-container").classList.add("hide");
-    document.getElementById("results-container").classList.remove("hide");
+    document.getElementById("question-game-area").classList.add("hide");
+    document.getElementById("results-game-area").classList.remove("hide");
   } else {
     for (let i = 0; i < currentQuestionSet.length; i++) {
       questionText.innerHTML = currentQuestionSet[currentQuestion].question;
