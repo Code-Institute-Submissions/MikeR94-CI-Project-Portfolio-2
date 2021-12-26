@@ -13,7 +13,6 @@ let currentQuestionSet = {};
 let score = 0;
 
 
-
 /**
  * When the user clicks the next button whilst in the question screen, this function will load the next question
  * and reset the answer buttons so that they are not disabled
@@ -77,7 +76,7 @@ function buildQuestions() {
 /**
  * Validates the players answer
  */
-function checkAnswer() {
+function checkAnswer(element) {
   document.getElementById("answer1-btn").disabled = true;
   document.getElementById("answer2-btn").disabled = true;
   document.getElementById("answer3-btn").disabled = true;
@@ -88,8 +87,7 @@ function checkAnswer() {
     incrementScore();
   } else {
     answerClicked = true;
-  }
-
+  } 
 }
 
 /**

@@ -288,3 +288,13 @@ button:hover {
   text-align: center;
   margin-top: 150px;
 }
+
+/* Test styles */
+
+.correct {
+  background-color: lightgreen;
+}
+
+.wrong {
+  background-color: red;
+}
