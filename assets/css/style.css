@@ -12,6 +12,14 @@
   font-weight: normal;
 }
 
+html {
+  background: url(../images/outer-space-fantasy-art.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 :root {
   --clr-game-canvas: #1b1c27;
   --clr-text: #f8f8ff;
