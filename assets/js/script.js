@@ -11,20 +11,12 @@ let quizLength = 10;
 let currentQuestionSet = {};
 let score = 0;
 
-// Test code
-
-function incrementScore() {
-  if (currentQuestionSet === easyQuestions) {
-    document.getElementById("result-score").innerText = score += 10;
-  } else if (currentQuestionSet === mediumQuestions) {
-    document.getElementById("result-score").innerText = score += 20;
-  } else if (currentQuestionSet === hardQuestions) {
-    document.getElementById("result-score").innerText = score += 30;
-  }
-}
-
-// Test code end
-
+/**
+ * Depending on what difficulty the player selects, this function then randomly shuffles the questions,
+ * removes the difficulty screen and displays the question screen. It then calls buildQuestions() to
+ * create a list of questions for the player
+ * @param {the target value that the user selected} event 
+ */
 function runQuiz(event) {
   let difficulty = event.target.value;
   if (difficulty === "easy") {
@@ -41,7 +33,12 @@ function runQuiz(event) {
   document.getElementById("question-game-area").classList.remove("hide");
   buildQuestions();
 }
- 
+
+/**
+ * Checks if the player has answered 10 questions and if not, loop through the questions and
+ * display them to the user. It also listens for the users answer and then calls checkAnswer()
+ * to validate the answer
+ */
 function buildQuestions() {
   if (currentQuestion >= quizLength) {
     document.getElementById("question-game-area").classList.add("hide");
@@ -61,6 +58,9 @@ function buildQuestions() {
   }
 }
 
+/**
+ * Validates the players answer
+ */
 function checkAnswer() {
   let userAnswer = this.value;
   if (userAnswer === currentQuestionSet[currentQuestion].answer) {
@@ -75,11 +75,27 @@ function checkAnswer() {
   }
 }
 
+/**
+ * When the player clicks the next button, hide the start screen and unhide the the difficulty
+ * game screen
+ */
 function toDifficultyGameArea() {
   document.getElementById("start-game-area").classList.add("hide");
   document.getElementById("difficulty-game-area").classList.remove("hide");
 }
 
+/**
+ * Increments the player score depending on the difficulty of the questions
+ */
+function incrementScore() {
+  if (currentQuestionSet === easyQuestions) {
+    document.getElementById("result-score").innerText = score += 10;
+  } else if (currentQuestionSet === mediumQuestions) {
+    document.getElementById("result-score").innerText = score += 20;
+  } else if (currentQuestionSet === hardQuestions) {
+    document.getElementById("result-score").innerText = score += 30;
+  }
+}
 
 /**
  * Loop through the categories and add a click event listener to load the difficulty that the user has selected
