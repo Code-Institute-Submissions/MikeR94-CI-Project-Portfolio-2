@@ -11,6 +11,21 @@ let quizLength = 10;
 let currentQuestionSet = {};
 let score = 0;
 
+// Test code
+
+let loadNextQuestion = document.getElementById("next-question").addEventListener("click", nextQuestion);
+
+function nextQuestion() {
+  currentQuestion++;
+  buildQuestions();
+  document.getElementById("answer1-btn").disabled = false;
+  document.getElementById("answer2-btn").disabled = false;
+  document.getElementById("answer3-btn").disabled = false;
+  document.getElementById("answer4-btn").disabled = false;
+}
+
+// Test code end
+
 
 /**
  * Depending on what difficulty the player selects, this function then randomly shuffles the questions,
@@ -63,16 +78,16 @@ function buildQuestions() {
  * Validates the players answer
  */
 function checkAnswer() {
+  document.getElementById("answer1-btn").disabled = true;
+  document.getElementById("answer2-btn").disabled = true;
+  document.getElementById("answer3-btn").disabled = true;
+  document.getElementById("answer4-btn").disabled = true;
   let userAnswer = this.value;
   if (userAnswer === currentQuestionSet[currentQuestion].answer) {
     answerClicked = true;
-    currentQuestion++;
-    buildQuestions();
     incrementScore();
   } else {
     answerClicked = true;
-    currentQuestion++;
-    buildQuestions();
   }
 }
 
