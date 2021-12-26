@@ -9,7 +9,21 @@ let answerClicked = false;
 let shuffledQuestions = 0;
 let quizLength = 10;
 let currentQuestionSet = {};
+let score = 0;
 
+// Test code
+
+function incrementScore() {
+  if (currentQuestionSet === easyQuestions) {
+    document.getElementById("result-score").innerText = score += 10;
+  } else if (currentQuestionSet === mediumQuestions) {
+    document.getElementById("result-score").innerText = score += 20;
+  } else if (currentQuestionSet === hardQuestions) {
+    document.getElementById("result-score").innerText = score += 30;
+  }
+}
+
+// Test code end
 
 function runQuiz(event) {
   let difficulty = event.target.value;
@@ -53,6 +67,7 @@ function checkAnswer() {
     answerClicked = true;
     currentQuestion++;
     buildQuestions();
+    incrementScore();
   } else {
     answerClicked = true;
     currentQuestion++;
