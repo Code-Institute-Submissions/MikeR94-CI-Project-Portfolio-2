@@ -24,12 +24,10 @@ function nextQuestion() {
   document.getElementById("answer2-btn").disabled = false;
   document.getElementById("answer3-btn").disabled = false;
   document.getElementById("answer4-btn").disabled = false;
-  let correctAnswer = currentQuestionSet[currentQuestion].answer;
   let answerButtons = document.getElementsByClassName("answer-btn");
   for (let i = 0; i < answerButtons.length; i++) {
-    if (answerButtons[i].value === correctAnswer) {
       answerButtons[i].classList.remove("correct");
-    }
+      answerButtons[i].classList.remove("wrong");
   }
 }
 
@@ -96,13 +94,14 @@ function checkAnswer() {
   } else {
     answerClicked = true;
   }
-  
+
   let answerButtons = document.getElementsByClassName("answer-btn");
   for (let i = 0; i < answerButtons.length; i++) {
     if (answerButtons[i].value === correctAnswer) {
-      console.log(answerButtons[i]);
       answerButtons[i].classList.add("correct");
-    }
+    } else if (userAnswer !== correctAnswer) {
+      this.classList.add("wrong");
+    } 
   }
 }
 
