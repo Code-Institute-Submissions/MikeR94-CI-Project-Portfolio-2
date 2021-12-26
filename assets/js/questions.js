@@ -1,4 +1,4 @@
-let driverQuestions = [{
+let easyQuestions = [{
     question: 'F1 driver question 1',
     a: 'F1 Answer 1',
     b: 'F1 Answer 2',
@@ -159,7 +159,7 @@ let driverQuestions = [{
     answer: 'A'
   },];
   
-  let constructorQuestions = [{
+  let mediumQuestions = [{
     question: 'F1 constructor question 1',
     a: 'F1 Answer 1',
     b: 'F1 Answer 2',
@@ -320,7 +320,7 @@ let driverQuestions = [{
     answer: 'A'
   }];
   
-  let generalKnowledgeQuestions = [{
+  let hardQuestions = [{
     question: 'F1 general knowledge question 1',
     a: 'F1 Answer 1',
     b: 'F1 Answer 2',

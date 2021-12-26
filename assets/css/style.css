@@ -134,9 +134,9 @@ button:hover {
   text-align: center;
 }
 
-/* Category Game Area */
+/* difficulty Game Area */
 
-.category-game-area {
+.difficulty-game-area {
   background-color: var(--clr-game-canvas);
   height: 450px;
   width: 700px;
@@ -148,16 +148,16 @@ button:hover {
   border-radius: 30px;
 }
 
-.category-main-text {
+.difficulty-main-text {
   padding: 30px;
   text-align: center;
 }
 
-.category-area-btn {
+.difficulty-btn {
   display: grid;
 }
 
-.category-area-btn button {
+.difficulty-btn button {
   margin: 10px auto;
 }
 

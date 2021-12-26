@@ -1,4 +1,4 @@
-let nextBtn = document.getElementById("next-btn").addEventListener("click", toCategoryGameArea);
+let nextBtn = document.getElementById("next-btn").addEventListener("click", toDifficultyGameArea);
 let answer1 = document.getElementById("answer1-btn");
 let answer2 = document.getElementById("answer2-btn");
 let answer3 = document.getElementById("answer3-btn");
@@ -12,18 +12,18 @@ let currentQuestionSet = {};
 
 
 function runQuiz(event) {
-  let category = event.target.value;
-  if (category === "driver") {
-    shuffledQuestions = driverQuestions.sort(() => Math.random() - 0.5);
+  let difficulty = event.target.value;
+  if (difficulty === "easy") {
+    shuffledQuestions = easyQuestions.sort(() => Math.random() - 0.5);
     currentQuestionSet = shuffledQuestions;
-  } else if (category === "general_knowledge") {
-    shuffledQuestions = generalKnowledgeQuestions.sort(() => Math.random() - 0.5);
+  } else if (difficulty === "medium") {
+    shuffledQuestions = mediumQuestions.sort(() => Math.random() - 0.5);
     currentQuestionSet = shuffledQuestions;
-  } else if (category === "constructor") {
-    shuffledQuestions = constructorQuestions.sort(() => Math.random() - 0.5);
+  } else if (difficulty === "hard") {
+    shuffledQuestions = hardQuestions.sort(() => Math.random() - 0.5);
     currentQuestionSet = shuffledQuestions;
   }
-  document.getElementById("category-game-area").classList.add("hide");
+  document.getElementById("difficulty-game-area").classList.add("hide");
   document.getElementById("question-game-area").classList.remove("hide");
   buildQuestions();
 }
@@ -60,18 +60,18 @@ function checkAnswer() {
   }
 }
 
-function toCategoryGameArea() {
+function toDifficultyGameArea() {
   document.getElementById("start-game-area").classList.add("hide");
-  document.getElementById("category-game-area").classList.remove("hide");
+  document.getElementById("difficulty-game-area").classList.remove("hide");
 }
 
 
 /**
- * Loop through the categories and add a click event listener to load the category that the user has selected
+ * Loop through the categories and add a click event listener to load the difficulty that the user has selected
  */
-let categorySelected = document.getElementsByClassName("category-area-btn");
-for (let i = 0; i < categorySelected.length; i++) {
-  categorySelected[i].addEventListener("click", runQuiz);
+let difficultySelected = document.getElementsByClassName("difficulty-btn");
+for (let i = 0; i < difficultySelected.length; i++) {
+  difficultySelected[i].addEventListener("click", runQuiz);
 }
 
 /**
