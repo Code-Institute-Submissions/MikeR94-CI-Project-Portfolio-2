@@ -197,10 +197,10 @@ button {
 }
 
 .next-question {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+    position: absolute;
+    left: 47%;
+    top: 55%;
+  }
 
 .next-question button {
   border-radius: 50%;
@@ -218,27 +218,14 @@ button {
 
 /* Lights Section */
 
-.lights-container {
-  width: 700px;
-  height: 80px;
-  margin: 0 auto;
-  position: absolute;
-  background-color: var(--clr-game-canvas);
-  top: 68%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  border-radius: 5px 5px 20px 20px;
-}
 
-.light-background {
-  width: 40px;
-  height: 60px;
-  z-index: 5;
+.lights-bar {
   display: grid;
-  float: left;
-  margin-left: 27px;
-  border-radius: 7px;
+  grid-template-columns: repeat(10, 10fr);
+  position: absolute;
+  bottom: 4%;
+  right: 9%;
+  gap: 40px;
 }
 
 .answer-light {
@@ -247,7 +234,6 @@ button {
   background-color: grey;
   border-radius: 50%;
   margin: 0 auto;
-  margin-top: 30px;
 }
 
 /* Rules Game Area */
