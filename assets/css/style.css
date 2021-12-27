@@ -208,6 +208,14 @@ button {
   height: 40px;
 }
 
+.correct {
+  background-color: rgb(12, 114, 12);
+}
+
+.wrong {
+  background-color: rgb(143, 22, 22);
+}
+
 /* Rules Game Area */
 
 .rules-game-area {
@@ -292,14 +300,4 @@ button {
 .results-page {
   text-align: center;
   margin-top: 150px;
-}
-
-/* Test styles */
-
-.correct {
-  background-color: rgb(12, 114, 12);
-}
-
-.wrong {
-  background-color: rgb(143, 22, 22);
 }
