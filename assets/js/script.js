@@ -13,6 +13,39 @@ let currentQuestionSet = {};
 let score = 0;
 let determineColour = "unanswered";
 
+// Test code
+let timeLeft;
+let timer;
+
+function startTimer() {
+  timeLeft = 5;
+  timer = setInterval(function () {
+    // countdown(timeLeft);
+    document.getElementById("timer").innerHTML = timeLeft;
+  }, 1000);
+}
+
+function countdown(seconds) {
+  if (seconds === 0) {
+    stopTimer();
+    document.getElementById("next-question").classList.remove("hide");
+    document.getElementById("answer1-btn").disabled = true;
+    document.getElementById("answer2-btn").disabled = true;
+    document.getElementById("answer3-btn").disabled = true;
+    document.getElementById("answer4-btn").disabled = true;
+  } else {
+    timeLeft -= 1;
+  }
+}
+
+function stopTimer() {
+  // console.log("time is up");
+  clearInterval(timer);
+  // console.log("timer cleared");
+}
+
+// Test code end
+
 /**
  * When the player clicks the next button whilst in the question screen, this function will load the next question
  * and reset the answer buttons so that they are not disabled. It also loops through the answer buttons and removes
@@ -21,6 +54,7 @@ let determineColour = "unanswered";
 function nextQuestion() {
   currentQuestion++;
   buildQuestions();
+  startTimer();
   document.getElementById("next-question").classList.add("hide");
   document.getElementById("answer1-btn").disabled = false;
   document.getElementById("answer2-btn").disabled = false;
@@ -54,6 +88,7 @@ function runQuiz(event) {
   document.getElementById("difficulty-game-area").classList.add("hide");
   document.getElementById("question-game-area").classList.remove("hide");
   buildQuestions();
+  startTimer();
 }
 
 /**
@@ -96,11 +131,13 @@ function checkAnswer() {
     document.getElementById("next-question").classList.remove("hide");
     determineColour = "correct";
     colorLights();
+    stopTimer();
   } else {
     answerClicked = true;
     document.getElementById("next-question").classList.remove("hide");
     determineColour = "incorrect";
     colorLights();
+    stopTimer();
   }
   /**
    * Loops through the answer buttons and displays the correct answer if the player has selected the wrong
