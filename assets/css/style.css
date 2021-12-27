@@ -90,6 +90,7 @@ button {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 0px 0px 20px 20px;
+  z-index: 100;
 }
 
 .menu button {
