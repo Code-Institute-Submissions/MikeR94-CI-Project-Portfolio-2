@@ -13,8 +13,9 @@ let currentQuestionSet = {};
 let score = 0;
 
 /**
- * When the user clicks the next button whilst in the question screen, this function will load the next question
- * and reset the answer buttons so that they are not disabled (add description code to new loop)
+ * When the player clicks the next button whilst in the question screen, this function will load the next question
+ * and reset the answer buttons so that they are not disabled. It also loops through the answer buttons and removes
+ * any styles that have been added on checkAnswer()
  */
 function nextQuestion() {
   currentQuestion++;
@@ -34,7 +35,7 @@ function nextQuestion() {
  * Depending on what difficulty the player selects, this function then randomly shuffles the questions,
  * removes the difficulty screen and displays the question screen. It then calls buildQuestions() to
  * create a list of questions for the player
- * @param {the target value that the user selected} event
+ * @param {the target value that the player selected} event
  */
 function runQuiz(event) {
   let difficulty = event.target.value;
@@ -55,7 +56,7 @@ function runQuiz(event) {
 
 /**
  * Checks if the player has answered 10 questions and if not, loop through the questions and
- * display them to the user. It also listens for the users answer and then calls checkAnswer()
+ * display them to the player. It also listens for the players answer and then calls checkAnswer()
  * to validate the answer
  */
 function buildQuestions() {
@@ -78,27 +79,30 @@ function buildQuestions() {
 }
 
 /**
- * Validates the players answer (add description code to new loop)
+ * Validates the players answer
  */
 function checkAnswer() {
   document.getElementById("answer1-btn").disabled = true;
   document.getElementById("answer2-btn").disabled = true;
   document.getElementById("answer3-btn").disabled = true;
   document.getElementById("answer4-btn").disabled = true;
-  let userAnswer = this.value;
+  let playerAnswer = this.value;
   let correctAnswer = currentQuestionSet[currentQuestion].answer;
-  if (userAnswer === correctAnswer) {
+  if (playerAnswer === correctAnswer) {
     answerClicked = true;
     incrementScore();
   } else {
     answerClicked = true;
   }
-
+  /**
+   * Loops through the answer buttons and displays the correct answer if the player has selected the wrong
+   * answer. If hte player has selected the wrong answer, it will also highlight that red
+   */
   let answerButtons = document.getElementsByClassName("answer-btn");
   for (let i = 0; i < answerButtons.length; i++) {
     if (answerButtons[i].value === correctAnswer) {
       answerButtons[i].classList.add("correct");
-    } else if (userAnswer !== correctAnswer) {
+    } else if (playerAnswer !== correctAnswer) {
       this.classList.add("wrong");
     }
   }
@@ -127,7 +131,7 @@ function incrementScore() {
 }
 
 /**
- * Loop through the categories and add a click event listener to load the difficulty that the user has selected
+ * Loop through the categories and add a click event listener to load the difficulty that the player has selected
  */
 let difficultySelected = document.getElementsByClassName("difficulty-btn");
 for (let i = 0; i < difficultySelected.length; i++) {
@@ -147,7 +151,7 @@ for (let i = 0; i < goHome.length; i++) {
 
 /**
  * Loop through both "hamburger" and "menu" class and add a click event listener to open the menu
- * if the user clicks the hamburger
+ * if the player clicks the hamburger
  */
 let toggleMenu = document.getElementsByClassName("hamburger");
 let menu = document.getElementsByClassName("menu");
