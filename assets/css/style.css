@@ -114,6 +114,7 @@ button {
 }
 
 .start-main-text {
+  margin-top: 20px;
   padding: 30px;
   text-align: center;
 }
@@ -150,6 +151,7 @@ button {
 }
 
 .difficulty-main-text {
+  margin-top: 20px;
   padding: 30px;
   text-align: center;
 }
@@ -177,6 +179,7 @@ button {
 }
 
 .question-main-text {
+  margin-top: 20px;
   text-align: center;
   padding: 30px;
 }
@@ -320,5 +323,5 @@ button {
 
 .results-page {
   text-align: center;
-  margin-top: 150px;
+  margin-top: 140px;
 }
