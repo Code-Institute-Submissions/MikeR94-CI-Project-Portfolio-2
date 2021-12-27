@@ -40,8 +40,9 @@ button {
   color: var(--clr-text);
 }
 
-button:hover {
+.hover:hover {
   cursor: pointer;
+  background-color: var(--clr-btn-hover);
 }
 
 .hide {
@@ -190,6 +191,11 @@ button:hover {
   margin: 10px auto;
 }
 
+.answer-buttons button:hover {
+  cursor: pointer;
+  outline: 2px solid white;
+}
+
 .next-question {
   display: flex;
   justify-content: center;
@@ -291,9 +297,9 @@ button:hover {
 /* Test styles */
 
 .correct {
-  background-color: lightgreen;
+  background-color: rgb(12, 114, 12);
 }
 
 .wrong {
-  background-color: red;
+  background-color: rgb(143, 22, 22);
 }
