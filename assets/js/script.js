@@ -11,6 +11,7 @@ let shuffledQuestions = 0;
 let quizLength = 10;
 let currentQuestionSet = {};
 let score = 0;
+let determineColour = "unanswered";
 
 /**
  * When the player clicks the next button whilst in the question screen, this function will load the next question
@@ -93,9 +94,13 @@ function checkAnswer() {
     answerClicked = true;
     incrementScore();
     document.getElementById("next-question").classList.remove("hide");
+    determineColour = "correct";
+    colorLights();
   } else {
     answerClicked = true;
     document.getElementById("next-question").classList.remove("hide");
+    determineColour = "incorrect";
+    colorLights();
   }
   /**
    * Loops through the answer buttons and displays the correct answer if the player has selected the wrong
@@ -131,6 +136,30 @@ function incrementScore() {
   } else if (currentQuestionSet === hardQuestions) {
     document.getElementById("result-score").innerText = score += 30;
   }
+}
+
+/**
+ * A switch case statement to change the colour of the lights depending on whether the user answers
+ * correctly or not
+ */
+function colorLights() {
+  let answerLight = 0;
+
+  switch (determineColour) {
+    case "correct":
+      answerLight = "rgb(12, 114, 12)";
+      break;
+    case "incorrect":
+      answerLight = "rgb(143, 22, 22)";
+      break;
+    case null:
+    case undefined:
+    case "unanswered":
+      answerLight = "gray";
+      break;
+  }
+  document.getElementsByClassName("answer-light")[currentQuestion].style.backgroundColor = answerLight;
+  determineColour = "unanswered";
 }
 
 /**
