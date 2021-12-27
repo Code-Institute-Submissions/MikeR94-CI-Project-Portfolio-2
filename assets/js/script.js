@@ -20,7 +20,7 @@ let timer;
 function startTimer() {
   timeLeft = 5;
   timer = setInterval(function () {
-    // countdown(timeLeft);
+    countdown(timeLeft);
     document.getElementById("timer").innerHTML = timeLeft;
   }, 1000);
 }
@@ -52,6 +52,7 @@ function stopTimer() {
  * any styles that have been added on checkAnswer()
  */
 function nextQuestion() {
+  document.getElementById("timer").innerHTML = 5;
   currentQuestion++;
   buildQuestions();
   startTimer();
