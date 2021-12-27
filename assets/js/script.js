@@ -20,6 +20,7 @@ let score = 0;
 function nextQuestion() {
   currentQuestion++;
   buildQuestions();
+  document.getElementById("next-question").classList.add("hide");
   document.getElementById("answer1-btn").disabled = false;
   document.getElementById("answer2-btn").disabled = false;
   document.getElementById("answer3-btn").disabled = false;
@@ -91,8 +92,10 @@ function checkAnswer() {
   if (playerAnswer === correctAnswer) {
     answerClicked = true;
     incrementScore();
+    document.getElementById("next-question").classList.remove("hide");
   } else {
     answerClicked = true;
+    document.getElementById("next-question").classList.remove("hide");
   }
   /**
    * Loops through the answer buttons and displays the correct answer if the player has selected the wrong
