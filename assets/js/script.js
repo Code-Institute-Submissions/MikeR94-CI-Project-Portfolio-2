@@ -15,6 +15,7 @@ let determineColour = "unanswered";
 let timeLeft;
 let timer;
 let hiscores = JSON.parse(localStorage.getItem('hiscores')) || [];
+let playerName = document.getElementById("player-name");
 
 /**
  * When the player clicks the next button whilst in the question screen, this function will load the next question
