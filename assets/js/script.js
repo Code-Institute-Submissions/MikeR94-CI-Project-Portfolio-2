@@ -21,7 +21,7 @@ let timer;
  * any styles that have been added on checkAnswer()
  */
 function nextQuestion() {
-  document.getElementById("timer").innerHTML = 5;
+  document.getElementById("timer").innerHTML = 15;
   currentQuestion++;
   buildQuestions();
   startTimer();
@@ -109,6 +109,7 @@ function checkAnswer() {
     colorLights();
     stopTimer();
   }
+
   /**
    * Loops through the answer buttons and displays the correct answer if the player has selected the wrong
    * answer. If hte player has selected the wrong answer, it will also highlight that red
@@ -174,7 +175,7 @@ function colorLights() {
  * and takes in the timeLeft parameter to set the time
  */
 function startTimer() {
-  timeLeft = 5;
+  timeLeft = 15;
   timer = setInterval(function () {
     countdown(timeLeft);
     document.getElementById("timer").innerHTML = timeLeft;
