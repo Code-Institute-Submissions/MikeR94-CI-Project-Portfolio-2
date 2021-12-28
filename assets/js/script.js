@@ -182,12 +182,11 @@ function startTimer() {
   }, 1000);
 }
 
-
 /**
  * Function to countdown the timeLeft and check if the timeLeft is 0. If no time left then the timer stops and
  * all answer buttons are disabled so the player can't select an answer. It also loops through the answerButtons
  * and displays the correct answer to the player if the time is up.
- * @param {*} seconds 
+ * @param {*} seconds
  */
 function countdown(seconds) {
   console.log(seconds);
