@@ -12,46 +12,8 @@ let quizLength = 8;
 let currentQuestionSet = {};
 let score = 0;
 let determineColour = "unanswered";
-
-// Test code
 let timeLeft;
 let timer;
-
-function startTimer() {
-  timeLeft = 5;
-  timer = setInterval(function () {
-    countdown(timeLeft);
-    document.getElementById("timer").innerHTML = timeLeft;
-  }, 1000);
-}
-
-function countdown(seconds) {
-  let correctAnswer = currentQuestionSet[currentQuestion].answer;
-  let answerButtons = document.getElementsByClassName("answer-btn");
-  if (seconds === 0) {
-    stopTimer();
-    document.getElementById("next-question").classList.remove("hide");
-    document.getElementById("answer1-btn").disabled = true;
-    document.getElementById("answer2-btn").disabled = true;
-    document.getElementById("answer3-btn").disabled = true;
-    document.getElementById("answer4-btn").disabled = true;
-  } else {
-    timeLeft -= 1;
-  }
-  for (let i = 0; i < answerButtons.length; i++) {
-    if (answerButtons[i].value === correctAnswer && seconds === 0) {
-      answerButtons[i].classList.add("correct");
-    }
-  }
-}
-
-function stopTimer() {
-  // console.log("time is up");
-  clearInterval(timer);
-  // console.log("timer cleared");
-}
-
-// Test code end
 
 /**
  * When the player clicks the next button whilst in the question screen, this function will load the next question
@@ -205,6 +167,42 @@ function colorLights() {
   }
   document.getElementsByClassName("answer-light")[currentQuestion].style.filter = answerLight;
   determineColour = "unanswered";
+}
+
+/**
+ * Used to start the time for the player and counts down every 1 second. Works in conjunction with countdown()
+ * and takes in the timeLeft parameter to set the time
+ */
+function startTimer() {
+  timeLeft = 5;
+  timer = setInterval(function () {
+    countdown(timeLeft);
+    document.getElementById("timer").innerHTML = timeLeft;
+  }, 1000);
+}
+
+function countdown(seconds) {
+  let correctAnswer = currentQuestionSet[currentQuestion].answer;
+  let answerButtons = document.getElementsByClassName("answer-btn");
+  if (seconds === 0) {
+    stopTimer();
+    document.getElementById("next-question").classList.remove("hide");
+    document.getElementById("answer1-btn").disabled = true;
+    document.getElementById("answer2-btn").disabled = true;
+    document.getElementById("answer3-btn").disabled = true;
+    document.getElementById("answer4-btn").disabled = true;
+  } else {
+    timeLeft -= 1;
+  }
+  for (let i = 0; i < answerButtons.length; i++) {
+    if (answerButtons[i].value === correctAnswer && seconds === 0) {
+      answerButtons[i].classList.add("correct");
+    }
+  }
+}
+
+function stopTimer() {
+  clearInterval(timer);
 }
 
 /**
