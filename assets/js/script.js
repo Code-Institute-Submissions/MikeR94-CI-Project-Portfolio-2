@@ -8,7 +8,7 @@ let currentQuestion = 0;
 let questionText = document.getElementById("question-text");
 let answerClicked = false;
 let shuffledQuestions = 0;
-let quizLength = 10;
+let quizLength = 8;
 let currentQuestionSet = {};
 let score = 0;
 let determineColour = "unanswered";
@@ -185,18 +185,18 @@ function colorLights() {
 
   switch (determineColour) {
     case "correct":
-      answerLight = "rgb(12, 114, 12)";
+      answerLight = "grayscale(0%)";
       break;
     case "incorrect":
-      answerLight = "rgb(143, 22, 22)";
+      answerLight = "grayscale(100%)";
       break;
     case null:
     case undefined:
     case "unanswered":
-      answerLight = "gray";
+      answerLight = "grayscale(100%)";
       break;
   }
-  document.getElementsByClassName("answer-light")[currentQuestion].style.backgroundColor = answerLight;
+  document.getElementsByClassName("answer-light")[currentQuestion].style.filter = answerLight;
   determineColour = "unanswered";
 }
 

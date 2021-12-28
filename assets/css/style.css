@@ -230,6 +230,9 @@ button {
   left: 6%;
   margin: 0 auto;
   justify-content: space-evenly;
+}
+
+.answer-light {
   filter: grayscale(100%);
 }
 
