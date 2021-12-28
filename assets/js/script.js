@@ -216,6 +216,9 @@ function stopTimer() {
   clearInterval(timer);
 }
 
+/**
+ * Creates an object called playerScore and then pushes it the variable hiscores declared on line 17.
+ */
 function updateHiscore() {
   let playerScore = {
     score: score,
@@ -228,6 +231,9 @@ function updateHiscore() {
   localStorage.setItem("hiscores", JSON.stringify(hiscores));
 }
 
+/**
+ * Gets the hiscore list from the HTML and then creates a new list item with the players score
+ */
 let hiscoreBoard = document.getElementById('hiscore');
 hiscoreBoard.innerHTML = hiscores.map(score => {
     return `<li>${score.score} points</li>`;
