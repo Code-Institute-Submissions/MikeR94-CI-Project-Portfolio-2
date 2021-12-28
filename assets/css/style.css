@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Aldrich&display=swap");
 
+
 /* Global Styles */
 
 * {
@@ -181,18 +182,22 @@ button {
 .question-main-text {
   margin-top: 20px;
   text-align: center;
-  padding: 30px;
+  padding: 0px 30px 30px 30px;
 }
 
 .answer-buttons {
   display: grid;
   grid-template-columns: repeat(2, auto);
   gap: 10px;
-  margin-top: 40px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .answer-buttons button {
-  margin: 10px auto;
+  margin: 0px 80px 30px 80px;
+  padding: 5px;
 }
 
 .answer-buttons button:hover {

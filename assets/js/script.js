@@ -46,7 +46,7 @@ function nextQuestion() {
 function runQuiz(event) {
   let difficulty = event.target.value;
   if (difficulty === "easy") {
-    shuffledQuestions = easyQuestions.sort(() => Math.random() - 0.5);
+    shuffledQuestions = easyQuestions
     currentQuestionSet = shuffledQuestions;
   } else if (difficulty === "medium") {
     shuffledQuestions = mediumQuestions.sort(() => Math.random() - 0.5);
