@@ -177,7 +177,7 @@ function colorLights() {
 function startTimer() {
   timeLeft = 15;
   timer = setInterval(function () {
-    countdown(timeLeft);
+    countdown();
     document.getElementById("timer").innerHTML = timeLeft;
   }, 1000);
 }
@@ -186,12 +186,11 @@ function startTimer() {
  * Function to countdown the timeLeft and check if the timeLeft is 0. If no time left then the timer stops and
  * all answer buttons are disabled so the player can't select an answer. It also loops through the answerButtons
  * and displays the correct answer to the player if the time is up.
- * @param {*} seconds
  */
-function countdown(seconds) {
+function countdown() {
   let correctAnswer = currentQuestionSet[currentQuestion].answer;
   let answerButtons = document.getElementsByClassName("answer-btn");
-  if (seconds === 0) {
+  if (timeLeft === 0) {
     stopTimer();
     document.getElementById("next-question").classList.remove("hide");
     document.getElementById("answer1-btn").disabled = true;
@@ -202,7 +201,7 @@ function countdown(seconds) {
     timeLeft -= 1;
   }
   for (let i = 0; i < answerButtons.length; i++) {
-    if (answerButtons[i].value === correctAnswer && seconds === 0) {
+    if (answerButtons[i].value === correctAnswer && timeLeft === 0) {
       answerButtons[i].classList.add("correct");
     }
   }
