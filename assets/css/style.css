@@ -223,20 +223,54 @@ button {
 /* Lights Section */
 
 .lights-bar {
-  display: grid;
-  grid-template-columns: repeat(10, 10fr);
+  display: flex;
   position: absolute;
   bottom: 4%;
-  right: 9%;
   gap: 40px;
+  left: 6%;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  filter: grayscale(100%);
 }
 
-.answer-light {
-  width: 22px;
-  height: 22px;
-  background-color: var(--clr-text);
-  border-radius: 50%;
-  margin: 0 auto;
+#mercury img {
+  width: 40px;
+  height: 40px;
+}
+
+#venus img {
+  width: 40px;
+  height: 40px;
+}
+
+#earth img {
+  width: 44px;
+  height: 40px;
+}
+
+#mars img {
+  width: 47px;
+  height: 40px;
+}
+
+#jupiter img {
+  width: 40px;
+  height: 40px;
+}
+
+#saturn img {
+  width: 40px;
+  height: 40px;
+}
+
+#uranus img {
+  width: 40px;
+  height: 40px;
+}
+
+#neptune img {
+  width: 40px;
+  height: 40px;
 }
 
 /* Rules Game Area */
