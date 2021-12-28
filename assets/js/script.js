@@ -14,6 +14,7 @@ let score = 0;
 let determineColour = "unanswered";
 let timeLeft;
 let timer;
+let hiscores = JSON.parse(localStorage.getItem('hiscores')) || [];
 
 /**
  * When the player clicks the next button whilst in the question screen, this function will load the next question
@@ -70,6 +71,7 @@ function buildQuestions() {
   if (currentQuestion >= quizLength) {
     document.getElementById("question-game-area").classList.add("hide");
     document.getElementById("results-game-area").classList.remove("hide");
+    updateHiscore();
   } else {
     for (let i = 0; i < currentQuestionSet.length; i++) {
       questionText.innerHTML = currentQuestionSet[currentQuestion].question;
@@ -213,6 +215,23 @@ function countdown() {
 function stopTimer() {
   clearInterval(timer);
 }
+
+function updateHiscore() {
+  let playerScore = {
+    score: score,
+  };
+
+  hiscores.push(playerScore);
+  hiscores.sort((first, second) => second.score - first.score);
+  hiscores.splice(5);
+
+  localStorage.setItem("hiscores", JSON.stringify(hiscores));
+}
+
+let hiscoreBoard = document.getElementById('hiscore');
+hiscoreBoard.innerHTML = hiscores.map(score => {
+    return `<li>${score.score} points</li>`;
+}).join('');
 
 /**
  * Loop through the categories and add a click event listener to load the difficulty that the player has selected
