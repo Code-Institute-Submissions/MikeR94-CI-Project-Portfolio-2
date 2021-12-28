@@ -26,6 +26,8 @@ function startTimer() {
 }
 
 function countdown(seconds) {
+  let correctAnswer = currentQuestionSet[currentQuestion].answer;
+  let answerButtons = document.getElementsByClassName("answer-btn");
   if (seconds === 0) {
     stopTimer();
     document.getElementById("next-question").classList.remove("hide");
@@ -35,6 +37,11 @@ function countdown(seconds) {
     document.getElementById("answer4-btn").disabled = true;
   } else {
     timeLeft -= 1;
+  }
+  for (let i = 0; i < answerButtons.length; i++) {
+    if (answerButtons[i].value === correctAnswer && seconds === 0) {
+      answerButtons[i].classList.add("correct");
+    }
   }
 }
 
