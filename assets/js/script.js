@@ -223,6 +223,7 @@ function stopTimer() {
 function updateHiscore() {
   let playerScore = {
     score: score,
+    name: playerName.value
   };
 
   hiscores.push(playerScore);
@@ -236,8 +237,8 @@ function updateHiscore() {
  * Gets the hiscore list from the HTML and then creates a new list item with the players score
  */
 let hiscoreBoard = document.getElementById('hiscore');
-hiscoreBoard.innerHTML = hiscores.map(score => {
-    return `<li>${score.score} points</li>`;
+hiscoreBoard.innerHTML = hiscores.map(playerScore => {
+    return `<li>${playerScore.name} - ${playerScore.score} points</li>`;
 }).join('');
 
 /**
