@@ -189,7 +189,6 @@ function startTimer() {
  * @param {*} seconds
  */
 function countdown(seconds) {
-  console.log(seconds);
   let correctAnswer = currentQuestionSet[currentQuestion].answer;
   let answerButtons = document.getElementsByClassName("answer-btn");
   if (seconds === 0) {
