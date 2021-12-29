@@ -16,9 +16,9 @@ let timeLeft;
 let timer;
 let hiscores = JSON.parse(localStorage.getItem("hiscores")) || [];
 let playerName = document.getElementById("player-name");
-let toggleSound = document.getElementById("test-mute").addEventListener("click", toggleAudio)
 let audio = new Audio("assets/sounds/button-click.mp3");
 let isPlaying = true;
+
 
 /**
  * When the player clicks the next button whilst in the question screen, this function will load the next question
@@ -242,9 +242,11 @@ function toggleAudio() {
 };
 audio.onplaying = function() {
   isPlaying = true;
+  console.log("playing sound")
 }
 audio.pause = function() {
   isPlaying = false;
+  console.log("not playing sound")
 }
 
 /**
@@ -329,16 +331,14 @@ for (let i = 0; i < toggleMenu.length && menu.length; i++) {
     crossButton[i].classList.toggle("hide");
   });
 }
-
+  
 let audioIconLogo = document.getElementsByClassName("audio-icon-logo");
-let audioOnIcon = document.getElementsByClassName("sound-on");
-let audioOffIcon = document.getElementsByClassName("sound-off");
-for (let i = 0; i < audioIconLogo.length && audioOnIcon.length && audioOffIcon.length; i++) {
+for (let i = 0; i < audioIconLogo.length; i++) {
   audioIconLogo[i].addEventListener("click", () => {
-    audioOnIcon[i].classList.toggle("hide");
-    audioOffIcon[i].classList.toggle("hide");
+    toggleAudio();
   })
 }
+
 
 /**
  * Loop through the cross class and add a click event listener to replace the hamburger with a cross
