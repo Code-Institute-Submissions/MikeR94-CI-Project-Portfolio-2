@@ -27,6 +27,7 @@ function nextQuestion() {
   currentQuestion++;
   buildQuestions();
   startTimer();
+  buttonSound();
   document.getElementById("next-question").classList.add("hide");
   document.getElementById("answer1-btn").disabled = false;
   document.getElementById("answer2-btn").disabled = false;
@@ -61,6 +62,7 @@ function runQuiz(event) {
   document.getElementById("question-game-area").classList.remove("hide");
   buildQuestions();
   startTimer();
+  buttonSound();
 }
 
 /**
@@ -105,12 +107,14 @@ function checkAnswer() {
     determineColour = "correct";
     colorLights();
     stopTimer();
+    //Correct sound
   } else {
     answerClicked = true;
     document.getElementById("next-question").classList.remove("hide");
     determineColour = "incorrect";
     colorLights();
     stopTimer();
+    //Incorrect sound
   }
 
   /**
@@ -134,6 +138,7 @@ function checkAnswer() {
 function toDifficultyGameArea() {
   if (playerName.value == "" || playerName.value == null || playerName.value == undefined) {
     document.getElementById("error-text").classList.remove("hide");
+    buttonSound();
   } else {
     buttonSound();
     document.getElementById("start-game-area").classList.add("hide");
@@ -299,6 +304,7 @@ let toggleMenu = document.getElementsByClassName("hamburger");
 let menu = document.getElementsByClassName("menu");
 for (let i = 0; i < toggleMenu.length && menu.length; i++) {
   toggleMenu[i].addEventListener("click", () => {
+    buttonSound();
     menu[i].classList.toggle("hide");
     toggleMenu[i].classList.toggle("hide");
     crossButton[i].classList.toggle("hide");
@@ -310,6 +316,7 @@ for (let i = 0; i < toggleMenu.length && menu.length; i++) {
  */
 for (let i = 0; i < crossButton.length; i++) {
   crossButton[i].addEventListener("click", () => {
+    buttonSound();
     crossButton[i].classList.toggle("hide");
     menu[i].classList.toggle("hide");
     toggleMenu[i].classList.toggle("hide");
@@ -323,6 +330,7 @@ for (let i = 0; i < crossButton.length; i++) {
 let goRules = document.getElementsByClassName("rules-btn");
 for (let i = 0; i < goRules.length; i++) {
   goRules[i].addEventListener("click", () => {
+    buttonSound();
     document.getElementById("rules-game-area").classList.remove("hide");
     document.getElementById("hiscores-game-area").classList.add("hide");
     document.getElementById("contact-game-area").classList.add("hide");
@@ -340,6 +348,7 @@ for (let i = 0; i < goRules.length; i++) {
 let goHiscores = document.getElementsByClassName("hiscores-btn");
 for (let i = 0; i < goHiscores.length; i++) {
   goHiscores[i].addEventListener("click", () => {
+    buttonSound();
     document.getElementById("hiscores-game-area").classList.remove("hide");
     document.getElementById("rules-game-area").classList.add("hide");
     document.getElementById("contact-game-area").classList.add("hide");
@@ -357,6 +366,7 @@ for (let i = 0; i < goHiscores.length; i++) {
 let goContact = document.getElementsByClassName("contact-btn");
 for (let i = 0; i < goContact.length; i++) {
   goContact[i].addEventListener("click", () => {
+    buttonSound();
     document.getElementById("contact-game-area").classList.remove("hide");
     document.getElementById("rules-game-area").classList.add("hide");
     document.getElementById("hiscores-game-area").classList.add("hide");
