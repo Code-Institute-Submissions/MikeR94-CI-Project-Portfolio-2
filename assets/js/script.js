@@ -16,6 +16,9 @@ let timeLeft;
 let timer;
 let hiscores = JSON.parse(localStorage.getItem("hiscores")) || [];
 let playerName = document.getElementById("player-name");
+let toggleSound = document.getElementById("test-mute").addEventListener("click", toggleAudio)
+let audio = new Audio("assets/sounds/button-click.mp3");
+let isPlaying = true;
 
 /**
  * When the player clicks the next button whilst in the question screen, this function will load the next question
@@ -232,11 +235,27 @@ function stopTimer() {
 }
 
 /**
+ * Lets the player have the option whether to have sounds on or not
+ */
+function toggleAudio() {
+  isPlaying ? audio.pause() : audio.play();
+};
+audio.onplaying = function() {
+  isPlaying = true;
+}
+audio.pause = function() {
+  isPlaying = false;
+}
+
+/**
  * Function to play a sound when the player clicks a button
  */
 function buttonSound() {
-  let audio = new Audio("assets/sounds/button-click.mp3");
-  audio.play();
+  if (isPlaying) {
+    audio.play();
+  } else {
+    audio.pause();
+  }
 }
 
 /**
