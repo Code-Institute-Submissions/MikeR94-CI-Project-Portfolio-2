@@ -305,17 +305,6 @@ button {
   list-style-type: none;
 }
 
-.results-main-text {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.results-hiscores-btn {
-  position: absolute;
-  top: 60%;
-  right: 37%;
-}
-
 /* Hiscores Game Area */
 
 .hiscores-game-area {
@@ -375,5 +364,28 @@ button {
 
 .results-page {
   text-align: center;
-  margin-top: 140px;
+  margin-top: 60px;
+}
+
+.results-main-text {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.results-hiscores-btn {
+  position: absolute;
+  top: 60%;
+  right: 37%;
+}
+
+#result-score {
+  color: lightgreen;
+}
+
+.results-page i {
+  color: gold;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 25px;
+  margin-bottom: 30px;
 }
