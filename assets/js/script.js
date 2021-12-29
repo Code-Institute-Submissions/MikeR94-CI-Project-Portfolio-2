@@ -330,6 +330,16 @@ for (let i = 0; i < toggleMenu.length && menu.length; i++) {
   });
 }
 
+let audioIconLogo = document.getElementsByClassName("audio-icon-logo");
+let audioOnIcon = document.getElementsByClassName("sound-on");
+let audioOffIcon = document.getElementsByClassName("sound-off");
+for (let i = 0; i < audioIconLogo.length && audioOnIcon.length && audioOffIcon.length; i++) {
+  audioIconLogo[i].addEventListener("click", () => {
+    audioOnIcon[i].classList.toggle("hide");
+    audioOffIcon[i].classList.toggle("hide");
+  })
+}
+
 /**
  * Loop through the cross class and add a click event listener to replace the hamburger with a cross
  */
