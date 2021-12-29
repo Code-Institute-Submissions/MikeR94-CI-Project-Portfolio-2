@@ -14,9 +14,8 @@ let score = 0;
 let determineColour = "unanswered";
 let timeLeft;
 let timer;
-let hiscores = JSON.parse(localStorage.getItem('hiscores')) || [];
+let hiscores = JSON.parse(localStorage.getItem("hiscores")) || [];
 let playerName = document.getElementById("player-name");
-
 
 /**
  * When the player clicks the next button whilst in the question screen, this function will load the next question
@@ -232,7 +231,7 @@ function stopTimer() {
 function updateHiscore() {
   let playerScore = {
     score: score,
-    name: playerName.value
+    name: playerName.value,
   };
 
   hiscores.push(playerScore);
@@ -245,10 +244,12 @@ function updateHiscore() {
 /**
  * Gets the hiscore list from the HTML and then creates a new list item with the players score
  */
-let hiscoreBoard = document.getElementById('hiscore');
-hiscoreBoard.innerHTML = hiscores.map(playerScore => {
+let hiscoreBoard = document.getElementById("hiscore");
+hiscoreBoard.innerHTML = hiscores
+  .map((playerScore) => {
     return `<li>${playerScore.name} - ${playerScore.score} points</li>`;
-}).join('');
+  })
+  .join("");
 
 /**
  * Loop through the categories and add a click event listener to load the difficulty that the player has selected
@@ -257,7 +258,6 @@ let difficultySelected = document.getElementsByClassName("difficulty-btn");
 for (let i = 0; i < difficultySelected.length; i++) {
   difficultySelected[i].addEventListener("click", runQuiz);
 }
-
 
 /**
  * Loop through the home-icon-logo situated on the game-bar and add an event listener to reload the
@@ -285,11 +285,25 @@ for (let i = 0; i < goHome.length; i++) {
  * Loop through both "hamburger" and "menu" class and add a click event listener to open the menu
  * if the player clicks the hamburger
  */
+let crossButton = document.getElementsByClassName("cross");
 let toggleMenu = document.getElementsByClassName("hamburger");
 let menu = document.getElementsByClassName("menu");
 for (let i = 0; i < toggleMenu.length && menu.length; i++) {
   toggleMenu[i].addEventListener("click", () => {
     menu[i].classList.toggle("hide");
+    toggleMenu[i].classList.toggle("hide");
+    crossButton[i].classList.toggle("hide");
+  });
+}
+
+/**
+ * Loop through the cross class and add a click event listener to replace the hamburger with a cross
+ */
+for (let i = 0; i < crossButton.length; i++) {
+  crossButton[i].addEventListener("click", () => {
+    crossButton[i].classList.toggle("hide");
+    menu[i].classList.toggle("hide");
+    toggleMenu[i].classList.toggle("hide");
   });
 }
 
