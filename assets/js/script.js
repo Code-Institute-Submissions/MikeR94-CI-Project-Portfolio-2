@@ -17,6 +17,7 @@ let timer;
 let hiscores = JSON.parse(localStorage.getItem("hiscores")) || [];
 let playerName = document.getElementById("player-name");
 
+
 /**
  * When the player clicks the next button whilst in the question screen, this function will load the next question
  * and reset the answer buttons so that they are not disabled. It also loops through the answer buttons and removes
@@ -135,6 +136,7 @@ function toDifficultyGameArea() {
   if (playerName.value == "" || playerName.value == null || playerName.value == undefined) {
     document.getElementById("error-text").classList.remove("hide");
   } else {
+    buttonSound();
     document.getElementById("start-game-area").classList.add("hide");
     document.getElementById("difficulty-game-area").classList.remove("hide");
   }
@@ -224,6 +226,15 @@ function countdown() {
 function stopTimer() {
   clearInterval(timer);
 }
+
+/**
+ * Function to play a sound when the player clicks a button
+ */
+function buttonSound() {
+  let audio = new Audio('assets/css/sounds/button-click.mp3')
+  audio.play();
+}
+
 
 /**
  * Creates an object called playerScore and then pushes it the variable hiscores declared on line 17.
