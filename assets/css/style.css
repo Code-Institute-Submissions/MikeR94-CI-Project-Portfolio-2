@@ -100,10 +100,11 @@ button {
   height: 32px;
   cursor: pointer;
 }
-.cross:before, .cross:after {
+.cross:before,
+.cross:after {
   position: absolute;
   left: 15px;
-  content: ' ';
+  content: " ";
   height: 33px;
   width: 3px;
   background-color: white;
