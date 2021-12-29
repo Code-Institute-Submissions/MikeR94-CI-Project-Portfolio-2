@@ -60,11 +60,14 @@ button {
   padding: 20px;
 }
 
+.home-icon-logo {
+  width: 38px;
+  cursor: pointer;
+}
 
 .home-icon-logo i {
   color: var(--clr-text);
   font-size: 30px;
-  cursor: pointer;
 }
 
 .hamburger {
