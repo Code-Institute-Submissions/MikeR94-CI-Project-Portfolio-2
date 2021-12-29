@@ -92,6 +92,28 @@ button {
   margin-top: 5px;
 }
 
+.cross {
+  position: absolute;
+  right: 4%;
+  top: 3.5%;
+  width: 32px;
+  height: 32px;
+}
+.cross:before, .cross:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: white;
+}
+.cross:before {
+  transform: rotate(45deg);
+}
+.cross:after {
+  transform: rotate(-45deg);
+}
+
 .menu {
   background-color: var(--clr-game-canvas);
   height: 390px;
