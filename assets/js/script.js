@@ -190,6 +190,10 @@ function startTimer() {
   }, 1000);
 }
 
+function reload() {
+  window.location.reload();
+}
+
 /**
  * Function to countdown the timeLeft and check if the timeLeft is 0. If no time left then the timer stops and
  * all answer buttons are disabled so the player can't select an answer. It also loops through the answerButtons
@@ -252,6 +256,18 @@ hiscoreBoard.innerHTML = hiscores.map(playerScore => {
 let difficultySelected = document.getElementsByClassName("difficulty-btn");
 for (let i = 0; i < difficultySelected.length; i++) {
   difficultySelected[i].addEventListener("click", runQuiz);
+}
+
+
+/**
+ * Loop through the home-icon-logo situated on the game-bar and add an event listener to reload the
+ * website if clicked
+ */
+let goHomeIcon = document.getElementsByClassName("home-icon-logo");
+for (let i = 0; i < goHomeIcon.length; i++) {
+  goHomeIcon[i].addEventListener("click", () => {
+    window.location.reload();
+  });
 }
 
 /**
