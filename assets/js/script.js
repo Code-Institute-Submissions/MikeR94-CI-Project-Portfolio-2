@@ -235,7 +235,7 @@ function stopTimer() {
  * Function to play a sound when the player clicks a button
  */
 function buttonSound() {
-  let audio = new Audio("assets/css/sounds/button-click.mp3");
+  let audio = new Audio("assets/sounds/button-click.mp3");
   audio.play();
 }
 
