@@ -137,6 +137,13 @@ button {
   text-align: center;
 }
 
+.error-text {
+  position: absolute;
+  font-size: 14px;
+  top: 60%;
+  left: 28.5%;
+}
+
 /* difficulty Game Area */
 
 .difficulty-game-area {
