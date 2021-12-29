@@ -319,6 +319,8 @@ for (let i = 0; i < goRules.length; i++) {
     document.getElementById("contact-game-area").classList.add("hide");
     document.getElementById("results-game-area").classList.add("hide");
     menu[i].classList.toggle("hide");
+    toggleMenu[i].classList.toggle("hide");
+    crossButton[i].classList.toggle("hide");
   });
 }
 
@@ -334,6 +336,8 @@ for (let i = 0; i < goHiscores.length; i++) {
     document.getElementById("contact-game-area").classList.add("hide");
     document.getElementById("results-game-area").classList.add("hide");
     menu[i].classList.toggle("hide");
+    toggleMenu[i].classList.toggle("hide");
+    crossButton[i].classList.toggle("hide");
   });
 }
 
@@ -349,5 +353,7 @@ for (let i = 0; i < goContact.length; i++) {
     document.getElementById("hiscores-game-area").classList.add("hide");
     document.getElementById("results-game-area").classList.add("hide");
     menu[i].classList.toggle("hide");
+    toggleMenu[i].classList.toggle("hide");
+    crossButton[i].classList.toggle("hide");
   });
 }
