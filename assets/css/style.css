@@ -70,6 +70,13 @@ button {
   font-size: 30px;
 }
 
+#timer {
+  position: absolute;
+  width: 40px;
+  right: 45%;
+  top: 4%;
+}
+
 .hamburger {
   width: 30px;
   cursor: pointer;
