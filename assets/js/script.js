@@ -130,11 +130,15 @@ function checkAnswer() {
 
 /**
  * When the player clicks the next button, hide the start screen and unhide the the difficulty
- * game screen
+ * game screen. If the player does not enter a name, display the error text
  */
 function toDifficultyGameArea() {
-  document.getElementById("start-game-area").classList.add("hide");
-  document.getElementById("difficulty-game-area").classList.remove("hide");
+  if (playerName.value == "" || playerName.value == null || playerName.value == undefined) {
+    document.getElementById("error-text").classList.remove("hide");
+  } else {
+    document.getElementById("start-game-area").classList.add("hide");
+    document.getElementById("difficulty-game-area").classList.remove("hide");
+  }
 }
 
 /**
