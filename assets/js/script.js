@@ -16,8 +16,9 @@ let timeLeft;
 let timer;
 let hiscores = JSON.parse(localStorage.getItem("hiscores")) || [];
 let playerName = document.getElementById("player-name");
-let audio = new Audio("assets/sounds/button-click.mp3");
+let buttonAudio = new Audio("assets/sounds/button-click.mp3");
 let correctAudio = new Audio("assets/sounds/correct-sound.mp3");
+let incorrectAudio = new Audio("assets/sounds/incorrect-sound.mp3");
 let isPlaying = true;
 let audioOffIcon = document.getElementsByClassName("sound-off");
 let audioOnIcon = document.getElementsByClassName("sound-on");
@@ -119,7 +120,7 @@ function checkAnswer() {
     determineColour = "incorrect";
     colorLights();
     stopTimer();
-    //Incorrect sound
+    incorrectSound();
   }
 
   /**
@@ -240,10 +241,10 @@ function stopTimer() {
  * Lets the player have the option whether to have sounds on or not
  */
 function toggleAudio() {
-  isPlaying ? audio.pause() : audio.play();
+  isPlaying ? buttonAudio.pause() : buttonAudio.play();
 }
 
-audio.onplaying = function () {
+buttonAudio.onplaying = function () {
   isPlaying = true;
   for (let i = 0; i < audioOffIcon.length && audioOnIcon.length; i++) {
     audioOffIcon[i].classList.add("hide");
@@ -251,7 +252,7 @@ audio.onplaying = function () {
   }
 };
 
-audio.pause = function () {
+buttonAudio.pause = function () {
   isPlaying = false;
   for (let i = 0; i < audioOffIcon.length && audioOnIcon.length; i++) {
     audioOffIcon[i].classList.remove("hide");
@@ -267,14 +268,22 @@ function correctSound() {
   }
 }
 
+function incorrectSound() {
+  if (isPlaying) {
+    incorrectAudio.play();
+  } else {
+    incorrectAudio.pause();
+  }
+}
+
 /**
  * Function to play a sound when the player clicks a button
  */
 function buttonSound() {
   if (isPlaying) {
-    audio.play();
+    buttonAudio.play();
   } else {
-    audio.pause();
+    buttonAudio.pause();
   }
 }
 
