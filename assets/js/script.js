@@ -153,6 +153,9 @@ function toDifficultyGameArea() {
     buttonSound();
     document.getElementById("start-game-area").classList.add("hide");
     document.getElementById("difficulty-game-area").classList.remove("hide");
+    let player = playerName.value;
+    let difficultyText = document.getElementById("difficulty-main-text");
+    difficultyText.innerText = `Great stuff ${player},  how difficult would you like your questions?`;
   }
 }
 
