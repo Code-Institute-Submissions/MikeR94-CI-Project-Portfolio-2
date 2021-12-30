@@ -1,11 +1,11 @@
 let easyQuestions = [
   {
-    question: "Name the comet that completes an orbit of the Sun once every three years — the shortest period of any known comet?",
-    a: "Halley's Comet",
-    b: "Chiron",
-    c: "Encke's Comet",
-    d: "Comet Hale-Bopp",
-    answer: "C",
+    question: "Astronomy easy question 1",
+    a: "Astronomy Answer 1",
+    b: "Astronomy Answer 2",
+    c: "Astronomy Answer 3",
+    d: "Astronomy Answer 4",
+    answer: "A",
   },
   {
     question: "Astronomy easy question 2",
