@@ -17,6 +17,7 @@ let timer;
 let hiscores = JSON.parse(localStorage.getItem("hiscores")) || [];
 let playerName = document.getElementById("player-name");
 let audio = new Audio("assets/sounds/button-click.mp3");
+let correctAudio = new Audio("assets/sounds/correct-sound.mp3");
 let isPlaying = true;
 let audioOffIcon = document.getElementsByClassName("sound-off");
 let audioOnIcon = document.getElementsByClassName("sound-on");
