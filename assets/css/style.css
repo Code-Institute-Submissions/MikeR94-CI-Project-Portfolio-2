@@ -354,14 +354,35 @@ button {
   border-radius: 30px;
 }
 
-.rules-list {
-  text-align: center;
-  margin-top: 110px;
+.rules-text {
+  margin-top: 70px;
 }
 
-.rules-list li {
-  margin-top: 10px;
-  list-style-type: none;
+.rules-text p {
+  font-size: 14px;
+  margin: 20px;
+}
+
+.rules-planet-1 {
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  left: 323px;
+  top: 208px
+}
+
+.rules-planet-2 {
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  filter: grayscale(100%);
+  top: 230px
+}
+
+.rules-next-question {
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
 }
 
 /* Hiscores Game Area */
