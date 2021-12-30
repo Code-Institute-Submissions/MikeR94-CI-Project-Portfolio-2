@@ -112,7 +112,7 @@ function checkAnswer() {
     determineColour = "correct";
     colorLights();
     stopTimer();
-    //Correct sound
+    correctSound();
   } else {
     answerClicked = true;
     document.getElementById("next-question").classList.remove("hide");
@@ -260,6 +260,14 @@ audio.pause = function () {
     audioOnIcon[i].classList.add("hide");
   }
 };
+
+function correctSound() {
+  if (isPlaying) {
+    correctAudio.play();
+  } else {
+    correctAudio.pause();
+  }
+}
 
 /**
  * Function to play a sound when the player clicks a button
