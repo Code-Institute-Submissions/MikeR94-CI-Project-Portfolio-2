@@ -410,33 +410,6 @@ button {
   list-style-type: none;
 }
 
-.reset-hiscores-text {
-  position: absolute;
-  bottom: 40px;
-  margin: 0px 20px 20px 20px;
-  font-size: 15px;
-  text-align: center;
-}
-
-.top-5-text {
-  position: absolute;
-  font-size: 15px;
-  left: 180px;
-  top: 100px;
-}
-
-.reset-hiscores-btn {
-  position: absolute;
-  bottom: 10px;
-  left: 270px;
-}
-
-.reset-hiscores-btn button {
-  font-size: 15px;
-  width: 130px;
-  height: 40px;
-}
-
 .gold-trophy {
   position: absolute;
   top: 160px;
