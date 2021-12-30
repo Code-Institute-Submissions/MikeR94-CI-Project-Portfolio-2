@@ -368,7 +368,7 @@ button {
   height: 27px;
   position: absolute;
   left: 323px;
-  top: 208px
+  top: 208px;
 }
 
 .rules-planet-2 {
@@ -376,7 +376,7 @@ button {
   height: 27px;
   position: absolute;
   filter: grayscale(100%);
-  top: 230px
+  top: 230px;
 }
 
 .rules-next-question {
@@ -400,13 +400,74 @@ button {
 }
 
 .hiscores-list {
-  text-align: center;
-  margin-top: 110px;
+  position: absolute;
+  left: 280px;
+  top: 150px;
 }
 
 .hiscores-list li {
   margin-top: 10px;
   list-style-type: none;
+}
+
+.reset-hiscores-text {
+  position: absolute;
+  bottom: 40px;
+  margin: 0px 20px 20px 20px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.top-5-text {
+  position: absolute;
+  font-size: 15px;
+  left: 180px;
+  top: 100px;
+}
+
+.reset-hiscores-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 270px;
+}
+
+.reset-hiscores-btn button {
+  font-size: 15px;
+  width: 130px;
+  height: 40px;
+}
+
+.gold-trophy {
+  position: absolute;
+  top: 160px;
+  left: 230px;
+}
+
+.silver-trophy {
+  position: absolute;
+  top: 197px;
+  left: 230px;
+}
+
+.bronze-trophy {
+  position: absolute;
+  top: 234px;
+  left: 230px;
+}
+
+.gold-trophy img {
+  width: 25px;
+  height: 25px;
+}
+
+.silver-trophy img {
+  width: 25px;
+  height: 25px;
+}
+
+.bronze-trophy img {
+  width: 25px;
+  height: 25px;
 }
 
 /* Contact Game Area */
