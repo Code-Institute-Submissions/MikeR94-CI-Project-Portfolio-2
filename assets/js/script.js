@@ -1,5 +1,6 @@
 let nextBtn = document.getElementById("next-btn").addEventListener("click", toDifficultyGameArea);
 let loadNextQuestion = document.getElementById("next-question").addEventListener("click", nextQuestion);
+let clearHiscoresBtn = document.getElementById("reset-hiscores").addEventListener("click", clearHiscores);
 let answer1 = document.getElementById("answer1-btn");
 let answer2 = document.getElementById("answer2-btn");
 let answer3 = document.getElementById("answer3-btn");
@@ -306,6 +307,15 @@ function updateHiscore() {
 
   localStorage.setItem("hiscores", JSON.stringify(hiscores));
 }
+
+/**
+ * Clears the hiscores and reloads the website
+ */
+function clearHiscores() {
+  localStorage.clear();
+  window.location.reload();
+}
+
 
 /**
  * Gets the hiscore list from the HTML and then creates a new list item with the players score
