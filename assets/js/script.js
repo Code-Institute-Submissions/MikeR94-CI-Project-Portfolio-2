@@ -18,7 +18,8 @@ let hiscores = JSON.parse(localStorage.getItem("hiscores")) || [];
 let playerName = document.getElementById("player-name");
 let audio = new Audio("assets/sounds/button-click.mp3");
 let isPlaying = true;
-
+let audioOffIcon = document.getElementsByClassName("sound-off");
+let audioOnIcon = document.getElementsByClassName("sound-on");
 
 /**
  * When the player clicks the next button whilst in the question screen, this function will load the next question
@@ -239,15 +240,25 @@ function stopTimer() {
  */
 function toggleAudio() {
   isPlaying ? audio.pause() : audio.play();
-};
-audio.onplaying = function() {
+}
+
+audio.onplaying = function () {
   isPlaying = true;
-  console.log("playing sound")
-}
-audio.pause = function() {
+  console.log("playing sound");
+  for (let i = 0; i < audioOffIcon.length && audioOnIcon.length; i++) {
+    audioOffIcon[i].classList.add("hide");
+    audioOnIcon[i].classList.remove("hide");
+  }
+};
+
+audio.pause = function () {
   isPlaying = false;
-  console.log("not playing sound")
-}
+  console.log("not playing sound");
+  for (let i = 0; i < audioOffIcon.length && audioOnIcon.length; i++) {
+    audioOffIcon[i].classList.remove("hide");
+    audioOnIcon[i].classList.add("hide");
+  }
+};
 
 /**
  * Function to play a sound when the player clicks a button
@@ -331,14 +342,13 @@ for (let i = 0; i < toggleMenu.length && menu.length; i++) {
     crossButton[i].classList.toggle("hide");
   });
 }
-  
+
 let audioIconLogo = document.getElementsByClassName("audio-icon-logo");
 for (let i = 0; i < audioIconLogo.length; i++) {
   audioIconLogo[i].addEventListener("click", () => {
     toggleAudio();
-  })
+  });
 }
-
 
 /**
  * Loop through the cross class and add a click event listener to replace the hamburger with a cross
