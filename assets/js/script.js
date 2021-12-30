@@ -46,6 +46,10 @@ function nextQuestion() {
   }
 }
 
+function showNextQuestionIcon() {
+  setTimeout(function() {document.getElementById("next-question").classList.remove("hide");}, 500)
+}
+
 /**
  * Depending on what difficulty the player selects, this function then randomly shuffles the questions,
  * removes the difficulty screen and displays the question screen. It then calls buildQuestions() to
@@ -109,18 +113,18 @@ function checkAnswer() {
   if (playerAnswer === correctAnswer) {
     answerClicked = true;
     incrementScore();
-    document.getElementById("next-question").classList.remove("hide");
     determineColour = "correct";
     colorLights();
     stopTimer();
     correctSound();
+    showNextQuestionIcon();
   } else {
     answerClicked = true;
-    document.getElementById("next-question").classList.remove("hide");
     determineColour = "incorrect";
     colorLights();
     stopTimer();
     incorrectSound();
+    showNextQuestionIcon();
   }
 
   /**
