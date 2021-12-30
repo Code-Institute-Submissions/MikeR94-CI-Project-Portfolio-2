@@ -245,7 +245,6 @@ function toggleAudio() {
 
 audio.onplaying = function () {
   isPlaying = true;
-  console.log("playing sound");
   for (let i = 0; i < audioOffIcon.length && audioOnIcon.length; i++) {
     audioOffIcon[i].classList.add("hide");
     audioOnIcon[i].classList.remove("hide");
@@ -254,7 +253,6 @@ audio.onplaying = function () {
 
 audio.pause = function () {
   isPlaying = false;
-  console.log("not playing sound");
   for (let i = 0; i < audioOffIcon.length && audioOnIcon.length; i++) {
     audioOffIcon[i].classList.remove("hide");
     audioOnIcon[i].classList.add("hide");
