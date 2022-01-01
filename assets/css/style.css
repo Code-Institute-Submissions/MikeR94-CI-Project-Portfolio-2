@@ -410,35 +410,57 @@ button {
   list-style-type: none;
 }
 
-.gold-trophy {
+.ribbon-1 {
   position: absolute;
   top: 160px;
   left: 230px;
 }
 
-.silver-trophy {
+.ribbon-2 {
   position: absolute;
   top: 197px;
   left: 230px;
 }
 
-.bronze-trophy {
+.ribbon-3 {
   position: absolute;
   top: 234px;
   left: 230px;
 }
 
-.gold-trophy img {
+.ribbon-4 {
+  position: absolute;
+  top: 272px;
+  left: 230px;
+}
+
+.ribbon-5 {
+  position: absolute;
+  top: 310px;
+  left: 230px;
+}
+
+.ribbon-1 img {
   width: 25px;
   height: 25px;
 }
 
-.silver-trophy img {
+.ribbon-2 img {
   width: 25px;
   height: 25px;
 }
 
-.bronze-trophy img {
+.ribbon-3 img {
+  width: 25px;
+  height: 25px;
+}
+
+.ribbon-4 img {
+  width: 25px;
+  height: 25px;
+}
+
+.ribbon-5 img {
   width: 25px;
   height: 25px;
 }
