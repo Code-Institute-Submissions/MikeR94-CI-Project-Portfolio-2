@@ -4,8 +4,15 @@ let answer1 = document.getElementById("answer1-btn");
 let answer2 = document.getElementById("answer2-btn");
 let answer3 = document.getElementById("answer3-btn");
 let answer4 = document.getElementById("answer4-btn");
-let currentQuestion = 0;
 let questionText = document.getElementById("question-text");
+let audioOffIcon = document.getElementsByClassName("sound-off");
+let audioOnIcon = document.getElementsByClassName("sound-on");
+let hiscores = JSON.parse(localStorage.getItem("hiscores")) || [];
+let playerName = document.getElementById("player-name");
+let buttonAudio = new Audio("assets/sounds/button-click.mp3");
+let correctAudio = new Audio("assets/sounds/correct-sound.mp3");
+let incorrectAudio = new Audio("assets/sounds/incorrect-sound.mp3");
+let currentQuestion = 0;
 let answerClicked = false;
 let shuffledQuestions = 0;
 let quizLength = 8;
@@ -14,15 +21,7 @@ let score = 0;
 let determineColour = "unanswered";
 let timeLeft;
 let timer;
-let hiscores = JSON.parse(localStorage.getItem("hiscores")) || [];
-let playerName = document.getElementById("player-name");
-let buttonAudio = new Audio("assets/sounds/button-click.mp3");
-let correctAudio = new Audio("assets/sounds/correct-sound.mp3");
-let incorrectAudio = new Audio("assets/sounds/incorrect-sound.mp3");
 let isPlaying = true;
-let audioOffIcon = document.getElementsByClassName("sound-off");
-let audioOnIcon = document.getElementsByClassName("sound-on");
-let userName = playerName.value;
 
 /**
  * When the player clicks the next button whilst in the question screen, this function will load the next question
@@ -211,10 +210,6 @@ function startTimer() {
     countdown();
     document.getElementById("timer").innerHTML = timeLeft;
   }, 1000);
-}
-
-function reload() {
-  window.location.reload();
 }
 
 /**
