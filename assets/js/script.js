@@ -50,7 +50,9 @@ function nextQuestion() {
  * Small delay to show the next question icon
  */
 function showNextQuestionIcon() {
-  setTimeout(function() {document.getElementById("next-question").classList.remove("hide");}, 500)
+  setTimeout(function () {
+    document.getElementById("next-question").classList.remove("hide");
+  }, 500);
 }
 
 /**
@@ -317,7 +319,6 @@ function clearHiscores() {
   localStorage.clear();
   window.location.reload();
 }
-
 
 /**
  * Gets the hiscore list from the HTML and then creates a new list item with the players score
