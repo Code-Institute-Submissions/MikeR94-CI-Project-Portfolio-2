@@ -402,7 +402,7 @@ button {
 .hiscores-list {
   position: absolute;
   left: 280px;
-  top: 150px;
+  top: 185px;
 }
 
 .hiscores-list li {
@@ -410,33 +410,39 @@ button {
   list-style-type: none;
 }
 
-.ribbon-1 {
+.hiscores-main-text {
   position: absolute;
-  top: 160px;
-  left: 230px;
+  top: 120px;
+  left: 130px;
 }
 
-.ribbon-2 {
+.ribbon-1 {
   position: absolute;
   top: 197px;
   left: 230px;
 }
 
-.ribbon-3 {
+.ribbon-2 {
   position: absolute;
   top: 234px;
   left: 230px;
 }
 
-.ribbon-4 {
+.ribbon-3 {
   position: absolute;
   top: 272px;
   left: 230px;
 }
 
-.ribbon-5 {
+.ribbon-4 {
   position: absolute;
   top: 310px;
+  left: 230px;
+}
+
+.ribbon-5 {
+  position: absolute;
+  top: 345px;
   left: 230px;
 }
 
