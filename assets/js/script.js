@@ -22,6 +22,7 @@ let incorrectAudio = new Audio("assets/sounds/incorrect-sound.mp3");
 let isPlaying = true;
 let audioOffIcon = document.getElementsByClassName("sound-off");
 let audioOnIcon = document.getElementsByClassName("sound-on");
+let userName = playerName.value;
 
 /**
  * When the player clicks the next button whilst in the question screen, this function will load the next question
@@ -74,7 +75,6 @@ function runQuiz(event) {
   startTimer();
   buttonSound();
 }
-
 /**
  * Checks if the player has answered 10 questions and if not, loop through the questions and
  * display them to the player. It also listens for the players answer and then calls checkAnswer()
@@ -84,6 +84,8 @@ function buildQuestions() {
   if (currentQuestion >= quizLength) {
     document.getElementById("question-game-area").classList.add("hide");
     document.getElementById("results-game-area").classList.remove("hide");
+    let player = playerName.value;
+    document.getElementById("results-main-text").innerText = `Nice attempt ${player}, your total score is below:`;
     updateHiscore();
   } else {
     for (let i = 0; i < currentQuestionSet.length; i++) {
