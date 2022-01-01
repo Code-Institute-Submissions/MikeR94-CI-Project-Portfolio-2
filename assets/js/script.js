@@ -47,6 +47,9 @@ function nextQuestion() {
   }
 }
 
+/**
+ * Small delay to show the next question icon
+ */
 function showNextQuestionIcon() {
   setTimeout(function() {document.getElementById("next-question").classList.remove("hide");}, 500)
 }
