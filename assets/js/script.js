@@ -134,6 +134,7 @@ function checkAnswer() {
     incorrectSound();
     showNextQuestionIcon();
   }
+  questionScoreDisplay.innerText = score;
 
   /**
    * Loops through the answer buttons and displays the correct answer if the player has selected the wrong
