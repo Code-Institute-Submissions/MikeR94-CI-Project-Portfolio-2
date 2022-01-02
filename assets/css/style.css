@@ -524,31 +524,36 @@ button {
 
 .results-page {
   text-align: center;
-  margin-top: 60px;
+}
+
+.results-title-text {
+  margin-top: 20px;
+}
+
+.results-title-text p {
+  font-weight: bold;
 }
 
 .results-main-text {
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-top: 50px;
 }
 
 #result-score {
-  color: lightgreen;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .results-page i {
   color: gold;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-right: 6px;
   font-size: 25px;
-  margin-bottom: 30px;
   margin-top: 60px;
 }
 
-.results-bottom-text {
-  margin-top: 20px;
+.results-page button {
+  position: absolute;
+  top: 70%;
+  left: 37.5%;
 }
 
-.results-page button {
-  margin-top: 40px;
-}
+
