@@ -182,11 +182,11 @@ function toDifficultyGameArea() {
  */
 function incrementScore() {
   if (currentQuestionSet === easyQuestions) {
-    document.getElementById("result-score").innerText = score += 10;
+    document.getElementById("result-score").innerText = score += (10 + timeLeft);
   } else if (currentQuestionSet === mediumQuestions) {
-    document.getElementById("result-score").innerText = score += 20;
+    document.getElementById("result-score").innerText = score += (20 + timeLeft);
   } else if (currentQuestionSet === hardQuestions) {
-    document.getElementById("result-score").innerText = score += 30;
+    document.getElementById("result-score").innerText = score += (40 + timeLeft);
   }
 }
 
