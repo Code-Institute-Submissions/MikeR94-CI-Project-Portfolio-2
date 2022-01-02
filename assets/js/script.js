@@ -1,6 +1,7 @@
 let nextBtn = document.getElementById("next-btn").addEventListener("click", toDifficultyGameArea);
 let loadNextQuestion = document.getElementById("next-question").addEventListener("click", nextQuestion);
 let clearHiscoresBtn = document.getElementById("clear-hiscores").addEventListener("click", clearHiscores);
+let reloadWebsite = document.getElementById("play-again-btn").addEventListener("click", reload);
 let answer1 = document.getElementById("answer1-btn");
 let answer2 = document.getElementById("answer2-btn");
 let answer3 = document.getElementById("answer3-btn");
@@ -322,6 +323,13 @@ function updateHiscore() {
   hiscores.splice(3);
 
   localStorage.setItem("hiscores", JSON.stringify(hiscores));
+}
+
+/**
+ * Reload the website
+ */
+function reload() {
+  window.location.reload();
 }
 
 /**
