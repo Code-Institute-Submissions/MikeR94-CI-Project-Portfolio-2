@@ -66,6 +66,7 @@ function runQuiz(event) {
   if (difficulty === "easy") {
     shuffledQuestions = easyQuestions.sort(() => Math.random() - 0.5);
     currentQuestionSet = shuffledQuestions;
+    difficultySelectedForResults = 'easy';
   } else if (difficulty === "medium") {
     shuffledQuestions = mediumQuestions.sort(() => Math.random() - 0.5);
     currentQuestionSet = shuffledQuestions;
@@ -89,7 +90,7 @@ function buildQuestions() {
     document.getElementById("question-game-area").classList.add("hide");
     document.getElementById("results-game-area").classList.remove("hide");
     let player = playerName.value;
-    document.getElementById("results-main-text").innerText = `Nice attempt ${player}, your total score is below:`;
+    document.getElementById("results-main-text").innerText = `Insert personal message here for ${player}`;
     updateHiscore();
   } else {
     for (let i = 0; i < currentQuestionSet.length; i++) {
@@ -124,6 +125,7 @@ function checkAnswer() {
     stopTimer();
     correctSound();
     showNextQuestionIcon();
+    questionsAnsweredCorrectly++;
   } else {
     answerClicked = true;
     determineColour = "incorrect";
@@ -250,10 +252,10 @@ function stopTimer() {
  * Lets the player have the option whether to have sounds on or not
  */
 function toggleAudio() {
-  isPlaying ? buttonAudio.pause() : buttonAudio.play();
+  isPlaying ? toggleAudioOff() : toggleAudioOn();
 }
 
-buttonAudio.onplaying = function () {
+function toggleAudioOn() {
   isPlaying = true;
   for (let i = 0; i < audioOffIcon.length && audioOnIcon.length; i++) {
     audioOffIcon[i].classList.add("hide");
@@ -261,7 +263,7 @@ buttonAudio.onplaying = function () {
   }
 };
 
-buttonAudio.pause = function () {
+function toggleAudioOff() {
   isPlaying = false;
   for (let i = 0; i < audioOffIcon.length && audioOnIcon.length; i++) {
     audioOffIcon[i].classList.remove("hide");
