@@ -69,15 +69,15 @@ function runQuiz(event) {
   if (difficulty === "easy") {
     shuffledQuestions = easyQuestions.sort(() => Math.random() - 0.5);
     currentQuestionSet = shuffledQuestions;
-    playerDifficulty = 'easy';
+    playerDifficulty = "easy";
   } else if (difficulty === "medium") {
     shuffledQuestions = mediumQuestions.sort(() => Math.random() - 0.5);
     currentQuestionSet = shuffledQuestions;
-    playerDifficulty = 'medium';
+    playerDifficulty = "medium";
   } else if (difficulty === "hard") {
     shuffledQuestions = hardQuestions.sort(() => Math.random() - 0.5);
     currentQuestionSet = shuffledQuestions;
-    playerDifficulty = 'hard';
+    playerDifficulty = "hard";
   }
   document.getElementById("difficulty-game-area").classList.add("hide");
   document.getElementById("question-game-area").classList.remove("hide");
@@ -95,7 +95,9 @@ function buildQuestions() {
     document.getElementById("question-game-area").classList.add("hide");
     document.getElementById("results-game-area").classList.remove("hide");
     let player = playerName.value;
-    document.getElementById("results-main-text").innerText = `${player}, you managed to answer ${answeredCorrect} ${playerDifficulty} questions correctly resulting in the total score below.`;
+    document.getElementById(
+      "results-main-text"
+    ).innerText = `${player}, you managed to answer ${answeredCorrect} ${playerDifficulty} questions correctly resulting in the total score below.`;
     updateHiscore();
   } else {
     for (let i = 0; i < currentQuestionSet.length; i++) {
@@ -269,7 +271,7 @@ function toggleAudioOn() {
     audioOffIcon[i].classList.add("hide");
     audioOnIcon[i].classList.remove("hide");
   }
-};
+}
 
 function toggleAudioOff() {
   isPlaying = false;
@@ -277,7 +279,7 @@ function toggleAudioOff() {
     audioOffIcon[i].classList.remove("hide");
     audioOnIcon[i].classList.add("hide");
   }
-};
+}
 
 function correctSound() {
   if (isPlaying) {
