@@ -39,6 +39,7 @@ button {
   border: none;
   font-size: 16px;
   color: var(--clr-text);
+  border-radius: 3px;
 }
 
 .hover:hover {
