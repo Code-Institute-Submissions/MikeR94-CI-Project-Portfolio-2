@@ -125,7 +125,6 @@ function checkAnswer() {
     stopTimer();
     correctSound();
     showNextQuestionIcon();
-    questionsAnsweredCorrectly++;
   } else {
     answerClicked = true;
     determineColour = "incorrect";
