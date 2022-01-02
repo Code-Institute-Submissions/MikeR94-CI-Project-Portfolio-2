@@ -23,6 +23,8 @@ let determineColour = "unanswered";
 let timeLeft;
 let timer;
 let isPlaying = true;
+let answeredCorrect = 0;
+let answeredWrong = 0;
 
 /**
  * When the player clicks the next button whilst in the question screen, this function will load the next question
@@ -67,13 +69,15 @@ function runQuiz(event) {
   if (difficulty === "easy") {
     shuffledQuestions = easyQuestions.sort(() => Math.random() - 0.5);
     currentQuestionSet = shuffledQuestions;
-    difficultySelectedForResults = 'easy';
+    playerDifficulty = 'easy';
   } else if (difficulty === "medium") {
     shuffledQuestions = mediumQuestions.sort(() => Math.random() - 0.5);
     currentQuestionSet = shuffledQuestions;
+    playerDifficulty = 'medium';
   } else if (difficulty === "hard") {
     shuffledQuestions = hardQuestions.sort(() => Math.random() - 0.5);
     currentQuestionSet = shuffledQuestions;
+    playerDifficulty = 'hard';
   }
   document.getElementById("difficulty-game-area").classList.add("hide");
   document.getElementById("question-game-area").classList.remove("hide");
@@ -91,7 +95,7 @@ function buildQuestions() {
     document.getElementById("question-game-area").classList.add("hide");
     document.getElementById("results-game-area").classList.remove("hide");
     let player = playerName.value;
-    document.getElementById("results-main-text").innerText = `Insert personal message here for ${player}`;
+    document.getElementById("results-main-text").innerText = `${player}, you managed to answer ${answeredCorrect} ${playerDifficulty} questions correctly resulting in the total score below.`;
     updateHiscore();
   } else {
     for (let i = 0; i < currentQuestionSet.length; i++) {
@@ -120,8 +124,9 @@ function checkAnswer() {
   let correctAnswer = currentQuestionSet[currentQuestion].answer;
   if (playerAnswer === correctAnswer) {
     answerClicked = true;
-    incrementScore();
     determineColour = "correct";
+    answeredCorrect++;
+    incrementScore();
     colorLights();
     stopTimer();
     correctSound();
@@ -129,11 +134,13 @@ function checkAnswer() {
   } else {
     answerClicked = true;
     determineColour = "incorrect";
+    answeredWrong++;
     colorLights();
     stopTimer();
     incorrectSound();
     showNextQuestionIcon();
   }
+
   document.getElementById("question-score").innerText = score;
 
   /**
