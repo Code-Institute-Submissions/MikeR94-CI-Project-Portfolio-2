@@ -187,6 +187,7 @@ button {
 
 .start-game-area {
   background-color: var(--clr-game-canvas);
+  opacity: 0.97;
   height: 490px;
   width: 700px;
   margin: 0;
@@ -240,6 +241,7 @@ button {
 
 .difficulty-game-area {
   background-color: var(--clr-game-canvas);
+  opacity: 0.97;
   height: 490px;
   width: 700px;
   margin: 0;
@@ -277,6 +279,7 @@ button {
 
 .question-game-area {
   background-color: var(--clr-game-canvas);
+  opacity: 0.97;
   height: 490px;
   width: 700px;
   margin: 0;
@@ -393,6 +396,7 @@ button {
 
 .rules-game-area {
   background-color: var(--clr-game-canvas);
+  opacity: 0.97;
   height: 490px;
   width: 700px;
   margin: 0;
@@ -444,6 +448,7 @@ button {
 
 .hiscores-game-area {
   background-color: var(--clr-game-canvas);
+  opacity: 0.97;
   height: 490px;
   width: 700px;
   margin: 0;
@@ -524,6 +529,7 @@ button {
 
 .contact-game-area {
   background-color: var(--clr-game-canvas);
+  opacity: 0.97;
   height: 490px;
   width: 700px;
   margin: 0;
@@ -543,6 +549,7 @@ button {
 
 .results-game-area {
   background-color: var(--clr-game-canvas);
+  opacity: 0.97;
   height: 490px;
   width: 700px;
   margin: 0;
