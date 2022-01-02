@@ -373,12 +373,17 @@ button {
   border-radius: 30px;
 }
 
-.rules-text {
-  margin-top: 70px;
+.rules-title-text {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.rules-title-text p {
+  font-weight: bold;
 }
 
 .rules-text p {
-  font-size: 14px;
+  font-size: 15px;
   margin: 20px;
 }
 
@@ -386,8 +391,8 @@ button {
   width: 27px;
   height: 27px;
   position: absolute;
-  left: 323px;
-  top: 208px;
+  left: 345px;
+  top: 211px;
 }
 
 .rules-planet-2 {
@@ -395,7 +400,7 @@ button {
   height: 27px;
   position: absolute;
   filter: grayscale(100%);
-  top: 230px;
+  top: 235px;
 }
 
 .rules-next-question {
