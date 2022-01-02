@@ -406,6 +406,7 @@ button {
 .rules-title-text {
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 25px;
 }
 
 .rules-title-text p {
@@ -414,15 +415,15 @@ button {
 
 .rules-text p {
   font-size: 15px;
-  margin: 20px;
+  margin: 15px 35px 0px 35px;
 }
 
 .rules-planet-1 {
   width: 27px;
   height: 27px;
   position: absolute;
-  left: 345px;
-  top: 211px;
+  left: 360px;
+  top: 236px;
 }
 
 .rules-planet-2 {
@@ -430,7 +431,7 @@ button {
   height: 27px;
   position: absolute;
   filter: grayscale(100%);
-  top: 235px;
+  top: 257px;
 }
 
 .rules-next-question {
