@@ -417,6 +417,20 @@ button {
   border-radius: 30px;
 }
 
+.hiscores-title-text {
+  text-align: center;
+}
+
+.hiscores-title-text p {
+  font-weight: bold;
+}
+
+.clear-hiscores-btn button {
+  position: absolute;
+  top: 80%;
+  left: 38%;
+}
+
 .hiscores-list {
   position: absolute;
   left: 280px;
@@ -452,18 +466,6 @@ button {
   left: 230px;
 }
 
-.ribbon-4 {
-  position: absolute;
-  top: 310px;
-  left: 230px;
-}
-
-.ribbon-5 {
-  position: absolute;
-  top: 345px;
-  left: 230px;
-}
-
 .ribbon-1 img {
   width: 25px;
   height: 25px;
@@ -479,15 +481,6 @@ button {
   height: 25px;
 }
 
-.ribbon-4 img {
-  width: 25px;
-  height: 25px;
-}
-
-.ribbon-5 img {
-  width: 25px;
-  height: 25px;
-}
 
 /* Contact Game Area */
 
