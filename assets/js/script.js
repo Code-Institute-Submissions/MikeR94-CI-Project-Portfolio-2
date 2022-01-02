@@ -32,7 +32,7 @@ let answeredWrong = 0;
  * any styles that have been added on checkAnswer()
  */
 function nextQuestion() {
-  document.getElementById("timer").innerHTML = 60;
+  document.getElementById("timer").innerHTML = 30;
   currentQuestion++;
   buildQuestions();
   startTimer();
@@ -219,7 +219,7 @@ function colorLights() {
  * and takes in the timeLeft parameter to set the time
  */
 function startTimer() {
-  timeLeft = 60;
+  timeLeft = 30;
   timer = setInterval(function () {
     countdown();
     document.getElementById("timer").innerHTML = timeLeft;
