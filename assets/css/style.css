@@ -219,8 +219,17 @@ button {
   border-radius: 30px;
 }
 
-.difficulty-main-text {
+.difficulty-title-text {
+  text-align: center;
   margin-top: 20px;
+}
+
+.difficulty-title-text p {
+  font-weight: bold;
+}
+
+.difficulty-main-text {
+  margin-top: 10px;
   padding: 30px;
   text-align: center;
 }
