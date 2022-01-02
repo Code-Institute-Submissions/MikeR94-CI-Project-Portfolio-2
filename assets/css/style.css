@@ -420,6 +420,7 @@ button {
 
 .hiscores-title-text {
   text-align: center;
+  margin-top: 20px;
 }
 
 .hiscores-title-text p {
@@ -428,7 +429,7 @@ button {
 
 .clear-hiscores-btn button {
   position: absolute;
-  top: 80%;
+  top: 70%;
   left: 38%;
 }
 
@@ -445,7 +446,7 @@ button {
 
 .hiscores-main-text {
   position: absolute;
-  top: 120px;
+  top: 130px;
   left: 130px;
 }
 
