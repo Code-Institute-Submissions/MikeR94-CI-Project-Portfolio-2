@@ -565,7 +565,7 @@ button {
 }
 
 .results-main-text {
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 #result-score {
@@ -577,12 +577,12 @@ button {
   color: gold;
   margin-right: 6px;
   font-size: 25px;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 .results-page button {
   position: absolute;
-  top: 70%;
+  top: 63%;
   left: 37.5%;
 }
 
