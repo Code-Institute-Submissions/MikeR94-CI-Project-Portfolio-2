@@ -317,7 +317,7 @@ function updateHiscore() {
 
   hiscores.push(playerScore);
   hiscores.sort((first, second) => second.score - first.score);
-  hiscores.splice(5);
+  hiscores.splice(3);
 
   localStorage.setItem("hiscores", JSON.stringify(hiscores));
 }
