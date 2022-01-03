@@ -599,7 +599,17 @@ button {
 
 /* Media Queries */
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 700px) {
+  
+  button {
+    height: 40px;
+    font-size: 14px;
+  }
+
+  * {
+    font-size: 14px;
+  }
+  
   .start-game-area {
     height: 500px;
     width: 310px;
@@ -622,6 +632,25 @@ button {
   .question-game-area{
     height: 500px;
     width: 310px;
+  }
+
+  .lights-bar {
+    display: none;
+  }
+
+  .answer-buttons {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    top: 57%;
+  }
+
+  .answer-buttons button {
+    margin: 2px;
+  }
+  
+  .next-question {
+    left: 44%;
+    top: 85%;
   }
 
   .rules-game-area {
