@@ -629,6 +629,12 @@ button {
     width: 70%;
   }
 
+  .error-text {
+    left: 8%;
+    text-align: center;
+    font-size: 12px;
+  }
+
   .game-bar {
     width: 310px;
   }
