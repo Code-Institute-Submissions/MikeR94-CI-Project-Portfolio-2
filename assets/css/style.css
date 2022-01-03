@@ -677,6 +677,7 @@ button {
   .cross {
     right: 5%;
   }
+
   .cross:before,
   .cross:after {
     height: 27px;
@@ -685,6 +686,10 @@ button {
   .menu {
     height: 410px;
     width: 310px;
+  }
+
+  .menu button:nth-child(1) {
+    margin-top: 60px;
   }
 
   .difficulty-game-area {
