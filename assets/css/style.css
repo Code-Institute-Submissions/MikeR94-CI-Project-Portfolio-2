@@ -600,7 +600,6 @@ button {
 /* Media Queries */
 
 @media screen and (max-width: 700px) {
-  
   button {
     height: 40px;
     font-size: 14px;
@@ -609,7 +608,7 @@ button {
   * {
     font-size: 14px;
   }
-  
+
   .start-game-area {
     height: 500px;
     width: 310px;
@@ -642,58 +641,58 @@ button {
   .home-icon-logo i {
     font-size: 24px;
   }
-  
+
   .audio-icon-logo {
     left: 20%;
     top: 4.3%;
   }
-  
+
   .sound-on i {
     font-size: 22px;
   }
-  
+
   .sound-off i {
     font-size: 22px;
   }
-  
+
   #timer {
     right: 43%;
     font-size: 17px;
   }
-  
+
   .timer-icon {
     right: 48%;
     top: 3.5%;
   }
-  
+
   .timer-icon i {
     font-size: 20px;
   }
-  
+
   .question-score {
     font-size: 17px;
     right: 29%;
   }
-  
+
   .trophy-icon {
     right: 21%;
     top: 4.5%;
   }
-  
+
   .trophy-icon i {
     font-size: 18px;
   }
-  
+
   .hamburger {
     width: 27px;
     right: 6%;
   }
-  
+
   .hamburger-line {
     height: 3px;
     margin-top: 4px;
   }
-  
+
   .cross {
     right: 5%;
   }
@@ -702,7 +701,7 @@ button {
   .cross:after {
     height: 27px;
   }
- 
+
   .menu {
     height: 410px;
     width: 310px;
@@ -717,7 +716,7 @@ button {
     width: 310px;
   }
 
-  .question-game-area{
+  .question-game-area {
     height: 500px;
     width: 310px;
   }
@@ -735,7 +734,7 @@ button {
   .answer-buttons button {
     margin: 2px;
   }
-  
+
   .next-question {
     left: 44%;
     top: 85%;
@@ -755,43 +754,43 @@ button {
     text-align: center;
     margin-top: 20px;
   }
-  
+
   .hiscores-title-text p {
     font-weight: bold;
   }
-  
+
   .clear-hiscores-btn button {
     position: absolute;
     top: 76%;
     left: 23%;
   }
-  
+
   .hiscores-list {
     left: 75px;
-    top: 205px; 
+    top: 205px;
   }
-  
+
   .hiscores-list li {
     margin-top: 10px;
     line-height: 29px;
   }
-  
+
   .hiscores-main-text {
     top: 130px;
     left: 0px;
     text-align: center;
   }
-  
+
   .ribbon-1 {
     top: 217px;
     left: 30px;
   }
-  
+
   .ribbon-2 {
     top: 254px;
     left: 30px;
   }
-  
+
   .ribbon-3 {
     top: 292px;
     left: 30px;
@@ -800,5 +799,20 @@ button {
   .contact-game-area {
     height: 500px;
     width: 310px;
+  }
+
+  .results-game-area {
+    height: 500px;
+    width: 310px;
+  }
+
+  .results-main-text {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 40px;
+  }
+
+  .results-page button {
+    left: 23%;
   }
 }
