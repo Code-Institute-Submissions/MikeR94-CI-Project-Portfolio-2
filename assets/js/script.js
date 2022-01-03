@@ -1,6 +1,5 @@
 let nextBtn = document.getElementById("next-btn").addEventListener("click", toDifficultyGameArea);
 let loadNextQuestion = document.getElementById("next-question").addEventListener("click", nextQuestion);
-let clearHiscoresBtn = document.getElementById("clear-hiscores").addEventListener("click", clearHiscores);
 let reloadWebsite = document.getElementById("play-again-btn").addEventListener("click", reload);
 let answer1 = document.getElementById("answer1-btn");
 let answer2 = document.getElementById("answer2-btn");
@@ -9,11 +8,7 @@ let answer4 = document.getElementById("answer4-btn");
 let questionText = document.getElementById("question-text");
 let audioOffIcon = document.getElementsByClassName("sound-off");
 let audioOnIcon = document.getElementsByClassName("sound-on");
-let hiscores = JSON.parse(localStorage.getItem("hiscores")) || [];
 let playerName = document.getElementById("player-name");
-let buttonAudio = new Audio("assets/sounds/button-click.mp3");
-let correctAudio = new Audio("assets/sounds/correct-sound.mp3");
-let incorrectAudio = new Audio("assets/sounds/incorrect-sound.mp3");
 let currentQuestion = 0;
 let answerClicked = false;
 let shuffledQuestions = 0;
@@ -183,11 +178,11 @@ function toDifficultyGameArea() {
  */
 function incrementScore() {
   if (currentQuestionSet === easyQuestions) {
-    document.getElementById("result-score").innerText = score += (10 + timeLeft);
+    document.getElementById("result-score").innerText = score += 10 + timeLeft;
   } else if (currentQuestionSet === mediumQuestions) {
-    document.getElementById("result-score").innerText = score += (20 + timeLeft);
+    document.getElementById("result-score").innerText = score += 20 + timeLeft;
   } else if (currentQuestionSet === hardQuestions) {
-    document.getElementById("result-score").innerText = score += (40 + timeLeft);
+    document.getElementById("result-score").innerText = score += 40 + timeLeft;
   }
 }
 
@@ -216,139 +211,11 @@ function colorLights() {
 }
 
 /**
- * Used to start the time for the player and counts down every 1 second. Works in conjunction with countdown()
- * and takes in the timeLeft parameter to set the time
- */
-function startTimer() {
-  timeLeft = 30;
-  timer = setInterval(function () {
-    countdown();
-    document.getElementById("timer").innerHTML = timeLeft;
-  }, 1000);
-}
-
-/**
- * Function to countdown the timeLeft and check if the timeLeft is 0. If no time left then the timer stops and
- * all answer buttons are disabled so the player can't select an answer. It also loops through the answerButtons
- * and displays the correct answer to the player if the time is up.
- */
-function countdown() {
-  let correctAnswer = currentQuestionSet[currentQuestion].answer;
-  let answerButtons = document.getElementsByClassName("answer-btn");
-  if (timeLeft === 0) {
-    stopTimer();
-    document.getElementById("next-question").classList.remove("hide");
-    document.getElementById("answer1-btn").disabled = true;
-    document.getElementById("answer2-btn").disabled = true;
-    document.getElementById("answer3-btn").disabled = true;
-    document.getElementById("answer4-btn").disabled = true;
-  } else {
-    timeLeft -= 1;
-  }
-  for (let i = 0; i < answerButtons.length; i++) {
-    if (answerButtons[i].value === correctAnswer && timeLeft === 0) {
-      answerButtons[i].classList.add("correct");
-    }
-  }
-}
-
-/**
- * Stops the timer
- */
-function stopTimer() {
-  clearInterval(timer);
-}
-
-/**
- * Lets the player have the option whether to have sounds on or not
- */
-function toggleAudio() {
-  isPlaying ? toggleAudioOff() : toggleAudioOn();
-}
-
-function toggleAudioOn() {
-  isPlaying = true;
-  for (let i = 0; i < audioOffIcon.length && audioOnIcon.length; i++) {
-    audioOffIcon[i].classList.add("hide");
-    audioOnIcon[i].classList.remove("hide");
-  }
-}
-
-function toggleAudioOff() {
-  isPlaying = false;
-  for (let i = 0; i < audioOffIcon.length && audioOnIcon.length; i++) {
-    audioOffIcon[i].classList.remove("hide");
-    audioOnIcon[i].classList.add("hide");
-  }
-}
-
-function correctSound() {
-  if (isPlaying) {
-    correctAudio.play();
-  } else {
-    correctAudio.pause();
-  }
-}
-
-function incorrectSound() {
-  if (isPlaying) {
-    incorrectAudio.play();
-  } else {
-    incorrectAudio.pause();
-  }
-}
-
-/**
- * Function to play a sound when the player clicks a button
- */
-function buttonSound() {
-  if (isPlaying) {
-    buttonAudio.play();
-  } else {
-    buttonAudio.pause();
-  }
-}
-
-/**
- * Creates an object called playerScore and then pushes it the variable hiscores declared on line 17.
- */
-function updateHiscore() {
-  let playerScore = {
-    score: score,
-    name: playerName.value,
-  };
-
-  hiscores.push(playerScore);
-  hiscores.sort((first, second) => second.score - first.score);
-  hiscores.splice(3);
-
-  localStorage.setItem("hiscores", JSON.stringify(hiscores));
-}
-
-/**
  * Reload the website
  */
 function reload() {
   window.location.reload();
 }
-
-/**
- * Clears the hiscores and reloads the website (currently not is use)
- */
-function clearHiscores() {
-  localStorage.clear();
-  window.location.reload();
-}
-
-/**
- * Gets the hiscore list from the HTML and then creates a new list item with the players score
- */
-let hiscoreBoard = document.getElementById("hiscore");
-hiscoreBoard.innerHTML = hiscores
-  .map((playerScore) => {
-    return `<li>${playerScore.name} - ${playerScore.score} points</li>`;
-  })
-  .join("");
 
 /**
  * Loop through the categories and add a click event listener to load the difficulty that the player has selected
@@ -393,13 +260,6 @@ for (let i = 0; i < toggleMenu.length && menu.length; i++) {
     menu[i].classList.toggle("hide");
     toggleMenu[i].classList.toggle("hide");
     crossButton[i].classList.toggle("hide");
-  });
-}
-
-let audioIconLogo = document.getElementsByClassName("audio-icon-logo");
-for (let i = 0; i < audioIconLogo.length; i++) {
-  audioIconLogo[i].addEventListener("click", () => {
-    toggleAudio();
   });
 }
 
