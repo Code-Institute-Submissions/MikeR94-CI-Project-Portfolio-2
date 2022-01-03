@@ -445,6 +445,10 @@ button {
   height: 26px;
 }
 
+.rules-text-responsive {
+  display: none;
+}
+
 /* Hiscores Game Area */
 
 .hiscores-game-area {
@@ -743,6 +747,20 @@ button {
   .rules-game-area {
     height: 500px;
     width: 310px;
+  }
+
+  .rules-text {
+    display: none;
+  }
+
+  .rules-text-responsive {
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .rules-text-responsive p {
+    margin-top: 20px;
   }
 
   .hiscores-game-area {
