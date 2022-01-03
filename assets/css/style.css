@@ -615,6 +615,20 @@ button {
     width: 310px;
   }
 
+  .start-main-text {
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .start-input-name {
+    margin-top: 50px;
+  }
+
+  .start-input-name input {
+    width: 70%;
+  }
+
   .game-bar {
     width: 310px;
   }
