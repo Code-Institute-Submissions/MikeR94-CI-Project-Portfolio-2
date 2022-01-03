@@ -731,6 +731,52 @@ button {
     width: 310px;
   }
 
+  .hiscores-title-text {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .hiscores-title-text p {
+    font-weight: bold;
+  }
+  
+  .clear-hiscores-btn button {
+    position: absolute;
+    top: 76%;
+    left: 23%;
+  }
+  
+  .hiscores-list {
+    left: 75px;
+    top: 205px; 
+  }
+  
+  .hiscores-list li {
+    margin-top: 10px;
+    line-height: 29px;
+  }
+  
+  .hiscores-main-text {
+    top: 130px;
+    left: 0px;
+    text-align: center;
+  }
+  
+  .ribbon-1 {
+    top: 217px;
+    left: 30px;
+  }
+  
+  .ribbon-2 {
+    top: 254px;
+    left: 30px;
+  }
+  
+  .ribbon-3 {
+    top: 292px;
+    left: 30px;
+  }
+
   .contact-game-area {
     height: 500px;
     width: 310px;
