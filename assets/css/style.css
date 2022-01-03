@@ -619,6 +619,69 @@ button {
     width: 310px;
   }
 
+  .home-icon-logo i {
+    font-size: 24px;
+  }
+  
+  .audio-icon-logo {
+    left: 20%;
+    top: 4.3%;
+  }
+  
+  .sound-on i {
+    font-size: 22px;
+  }
+  
+  .sound-off i {
+    font-size: 22px;
+  }
+  
+  #timer {
+    right: 43%;
+    font-size: 17px;
+  }
+  
+  .timer-icon {
+    right: 48%;
+    top: 3.5%;
+  }
+  
+  .timer-icon i {
+    font-size: 20px;
+  }
+  
+  .question-score {
+    font-size: 17px;
+    right: 29%;
+  }
+  
+  .trophy-icon {
+    right: 21%;
+    top: 4.5%;
+  }
+  
+  .trophy-icon i {
+    font-size: 18px;
+  }
+  
+  .hamburger {
+    width: 27px;
+    right: 6%;
+  }
+  
+  .hamburger-line {
+    height: 3px;
+    margin-top: 4px;
+  }
+  
+  .cross {
+    right: 5%;
+  }
+  .cross:before,
+  .cross:after {
+    height: 27px;
+  }
+ 
   .menu {
     height: 410px;
     width: 310px;
