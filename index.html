@@ -242,20 +242,18 @@
         <button class="hiscores-btn hover">Hiscores</button>
         <button class="contact-btn hover">Contact</button>
       </div>
-      <div class="contact-form">
+      <div class="contact-title-text"><p>Contact</p></div>
+      <div class="contact">
         <form onsubmit="">
-          <input type="text" name="name" id="name" required>
-          <input type="text" name="email" id="email" required>
-          <label for="subject">How can we help?</label>
-          <select name="subject" id="subject" required>
-            <option value="" selected>Please choose an option</option>
+          <input type="text" name="name" id="name" class="input" placeholder="Name" required>
+          <input type="text" name="email" id="email" class="input" placeholder="Email Address" required>
+          <select name="subject" id="subject" class="input" required>
             <option value="question">General feedback</option>
             <option value="question">Submit an error</option>
             <option value="question">Submit a new question for the quiz</option>
           </select>
-          <label for="message">Message</label>
-          <textarea name="message" id="message" cols="50" rows="10" required></textarea>
-          <input type="submit" value="Submit" class="form-btn" />
+          <textarea name="message" id="message" cols="50" rows="3" placeholder="Message" required></textarea>
+          <button type="submit" class="hover">Submit</button>
         </form>
       </div>
     </div>

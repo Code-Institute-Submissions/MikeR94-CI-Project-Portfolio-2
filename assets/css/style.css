@@ -545,9 +545,50 @@ button {
   border-radius: 30px;
 }
 
-.contact-form {
+.contact-title-text {
   text-align: center;
-  margin-top: 150px;
+  margin-top: 20px;
+}
+
+.contact-title-text p {
+  font-weight: bold;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  padding-top: 32px;
+  color: black;
+  text-align: center;
+}
+
+.input,
+textarea {
+  width: 50%;
+  outline: none;
+  border-radius: 5px;
+  padding: 0px 5px;
+  border: 1px solid var(--clr-game-canvas);
+  transition: all 300ms ease;
+  margin-bottom: 1em;
+  color: black;
+}
+
+.contact button {
+  position: absolute;
+  left: 265px;
+  bottom: 40px;
+}
+
+textarea {
+  resize: none;
+}
+
+.contact option {
+  color: black;
 }
 
 /* Results Game Area */
@@ -817,6 +858,21 @@ button {
   .contact-game-area {
     height: 500px;
     width: 310px;
+  }
+
+  .contact button {
+    left: 68px;
+    bottom: 66px;
+  }
+
+  form {
+    padding-top: 45px;
+  }
+
+  .input,
+  textarea {
+    width: 65%;
+    padding: 3px 5px;
   }
 
   .results-game-area {
