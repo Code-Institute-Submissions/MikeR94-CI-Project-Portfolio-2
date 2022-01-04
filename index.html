@@ -243,8 +243,20 @@
         <button class="contact-btn hover">Contact</button>
       </div>
       <div class="contact-form">
-        <p>Contact form to come</p><br>
-        <input type="text">
+        <form onsubmit="">
+          <input type="text" name="name" id="name" required>
+          <input type="text" name="email" id="email" required>
+          <label for="subject">How can we help?</label>
+          <select name="subject" id="subject" required>
+            <option value="" selected>Please choose an option</option>
+            <option value="question">General feedback</option>
+            <option value="question">Submit an error</option>
+            <option value="question">Submit a new question for the quiz</option>
+          </select>
+          <label for="message">Message</label>
+          <textarea name="message" id="message" cols="50" rows="10" required></textarea>
+          <input type="submit" value="Submit" class="form-btn" />
+        </form>
       </div>
     </div>
     </section>
