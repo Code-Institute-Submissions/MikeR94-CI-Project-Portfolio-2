@@ -13,6 +13,8 @@ function sendMail() {
 
     emailjs.send('service_al2h1zo', 'template_xqi4jaf', emailProperties)
     .then(function(respond){
-        console.log("Success", respond.status)
+        console.log("Success", respond)
+        document.getElementById("contact-submit").innerHTML = "Sent";
+        document.getElementById('contact-submit').classList.add("correct")
     })
 }
