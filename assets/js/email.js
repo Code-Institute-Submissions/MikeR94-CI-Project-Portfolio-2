@@ -5,16 +5,18 @@ let userMessage = document.getElementById("message");
 let submit = document.getElementById("contact-submit").addEventListener("click", sendMail);
 
 function sendMail() {
-    let emailProperties = {
-        name: userName.value,
-        email: userEmail.value,
-        message: userMessage.value,
-    };
+  let emailProperties = {
+    name: userName.value,
+    email: userEmail.value,
+    message: userMessage.value,
+  };
 
-    emailjs.send('service_al2h1zo', 'template_xqi4jaf', emailProperties)
-    .then(function(respond){
-        console.log("Success", respond)
-        document.getElementById("contact-submit").innerHTML = "Sent";
-        document.getElementById('contact-submit').classList.add("correct")
-    })
+  emailjs.send("service_al2h1zo", "template_xqi4jaf", emailProperties).then(function (respond) {
+    console.log("Success", respond);
+    document.getElementById("contact-submit").innerHTML = "Sent";
+    document.getElementById("contact-submit").classList.add("correct");
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("message").value = "";
+  });
 }
