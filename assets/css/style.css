@@ -566,7 +566,8 @@ button {
   margin-top: 20px;
 }
 
-.input, textarea {
+.input,
+textarea {
   width: 400px;
   margin: 10px;
   color: black;
@@ -577,7 +578,6 @@ button {
   left: 265px;
   bottom: 50px;
 }
-
 
 /* Results Game Area */
 
@@ -628,6 +628,10 @@ button {
   position: absolute;
   top: 63%;
   left: 37.5%;
+}
+
+.size-error {
+  display: none;
 }
 
 /* Media Queries */
@@ -847,11 +851,12 @@ button {
     height: 500px;
     width: 310px;
   }
-  
-  .input, textarea {
+
+  .input,
+  textarea {
     width: 200px;
   }
-  
+
   .contact-form button {
     left: 70px;
     bottom: 90px;
@@ -870,5 +875,51 @@ button {
 
   .results-page button {
     left: 23%;
+  }
+}
+
+@media screen and (max-width: 309px) {
+  .start-game-area {
+    display: none;
+  }
+
+  .difficulty-game-area {
+    display: none;
+  }
+
+  .question-game-area {
+    display: none;
+  }
+
+  .rules-game-area {
+    display: none;
+  }
+
+  .hiscores-game-area {
+    display: none;
+  }
+
+  .contact-game-area {
+    display: none;
+  }
+
+  .results-game-area {
+    display: none;
+  }
+
+  .size-error {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .size-error p {
+    color: black;
+    background-color: white;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
   }
 }
