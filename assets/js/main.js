@@ -125,7 +125,7 @@ function checkAnswer() {
     determineColour = "correct";
     answeredCorrect++;
     incrementScore();
-    colorLights();
+    colorPlanets();
     stopTimer();
     correctSound();
     showNextQuestionIcon();
@@ -133,7 +133,7 @@ function checkAnswer() {
     answerClicked = true;
     determineColour = "incorrect";
     answeredWrong++;
-    colorLights();
+    colorPlanets();
     stopTimer();
     incorrectSound();
     showNextQuestionIcon();
@@ -190,7 +190,7 @@ function incrementScore() {
  * A switch case statement to change the colour of the lights depending on whether the user answers
  * correctly or not
  */
-function colorLights() {
+function colorPlanets() {
   let answerLight = 0;
 
   switch (determineColour) {
