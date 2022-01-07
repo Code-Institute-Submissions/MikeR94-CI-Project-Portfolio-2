@@ -67,10 +67,10 @@ The Astronomy Quiz is a one-page website which has been designed to look like an
 
 
  * ### Colour Scheme
-      The colour scheme eventually chosen is one based on a dark navy and light blue. This colour scheme gives off a very outer-space like feel and it compliments the background image.<br /><br />
+      The colour scheme eventually chosen is one based on primarily dark navy, light blue and an off white with the additional soft pink in the background image. This colour scheme gives off a very outer-space like feel and all colours compliment each other.<br /><br />
 
 
-![Colour Palate image](assets/readme-images/reflection-colour-palette.png)
+![Colour Palate image](assets/images/readme-images/colour-palette-image.png)
 
 
 [Back to top](<#contents>)
@@ -108,12 +108,12 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
 <details><summary><b>Desktop Home/Landing Page Image</b></summary>
 
-![Desktop Home Image](assets/readme-images/hero-image.jpg)
+![Desktop Home Image](assets/images/readme-images/desktop-home-page-image.png)
 </details><br />
 
 <details><summary><b>Desktop Home/Landing Page Responsive Image</b></summary>
 
-![Responsive Home Image](assets/readme-images/hero-image.jpg)
+![Responsive Home Image](assets/images/readme-images/responsive-home-page-image.png)
 </details><br />
 
 [Back to top](<#contents>)
