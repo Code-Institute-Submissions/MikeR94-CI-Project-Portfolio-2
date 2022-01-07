@@ -156,17 +156,43 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
 * ### Question Section
     
-    * Insert text here<br /><br />
+    * This is the core of the game. The user is asked to answer 8 questions that are Astronomy related and the difficulty of the questions will be determined by what difficulty the user selects in the difficulty section
+    * I decided to do 8 questions as there are 8 planets in our solar system. It's a small niche addition that hopefully the user may spot.
+    * Each question is randomly displayed from a list of pre-determined questions created from questions.js.
+    * If the player answers a correct answer, a "correct sound" noise will play, the correct answer will highlight green, the planet icon will light up, the time will pause and the player will receive points determined by difficulty for answering the question plus additional points equal to the time left. The next question icon will then show after 0.5 seconds.
+    * If the players answers incorrectly, an "incorrect sound" noise will play, the correct answer will highlight green, the users selected answer will highlight red and the user will not score points. The next question icon will then show after 0.5 seconds.<br /><br />
     
 <details><summary><b>Desktop Question Image</b></summary>
 
-![Desktop Question Image](assets/readme-images/contact-image.png)
+![Desktop Question Image](assets/images/readme-images/desktop-question-image.png)
+</details><br />
+
+<details><summary><b>Desktop Question Correct Answer Image</b></summary>
+
+![Desktop Question Image](assets/images/readme-images/desktop-question-correct-image.png)
+</details><br />
+
+<details><summary><b>Desktop Question Wrong Answer Image</b></summary>
+
+![Desktop Question Image](assets/images/readme-images/desktop-question-incorrect-image.png)
 </details><br />
 
 <details><summary><b>Responsive Question Image</b></summary>
 
-![Responsive Question Image](assets/readme-images/contact-responsive-image.png)
+![Responsive Question Image](assets/images/readme-images/responsive-question-image.png)
 </details><br />
+
+<details><summary><b>Responsive Question Correct Answer Image</b></summary>
+
+![Responsive Question Image](assets/images/readme-images/responsive-question-correct-image.png)
+</details><br />
+
+<details><summary><b>Responsive Question Wrong Answer Image</b></summary>
+
+![Responsive Question Image](assets/images/readme-images/responsive-question-incorrect-image.png)
+</details><br />
+
+
 
 [Back to top](<#contents>)
 
