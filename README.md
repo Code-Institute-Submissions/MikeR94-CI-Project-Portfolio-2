@@ -28,7 +28,7 @@ You can view the live site here - <a href="https://miker94.github.io/CI-Project-
     * [Global Hiscores](<#global-hiscores>)
     * [Fact Of The Week](<#fact-of-the-week>)
     * [Monthly Polls](<#monthly-polls>)
-    * [Global Sound](<#global-sound-settings)
+    * [Global Sound](<#global-sound-settings>)
 * [**Technologies Used**](<#technologies-used>)
 * [**Testing**](<#testing>)
 * [**Deployment**](<#deployment>)
@@ -300,14 +300,16 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 # Technologies Used
 * [HTML5](https://en.wikipedia.org/wiki/HTML) - Provides the content and structure for the website.
 * [CSS3](https://en.wikipedia.org/wiki/CSS) - Provides the styling for the website.
-* [JavaScript](https://en.wikipedia.org/wiki/JavaScript) - Provides the responsive navigation bar for the website.
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript) - Provides the functionality of the website.
 * [Figma](https://www.figma.com/) - Used to create the design prototype.
 * [a11y](https://color.a11y.com/Contrast/) - Used to test the contrast and accessibility.
 * [Favicon](https://favicon.io/) - Used to create the favicon.
 * [Compressor](https://compressor.io/) - Used to compress the images.
-* [Gitpod](https://www.gitpod.io/#get-started) - Used to create and edit the website.
+* [VSCode](https://code.visualstudio.com/) - Used to create and edit the website.
 * [GitHub](https://github.com/) - Used to host and deploy the website.
 * [GitBash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) - Terminal used to push changes to the GitHub repository.
+* [EmailJS](https://www.emailjs.com/) - Used to implement a working email system.
+* [removebg](https://www.remove.bg/) - Used to remove background images.
 
 [Back to top](<#contents>)
 
@@ -467,9 +469,6 @@ The live link to the Github repository can be found here - https://github.com/Mi
 * The colour palette was displayed by [Coolors](https://coolors.co/)
 * The icons came from [Font Awesome](https://fontawesome.com/)
 * The responsive preview image at the top of the README.md came from  [Techsini](https://techsini.com/multi-mockup/index.php)
-* The responsive Youtube video came from a [YouTube Tutorial](https://www.youtube.com/watch?v=0L8cQ9nRtuE&t=671s)
-* The JavaScript code for the responsive navigation bar was provided and taught to me by brother [Jack Ralph](https://github.com/jackralph)
-* The text content came from [NHS](https://www.nhs.uk/live-well/exercise/guide-to-yoga/) and [HealthLine](https://www.healthline.com/health/fitness-exercise/beginner-yoga-poses)
 * The favicon came from [Favicon](https://favicon.io/) 
 
 ### Media
