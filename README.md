@@ -17,6 +17,7 @@ You can view the live site here - <a href="https://miker94.github.io/CI-Project-
     *  [Colour Scheme](<#colour-scheme>)
 * [**Features**](<#features>)
     * [Home](<#home-section>)
+    * [Navigation](<#navigation-bar>)
     * [Difficulty](<#difficulty-section>)
     * [Question](<#question-section>)
     * [Results](<#results-section>)
@@ -78,7 +79,25 @@ The Astronomy Quiz is a one-page website which has been designed to look like an
 
 The Astronomy Quiz website is set up to be very easy to use and visually appealing for the player. It was designed with user-experience in mind. The player should feel like they are doing an Astronomy Quiz just by the visual theme and feel encouraged to keep playing to try and beat their current hiscore.
 
-## Existing Features  
+## Existing Features
+  * ### Home Section
+
+      * This is the first part of the quiz the user will see when visiting and is designed to allow the user to immediately get started with playing the quiz.
+      * In the middle of the website the player will see the quiz application complimented by a beautiful space background.
+      * Within the quiz application, the user will be greeted and then asked to submit a name and then click next to be directed to select a difficulty.<br /><br />
+
+<details><summary><b>Desktop Home/Landing Page Image</b></summary>
+
+![Desktop Home Image](assets/images/readme-images/desktop-home-page-image.png)
+</details><br />
+
+<details><summary><b>Desktop Home/Landing Page Responsive Image</b></summary>
+
+![Responsive Home Image](assets/images/readme-images/responsive-home-page-image.png)
+</details><br />
+
+[Back to top](<#contents>)
+
   * ### Navigation Bar
 
     * Located at the top of the quiz application and provides the user the ability to navigate back to the home page, enter the menu and turn the game sounds on or off. Whilst the player is currently playing the quiz, additional features show like the time left and the players current score.<br /><br />
@@ -100,52 +119,36 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
 [Back to top](<#contents>)
 
-  * ### Home Section
-
-      * This is the first part of the quiz the user will see when visiting and is designed to allow the user to immediately get started with playing the quiz.
-      * In the middle of the website the player will see the quiz application complimented by a beautiful space background.
-      * Within the quiz application, the user will be greeted and then asked to submit a name and then click next to be directed to select a difficulty.<br /><br />
-
-<details><summary><b>Desktop Home/Landing Page Image</b></summary>
-
-![Desktop Home Image](assets/images/readme-images/desktop-home-page-image.png)
-</details><br />
-
-<details><summary><b>Desktop Home/Landing Page Responsive Image</b></summary>
-
-![Responsive Home Image](assets/images/readme-images/responsive-home-page-image.png)
-</details><br />
-
-[Back to top](<#contents>)
-
   * ### Menu Section
-    * Insert text here<br /><br /> 
+    * I implemented a menu that the user can access at all times by pressing the 3 white lines in the top right. When pressed, these 3 white lines will disappear, a cross will be shown and then the menu will appear.
+    * The user will have access to 4 navigation buttons **Home**, **Rules**, **Hiscores** and **Contact**.
+    * If the user opens the menu during answering quiz questions, the game will not pause. This should promote fair play for all users <br /><br /> 
 
 <details><summary><b>Desktop Menu Image</b></summary>
 
-![Desktop Menu Image](assets/readme-images/about-image.png)
+![Desktop Menu Image](assets/images/readme-images/desktop-menu-image.png)
 </details><br />
 
 <details><summary><b>Responsive Menu Image</b></summary>
 
-![Responsive Menu Image](assets/readme-images/about-image.png)
+![Responsive Menu Image](assets/images/readme-images/responsive-menu-image.png)
 </details><br />
-
 
 [Back to top](<#contents>)
 
   * ### Difficulty Section
 
-    * Insert text here<br /><br />
+    * After the user has entered their name and clicked the next button on the home page, they will then be directed to this page where they can select a difficulty.
+    * The quiz has 3 difficulty levels to choose from. Selecting easy will give 10 points per correct answers, medium will give 20 points per correct answer and hard will give 40 points per correct answer.<br /><br />
 
 <details><summary><b>Desktop Difficulty Image</b></summary>
 
-![Desktop Difficulty Image](assets/readme-images/try-it-image.png)
+![Desktop Difficulty Image](assets/images/readme-images/desktop-difficulty-image.png)
 </details><br />
 
 <details><summary><b>Responsive Difficulty Image</b></summary>
 
-![Responsive Difficulty Image](assets/readme-images/try-it-responsive-image.png)
+![Responsive Difficulty Image](assets/images/readme-images/responsive-difficulty-image.png)
 </details><br />
 
 
