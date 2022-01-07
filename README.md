@@ -25,9 +25,10 @@ You can view the live site here - <a href="https://miker94.github.io/CI-Project-
     * [Hiscore](<#hiscore-section>)
     * [Contact](<#contact-section>)
 * [**Future Features**](<#future-features>)
-    * [Feature 1](<#feature-1>)
-    * [Feature 2](<#feature-2>)
-    * [Feature 3](<#feature-3>)
+    * [Global Hiscores](<#global-hiscores>)
+    * [Fact Of The Week](<#fact-of-the-week>)
+    * [Monthly Polls](<#monthly-polls>)
+    * [Global Sound](<#global-sound-settings)
 * [**Technologies Used**](<#technologies-used>)
 * [**Testing**](<#testing>)
 * [**Deployment**](<#deployment>)
@@ -275,22 +276,23 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
 [Back to top](<#contents>)
 
-
-[Back to top](<#contents>)
-
 * ## Future Features 
 
-* ### Feature 1
+* ### Global Hiscores
 
-    * Insert text here
+    * Instead of hiscores saving locally, having the hiscores save globally would be much engaging for the user as they would be able to compete with others around the world to test their knowledge.
 
-* ### Feature 2
+* ### Fact Of The Week
 
-    * Insert text here
+    * Having a page dedicated to displaying interesting Astronomy facts weekly would increase the the chances of people returning to the website/quiz application to see the new fact.
 
-* ### Feature 3
+* ### Monthly Polls
 
-    * Insert text here
+    * Having a poll section where the player can submit their vote on a poll and then see results from others around the world would be a good way of seeing peoples different views and opinions on astronomy related topics. For example, "Which is your favourite planet?".
+
+* ### Global Sound Settings
+
+    * I believe it would be much more intuitive to save the users sound settings in local storage so that when the user refreshes the page, they don't have to keep turning the sound off every time if they don't wish to hear sound.
 
 
 [Back to top](<#contents>)
@@ -356,7 +358,7 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 * ## Accessibility Testing
     * I also put the website through [a11y](https://color.a11y.com/Contrast/) to further test the contrast and found no issues.  <br /><br />
 
-    ![a11y Test](assets/readme-images/a11y-contrast-test-image.png)
+    ![a11y Test](assets/images/readme-images/a11y-contrast-test-image.png)
 
 * ## Responsiveness Testing
     * The responsive design tests were carried out manually with [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/) and [Responsive Design Checker](https://www.responsivedesignchecker.com/).<br /><br />
