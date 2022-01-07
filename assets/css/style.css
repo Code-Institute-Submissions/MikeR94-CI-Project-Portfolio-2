@@ -3,6 +3,13 @@
 
 /* Global Styles */
 
+:root {
+  --clr-game-canvas: #031227;
+  --clr-text: #faf9f6;
+  --clr-btn: #107896;
+  --clr-btn-hover: #43abc9;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,13 +24,6 @@ html {
   background: url(../images/background/outer-space-fantasy-art.jpg) no-repeat center center fixed;
   background-size: cover;
   overflow: hidden;
-}
-
-:root {
-  --clr-game-canvas: #031227;
-  --clr-text: #faf9f6;
-  --clr-btn: #107896;
-  --clr-btn-hover: #43abc9;
 }
 
 body {
