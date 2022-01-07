@@ -198,64 +198,79 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
 * ### Results Section
     
-    * Insert text here<br /><br />
+    * When the user finishes the quiz, they will then presented with a results page which will display the users score and then give them the option to play again if they wish to.<br /><br />
     
 <details><summary><b>Desktop Results Image</b></summary>
 
-![Desktop Results Image](assets/readme-images/contact-image.png)
+![Desktop Results Image](assets/images/readme-images/desktop-results-image.png)
 </details><br />
 
 <details><summary><b>Responsive Results Image</b></summary>
 
-![Responsive Results Image](assets/readme-images/contact-responsive-image.png)
+![Responsive Results Image](assets/images/readme-images/responsive-results-image.png)
 </details><br />
 
 [Back to top](<#contents>)
 
 * ### Rules Section
     
-    * Insert text here<br /><br />
+    * Created to give the user a further understanding of the game and can be access via the menu.
+    * As well as having informative text, additional icons have been added to further aid the user in understanding.<br /><br />
     
 <details><summary><b>Desktop Rules Image</b></summary>
 
-![Desktop Rules Image](assets/readme-images/contact-image.png)
+![Desktop Rules Image](assets/images/readme-images/desktop-rules-image.png)
 </details><br />
 
 <details><summary><b>Responsive Rules Image</b></summary>
 
-![Responsive Rules Image](assets/readme-images/contact-responsive-image.png)
+![Responsive Rules Image](assets/images/readme-images/responsive-rules-image.png)
 </details><br />
 
 [Back to top](<#contents>)
 
 * ### Hiscore Section
     
-    * Insert text here<br /><br />
+    * Shows the user the current top 3 hiscores.
+    * All scores are saved in local storage so users can only compete with anyone who attempts the quiz on the same machine.
+    * The user has the ability to clear the hiscores and start fresh if they wish to do so.<br /><br />
     
 <details><summary><b>Desktop Hiscore Image</b></summary>
 
-![Desktop Hiscore Image](assets/readme-images/contact-image.png)
+![Desktop Hiscore Image](assets/images/readme-images/desktop-hiscore-image.png)
 </details><br />
 
 <details><summary><b>Responsive Hiscore Image</b></summary>
 
-![Responsive Hiscore Image](assets/readme-images/contact-responsive-image.png)
+![Responsive Hiscore Image](assets/images/readme-images/responsive-hiscore-image.png)
 </details><br />
 
 [Back to top](<#contents>)
 
 * ### Contact Section
     
-    * Insert text here<br /><br />
+    * Allows the user to submit any feedback, questions or concerns they may have.
+    * Created with [Email.JS](https://www.emailjs.com/) and allows for emails to be sent directly to a new email address created for this project.
+    * Additional functionality added to provide the user some visual information as to whether their message has been successfully sent or not. <br /><br />
     
 <details><summary><b>Desktop Contact Image</b></summary>
 
-![Desktop Contact Image](assets/readme-images/contact-image.png)
+![Desktop Contact Image](assets/images/readme-images/desktop-contact-image.png)
+</details><br />
+
+<details><summary><b>Desktop Contact Sent Image</b></summary>
+
+![Desktop Contact Image](assets/images/readme-images/desktop-contact-sent-image.png)
+</details><br />
+
+<details><summary><b>Desktop Contact Error Image</b></summary>
+
+![Desktop Contact Image](assets/images/readme-images/desktop-contact-error-image.png)
 </details><br />
 
 <details><summary><b>Responsive Contact Image</b></summary>
 
-![Responsive Contact Image](assets/readme-images/contact-responsive-image.png)
+![Responsive Contact Image](assets/images/readme-images/responsive-contact-image.png)
 </details><br />
 
 [Back to top](<#contents>)
