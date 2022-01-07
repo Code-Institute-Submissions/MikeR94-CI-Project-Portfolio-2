@@ -919,7 +919,7 @@ textarea {
     transform: translate(-50%, -50%);
   }
 
-  .size-error p {
+  .size-error h1 {
     color: black;
     background-color: white;
     text-align: center;
@@ -965,7 +965,7 @@ textarea {
     transform: translate(-50%, -50%);
   }
 
-  .size-error p {
+  .size-error h1 {
     color: black;
     background-color: white;
     text-align: center;
