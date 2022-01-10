@@ -35,6 +35,7 @@ You can view the live site here - <a href="https://miker94.github.io/CI-Project-
 * [**Credits**](<#credits>)
     * [**Content**](<#content>)
     * [**Media**](<#media>)
+    * [**Code**](<#code>)
 *  [**Acknowledgments**](<#acknowledgements>)
 
 
@@ -467,13 +468,23 @@ The live link to the Github repository can be found here - https://github.com/Mi
 
 * The font came from [Google Fonts](https://fonts.google.com/)
 * The colour palette was displayed by [Coolors](https://coolors.co/)
-* The icons came from [Font Awesome](https://fontawesome.com/)
-* The responsive preview image at the top of the README.md came from  [Techsini](https://techsini.com/multi-mockup/index.php)
-* The favicon came from [Favicon](https://favicon.io/) 
+* The HTML icons came from [Font Awesome](https://fontawesome.com/)
+* The responsive preview image at the top of the README.md came from [Techsini](https://techsini.com/multi-mockup/index.php)
+* The favicon came from [Favicon](https://favicon.io/)
+* The questions and answers came from [TriviaWell](https://www.triviawell.com/), [IcebreakerIdeas](https://icebreakerideas.com/), [FreePubQuiz](http://www.freepubquiz.co.uk/), [eadt](https://www.eadt.co.uk/) and [QuizGlobal](https://quizglobal.com/)
 
 ### Media
-* The images came from [Pexels](https://www.pexels.com/), [HiClipArt](https://www.hiclipart.com/) and [YogaJournal](https://www.yogajournal.com/)
+* The background image came from [WallpapersMug](https://wallpapersmug.com/)
+* The favicon image came from [flaticon](https://www.flaticon.com/) and then turned into a favicon by [Favicon](https://favicon.io/)
+* The icons for the planets came from [VectorStock](https://www.vectorstock.com/)
+* The icons for the hiscore ribbons came from [iStock](https://www.istockphoto.com/)
 * The photos were compressed using [Compressor](https://compressor.io/)
+
+### Code
+* The code for the hiscores was based off guidance and inspiration from a user name [Minna N](https://dev.to/minna_xd). I used this link [DevTo](https://dev.to/minna_xd/adding-a-high-score-table-to-javascript30-whack-a-mole-4adk) to gain a good understanding of what is required to create a hiscores system using local storage and then implemented a version of my own for The Astronomy Quiz.
+* For the contact form, I wanted to be able to actually receive emails and understand how that can be achieved. I stumbled upon a brilliant website called [EmailJS](https://www.emailjs.com/docs/user-guide/creating-email-templates/) that has some very clear and informative documentation which explains how you can embed a working email system on your website.
+* When searching how I could implement audio through JavaScript, I found this [StackOverflow](https://stackoverflow.com/questions/9419263/how-to-play-audio) post which explained some basic concepts on how to achieve it. After managing to implement audio on my quiz, I decided to refactor the code to make it more readable and also reusable.
+* I feel like adding a timer on a quiz can make it more engaging for the user and provide a better user experience. After searching online for some information, I found this [StackOverflow](https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz) post which shows a basic example of a countdown timer. After understanding the fundamentals behind it, I decided to implement it but refactor it to suit my needs.
 
 [Back to top](<#contents>)
 
