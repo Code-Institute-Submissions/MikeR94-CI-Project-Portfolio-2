@@ -575,6 +575,10 @@ textarea {
   color: black;
 }
 
+.error-border {
+  border: 2px solid red;
+}
+
 .contact-form button {
   position: absolute;
   left: 265px;
