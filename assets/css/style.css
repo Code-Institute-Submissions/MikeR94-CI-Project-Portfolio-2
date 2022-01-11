@@ -570,12 +570,12 @@ h1 {
 .contact-form {
   width: 640px;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .input,
 textarea {
-  width: 400px;
+  width: 470px;
   margin: 10px;
   color: black;
 }
@@ -586,14 +586,14 @@ textarea {
 
 .contact-form button {
   position: absolute;
-  left: 265px;
-  bottom: 50px;
+  top: 71%;
+  left: 41.5%;
 }
 
 .contact-name-question {
   position: absolute;
-  top: 138px;
-  right: 120px;
+  top: 168px;
+  right: 236px;
 }
 
 .contact-name-question i {
@@ -601,7 +601,6 @@ textarea {
 }
 
 .contact-name-question p {
-  /* The tooltip */
   display: none;
   text-align: left;
   background-color: var(--clr-btn);
@@ -623,8 +622,8 @@ textarea {
 
 .contact-email-question {
   position: absolute;
-  top: 189px;
-  right: 120px;
+  top: 218px;
+  right: 236px;
 }
 
 .contact-email-question i {
@@ -632,7 +631,6 @@ textarea {
 }
 
 .contact-email-question p {
-  /* The tooltip */
   display: none;
   text-align: left;
   background-color: var(--clr-btn);
@@ -654,8 +652,8 @@ textarea {
 
 .contact-message-question {
   position: absolute;
-  top: 238px;
-  right: 120px;
+  top: 268px;
+  right: 236px;
 }
 
 .contact-message-question i {
@@ -663,7 +661,6 @@ textarea {
 }
 
 .contact-message-question p {
-  /* The tooltip */
   display: none;
   text-align: left;
   background-color: var(--clr-btn);
