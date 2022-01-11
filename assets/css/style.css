@@ -743,13 +743,23 @@ textarea {
   }
 
   .menu {
-    height: 390px;
+    height: 404px;
     width: 700px;
+    top: 56.5%;
+  }
+
+  .menu button:nth-child(1) {
+    margin-top: 20px;
   }
   
   .start-game-area {
     height: 490px;
     width: 700px;
+  }
+
+  .error-text {
+    top: 68%;
+    left: 10%;
   }
 
   .start-main-text {
@@ -765,6 +775,10 @@ textarea {
     width: 700px;
   }
 
+  .difficulty-main-text {
+    margin-bottom: 0px;
+  }
+
   .rules-game-area {
     height: 490px;
     width: 700px;
@@ -773,6 +787,23 @@ textarea {
   .question-game-area {
     height: 490px;
     width: 700px;
+  }
+
+  .answer-buttons button {
+    width: 170px;
+    height: 60px;
+  }
+
+  .question-main-text {
+    margin-top: 15px;
+  }
+
+  .lights-bar {
+    left: 6.5%;
+  }
+
+  .next-question {
+    left: 47%;
   }
 
   .hiscores-game-area {
