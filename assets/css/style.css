@@ -298,7 +298,7 @@ h1 {
 }
 
 .question-main-text {
-  margin-top: 20px;
+  margin-top: 43px;
   text-align: center;
   padding: 0px 30px 30px 30px;
 }
@@ -306,9 +306,9 @@ h1 {
 .answer-buttons {
   display: grid;
   grid-template-columns: repeat(2, auto);
-  gap: 10px;
+  gap: 35px;
   position: absolute;
-  top: 60%;
+  top: 58%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -316,17 +316,19 @@ h1 {
 .answer-buttons button {
   margin: 0px 80px 30px 80px;
   padding: 5px;
+  width: 260px;
+  height: 80px;
 }
 
 .answer-buttons button:hover {
   cursor: pointer;
-  outline: 2px solid white;
+  outline: 1px solid white;
 }
 
 .next-question {
   position: absolute;
-  left: 47%;
-  top: 55%;
+  left: 48%;
+  top: 52%;
 }
 
 .next-question button {
@@ -350,8 +352,7 @@ h1 {
   position: absolute;
   bottom: 4%;
   gap: 40px;
-  left: 6%;
-  margin: 0 auto;
+  left: 19%;
   justify-content: space-evenly;
 }
 
@@ -481,14 +482,14 @@ h1 {
 
 .clear-hiscores-btn button {
   position: absolute;
-  top: 70%;
-  left: 38%;
+  top: 71%;
+  left: 41.5%;
 }
 
 .hiscores-list {
   position: absolute;
-  left: 275px;
-  top: 185px;
+  left: 447px;
+  top: 222px;
 }
 
 .hiscores-list li {
@@ -499,26 +500,26 @@ h1 {
 
 .hiscores-main-text {
   position: absolute;
-  top: 130px;
-  left: 130px;
+  top: 150px;
+  left: 278px;
 }
 
 .ribbon-1 {
   position: absolute;
-  top: 197px;
-  left: 230px;
+  top: 232px;
+  left: 404px;
 }
 
 .ribbon-2 {
   position: absolute;
-  top: 234px;
-  left: 230px;
+  top: 272px;
+  left: 404px;
 }
 
 .ribbon-3 {
   position: absolute;
-  top: 272px;
-  left: 230px;
+  top: 312px;
+  left: 404px;
 }
 
 .ribbon-1 img {
@@ -599,7 +600,8 @@ textarea {
   cursor: pointer;
 }
 
-.contact-name-question p{    /* The tooltip */
+.contact-name-question p {
+  /* The tooltip */
   display: none;
   text-align: left;
   background-color: var(--clr-btn);
@@ -609,13 +611,13 @@ textarea {
   border-radius: 3px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   right: -4px;
-  color: #FFF;
+  color: #fff;
   font-size: 13px;
   line-height: 1.4;
 }
 
-.contact-name-question:hover p{
-  display:block;
+.contact-name-question:hover p {
+  display: block;
   z-index: 50;
 }
 
@@ -629,7 +631,8 @@ textarea {
   cursor: pointer;
 }
 
-.contact-email-question p{    /* The tooltip */
+.contact-email-question p {
+  /* The tooltip */
   display: none;
   text-align: left;
   background-color: var(--clr-btn);
@@ -639,13 +642,13 @@ textarea {
   border-radius: 3px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   right: -4px;
-  color: #FFF;
+  color: #fff;
   font-size: 13px;
   line-height: 1.4;
 }
 
-.contact-email-question:hover p{
-  display:block;
+.contact-email-question:hover p {
+  display: block;
   z-index: 50;
 }
 
@@ -659,7 +662,8 @@ textarea {
   cursor: pointer;
 }
 
-.contact-message-question p{    /* The tooltip */
+.contact-message-question p {
+  /* The tooltip */
   display: none;
   text-align: left;
   background-color: var(--clr-btn);
@@ -669,13 +673,13 @@ textarea {
   border-radius: 3px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   right: -4px;
-  color: #FFF;
+  color: #fff;
   font-size: 13px;
   line-height: 1.4;
 }
 
-.contact-message-question:hover p{
-  display:block;
+.contact-message-question:hover p {
+  display: block;
   z-index: 50;
 }
 
@@ -707,7 +711,7 @@ textarea {
 }
 
 .results-main-text {
-  margin-top: 60px;
+  margin-top: 133px;
   padding-left: 70px;
   padding-right: 70px;
 }
@@ -726,8 +730,8 @@ textarea {
 
 .results-page button {
   position: absolute;
-  top: 63%;
-  left: 37.5%;
+  top: 71%;
+  left: 41.5%;
 }
 
 .size-error {
@@ -914,8 +918,8 @@ textarea {
 
   .clear-hiscores-btn button {
     position: absolute;
-    top: 76%;
-    left: 23%;
+    top: 71%;
+    left: 41.5%;
   }
 
   .hiscores-list {
@@ -1054,7 +1058,7 @@ textarea {
   .results-game-area {
     display: none;
   }
-  
+
   .size-error {
     display: block;
     position: absolute;
