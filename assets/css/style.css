@@ -953,11 +953,14 @@ textarea {
   .answer-buttons {
     display: grid;
     grid-template-columns: repeat(1, auto);
-    top: 57%;
+    top: 54%;
+    gap: 15px;
+
   }
 
   .answer-buttons button {
     margin: 2px;
+    height: 40px;
   }
 
   .next-question {
