@@ -742,6 +742,11 @@ textarea {
     width: 700px;
   }
 
+  .audio-icon-logo {
+    left: 10%;
+    top: 4.3%;
+  }
+
   .menu {
     height: 404px;
     width: 700px;
@@ -758,12 +763,16 @@ textarea {
   }
 
   .error-text {
-    top: 68%;
+    top: 63%;
     left: 10%;
   }
 
   .start-main-text {
     margin-top: 50px;
+  }
+
+  .start-input-name {
+    margin-top: 45px;
   }
 
   .start-game-area-btn {
@@ -809,6 +818,36 @@ textarea {
   .hiscores-game-area {
     height: 490px;
     width: 700px;
+  }
+
+  .clear-hiscores-btn button{
+    top: 72.5%;
+    left: 38%;
+  }
+
+  .hiscores-main-text {
+    left: 143px;
+    top: 140px;
+  }
+
+  .hiscores-list {
+    left: 292px;
+    top: 195px;
+  }
+
+  .ribbon-1 {
+    top: 207px;
+    left: 256px;
+  }
+
+  .ribbon-2 {
+    top: 247px;
+    left: 256px;
+  }
+
+  .ribbon-3 {
+    top: 287px;
+    left: 256px;
   }
 
   .contact-game-area {
@@ -1003,8 +1042,8 @@ textarea {
 
   .clear-hiscores-btn button {
     position: absolute;
-    top: 71%;
-    left: 41.5%;
+    top: 75%;
+    left: 23.5%;
   }
 
   .hiscores-list {
