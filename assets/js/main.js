@@ -21,6 +21,7 @@ let timer;
 let isPlaying = true;
 let answeredCorrect = 0;
 let answeredWrong = 0;
+let regEx = /^[A-Za-z]+$/;
 
 /**
  * When the player clicks the next button whilst in the question screen, this function will load the next question
@@ -155,21 +156,22 @@ function checkAnswer() {
   }
 }
 
+
 /**
  * When the player clicks the next button, hide the start screen and unhide the the difficulty
  * game screen. If the player does not enter a name, display the error text
  */
 function toDifficultyGameArea() {
-  if (playerName.value == "" || playerName.value == null || playerName.value == undefined) {
-    document.getElementById("error-text").classList.remove("hide");
-    buttonSound();
-  } else {
+  if (playerName.value.match(regEx)) {
     buttonSound();
     document.getElementById("start-game-area").classList.add("hide");
     document.getElementById("difficulty-game-area").classList.remove("hide");
     let player = playerName.value;
     let difficultyText = document.getElementById("difficulty-main-text");
     difficultyText.innerText = `Great stuff ${player},  how difficult would you like your questions?`;
+  } else {
+    document.getElementById("error-text").classList.remove("hide");
+    buttonSound();
   }
 }
 
