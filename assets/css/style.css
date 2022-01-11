@@ -581,6 +581,35 @@ textarea {
   bottom: 50px;
 }
 
+.contact-name-question {
+  position: absolute;
+  top: 138px;
+  right: 120px;
+}
+
+.contact-name-question i {
+  cursor: pointer;
+}
+
+.contact-name-question p{    /* The tooltip */
+  display: none;
+  text-align: left;
+  background-color: var(--clr-btn);
+  padding: 20px;
+  width: 300px;
+  position: absolute;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  right: -4px;
+  color: #FFF;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.contact-name-question:hover p{
+  display:block;
+}
+
 /* Results Game Area */
 
 .results-game-area {
