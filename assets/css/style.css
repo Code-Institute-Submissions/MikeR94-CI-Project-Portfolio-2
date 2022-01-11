@@ -608,6 +608,67 @@ textarea {
 
 .contact-name-question:hover p{
   display:block;
+  z-index: 50;
+}
+
+.contact-email-question {
+  position: absolute;
+  top: 189px;
+  right: 120px;
+}
+
+.contact-email-question i {
+  cursor: pointer;
+}
+
+.contact-email-question p{    /* The tooltip */
+  display: none;
+  text-align: left;
+  background-color: var(--clr-btn);
+  padding: 20px;
+  width: 300px;
+  position: absolute;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  right: -4px;
+  color: #FFF;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.contact-email-question:hover p{
+  display:block;
+  z-index: 50;
+}
+
+.contact-message-question {
+  position: absolute;
+  top: 238px;
+  right: 120px;
+}
+
+.contact-message-question i {
+  cursor: pointer;
+}
+
+.contact-message-question p{    /* The tooltip */
+  display: none;
+  text-align: left;
+  background-color: var(--clr-btn);
+  padding: 20px;
+  width: 300px;
+  position: absolute;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  right: -4px;
+  color: #FFF;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.contact-message-question:hover p{
+  display:block;
+  z-index: 50;
 }
 
 /* Results Game Area */
