@@ -435,7 +435,7 @@ h1 {
   height: 27px;
   position: absolute;
   left: 360px;
-  top: 236px;
+  top: 212px;
 }
 
 .rules-planet-2 {
@@ -443,7 +443,7 @@ h1 {
   height: 27px;
   position: absolute;
   filter: grayscale(100%);
-  top: 257px;
+  top: 236px;
 }
 
 .rules-next-question {
@@ -793,6 +793,15 @@ textarea {
     width: 700px;
   }
 
+  .rules-planet-1 {
+    left: 360px;
+    top: 236px;
+  }
+  
+  .rules-planet-2 {
+    top: 257px;
+  }
+
   .question-game-area {
     height: 490px;
     width: 700px;
@@ -855,9 +864,47 @@ textarea {
     width: 700px;
   }
 
+  .contact-form {
+    width: 420px;
+    margin-top: 25px;
+  }
+
+  .contact-form button {
+    top: 78.5%;
+    left: 38%;
+  }
+
+  .contact-name-question {
+    right: 117px;
+    top: 144px;
+  }
+
+  .contact-email-question {
+    right: 117px;
+    top: 194px;
+  }
+
+  .contact-message-question {
+    right: 117px;
+    top: 244px;
+  }
+
+  .input, textarea {
+    width: 400px;
+  }
+
   .results-game-area {
     height: 490px;
     width: 700px;
+  }
+
+  .results-main-text {
+    margin-top: 79px;
+  }
+
+  .results-page button{
+    top: 72.5%;
+    left: 38%;
   }
 }
 
@@ -1090,6 +1137,27 @@ textarea {
   .contact-form button {
     left: 70px;
     bottom: 90px;
+    top: 72.5%;
+  }
+
+  .contact-form {
+    width: 420px;
+    margin-top: 25px;
+  }
+
+  .contact-name-question {
+    right: 32px;
+    top: 138px;
+  }
+
+  .contact-email-question {
+    right: 32px;
+    top: 184px;
+  }
+
+  .contact-message-question {
+    right: 32px;
+    top: 228px;
   }
 
   .results-game-area {
