@@ -1208,6 +1208,10 @@ textarea {
   .results-page button {
     left: 23%;
   }
+
+  .results-page i {
+    margin-top: 64px;
+  }
 }
 
 @media screen and (max-width: 309px) {
