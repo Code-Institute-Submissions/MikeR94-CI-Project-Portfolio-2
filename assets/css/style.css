@@ -580,6 +580,10 @@ textarea {
   color: black;
 }
 
+textarea {
+  resize: none;
+}
+
 .error-border {
   border: 2px solid red;
 }
