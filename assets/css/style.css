@@ -831,7 +831,7 @@ textarea {
   }
 
   .question-main-text {
-    margin-top: 15px;
+    margin-top: 30px;
   }
 
   .lights-bar {
@@ -1075,7 +1075,7 @@ textarea {
   .answer-buttons {
     display: grid;
     grid-template-columns: repeat(1, auto);
-    top: 54%;
+    top: 56%;
     gap: 15px;
   }
 
