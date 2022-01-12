@@ -1244,11 +1244,11 @@ textarea {
   }
 
   .size-error h1 {
-    color: black;
-    background-color: white;
+    color: var(--clr-text);
+    background-color: var(--clr-game-canvas);
     text-align: center;
     padding: 5px;
-    font-weight: bold;
+    font-weight: normal;
   }
 }
 
