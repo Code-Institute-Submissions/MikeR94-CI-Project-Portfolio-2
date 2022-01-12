@@ -269,11 +269,11 @@
         <button class="hiscores-btn hover">Hiscores</button>
         <button class="contact-btn hover">Contact</button>
       </div>
-      <div class="contact-title-text">
+      <div class="contact-title-text" id="contact-title-text">
         <h1>Contact</h1>
       </div>
       <div class="contact-area">
-        <div class="contact-form">
+        <div class="contact-form" id="contact-form">
           <label for="name"></label>
           <input type="text" id="name" class="input" placeholder="Name" required />
           <label for="email"></label>
@@ -283,17 +283,23 @@
           <button id="contact-submit" class="hover">Submit</button>
         </div>
       </div>
-      <div class="contact-name-question">
+      <div class="contact-name-question" id="contact-name-question">
         <i class="fas fa-question-circle"></i>
         <p>Your name can only include letters and spaces.</p>
       </div>
-      <div class="contact-email-question">
+      <div class="contact-email-question" id="contact-email-question">
         <i class="fas fa-question-circle"></i>
         <p>Your email should address should follow the correct format. (test123@gmail.com)</p>
       </div>
-      <div class="contact-message-question">
+      <div class="contact-message-question" id="contact-message-question">
         <i class="fas fa-question-circle"></i>
         <p>Your message should be at least 10 characters long.</p>
+      </div>
+      <div class="sent-message hide" id="sent-message">
+        <span><p>Message Sent</p></span><br/>
+        <p>Thank you for your message, your message has been successfully sent. We will aim to respond as soon as possible</p><br>
+        <p>In the meantime, how about a quick game?</p>
+        <button class="home-icon hide" id="contact-go-home">Home</button>
       </div>
     </section>
 
