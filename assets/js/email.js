@@ -6,7 +6,7 @@ let submit = document.getElementById("contact-submit").addEventListener("click",
 
 let regExEmail =
   /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-let regExName = /^(?! )[A-Za-z\s]*$/;
+let regExName = /^(?! )[A-Za-z\s\xC0-\uFFFF]*$/;
 
 function sendMail() {
   let emailProperties = {

@@ -21,7 +21,7 @@ let timer;
 let isPlaying = true;
 let answeredCorrect = 0;
 let answeredWrong = 0;
-let regEx = /^(?! )[A-Za-z\s]*$/;
+let regEx = /^(?! )[A-Za-z\s\xC0-\uFFFF]*$/;
 
 /**
  * When the player clicks the next button whilst in the question screen, this function will load the next question
