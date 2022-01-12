@@ -1146,18 +1146,15 @@ textarea {
   }
 
   .contact-name-question {
-    right: 32px;
-    top: 138px;
+    display: none;
   }
 
   .contact-email-question {
-    right: 32px;
-    top: 184px;
+    display: none;
   }
 
   .contact-message-question {
-    right: 32px;
-    top: 228px;
+    display: none;
   }
 
   .results-game-area {
