@@ -957,11 +957,15 @@ textarea {
   }
 
   .start-input-name {
-    margin-top: 50px;
+    margin-top: 55px;
   }
 
   .start-input-name input {
     width: 70%;
+  }
+
+  .start-game-area-btn {
+    margin-top: 100px;
   }
 
   .error-text {
