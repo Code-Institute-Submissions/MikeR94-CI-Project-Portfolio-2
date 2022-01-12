@@ -231,7 +231,7 @@ h1 {
 }
 
 .start-game-area-btn {
-  margin-top: 109px;
+  margin-top: 94px;
   text-align: center;
 }
 
@@ -688,14 +688,14 @@ textarea {
   right: 275px;
 }
 
-.sent-message span p {
+.sent-message h2 {
   color: rgb(76, 247, 76);
   font-size: 20px;
   font-weight: bold;
 }
 
 .sent-message button {
-  margin-top: 60px;
+  margin-top: 83px;
 }
 
 /* Results Game Area */
@@ -794,7 +794,7 @@ textarea {
   }
 
   .start-game-area-btn {
-    margin-top: 65px;
+    margin-top: 70px;
   }
 
   .difficulty-game-area {
@@ -848,8 +848,8 @@ textarea {
   }
 
   .clear-hiscores-btn button {
-    top: 72.5%;
-    left: 38%;
+    top: 356px;
+    left: 265px;
   }
 
   .hiscores-main-text {
@@ -909,7 +909,7 @@ textarea {
 
   .sent-message {
     top: 110px;
-    right: 120px;
+    right: 125px;
   }
 
   .sent-message button {
