@@ -64,7 +64,6 @@ function buttonSound() {
   }
 }
 
-
 /**
  * Loop through the audio-icon-logo and call toggleAudio() when the player clicks
  */

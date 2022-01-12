@@ -156,7 +156,6 @@ function checkAnswer() {
   }
 }
 
-
 /**
  * When the player clicks the next button, hide the start screen and unhide the the difficulty
  * game screen. If the player does not enter a name, display the error text

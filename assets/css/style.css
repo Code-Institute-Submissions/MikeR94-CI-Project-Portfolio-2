@@ -774,7 +774,7 @@ textarea {
   .menu button:nth-child(1) {
     margin-top: 20px;
   }
-  
+
   .start-game-area {
     height: 490px;
     width: 700px;
@@ -815,7 +815,7 @@ textarea {
     left: 360px;
     top: 236px;
   }
-  
+
   .rules-planet-2 {
     top: 257px;
   }
@@ -847,7 +847,7 @@ textarea {
     width: 700px;
   }
 
-  .clear-hiscores-btn button{
+  .clear-hiscores-btn button {
     top: 72.5%;
     left: 38%;
   }
@@ -911,12 +911,13 @@ textarea {
     top: 110px;
     right: 120px;
   }
-  
+
   .sent-message button {
     margin-top: 60px;
   }
 
-  .input, textarea {
+  .input,
+  textarea {
     width: 400px;
   }
 
@@ -933,7 +934,7 @@ textarea {
     margin-top: 54px;
   }
 
-  .results-page button{
+  .results-page button {
     top: 72.5%;
     left: 38%;
   }
@@ -1076,7 +1077,6 @@ textarea {
     grid-template-columns: repeat(1, auto);
     top: 54%;
     gap: 15px;
-
   }
 
   .answer-buttons button {
