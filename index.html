@@ -274,13 +274,15 @@
       </div>
       <div class="contact-area">
         <div class="contact-form" id="contact-form">
-          <label for="name"></label>
-          <input type="text" id="name" class="input" placeholder="Name" required />
-          <label for="email"></label>
-          <input type="text" id="email" class="input" placeholder="Email Address" required />
-          <label for="message"></label>
-          <textarea id="message" cols="50" rows="4" placeholder="Message" required></textarea>
-          <button id="contact-submit" class="hover">Submit</button>
+          <form onsubmit="sendMail()">
+            <label for="name"></label>
+            <input type="text" id="name" class="input" placeholder="Name" required />
+            <label for="email"></label>
+            <input type="email" id="email" class="input" placeholder="Email Address" required />
+            <label for="message"></label>
+            <textarea id="message" cols="50" rows="4" placeholder="Message" required></textarea>
+            <button id="contact-submit" class="hover">Submit</button>
+          </form>
         </div>
       </div>
       <div class="contact-name-question" id="contact-name-question">
@@ -296,7 +298,8 @@
         <p>Your message should be at least 10 characters long.</p>
       </div>
       <div class="sent-message hide" id="sent-message">
-        <h2>Message Sent</h2><br>
+        <h2>Message Sent</h2>
+        <br />
         <p>Thank you for your message, your message has been successfully sent. We will aim to respond as soon as possible</p>
         <br />
         <p>In the meantime, how about a quick game?</p>

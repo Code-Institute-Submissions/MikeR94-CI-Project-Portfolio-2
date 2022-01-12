@@ -4,8 +4,7 @@ let userMessage = document.getElementById("message");
 
 let submit = document.getElementById("contact-submit").addEventListener("click", sendMail);
 
-let regExEmail =
-  /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+let regExEmail = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 let regExName = /^(?! )[A-Za-z\s\xC0-\uFFFF]*$/;
 
 function sendMail() {
@@ -34,45 +33,23 @@ function sendMail() {
       document.getElementById("sent-message").classList.remove("hide");
     });
   }
-  if (userName.value == null || userName.value == undefined || userName.value == "") {
-    errorButton();
-    setTimeout(resetError, 3000);
-    console.log("username incorrect");
-    document.getElementById("name").classList.add("error-border");
-  }
+
   if (!userName.value.match(regExName)) {
-    errorButton();
-    setTimeout(resetError, 3000);
-    console.log("username incorrect");
-    document.getElementById("name").classList.add("error-border");
+    userName.setCustomValidity("Your name can only include letters and spaces")
+  } else {
+    userName.setCustomValidity("")
   }
-  if (!email.value.match(regExEmail)) {
-    errorButton();
-    setTimeout(resetError, 3000);
-    console.log("email incorrect");
-    document.getElementById("email").classList.add("error-border");
+  
+  if (!userEmail.value.match(regExEmail)) {
+    userEmail.setCustomValidity("Your email should address should follow the correct format. (test123@gmail.com)")
+  } else {
+    userEmail.setCustomValidity("");
   }
+  
   if (message.value.length < 10) {
-    errorButton();
-    setTimeout(resetError, 3000);
-    console.log("message not long enough");
-    document.getElementById("message").classList.add("error-border");
+    userMessage.setCustomValidity("Please enter at least 10 characters")
+  } else {
+    userMessage.setCustomValidity("")
   }
-}
 
-function resetError() {
-  document.getElementById("contact-submit").innerHTML = "Submit";
-  document.getElementById("contact-submit").classList.remove("wrong");
-  document.getElementById("contact-submit").classList.add("hover");
-  document.getElementById("contact-submit").disabled = false;
-  document.getElementById("name").classList.remove("error-border");
-  document.getElementById("email").classList.remove("error-border");
-  document.getElementById("message").classList.remove("error-border");
-}
-
-function errorButton() {
-  document.getElementById("contact-submit").innerHTML = "Error";
-  document.getElementById("contact-submit").classList.add("wrong");
-  document.getElementById("contact-submit").classList.remove("hover");
-  document.getElementById("contact-submit").disabled = true;
 }
