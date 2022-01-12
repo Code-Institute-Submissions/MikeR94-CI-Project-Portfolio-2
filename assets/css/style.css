@@ -907,6 +907,15 @@ textarea {
     top: 244px;
   }
 
+  .sent-message {
+    top: 110px;
+    right: 120px;
+  }
+  
+  .sent-message button {
+    margin-top: 60px;
+  }
+
   .input, textarea {
     width: 400px;
   }
@@ -1145,6 +1154,12 @@ textarea {
   .contact-game-area {
     height: 500px;
     width: 310px;
+  }
+
+  .sent-message {
+    width: 250px;
+    top: 110px;
+    right: 31px;
   }
 
   .input,
