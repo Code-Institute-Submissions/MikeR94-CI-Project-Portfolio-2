@@ -37,10 +37,14 @@ function nextQuestion() {
   document.getElementById("next-question").classList.add("greyscale");
   document.getElementById("next-question").setAttribute("disabled", "disabled");
   document.getElementById("next-question").classList.remove("hover");
-  document.getElementById("answer1-btn").disabled = false;
-  document.getElementById("answer2-btn").disabled = false;
-  document.getElementById("answer3-btn").disabled = false;
-  document.getElementById("answer4-btn").disabled = false;
+  document.getElementById("answer1-btn").removeAttribute("disabled", "disabled")
+  document.getElementById("answer2-btn").removeAttribute("disabled", "disabled")
+  document.getElementById("answer3-btn").removeAttribute("disabled", "disabled")
+  document.getElementById("answer4-btn").removeAttribute("disabled", "disabled")
+  document.getElementById("answer1-btn").classList.add("answer-buttons-hover")
+  document.getElementById("answer2-btn").classList.add("answer-buttons-hover")
+  document.getElementById("answer3-btn").classList.add("answer-buttons-hover")
+  document.getElementById("answer4-btn").classList.add("answer-buttons-hover")
   let answerButtons = document.getElementsByClassName("answer-btn");
   for (let i = 0; i < answerButtons.length; i++) {
     answerButtons[i].classList.remove("correct");
@@ -120,10 +124,15 @@ function buildQuestions() {
  * Validates the players answer
  */
 function checkAnswer() {
-  document.getElementById("answer1-btn").disabled = true;
-  document.getElementById("answer2-btn").disabled = true;
-  document.getElementById("answer3-btn").disabled = true;
-  document.getElementById("answer4-btn").disabled = true;
+  document.getElementById("answer1-btn").setAttribute("disabled", "disabled")
+  document.getElementById("answer2-btn").setAttribute("disabled", "disabled")
+  document.getElementById("answer3-btn").setAttribute("disabled", "disabled")
+  document.getElementById("answer4-btn").setAttribute("disabled", "disabled")
+  document.getElementById("answer1-btn").classList.remove("answer-buttons-hover")
+  document.getElementById("answer2-btn").classList.remove("answer-buttons-hover")
+  document.getElementById("answer3-btn").classList.remove("answer-buttons-hover")
+  document.getElementById("answer4-btn").classList.remove("answer-buttons-hover")
+
   let playerAnswer = this.value;
   let correctAnswer = currentQuestionSet[currentQuestion].answer;
   if (playerAnswer === correctAnswer) {
