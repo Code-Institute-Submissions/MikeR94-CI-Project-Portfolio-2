@@ -34,7 +34,9 @@ function nextQuestion() {
   buildQuestions();
   startTimer();
   buttonSound();
-  document.getElementById("next-question").classList.add("hide");
+  document.getElementById("next-question").classList.add("greyscale");
+  document.getElementById("next-question").setAttribute("disabled", "disabled");
+  document.getElementById("next-question").classList.remove("hover");
   document.getElementById("answer1-btn").disabled = false;
   document.getElementById("answer2-btn").disabled = false;
   document.getElementById("answer3-btn").disabled = false;
@@ -51,7 +53,9 @@ function nextQuestion() {
  */
 function showNextQuestionIcon() {
   setTimeout(function () {
-    document.getElementById("next-question").classList.remove("hide");
+    document.getElementById("next-question").classList.remove("greyscale");
+    document.getElementById("next-question").removeAttribute("disabled", "disabled");
+    document.getElementById("next-question").classList.add("hover");
   }, 500);
 }
 
@@ -78,6 +82,7 @@ function runQuiz(event) {
   }
   document.getElementById("difficulty-game-area").classList.add("hide");
   document.getElementById("question-game-area").classList.remove("hide");
+  document.getElementById("next-question").setAttribute("disabled", "disabled");
   buildQuestions();
   startTimer();
   buttonSound();

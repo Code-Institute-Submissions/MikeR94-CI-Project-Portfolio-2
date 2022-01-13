@@ -20,7 +20,7 @@ function countdown() {
   let answerButtons = document.getElementsByClassName("answer-btn");
   if (timeLeft === 0) {
     stopTimer();
-    document.getElementById("next-question").classList.remove("hide");
+    document.getElementById("next-question").classList.remove("greyscale");
     document.getElementById("answer1-btn").disabled = true;
     document.getElementById("answer2-btn").disabled = true;
     document.getElementById("answer3-btn").disabled = true;
