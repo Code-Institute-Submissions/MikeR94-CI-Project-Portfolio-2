@@ -166,6 +166,7 @@ function checkAnswer() {
  * game screen. If the player does not enter a name, display the error text
  */
 function toDifficultyGameArea() {
+  
   if (playerName.value.match(regEx) && playerName.value != null && playerName.value != undefined && playerName.value != "") {
     buttonSound();
     document.getElementById("start-game-area").classList.add("hide");
@@ -173,11 +174,15 @@ function toDifficultyGameArea() {
     let player = playerName.value;
     let difficultyText = document.getElementById("difficulty-main-text");
     difficultyText.innerText = `Great stuff ${player},  how difficult would you like your questions?`;
+  } 
+  
+  if (!playerName.value.match(regEx)) {
+    playerName.setCustomValidity("Your name can only include letters and spaces")
   } else {
-    document.getElementById("error-text").classList.remove("hide");
-    buttonSound();
+    playerName.setCustomValidity("")
   }
 }
+
 
 /**
  * Increments the player score depending on the difficulty of the questions

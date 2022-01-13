@@ -51,5 +51,4 @@ function sendMail() {
   } else {
     userMessage.setCustomValidity("")
   }
-
 }
