@@ -40,14 +40,14 @@ function nextQuestion() {
   document.getElementById("next-question").classList.add("greyscale");
   document.getElementById("next-question").setAttribute("disabled", "disabled");
   document.getElementById("next-question").classList.remove("hover");
-  document.getElementById("answer1-btn").removeAttribute("disabled", "disabled");
-  document.getElementById("answer2-btn").removeAttribute("disabled", "disabled");
-  document.getElementById("answer3-btn").removeAttribute("disabled", "disabled");
-  document.getElementById("answer4-btn").removeAttribute("disabled", "disabled");
-  document.getElementById("answer1-btn").classList.add("answer-buttons-hover");
-  document.getElementById("answer2-btn").classList.add("answer-buttons-hover");
-  document.getElementById("answer3-btn").classList.add("answer-buttons-hover");
-  document.getElementById("answer4-btn").classList.add("answer-buttons-hover");
+  document.getElementById("answer1-btn").removeAttribute("disabled", "disabled")
+  document.getElementById("answer2-btn").removeAttribute("disabled", "disabled")
+  document.getElementById("answer3-btn").removeAttribute("disabled", "disabled")
+  document.getElementById("answer4-btn").removeAttribute("disabled", "disabled")
+  document.getElementById("answer1-btn").classList.add("answer-buttons-hover")
+  document.getElementById("answer2-btn").classList.add("answer-buttons-hover")
+  document.getElementById("answer3-btn").classList.add("answer-buttons-hover")
+  document.getElementById("answer4-btn").classList.add("answer-buttons-hover")
   let answerButtons = document.getElementsByClassName("answer-btn");
   for (let i = 0; i < answerButtons.length; i++) {
     answerButtons[i].classList.remove("correct");
@@ -78,25 +78,25 @@ function runQuiz(event) {
     shuffledQuestions = easyQuestions.sort(() => Math.random() - 0.5);
     currentQuestionSet = shuffledQuestions;
     playerDifficulty = "easy";
-    document.getElementById("difficulty-easy").innerText = "Loading...";
+    document.getElementById("difficulty-easy").innerText = "Loading..."
   } else if (difficulty === "medium") {
     shuffledQuestions = mediumQuestions.sort(() => Math.random() - 0.5);
     currentQuestionSet = shuffledQuestions;
     playerDifficulty = "medium";
-    document.getElementById("difficulty-medium").innerText = "Loading...";
+    document.getElementById("difficulty-medium").innerText = "Loading..."
   } else if (difficulty === "hard") {
     shuffledQuestions = hardQuestions.sort(() => Math.random() - 0.5);
     currentQuestionSet = shuffledQuestions;
     playerDifficulty = "hard";
-    document.getElementById("difficulty-hard").innerText = "Loading...";
+    document.getElementById("difficulty-hard").innerText = "Loading..."
   }
   buttonSound();
-  document.getElementById("difficulty-easy").setAttribute("disabled", "disabled");
-  document.getElementById("difficulty-medium").setAttribute("disabled", "disabled");
-  document.getElementById("difficulty-hard").setAttribute("disabled", "disabled");
-  document.getElementById("difficulty-easy").classList.remove("hover");
-  document.getElementById("difficulty-medium").classList.remove("hover");
-  document.getElementById("difficulty-hard").classList.remove("hover");
+  document.getElementById("difficulty-easy").setAttribute("disabled", "disabled")
+  document.getElementById("difficulty-medium").setAttribute("disabled", "disabled")
+  document.getElementById("difficulty-hard").setAttribute("disabled", "disabled")
+  document.getElementById("difficulty-easy").classList.remove("hover")
+  document.getElementById("difficulty-medium").classList.remove("hover")
+  document.getElementById("difficulty-hard").classList.remove("hover")
 
   setTimeout(function () {
     document.getElementById("difficulty-game-area").classList.add("hide");
@@ -140,14 +140,14 @@ function buildQuestions() {
  * Validates the players answer
  */
 function checkAnswer() {
-  document.getElementById("answer1-btn").setAttribute("disabled", "disabled");
-  document.getElementById("answer2-btn").setAttribute("disabled", "disabled");
-  document.getElementById("answer3-btn").setAttribute("disabled", "disabled");
-  document.getElementById("answer4-btn").setAttribute("disabled", "disabled");
-  document.getElementById("answer1-btn").classList.remove("answer-buttons-hover");
-  document.getElementById("answer2-btn").classList.remove("answer-buttons-hover");
-  document.getElementById("answer3-btn").classList.remove("answer-buttons-hover");
-  document.getElementById("answer4-btn").classList.remove("answer-buttons-hover");
+  document.getElementById("answer1-btn").setAttribute("disabled", "disabled")
+  document.getElementById("answer2-btn").setAttribute("disabled", "disabled")
+  document.getElementById("answer3-btn").setAttribute("disabled", "disabled")
+  document.getElementById("answer4-btn").setAttribute("disabled", "disabled")
+  document.getElementById("answer1-btn").classList.remove("answer-buttons-hover")
+  document.getElementById("answer2-btn").classList.remove("answer-buttons-hover")
+  document.getElementById("answer3-btn").classList.remove("answer-buttons-hover")
+  document.getElementById("answer4-btn").classList.remove("answer-buttons-hover")
 
   let playerAnswer = this.value;
   let correctAnswer = currentQuestionSet[currentQuestion].answer;
@@ -198,14 +198,15 @@ function toDifficultyGameArea() {
     let player = playerName.value;
     let difficultyText = document.getElementById("difficulty-main-text");
     difficultyText.innerText = `Great stuff ${player},  how difficult would you like your questions?`;
-  }
-
+  } 
+  
   if (!playerName.value.match(regEx)) {
-    playerName.setCustomValidity("Your name can only include letters and spaces");
+    playerName.setCustomValidity("Your name can only include letters and spaces")
   } else {
-    playerName.setCustomValidity("");
+    playerName.setCustomValidity("")
   }
 }
+
 
 /**
  * Increments the player score depending on the difficulty of the questions
@@ -309,7 +310,13 @@ let goRules = document.getElementsByClassName("rules-btn");
 for (let i = 0; i < goRules.length; i++) {
   goRules[i].addEventListener("click", () => {
     buttonSound();
-    selectMenu("rules-game-area");
+    document.getElementById("rules-game-area").classList.remove("hide");
+    document.getElementById("hiscores-game-area").classList.add("hide");
+    document.getElementById("contact-game-area").classList.add("hide");
+    document.getElementById("results-game-area").classList.add("hide");
+    document.getElementById("start-game-area").classList.add("hide");
+    document.getElementById("question-game-area").classList.add("hide");
+    document.getElementById("difficulty-game-area").classList.add("hide");
     menu[i].classList.toggle("hide");
     toggleMenu[i].classList.toggle("hide");
     crossButton[i].classList.toggle("hide");
@@ -324,7 +331,13 @@ let goHiscores = document.getElementsByClassName("hiscores-btn");
 for (let i = 0; i < goHiscores.length; i++) {
   goHiscores[i].addEventListener("click", () => {
     buttonSound();
-    selectMenu("hiscores-game-area");
+    document.getElementById("hiscores-game-area").classList.remove("hide");
+    document.getElementById("rules-game-area").classList.add("hide");
+    document.getElementById("contact-game-area").classList.add("hide");
+    document.getElementById("results-game-area").classList.add("hide");
+    document.getElementById("start-game-area").classList.add("hide");
+    document.getElementById("question-game-area").classList.add("hide");
+    document.getElementById("difficulty-game-area").classList.add("hide");
     menu[i].classList.toggle("hide");
     toggleMenu[i].classList.toggle("hide");
     crossButton[i].classList.toggle("hide");
@@ -333,39 +346,21 @@ for (let i = 0; i < goHiscores.length; i++) {
 
 /**
  * Loop through the contact button and add a click event listener to open the contact page and hide the
- * other relevant pages.
+ * other relevant pages
  */
 let goContact = document.getElementsByClassName("contact-btn");
 for (let i = 0; i < goContact.length; i++) {
   goContact[i].addEventListener("click", () => {
     buttonSound();
-    selectMenu("contact-game-area");
+    document.getElementById("contact-game-area").classList.remove("hide");
+    document.getElementById("rules-game-area").classList.add("hide");
+    document.getElementById("hiscores-game-area").classList.add("hide");
+    document.getElementById("results-game-area").classList.add("hide");
+    document.getElementById("start-game-area").classList.add("hide");
+    document.getElementById("question-game-area").classList.add("hide");
+    document.getElementById("difficulty-game-area").classList.add("hide");
     menu[i].classList.toggle("hide");
     toggleMenu[i].classList.toggle("hide");
     crossButton[i].classList.toggle("hide");
   });
-}
-
-function selectMenu(selectedMenu) {
-  let gameAreas = [
-    "contact-game-area",
-    "rules-game-area",
-    "hiscores-game-area",
-    "results-game-area",
-    "start-game-area",
-    "question-game-area",
-    "difficulty-game-area",
-  ];
-
-  console.log(selectMenu);
-
-  let indexOfSelectedMenu = gameAreas.indexOf(selectedMenu);
-
-  gameAreas.splice(indexOfSelectedMenu, 1);
-
-  for (let i = 0; i < gameAreas.length; i++) {
-    document.getElementById(gameAreas[i]).classList.add("hide");
-  }
-
-  document.getElementById(selectedMenu).classList.remove("hide");
 }
