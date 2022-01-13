@@ -21,6 +21,8 @@ function countdown() {
   if (timeLeft === 0) {
     stopTimer();
     document.getElementById("next-question").classList.remove("greyscale");
+    document.getElementById("next-question").removeAttribute("disabled", "disabled");
+    document.getElementById("next-question").classList.add("hover");
     document.getElementById("answer1-btn").disabled = true;
     document.getElementById("answer2-btn").disabled = true;
     document.getElementById("answer3-btn").disabled = true;

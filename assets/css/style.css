@@ -57,10 +57,6 @@ h1 {
   filter: grayscale(100%);
 }
 
-.no-greyscale {
-  filter: grayscale(0%);
-}
-
 /* Game Bar Area */
 
 .game-bar {
