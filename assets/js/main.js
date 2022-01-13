@@ -346,7 +346,7 @@ for (let i = 0; i < goHiscores.length; i++) {
 
 /**
  * Loop through the contact button and add a click event listener to open the contact page and hide the
- * other relevant pages
+ * other relevant pages.
  */
 let goContact = document.getElementsByClassName("contact-btn");
 for (let i = 0; i < goContact.length; i++) {
