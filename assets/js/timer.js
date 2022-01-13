@@ -31,6 +31,8 @@ function countdown() {
   for (let i = 0; i < answerButtons.length; i++) {
     if (answerButtons[i].value === correctAnswer && timeLeft === 0) {
       answerButtons[i].classList.add("correct");
+    } else if (answerButtons[i] !== correctAnswer && timeLeft === 0) {
+      answerButtons[i].classList.add("wrong");
     }
   }
 }
