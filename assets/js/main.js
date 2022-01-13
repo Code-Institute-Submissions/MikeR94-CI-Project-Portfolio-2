@@ -1,6 +1,9 @@
 let nextBtn = document.getElementById("next-btn").addEventListener("click", toDifficultyGameArea);
 let loadNextQuestion = document.getElementById("next-question").addEventListener("click", nextQuestion);
 let reloadWebsite = document.getElementById("play-again-btn").addEventListener("click", reload);
+let loadEasy = document.getElementById("difficulty-easy").addEventListener("click", runQuiz);
+let loadMedium = document.getElementById("difficulty-medium").addEventListener("click", runQuiz);
+let loadHard = document.getElementById("difficulty-hard").addEventListener("click", runQuiz);
 let answer1 = document.getElementById("answer1-btn");
 let answer2 = document.getElementById("answer2-btn");
 let answer3 = document.getElementById("answer3-btn");
@@ -75,22 +78,35 @@ function runQuiz(event) {
     shuffledQuestions = easyQuestions.sort(() => Math.random() - 0.5);
     currentQuestionSet = shuffledQuestions;
     playerDifficulty = "easy";
+    document.getElementById("difficulty-easy").innerText = "Loading..."
   } else if (difficulty === "medium") {
     shuffledQuestions = mediumQuestions.sort(() => Math.random() - 0.5);
     currentQuestionSet = shuffledQuestions;
     playerDifficulty = "medium";
+    document.getElementById("difficulty-medium").innerText = "Loading..."
   } else if (difficulty === "hard") {
     shuffledQuestions = hardQuestions.sort(() => Math.random() - 0.5);
     currentQuestionSet = shuffledQuestions;
     playerDifficulty = "hard";
+    document.getElementById("difficulty-hard").innerText = "Loading..."
   }
-  document.getElementById("difficulty-game-area").classList.add("hide");
-  document.getElementById("question-game-area").classList.remove("hide");
-  document.getElementById("next-question").setAttribute("disabled", "disabled");
-  buildQuestions();
-  startTimer();
   buttonSound();
+  document.getElementById("difficulty-easy").setAttribute("disabled", "disabled")
+  document.getElementById("difficulty-medium").setAttribute("disabled", "disabled")
+  document.getElementById("difficulty-hard").setAttribute("disabled", "disabled")
+  document.getElementById("difficulty-easy").classList.remove("hover")
+  document.getElementById("difficulty-medium").classList.remove("hover")
+  document.getElementById("difficulty-hard").classList.remove("hover")
+
+  setTimeout(function () {
+    document.getElementById("difficulty-game-area").classList.add("hide");
+    document.getElementById("question-game-area").classList.remove("hide");
+    document.getElementById("next-question").setAttribute("disabled", "disabled");
+    buildQuestions();
+    startTimer();
+  }, 2000);
 }
+
 /**
  * Checks if the player has answered 10 questions and if not, loop through the questions and
  * display them to the player. It also listens for the players answer and then calls checkAnswer()
@@ -175,9 +191,8 @@ function checkAnswer() {
  * game screen. If the player does not enter a name, display the error text
  */
 function toDifficultyGameArea() {
-  
+  buttonSound();
   if (playerName.value.match(regEx) && playerName.value != null && playerName.value != undefined && playerName.value != "") {
-    buttonSound();
     document.getElementById("start-game-area").classList.add("hide");
     document.getElementById("difficulty-game-area").classList.remove("hide");
     let player = playerName.value;
@@ -235,14 +250,6 @@ function colorPlanets() {
  */
 function reload() {
   window.location.reload();
-}
-
-/**
- * Loop through the categories and add a click event listener to load the difficulty that the player has selected
- */
-let difficultySelected = document.getElementsByClassName("difficulty-btn");
-for (let i = 0; i < difficultySelected.length; i++) {
-  difficultySelected[i].addEventListener("click", runQuiz);
 }
 
 /**
