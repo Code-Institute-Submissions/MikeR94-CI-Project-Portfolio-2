@@ -21,6 +21,7 @@ let score = 0;
 let determineColour = "unanswered";
 let timeLeft;
 let timer;
+let playerDifficulty;
 let isPlaying = true;
 let answeredCorrect = 0;
 let answeredWrong = 0;
