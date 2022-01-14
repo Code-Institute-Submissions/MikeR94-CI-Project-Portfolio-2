@@ -13,7 +13,7 @@ function sendMail() {
     email: userEmail.value,
     message: userMessage.value,
   };
-
+  buttonSound();
   if (
     userName.value.match(regExName) &&
     userName.value != null &&
