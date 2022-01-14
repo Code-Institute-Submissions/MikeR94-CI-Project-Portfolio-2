@@ -1,6 +1,7 @@
 let buttonAudio = new Audio("assets/sounds/button-click.mp3");
 let correctAudio = new Audio("assets/sounds/correct-sound.mp3");
 let incorrectAudio = new Audio("assets/sounds/incorrect-sound.mp3");
+let isPlaying;
 
 /**
  * Lets the player have the option whether to have sounds on or not
