@@ -1,10 +1,4 @@
-let nextBtn = document.getElementById("next-btn").addEventListener("click", toDifficultyGameArea);
-let reloadWebsite = document.getElementById("play-again-btn").addEventListener("click", reload);
-let loadEasy = document.getElementById("difficulty-easy").addEventListener("click", runQuiz);
-let loadMedium = document.getElementById("difficulty-medium").addEventListener("click", runQuiz);
-let loadHard = document.getElementById("difficulty-hard").addEventListener("click", runQuiz);
 let nextQuestionIcon = document.getElementById("next-question");
-nextQuestionIcon.addEventListener("click", nextQuestion);
 let answer1 = document.getElementById("answer1-btn");
 let answer2 = document.getElementById("answer2-btn");
 let answer3 = document.getElementById("answer3-btn");
@@ -13,6 +7,11 @@ let questionText = document.getElementById("question-text");
 let audioOffIcon = document.getElementsByClassName("sound-off");
 let audioOnIcon = document.getElementsByClassName("sound-on");
 let playerName = document.getElementById("player-name");
+document.getElementById("next-btn").addEventListener("click", toDifficultyGameArea);
+document.getElementById("play-again-btn").addEventListener("click", reload);
+document.getElementById("difficulty-easy").addEventListener("click", runQuiz);
+document.getElementById("difficulty-hard").addEventListener("click", runQuiz);
+nextQuestionIcon.addEventListener("click", nextQuestion);
 let currentQuestion = 0;
 let answerClicked = false;
 let shuffledQuestions = 0;
@@ -121,9 +120,7 @@ function buildQuestions() {
     document.getElementById("question-game-area").classList.add("hide");
     document.getElementById("results-game-area").classList.remove("hide");
     let player = playerName.value;
-    document.getElementById(
-      "results-main-text"
-    ).innerText = `${player}, you managed to answer ${answeredCorrect} ${playerDifficulty} questions correctly resulting in the total score below.`;
+    document.getElementById("results-main-text").innerText = `${player}, you managed to answer ${answeredCorrect} ${playerDifficulty} questions correctly resulting in the total score below.`;
     updateHiscore();
   } else {
     for (let i = 0; i < currentQuestionSet.length; i++) {
