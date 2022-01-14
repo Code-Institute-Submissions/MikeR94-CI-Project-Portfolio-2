@@ -1,3 +1,5 @@
+// All questions for the quiz are stored below
+
 let easyQuestions = [
   {
     question: "What is the largest planet in the Solar System?",

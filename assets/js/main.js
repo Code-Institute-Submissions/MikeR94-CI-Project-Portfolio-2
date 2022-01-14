@@ -1,3 +1,4 @@
+// Variables
 let nextQuestionIcon = document.getElementById("next-question");
 let answer1 = document.getElementById("answer1-btn");
 let answer2 = document.getElementById("answer2-btn");
@@ -7,11 +8,6 @@ let questionText = document.getElementById("question-text");
 let audioOffIcon = document.getElementsByClassName("sound-off");
 let audioOnIcon = document.getElementsByClassName("sound-on");
 let playerName = document.getElementById("player-name");
-document.getElementById("next-btn").addEventListener("click", toDifficultyGameArea);
-document.getElementById("play-again-btn").addEventListener("click", reload);
-document.getElementById("difficulty-easy").addEventListener("click", runQuiz);
-document.getElementById("difficulty-hard").addEventListener("click", runQuiz);
-nextQuestionIcon.addEventListener("click", nextQuestion);
 let currentQuestion = 0;
 let answerClicked = false;
 let shuffledQuestions = 0;
@@ -26,6 +22,13 @@ let isPlaying = true;
 let answeredCorrect = 0;
 let answeredWrong = 0;
 let regEx = /^(?! )[A-Za-z\s\xC0-\uFFFF]*$/;
+
+// Event Listeners
+document.getElementById("next-btn").addEventListener("click", toDifficultyGameArea);
+document.getElementById("play-again-btn").addEventListener("click", reload);
+document.getElementById("difficulty-easy").addEventListener("click", runQuiz);
+document.getElementById("difficulty-hard").addEventListener("click", runQuiz);
+nextQuestionIcon.addEventListener("click", nextQuestion);
 
 /**
  * When the player clicks the next button whilst in the question screen, this function will load the next question
@@ -343,6 +346,12 @@ for (let i = 0; i < goContact.length; i++) {
     crossButton[i].classList.toggle("hide");
   });
 }
+
+/**
+ *  Passes in the selected menu, splice it from the array and then add the hide class to all remaining items in the array but remove the
+ *  hide class for the item that has been spliced
+ * @param {Takes the string of the game-areas as an argument} selectedMenu 
+ */
 
 function selectMenu(selectedMenu) {
   let gameAreas = [

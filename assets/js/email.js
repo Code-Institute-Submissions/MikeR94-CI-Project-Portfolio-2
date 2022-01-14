@@ -1,12 +1,17 @@
+// Variables
 let userName = document.getElementById("name");
 let userEmail = document.getElementById("email");
 let userMessage = document.getElementById("message");
-
-document.getElementById("contact-submit").addEventListener("click", sendMail);
-
 let regExEmail = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 let regExName = /^(?! )[A-Za-z\s\xC0-\uFFFF]*$/;
 
+// Event Listeners
+document.getElementById("contact-submit").addEventListener("click", sendMail);
+
+/**
+ * This function checks if the users details have been filled in correctly relative to ReGex criteria and if so, send the email.
+ * This function has been heavily modified from the emailjs.com docs (https://www.emailjs.com/docs/sdk/send/)
+ */
 function sendMail() {
   let emailProperties = {
     name: userName.value,
