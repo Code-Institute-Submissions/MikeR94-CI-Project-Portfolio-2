@@ -1009,6 +1009,10 @@ textarea {
     width: 310px;
   }
 
+  .start-name-question {
+    display: none;
+  }
+
   .start-main-text {
     margin-top: 50px;
     margin-left: 10px;
