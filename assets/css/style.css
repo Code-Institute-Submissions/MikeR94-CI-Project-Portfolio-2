@@ -240,14 +240,6 @@ h1 {
   text-align: center;
 }
 
-.error-text {
-  position: absolute;
-  font-size: 14px;
-  top: 63%;
-  left: 31%;
-  text-align: center;
-}
-
 /* Difficulty Game Area */
 
 .difficulty-game-area {
@@ -350,9 +342,9 @@ h1 {
   background-color: rgb(143, 22, 22);
 }
 
-/* Lights Section */
+/* Planet Bar Section */
 
-.lights-bar {
+.planet-bar {
   display: flex;
   position: absolute;
   bottom: 4%;
@@ -361,7 +353,7 @@ h1 {
   justify-content: space-evenly;
 }
 
-.answer-light {
+.answer-planet {
   filter: grayscale(100%);
 }
 
@@ -789,11 +781,6 @@ textarea {
     width: 700px;
   }
 
-  .error-text {
-    top: 63%;
-    left: 23.5%;
-  }
-
   .start-main-text {
     margin-top: 50px;
   }
@@ -843,7 +830,7 @@ textarea {
     margin-top: 30px;
   }
 
-  .lights-bar {
+  .planet-bar {
     left: 6.5%;
   }
 
@@ -982,14 +969,6 @@ textarea {
     margin-top: 100px;
   }
 
-  .error-text {
-    left: 1%;
-    text-align: center;
-    font-size: 12px;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
   .game-bar {
     width: 310px;
   }
@@ -1077,7 +1056,7 @@ textarea {
     width: 310px;
   }
 
-  .lights-bar {
+  .planet-bar {
     display: none;
   }
 

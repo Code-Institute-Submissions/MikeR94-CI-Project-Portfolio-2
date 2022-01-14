@@ -174,7 +174,7 @@ function checkAnswer() {
 
   /**
    * Loops through the answer buttons and displays the correct answer if the player has selected the wrong
-   * answer. If hte player has selected the wrong answer, it will also highlight that red
+   * answer. If hte player has selected the wrong answer, it will also highPlanet that red
    */
   let answerButtons = document.getElementsByClassName("answer-btn");
   for (let i = 0; i < answerButtons.length; i++) {
@@ -221,26 +221,26 @@ function incrementScore() {
 }
 
 /**
- * A switch case statement to change the colour of the lights depending on whether the user answers
+ * A switch case statement to change the colour of the planets depending on whether the user answers
  * correctly or not
  */
 function colorPlanets() {
-  let answerLight = 0;
+  let answerPlanet = 0;
 
   switch (determineColour) {
     case "correct":
-      answerLight = "grayscale(0%)";
+      answerPlanet = "grayscale(0%)";
       break;
     case "incorrect":
-      answerLight = "grayscale(100%)";
+      answerPlanet = "grayscale(100%)";
       break;
     case null:
     case undefined:
     case "unanswered":
-      answerLight = "grayscale(100%)";
+      answerPlanet = "grayscale(100%)";
       break;
   }
-  document.getElementsByClassName("answer-light")[currentQuestion].style.filter = answerLight;
+  document.getElementsByClassName("answer-planet")[currentQuestion].style.filter = answerPlanet 
   determineColour = "unanswered";
 }
 
