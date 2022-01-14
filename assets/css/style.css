@@ -96,38 +96,36 @@ h1 {
 
 #timer {
   position: absolute;
-  width: 60px;
-  right: 30%;
+  right: 20%;
   top: 4%;
   font-size: 20px;
 }
 
 .timer-icon {
-  font-size: 20px;
   position: absolute;
-  right: 30.5%;
+  right: 17%;
   top: 4%;
 }
 
 .timer-icon i {
-  font-size: 25px;
+  font-size: 24px;
 }
 
 .question-score {
   position: absolute;
-  right: 20%;
+  right: 8.8%;
   top: 4%;
   font-size: 20px;
 }
 
 .trophy-icon {
   position: absolute;
-  right: 15%;
-  top: 4.7%;
+  right: 5%;
+  top: 4.5%;
 }
 
 .trophy-icon i {
-  font-size: 22px;
+  font-size: 21px;
   color: gold;
 }
 
@@ -830,6 +828,18 @@ textarea {
     margin-top: 30px;
   }
 
+  .timer-icon {
+    right: 20%;
+  }
+
+  #timer {
+    right: 24.5%;
+  }
+
+  .question-score {
+    right: 9.8%;
+  }
+
   .planet-bar {
     left: 6.5%;
   }
@@ -974,12 +984,12 @@ textarea {
   }
 
   .home-icon-logo i {
-    font-size: 24px;
+    font-size: 23px;
   }
 
   .audio-icon-logo {
     left: 20%;
-    top: 4.3%;
+    top: 4.2%;
   }
 
   .sound-on i {
@@ -996,26 +1006,22 @@ textarea {
   }
 
   .timer-icon {
-    right: 48%;
-    top: 3.5%;
+    right: 35%;
+    top: 4.2%;
   }
 
   .timer-icon i {
-    font-size: 20px;
+    font-size: 21.5px;
   }
 
   .question-score {
     font-size: 17px;
-    right: 29%;
+    right: 18%;
   }
 
   .trophy-icon {
-    right: 21%;
-    top: 4.5%;
-  }
-
-  .trophy-icon i {
-    font-size: 18px;
+    right: 8%;
+    top: 4.4%;
   }
 
   .hamburger {
