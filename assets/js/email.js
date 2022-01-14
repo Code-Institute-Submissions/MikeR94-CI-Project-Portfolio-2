@@ -13,7 +13,9 @@ function sendMail() {
     email: userEmail.value,
     message: userMessage.value,
   };
+
   buttonSound();
+  
   if (
     userName.value.match(regExName) &&
     userName.value != null &&
@@ -35,20 +37,20 @@ function sendMail() {
   }
 
   if (!userName.value.match(regExName)) {
-    userName.setCustomValidity("Your name can only include letters and spaces")
+    userName.setCustomValidity("Your name can only include letters and spaces");
   } else {
-    userName.setCustomValidity("")
+    userName.setCustomValidity("");
   }
-  
+
   if (!userEmail.value.match(regExEmail)) {
-    userEmail.setCustomValidity("Your email should address should follow the correct format. (test123@gmail.com)")
+    userEmail.setCustomValidity("Your email should address should follow the correct format. (test123@gmail.com)");
   } else {
     userEmail.setCustomValidity("");
   }
-  
+
   if (message.value.length < 10) {
-    userMessage.setCustomValidity("Please enter at least 10 characters")
+    userMessage.setCustomValidity("Please enter at least 10 characters");
   } else {
-    userMessage.setCustomValidity("")
+    userMessage.setCustomValidity("");
   }
 }

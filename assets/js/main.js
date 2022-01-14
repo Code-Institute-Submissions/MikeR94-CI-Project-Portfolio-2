@@ -75,6 +75,7 @@ function showNextQuestionIcon() {
  */
 function runQuiz(event) {
   let difficulty = event.target.value;
+
   if (difficulty === "easy") {
     shuffledQuestions = easyQuestions.sort(() => Math.random() - 0.5);
     currentQuestionSet = shuffledQuestions;
@@ -91,7 +92,9 @@ function runQuiz(event) {
     playerDifficulty = "hard";
     document.getElementById("difficulty-hard").innerText = "Loading...";
   }
+
   buttonSound();
+
   document.getElementById("difficulty-easy").setAttribute("disabled", "disabled");
   document.getElementById("difficulty-medium").setAttribute("disabled", "disabled");
   document.getElementById("difficulty-hard").setAttribute("disabled", "disabled");
@@ -173,10 +176,6 @@ function checkAnswer() {
 
   document.getElementById("question-score").innerText = score;
 
-  /**
-   * Loops through the answer buttons and displays the correct answer if the player has selected the wrong
-   * answer. If hte player has selected the wrong answer, it will also highPlanet that red
-   */
   let answerButtons = document.getElementsByClassName("answer-btn");
   for (let i = 0; i < answerButtons.length; i++) {
     if (answerButtons[i].value === correctAnswer) {
@@ -241,7 +240,7 @@ function colorPlanets() {
       answerPlanet = "grayscale(100%)";
       break;
   }
-  document.getElementsByClassName("answer-planet")[currentQuestion].style.filter = answerPlanet 
+  document.getElementsByClassName("answer-planet")[currentQuestion].style.filter = answerPlanet;
   determineColour = "unanswered";
 }
 
