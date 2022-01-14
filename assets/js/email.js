@@ -2,7 +2,7 @@ let userName = document.getElementById("name");
 let userEmail = document.getElementById("email");
 let userMessage = document.getElementById("message");
 
-let submitMessage = document.getElementById("contact-submit").addEventListener("click", sendMail);
+document.getElementById("contact-submit").addEventListener("click", sendMail);
 
 let regExEmail = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 let regExName = /^(?! )[A-Za-z\s\xC0-\uFFFF]*$/;
@@ -15,14 +15,14 @@ function sendMail() {
   };
 
   buttonSound();
-  
+
   if (
     userName.value.match(regExName) &&
     userName.value != null &&
     userName.value != undefined &&
     userName.value != "" &&
-    email.value.match(regExEmail) &&
-    message.value.length > 10
+    userEmail.value.match(regExEmail) &&
+    userMessage.value.length > 10
   ) {
     emailjs.send("service_al2h1zo", "template_xqi4jaf", emailProperties).then(function (respond) {
       console.log("Success", respond);
@@ -48,7 +48,7 @@ function sendMail() {
     userEmail.setCustomValidity("");
   }
 
-  if (message.value.length < 10) {
+  if (userMessage.value.length < 10) {
     userMessage.setCustomValidity("Please enter at least 10 characters");
   } else {
     userMessage.setCustomValidity("");

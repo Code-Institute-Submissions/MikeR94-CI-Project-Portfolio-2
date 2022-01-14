@@ -1,5 +1,5 @@
 let hiscores = JSON.parse(localStorage.getItem("hiscores")) || [];
-let clearHiscoresBtn = document.getElementById("clear-hiscores").addEventListener("click", clearHiscores);
+document.getElementById("clear-hiscores").addEventListener("click", clearHiscores);
 
 /**
  * Gets the hiscore list from the HTML and then creates a new list item with the players score
