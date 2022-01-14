@@ -14,7 +14,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 17px;
+  font-size: 18px;
   font-family: Poppins, "sans-serif";
   font-weight: normal;
 }
@@ -42,6 +42,7 @@ button {
 
 h1 {
   font-weight: bold;
+  font-size: 22px;
 }
 
 .hover:hover {
@@ -731,14 +732,14 @@ textarea {
 }
 
 #result-score {
-  font-size: 25px;
+  font-size: 35px;
   font-weight: bold;
 }
 
 .results-page i {
   color: gold;
   margin-right: 6px;
-  font-size: 25px;
+  font-size: 35px;
   margin-top: 71px;
 }
 
@@ -755,6 +756,14 @@ textarea {
 /* Media Queries */
 
 @media screen and (max-width: 1190px) {
+  * {
+    font-size: 17px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+  
   .game-bar {
     width: 700px;
   }
@@ -956,6 +965,10 @@ textarea {
     font-size: 14px;
   }
 
+  h1 {
+    font-size: 16px;
+  }
+
   .start-game-area {
     height: 500px;
     width: 310px;
@@ -1017,6 +1030,10 @@ textarea {
   .question-score {
     font-size: 17px;
     right: 18%;
+  }
+
+  .question-main-text {
+    padding: 0px 20px 30px 20px;
   }
 
   .trophy-icon {
