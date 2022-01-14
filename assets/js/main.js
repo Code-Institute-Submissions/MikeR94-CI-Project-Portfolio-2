@@ -1,13 +1,14 @@
 let nextBtn = document.getElementById("next-btn").addEventListener("click", toDifficultyGameArea);
-let loadNextQuestion = document.getElementById("next-question").addEventListener("click", nextQuestion);
 let reloadWebsite = document.getElementById("play-again-btn").addEventListener("click", reload);
 let loadEasy = document.getElementById("difficulty-easy").addEventListener("click", runQuiz);
 let loadMedium = document.getElementById("difficulty-medium").addEventListener("click", runQuiz);
 let loadHard = document.getElementById("difficulty-hard").addEventListener("click", runQuiz);
-let answer1 = document.getElementById("answer1-btn");
-let answer2 = document.getElementById("answer2-btn");
-let answer3 = document.getElementById("answer3-btn");
-let answer4 = document.getElementById("answer4-btn");
+let nextQuestionIcon = document.getElementById("next-question");
+nextQuestionIcon.addEventListener("click", nextQuestion);
+let answer1 = answer1;
+let answer2 = answer2;
+let answer3 = answer3;
+let answer4 = answer4;
 let questionText = document.getElementById("question-text");
 let audioOffIcon = document.getElementsByClassName("sound-off");
 let audioOnIcon = document.getElementsByClassName("sound-on");
@@ -37,17 +38,17 @@ function nextQuestion() {
   buildQuestions();
   startTimer();
   buttonSound();
-  document.getElementById("next-question").classList.add("greyscale");
-  document.getElementById("next-question").setAttribute("disabled", "disabled");
-  document.getElementById("next-question").classList.remove("hover");
-  document.getElementById("answer1-btn").removeAttribute("disabled", "disabled");
-  document.getElementById("answer2-btn").removeAttribute("disabled", "disabled");
-  document.getElementById("answer3-btn").removeAttribute("disabled", "disabled");
-  document.getElementById("answer4-btn").removeAttribute("disabled", "disabled");
-  document.getElementById("answer1-btn").classList.add("answer-buttons-hover");
-  document.getElementById("answer2-btn").classList.add("answer-buttons-hover");
-  document.getElementById("answer3-btn").classList.add("answer-buttons-hover");
-  document.getElementById("answer4-btn").classList.add("answer-buttons-hover");
+  nextQuestionIcon.classList.add("greyscale");
+  nextQuestionIcon.setAttribute("disabled", "disabled");
+  nextQuestionIcon.classList.remove("hover");
+  answer1.removeAttribute("disabled", "disabled");
+  answer2.removeAttribute("disabled", "disabled");
+  answer3.removeAttribute("disabled", "disabled");
+  answer4.removeAttribute("disabled", "disabled");
+  answer1.classList.add("answer-buttons-hover");
+  answer2.classList.add("answer-buttons-hover");
+  answer3.classList.add("answer-buttons-hover");
+  answer4.classList.add("answer-buttons-hover");
   let answerButtons = document.getElementsByClassName("answer-btn");
   for (let i = 0; i < answerButtons.length; i++) {
     answerButtons[i].classList.remove("correct");
@@ -60,9 +61,9 @@ function nextQuestion() {
  */
 function showNextQuestionIcon() {
   setTimeout(function () {
-    document.getElementById("next-question").classList.remove("greyscale");
-    document.getElementById("next-question").removeAttribute("disabled", "disabled");
-    document.getElementById("next-question").classList.add("hover");
+    nextQuestionIcon.classList.remove("greyscale");
+    nextQuestionIcon.removeAttribute("disabled", "disabled");
+    nextQuestionIcon.classList.add("hover");
   }, 500);
 }
 
@@ -101,7 +102,7 @@ function runQuiz(event) {
   setTimeout(function () {
     document.getElementById("difficulty-game-area").classList.add("hide");
     document.getElementById("question-game-area").classList.remove("hide");
-    document.getElementById("next-question").setAttribute("disabled", "disabled");
+    nextQuestionIcon.setAttribute("disabled", "disabled");
     buildQuestions();
     startTimer();
   }, 2000);
@@ -128,10 +129,10 @@ function buildQuestions() {
       answer2.innerHTML = currentQuestionSet[currentQuestion].b;
       answer3.innerHTML = currentQuestionSet[currentQuestion].c;
       answer4.innerHTML = currentQuestionSet[currentQuestion].d;
-      document.getElementById("answer1-btn").onclick = checkAnswer;
-      document.getElementById("answer2-btn").onclick = checkAnswer;
-      document.getElementById("answer3-btn").onclick = checkAnswer;
-      document.getElementById("answer4-btn").onclick = checkAnswer;
+      answer1.onclick = checkAnswer;
+      answer2.onclick = checkAnswer;
+      answer3.onclick = checkAnswer;
+      answer4.onclick = checkAnswer;
     }
   }
 }
@@ -140,14 +141,14 @@ function buildQuestions() {
  * Validates the players answer
  */
 function checkAnswer() {
-  document.getElementById("answer1-btn").setAttribute("disabled", "disabled");
-  document.getElementById("answer2-btn").setAttribute("disabled", "disabled");
-  document.getElementById("answer3-btn").setAttribute("disabled", "disabled");
-  document.getElementById("answer4-btn").setAttribute("disabled", "disabled");
-  document.getElementById("answer1-btn").classList.remove("answer-buttons-hover");
-  document.getElementById("answer2-btn").classList.remove("answer-buttons-hover");
-  document.getElementById("answer3-btn").classList.remove("answer-buttons-hover");
-  document.getElementById("answer4-btn").classList.remove("answer-buttons-hover");
+  answer1.setAttribute("disabled", "disabled");
+  answer2.setAttribute("disabled", "disabled");
+  answer3.setAttribute("disabled", "disabled");
+  answer4.setAttribute("disabled", "disabled");
+  answer1.classList.remove("answer-buttons-hover");
+  answer2.classList.remove("answer-buttons-hover");
+  answer3.classList.remove("answer-buttons-hover");
+  answer4.classList.remove("answer-buttons-hover");
 
   let playerAnswer = this.value;
   let correctAnswer = currentQuestionSet[currentQuestion].answer;
