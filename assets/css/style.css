@@ -830,6 +830,11 @@ textarea {
     margin-top: 70px;
   }
 
+  .start-name-question {
+    top: 262px;
+    right: 150px;
+  }
+
   .difficulty-game-area {
     height: 490px;
     width: 700px;
