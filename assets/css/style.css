@@ -23,6 +23,8 @@ html {
   background: url(../images/background/outer-space-fantasy-art.jpg) no-repeat center center fixed;
   background-size: cover;
   overflow: hidden;
+  min-height: 100%;
+  min-width: 100%;
 }
 
 body {
