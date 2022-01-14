@@ -5,10 +5,10 @@ let loadMedium = document.getElementById("difficulty-medium").addEventListener("
 let loadHard = document.getElementById("difficulty-hard").addEventListener("click", runQuiz);
 let nextQuestionIcon = document.getElementById("next-question");
 nextQuestionIcon.addEventListener("click", nextQuestion);
-let answer1 = answer1;
-let answer2 = answer2;
-let answer3 = answer3;
-let answer4 = answer4;
+let answer1 = document.getElementById("answer1-btn");
+let answer2 = document.getElementById("answer2-btn");
+let answer3 = document.getElementById("answer3-btn");
+let answer4 = document.getElementById("answer4-btn");
 let questionText = document.getElementById("question-text");
 let audioOffIcon = document.getElementsByClassName("sound-off");
 let audioOnIcon = document.getElementsByClassName("sound-on");
