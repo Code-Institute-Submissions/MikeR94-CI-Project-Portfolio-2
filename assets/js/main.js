@@ -35,11 +35,15 @@ nextQuestionIcon.addEventListener("click", nextQuestion);
 // window.addEventListener('resize', resizeScreen);
 
 // function resizeScreen() {
-  
+//   if (window.screen.width >  window.screen.height ) {
+//       console.log("screen width is greater than screen height")
+//   }
 // }
 
 if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-  document.getElementById("start-game-area").classList.add("hide")
+  if (window.screen.width >  window.screen.height ) {
+    document.getElementById("start-game-area").classList.add("hide")
+}
 }
 
 
