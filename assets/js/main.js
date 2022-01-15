@@ -32,19 +32,21 @@ nextQuestionIcon.addEventListener("click", nextQuestion);
 
 
 
-// window.addEventListener('resize', resizeScreen);
+window.addEventListener('resize', resizeScreen);
 
-// function resizeScreen() {
-//   if (window.screen.width >  window.screen.height ) {
-//       console.log("screen width is greater than screen height")
-//   }
-// }
-
-if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-  if (window.innerWidth >  window.innerHeight) {
-    document.getElementById("start-game-area").classList.add("hide")
+function resizeScreen() {
+  if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+    if (window.innerWidth > window.innerHeight) {
+      document.getElementById("start-game-area").classList.add("hide")
+    }
   }
 }
+
+// if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+//   if (window.innerWidth > window.innerHeight) {
+//     document.getElementById("start-game-area").classList.add("hide")
+//   }
+// }
 
 
 /**
