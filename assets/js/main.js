@@ -39,9 +39,7 @@ nextQuestionIcon.addEventListener("click", nextQuestion);
 // }
 
 if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-  if(screen.availHeight < screen.availWidth){
-    document.getElementById("start-game-area").classList.add("hide")
-  }
+  document.getElementById("start-game-area").classList.add("hide")
 }
 
 
