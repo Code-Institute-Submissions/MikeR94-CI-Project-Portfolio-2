@@ -30,6 +30,19 @@ document.getElementById("difficulty-easy").addEventListener("click", runQuiz);
 document.getElementById("difficulty-hard").addEventListener("click", runQuiz);
 nextQuestionIcon.addEventListener("click", nextQuestion);
 
+
+
+window.addEventListener('resize', resizeScreen);
+
+function resizeScreen() {
+  if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+    if(screen.availHeight < screen.availWidth){
+      document.getElementById("start-game-area").classList.add("hide")
+    }
+  }
+}
+
+
 /**
  * When the player clicks the next button whilst in the question screen, this function will load the next question
  * and reset the answer buttons so that they are not disabled. It also loops through the answer buttons and removes

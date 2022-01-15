@@ -22,7 +22,6 @@
 html {
   background: url(../images/background/outer-space-fantasy-art.jpg) no-repeat center center fixed;
   background-size: cover;
-  overflow: hidden;
 }
 
 body {
@@ -197,7 +196,7 @@ h1 {
   background-color: var(--clr-game-canvas);
   opacity: 0.97;
   height: 590px;
-  width: 1000px;
+  max-width: 1000px;
   margin: 0;
   position: absolute;
   top: 50%;
@@ -786,7 +785,7 @@ textarea {
 
 /* Media Queries */
 
-@media screen and (max-width: 1190px), screen and (max-height: 600px) {
+@media screen and (max-width: 1190px), screen and (max-height: 500px) {
   * {
     font-size: 17px;
   }
@@ -991,7 +990,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 710px), screen and (max-height: 600px) {
+@media screen and (max-width: 700px), screen and (max-height: 500px) {
   button {
     height: 40px;
     font-size: 14px;
@@ -1269,7 +1268,7 @@ textarea {
   }
 }
 
-@media screen and (max-height: 600px) {
+@media screen and (max-height: 500px) {
   * {
     font-size: 14px;
   }
@@ -1422,48 +1421,24 @@ textarea {
   }
 }
 
-@media screen and (max-width: 309px) {
+@media screen and (max-width: 500px) {
   .start-game-area {
-    display: none;
+    max-width: 300px;
+  }
+  
+  .contact-game-area {
+    max-width: 300px;
   }
 
-  .difficulty-game-area {
-    display: none;
-  }
+}
 
-  .question-game-area {
-    display: none;
-  }
-
-  .rules-game-area {
-    display: none;
-  }
-
-  .hiscores-game-area {
-    display: none;
+@media screen and (max-height: 400px) {
+  .start-game-area {
+    max-height: 200px;
   }
 
   .contact-game-area {
     display: none;
   }
 
-  .results-game-area {
-    display: none;
-  }
-
-  .size-error {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .size-error h1 {
-    color: var(--clr-text);
-    background-color: var(--clr-game-canvas);
-    text-align: center;
-    padding: 5px;
-    font-weight: normal;
-  }
 }
