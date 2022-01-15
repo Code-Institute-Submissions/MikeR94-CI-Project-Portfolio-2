@@ -38,6 +38,8 @@ function resizeScreen() {
   if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
     if (window.innerWidth > window.innerHeight) {
       document.getElementById("start-game-area").classList.add("hide")
+    } else {
+      document.getElementById("start-game-area").classList.remove("hide")
     }
   }
 }
