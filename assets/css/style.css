@@ -193,7 +193,7 @@ h1 {
 /* Start Game Area */
 
 .start-game-area {
-  background-color: var(--clr-game-canvas);
+  background-color: green;
   opacity: 0.97;
   height: 590px;
   max-width: 1000px;

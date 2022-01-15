@@ -32,13 +32,15 @@ nextQuestionIcon.addEventListener("click", nextQuestion);
 
 
 
-window.addEventListener('resize', resizeScreen);
+// window.addEventListener('resize', resizeScreen);
 
-function resizeScreen() {
-  if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-    if(screen.availHeight < screen.availWidth){
-      document.getElementById("start-game-area").classList.add("hide")
-    }
+// function resizeScreen() {
+  
+// }
+
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+  if(screen.availHeight < screen.availWidth){
+    document.getElementById("start-game-area").classList.add("hide")
   }
 }
 
