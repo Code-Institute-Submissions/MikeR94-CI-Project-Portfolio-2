@@ -41,9 +41,9 @@ nextQuestionIcon.addEventListener("click", nextQuestion);
 // }
 
 if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-  if (window.screen.width >  window.screen.height ) {
+  if (window.innerWidth >  window.innerHeight) {
     document.getElementById("start-game-area").classList.add("hide")
-}
+  }
 }
 
 
