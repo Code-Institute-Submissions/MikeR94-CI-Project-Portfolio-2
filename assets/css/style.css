@@ -23,9 +23,6 @@ html {
   background: url(../images/background/outer-space-fantasy-art.jpg) no-repeat center center fixed;
   background-size: cover;
   overflow: hidden;
-  min-height: 100%;
-  min-width: 100%;
-  position: absolute;
 }
 
 body {
@@ -789,7 +786,7 @@ textarea {
 
 /* Media Queries */
 
-@media screen and (max-width: 1190px) {
+@media screen and (max-width: 1190px), screen and (max-height: 600px) {
   * {
     font-size: 17px;
   }
@@ -994,7 +991,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 710px), screen and (max-height: 600px) {
   button {
     height: 40px;
     font-size: 14px;
@@ -1272,15 +1269,41 @@ textarea {
   }
 }
 
-@media screen and (max-height: 415px) {
+@media screen and (max-height: 600px) {
+  * {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 15px;
+  }
+
+  button {
+    width: 140px;
+    height: 50px;
+  }
+  
   .game-bar {
     width: 600px;
     height: 60px;
   }
 
+  .audio-icon-logo {
+    left: 12%;
+    top: 6%;
+  }
+
   .menu {
     width: 600px;
-    height: 350px;
+    height: 280px;
+  }
+
+  .menu button:nth-child(1) {
+    margin-top: 15px;
+  }
+
+  .menu button {
+    margin: 15px auto;
   }
   
   .start-game-area {
@@ -1288,14 +1311,73 @@ textarea {
     height: 350px;
   }
 
+  .start-title-text {
+    margin-top: 0px;
+  }
+
+  .start-main-text {
+    margin-top: 40px;
+  }
+
+  .start-input-name {
+    margin-top: 30px;
+  }
+
+  .start-game-area-btn {
+    margin-top: 40px;
+  }
+
   .difficulty-game-area {
     width: 600px;
     height: 350px;
   }
 
+  .difficulty-title-text {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+
+  .difficulty-main-text {
+    padding: 0px;
+    margin-bottom: 20px;
+  }
+
+  .difficulty-btn button {
+    margin: 7px auto;
+  }
+
   .question-game-area {
     width: 600px;
     height: 350px;
+  }
+
+  .answer-buttons {
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+  }
+
+  .next-question {
+    left: 46.5%;
+  }
+
+  .timer-icon {
+    right: 25%;
+    top: 6%;
+  }
+
+  .trophy-icon {
+    right: 5%;
+    top: 6%;
+  }
+
+  .question-score {
+    right: 11%;
+    top: 5.5%;
+  }
+
+  #timer {
+    right: 30%;
+    top: 5.5%;
   }
 
   .rules-game-area {
@@ -1316,6 +1398,27 @@ textarea {
   .results-game-area {
     width: 600px;
     height: 350px;
+  }
+
+  .results-title-text {
+    margin-top: 0px;
+  }
+
+  .results-main-text {
+    margin-top: 25px;
+  }
+
+  .results-page i {
+    margin-top: 30px;
+    font-size: 25px;
+  }
+
+  #result-score {
+    font-size: 25px;
+  }
+
+  .results-page button {
+    left: 38.5%;
   }
 }
 
