@@ -1272,6 +1272,53 @@ textarea {
   }
 }
 
+@media screen and (max-height: 415px) {
+  .game-bar {
+    width: 600px;
+    height: 60px;
+  }
+
+  .menu {
+    width: 600px;
+    height: 350px;
+  }
+  
+  .start-game-area {
+    width: 600px;
+    height: 350px;
+  }
+
+  .difficulty-game-area {
+    width: 600px;
+    height: 350px;
+  }
+
+  .question-game-area {
+    width: 600px;
+    height: 350px;
+  }
+
+  .rules-game-area {
+    width: 600px;
+    height: 350px;
+  }
+
+  .hiscores-game-area {
+    width: 600px;
+    height: 350px;
+  }
+
+  .contact-game-area {
+    width: 600px;
+    height: 350px;
+  }
+
+  .results-game-area {
+    width: 600px;
+    height: 350px;
+  }
+}
+
 @media screen and (max-width: 309px) {
   .start-game-area {
     display: none;
