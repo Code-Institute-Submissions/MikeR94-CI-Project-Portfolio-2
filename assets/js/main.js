@@ -89,7 +89,7 @@ function removeLandscapeMobileMessage() {
 
 function checkForLandscapeOnMobile() {
   let landscape = window.innerWidth > window.innerHeight;
-  let mobileDevice = /Android|iPhone|webOS|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  let mobileDevice = /Android|iPhone|webOS|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
   if (mobileDevice) {
     if (landscape) {
