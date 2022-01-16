@@ -22,6 +22,7 @@ let isPlaying = true;
 let answeredCorrect = 0;
 let answeredWrong = 0;
 let regEx = /^(?! )[A-Za-z\s\xC0-\uFFFF]*$/;
+let gameState = 'start-game-area';
 
 // Event Listeners
 document.getElementById("next-btn").addEventListener("click", toDifficultyGameArea);
@@ -30,26 +31,82 @@ document.getElementById("difficulty-easy").addEventListener("click", runQuiz);
 document.getElementById("difficulty-hard").addEventListener("click", runQuiz);
 nextQuestionIcon.addEventListener("click", nextQuestion);
 
+window.onload = function() {
+  checkForLandscapeOnMobile();
+};
+
+window.addEventListener('resize', checkForLandscapeOnMobile);
+
+function addLandscapeMobileMessage() {
+  if (gameState === 'start-game-area') {
+    document.getElementById("start-game-area").classList.add("hide")
+  }
+
+  if (gameState === 'contact-game-area') {
+    document.getElementById("contact-game-area").classList.add("hide")
+  }
+
+  if (gameState === 'rules-game-area') {
+    document.getElementById("rules-game-area").classList.add("hide")
+  }
+
+  if (gameState === 'hiscores-game-area') {
+    document.getElementById("hiscores-game-area").classList.add("hide")
+  }
+
+  if (gameState === 'difficulty-game-area') {
+    document.getElementById("difficulty-game-area").classList.add("hide")
+  }
+
+  if (gameState === 'question-game-area') {
+    document.getElementById("question-game-area").classList.add("hide")
+  }
+
+  if (gameState === 'results-game-area') {
+    document.getElementById("results-game-area").classList.add("hide")
+  }
+
+  document.getElementById("size-error").classList.remove("hide")
+}
+
+function removeLandscapeMobileMessage() { 
+  if (gameState === 'start-game-area') {
+    document.getElementById("start-game-area").classList.remove("hide")
+  }
+  if (gameState === 'contact-game-area') {
+    document.getElementById("contact-game-area").classList.remove("hide")
+  }
+  if (gameState === 'rules-game-area') {
+    document.getElementById("rules-game-area").classList.remove("hide")
+  }
+  if (gameState === 'hiscores-game-area') {
+    document.getElementById("hiscores-game-area").classList.remove("hide")
+  }
+  if (gameState === 'difficulty-game-area') {
+    document.getElementById("difficulty-game-area").classList.remove("hide")
+  }
+  if (gameState === 'question-game-area') {
+    document.getElementById("question-game-area").classList.remove("hide")
+  }
+  if (gameState === 'results-game-area') {
+    document.getElementById("results-game-area").classList.remove("hide")
+  }
+  document.getElementById("size-error").classList.add("hide")
+}
 
 
-window.addEventListener('resize', resizeScreen);
+function checkForLandscapeOnMobile() {
+  let landscape = window.innerWidth > window.innerHeight;
+  let mobileDevice = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-function resizeScreen() {
-  if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-    if (window.innerWidth > window.innerHeight) {
-      document.getElementById("start-game-area").classList.add("hide")
+  if (mobileDevice) {
+    if (landscape) {
+      addLandscapeMobileMessage();
     } else {
-      document.getElementById("start-game-area").classList.remove("hide")
+      removeLandscapeMobileMessage()
     }
   }
 }
-
-// if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-//   if (window.innerWidth > window.innerHeight) {
-//     document.getElementById("start-game-area").classList.add("hide")
-//   }
-// }
-
 
 /**
  * When the player clicks the next button whilst in the question screen, this function will load the next question
@@ -142,12 +199,14 @@ function runQuiz(event) {
  */
 function buildQuestions() {
   if (currentQuestion >= quizLength) {
+    gameState = "results-game-area";
     document.getElementById("question-game-area").classList.add("hide");
     document.getElementById("results-game-area").classList.remove("hide");
     let player = playerName.value;
     document.getElementById("results-main-text").innerText = `${player}, you managed to answer ${answeredCorrect} ${playerDifficulty} questions correctly resulting in the total score below.`;
     updateHiscore();
   } else {
+    gameState = "question-game-area";
     for (let i = 0; i < currentQuestionSet.length; i++) {
       questionText.innerHTML = currentQuestionSet[currentQuestion].question;
       answer1.innerHTML = currentQuestionSet[currentQuestion].a;
@@ -213,6 +272,7 @@ function checkAnswer() {
  * game screen. If the player does not enter a name, display the error text
  */
 function toDifficultyGameArea() {
+  gameState = "difficulty-game-area"
   buttonSound();
   if (playerName.value.match(regEx) && playerName.value != null && playerName.value != undefined && playerName.value != "") {
     document.getElementById("start-game-area").classList.add("hide");
@@ -375,6 +435,8 @@ for (let i = 0; i < goContact.length; i++) {
  */
 
 function selectMenu(selectedMenu) {
+  gameState = selectedMenu;
+
   let gameAreas = [
     "contact-game-area",
     "rules-game-area",

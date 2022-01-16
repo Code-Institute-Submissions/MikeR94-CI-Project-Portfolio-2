@@ -780,7 +780,18 @@ textarea {
 }
 
 .size-error {
-  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.size-error h1 {
+  color: var(--clr-text);
+  background-color: var(--clr-game-canvas);
+  text-align: center;
+  padding: 5px;
+  font-weight: normal;
 }
 
 /* Media Queries */
