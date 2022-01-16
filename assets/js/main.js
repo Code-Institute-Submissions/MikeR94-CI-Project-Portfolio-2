@@ -28,6 +28,7 @@ let gameState = "start-game-area";
 document.getElementById("next-btn").addEventListener("click", toDifficultyGameArea);
 document.getElementById("play-again-btn").addEventListener("click", reload);
 document.getElementById("difficulty-easy").addEventListener("click", runQuiz);
+document.getElementById("difficulty-medium").addEventListener("click", runQuiz);
 document.getElementById("difficulty-hard").addEventListener("click", runQuiz);
 nextQuestionIcon.addEventListener("click", nextQuestion);
 window.addEventListener("resize", checkForLandscapeOnMobile);
