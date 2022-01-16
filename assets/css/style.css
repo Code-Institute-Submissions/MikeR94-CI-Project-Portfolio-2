@@ -1293,7 +1293,6 @@ textarea {
   }
 
   .start-game-area {
-    height: 500px;
     width: 270px;
   }
 
@@ -1326,12 +1325,10 @@ textarea {
   }
 
   .difficulty-game-area {
-    height: 500px;
     width: 270px;
   }
 
   .question-game-area {
-    height: 500px;
     width: 270px;
   }
 
@@ -1340,12 +1337,10 @@ textarea {
   }
 
   .rules-game-area {
-    height: 500px;
     width: 270px;
   }
 
   .hiscores-game-area {
-    height: 500px;
     width: 270px;
   }
 
@@ -1368,7 +1363,6 @@ textarea {
   }
 
   .contact-game-area {
-    height: 500px;
     width: 270px;
   }
 
@@ -1381,7 +1375,6 @@ textarea {
   }
 
   .results-game-area {
-    height: 500px;
     width: 270px;
   }
 
