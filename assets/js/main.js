@@ -31,7 +31,9 @@ document.getElementById("difficulty-easy").addEventListener("click", runQuiz);
 document.getElementById("difficulty-medium").addEventListener("click", runQuiz);
 document.getElementById("difficulty-hard").addEventListener("click", runQuiz);
 nextQuestionIcon.addEventListener("click", nextQuestion);
-window.addEventListener("resize", checkForLandscapeOnMobile);
+// window.addEventListener("resize", checkForLandscapeOnMobile);
+
+window.addEventListener("orientationchange", checkForLandscapeOnMobile);
 
 /**
  * Used to immediately check the orientation on loading
