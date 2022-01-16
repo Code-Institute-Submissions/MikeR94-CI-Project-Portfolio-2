@@ -52,7 +52,7 @@ In my second project, I intend to create a challenging, interactive and fun quiz
 The design prototype for The Astronomy Quiz was produced in [Figma](https://www.figma.com/). There are design prototypes for Desktop and Mobile. The reason that the design prototype looks very similar to the finished product is because I've learnt that being able to visually see your design before you spend the time implementing it is a very efficient method when it comes to creating something in software development. Being able to use a tool like [Figma](https://www.figma.com/) to "drag and drop" elements will save a large amount of time as apposed to trying to design through CSS, therefore before I implemented something, I made sure to design it on [Figma](https://www.figma.com/) first.<br /><br />
 
 
-![Design Prototype Preview](assets/readme-images/design-prototype.png)
+![Design Prototype Preview](assets/images/readme-images/design-prototype.png)
 
 
 [Back to top](<#contents>)
