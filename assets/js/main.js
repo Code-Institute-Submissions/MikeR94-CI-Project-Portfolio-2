@@ -266,11 +266,11 @@ function checkAnswer() {
  * game screen. If the player does not enter a name, display the error text
  */
 function toDifficultyGameArea() {
-  gameState = "difficulty-game-area";
   buttonSound();
   if (playerName.value.match(regEx) && playerName.value != null && playerName.value != undefined && playerName.value != "") {
     document.getElementById("start-game-area").classList.add("hide");
     document.getElementById("difficulty-game-area").classList.remove("hide");
+    gameState = "difficulty-game-area";
     let player = playerName.value;
     let difficultyText = document.getElementById("difficulty-main-text");
     difficultyText.innerText = `Great stuff ${player},  how difficult would you like your questions?`;
