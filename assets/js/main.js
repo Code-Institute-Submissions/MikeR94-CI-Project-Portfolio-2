@@ -102,7 +102,7 @@ function removeLandscapeMobileMessage() {
  * true, the error message will show. If not, the error message will not show
  */
 function checkForLandscapeOnMobile() {
-  let landscape = window.innerWidth > window.innerHeight;
+  let landscape = screen.availWidth > window.availHeight;
   let androidLandscape = screen.availWidth > screen.availHeight;
   let mobileDevice = /iPhone|webOS|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
   let androidDevice = /Android/i.test(navigator.userAgent);
