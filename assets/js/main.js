@@ -31,9 +31,8 @@ document.getElementById("difficulty-easy").addEventListener("click", runQuiz);
 document.getElementById("difficulty-medium").addEventListener("click", runQuiz);
 document.getElementById("difficulty-hard").addEventListener("click", runQuiz);
 nextQuestionIcon.addEventListener("click", nextQuestion);
-// window.addEventListener("resize", checkForLandscapeOnMobile);
+window.addEventListener("resize", checkForLandscapeOnMobile);
 
-window.addEventListener("orientationchange", checkForLandscapeOnMobile);
 
 /**
  * Used to immediately check the orientation on loading
@@ -103,13 +102,13 @@ function removeLandscapeMobileMessage() {
  * true, the error message will show. If not, the error message will not show
  */
 function checkForLandscapeOnMobile() {
-  let landscape = window.matchMedia("(orientation: landscape)").matches;
+  let landscape = window.innerWidth > window.innerHeight;
   let mobileDevice = /Android|iPhone|webOS|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-  // let widthDimensions = window.innerWidth <= 1000;
-  // let heightDimensions = window.innerHeight <= 900;
+  let widthDimensions = window.innerWidth <= 1000;
+  let heightDimensions = window.innerHeight <= 900;
 
   if (mobileDevice) {
-    if (landscape) {
+    if (landscape && widthDimensions && heightDimensions) {
       addLandscapeMobileMessage();
     } else {
       removeLandscapeMobileMessage();
