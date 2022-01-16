@@ -30,13 +30,18 @@ document.getElementById("play-again-btn").addEventListener("click", reload);
 document.getElementById("difficulty-easy").addEventListener("click", runQuiz);
 document.getElementById("difficulty-hard").addEventListener("click", runQuiz);
 nextQuestionIcon.addEventListener("click", nextQuestion);
-
 window.addEventListener("resize", checkForLandscapeOnMobile);
 
+/**
+ * Used to immediately check the orientation on loading
+ */
 window.onload = function () {
   checkForLandscapeOnMobile();
 };
 
+/**
+ * Checks the current gameState and if it meets the correct condition, hides that game-area and displays the error message
+ */
 function addLandscapeMobileMessage() {
   if (gameState === "start-game-area") {
     document.getElementById("start-game-area").classList.add("hide");
@@ -62,6 +67,9 @@ function addLandscapeMobileMessage() {
   document.getElementById("size-error").classList.remove("hide");
 }
 
+/**
+ * Checks the current gameState and if it meets the correct condition, un-hides that game-area and hides the error message
+ */
 function removeLandscapeMobileMessage() {
   if (gameState === "start-game-area") {
     document.getElementById("start-game-area").classList.remove("hide");
@@ -87,6 +95,10 @@ function removeLandscapeMobileMessage() {
   document.getElementById("size-error").classList.add("hide");
 }
 
+/**
+ * Checks if the width is greater than the height and if also if the user is on a mobile device, both conditions are
+ * true, the error message will show. If not, the error message will not show
+ */
 function checkForLandscapeOnMobile() {
   let landscape = window.innerWidth > window.innerHeight;
   let mobileDevice = /Android|iPhone|webOS|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
