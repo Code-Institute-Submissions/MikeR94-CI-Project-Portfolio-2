@@ -863,7 +863,7 @@ textarea {
   .rules-title-text {
     margin-bottom: 20px;
   }
-  
+
   .rules-text p {
     margin: 15px 35px 0px 35px;
   }
@@ -1194,7 +1194,7 @@ textarea {
   .clear-hiscores-btn button {
     position: absolute;
     top: 75%;
-    left: 23.5%;
+    left: 23%;
   }
 
   .hiscores-list {
@@ -1284,5 +1284,108 @@ textarea {
 
   .results-page i {
     margin-top: 64px;
+  }
+}
+
+@media screen and (max-width: 315px) {
+  * {
+    font-size: 13px;
+  }
+
+  .start-game-area {
+    height: 500px;
+    width: 270px;
+  }
+
+  .start-game-area-btn {
+    margin-top: 70px;
+  }
+
+  .game-bar {
+    width: 270px;
+  }
+
+  .menu {
+    width: 270px;
+  }
+
+  .audio-icon-logo {
+    left: 22%;
+  }
+
+  #timer {
+    right: 45%;
+  }
+
+  .timer-icon {
+    right: 36%;
+  }
+
+  .question-score {
+    right: 19%;
+  }
+
+  .difficulty-game-area {
+    height: 500px;
+    width: 270px;
+  }
+
+  .question-game-area {
+    height: 500px;
+    width: 270px;
+  }
+
+  .next-question {
+    left: 43%;
+  }
+
+  .rules-game-area {
+    height: 500px;
+    width: 270px;
+  }
+
+  .hiscores-game-area {
+    height: 500px;
+    width: 270px;
+  }
+
+  .hiscores-list {
+    left: 75px;
+    top: 205px;
+  }
+
+  .hiscores-list li {
+    margin-top: 10px;
+    line-height: 29px;
+  }
+
+  .hiscores-main-text {
+    padding: 15px;
+  }
+
+  .clear-hiscores-btn button {
+    left: 19%;
+  }
+
+  .contact-game-area {
+    height: 500px;
+    width: 270px;
+  }
+
+  .contact-form button {
+    left: 50px;
+  }
+
+  .sent-message {
+    right: 9px;
+  }
+
+  .results-game-area {
+    height: 500px;
+    width: 270px;
+  }
+
+  .results-page button {
+    left: 19%;
   }
 }
