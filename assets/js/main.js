@@ -106,8 +106,8 @@ function checkForLandscapeOnMobile() {
   let androidLandscape = screen.availWidth > screen.availHeight;
   let mobileDevice = /iPhone|webOS|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
   let androidDevice = /Android/i.test(navigator.userAgent);
-  let widthDimensions = window.innerWidth <= 1000;
-  let heightDimensions = window.innerHeight <= 900;
+  let widthDimensions = screen.availWidth <= 1000;
+  let heightDimensions = screen.availHeight <= 900;
 
   if (mobileDevice) {
     if (landscape && widthDimensions && heightDimensions) {
