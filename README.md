@@ -342,19 +342,19 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
 * ### Edge Desktop Lighthouse Result
 
-    ![Edge Desktop Lighthouse](assets/readme-images/desktop-edge-lighthouse-image.png)
+    ![Edge Desktop Lighthouse](assets/images/readme-images/edge-desktop-lighthouse.png)
 
 * ### Edge Mobile Lighthouse Result
 
-    ![Edge Mobile Lighthouse](assets/readme-images/mobile-edge-lighthouse-image.png)
+    ![Edge Mobile Lighthouse](assets/images/readme-images/edge-mobile-lighthouse.png)
 
 * ### Chrome Desktop Lighthouse Result
 
-    ![Chrome Desktop Lighthouse](assets/readme-images/lighthouse-desktop-image.png)
+    ![Chrome Desktop Lighthouse](assets/images/readme-images/chrome-desktop-lighthouse.png)
 
 * ### Chrome Mobile Lighthouse Result
 
-    ![Chrome Mobile Lighthouse](assets/readme-images/lighthouse-mobile-image.png)
+    ![Chrome Mobile Lighthouse](assets/images/readme-images/chrome-mobile-lighthouse.png)
 
     * Insert text here<br /><br />
 
