@@ -1,7 +1,6 @@
 // Variables
 let hiscores = JSON.parse(localStorage.getItem("hiscores")) || [];
 
-
 // Event Listeners
 document.getElementById("clear-hiscores").addEventListener("click", clearHiscores);
 

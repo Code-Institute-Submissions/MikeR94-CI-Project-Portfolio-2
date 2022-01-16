@@ -33,7 +33,6 @@ document.getElementById("difficulty-hard").addEventListener("click", runQuiz);
 nextQuestionIcon.addEventListener("click", nextQuestion);
 window.addEventListener("resize", checkForLandscapeOnMobile);
 
-
 /**
  * Used to immediately check the orientation on loading
  */
