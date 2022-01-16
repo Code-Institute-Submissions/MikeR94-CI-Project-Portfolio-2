@@ -7,6 +7,11 @@ function startTimer() {
   timer = setInterval(function () {
     countdown();
     document.getElementById("timer").innerHTML = timeLeft;
+    if (timeLeft < 11) {
+      document.getElementById("timer").style.color = "red";
+    } else {
+      document.getElementById("timer").style.color = "#faf9f6";
+    }
   }, 1000);
 }
 
@@ -18,6 +23,7 @@ function startTimer() {
 function countdown() {
   let correctAnswer = currentQuestionSet[currentQuestion].answer;
   let answerButtons = document.getElementsByClassName("answer-btn");
+  
   if (timeLeft === 0) {
     stopTimer();
     document.getElementById("next-question").classList.remove("greyscale");

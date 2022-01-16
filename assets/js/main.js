@@ -123,6 +123,7 @@ function nextQuestion() {
   buildQuestions();
   startTimer();
   buttonSound();
+  document.getElementById("timer").style.color = "#faf9f6";
   nextQuestionIcon.classList.add("greyscale");
   nextQuestionIcon.setAttribute("disabled", "disabled");
   nextQuestionIcon.classList.remove("hover");
