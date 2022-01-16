@@ -193,7 +193,7 @@ h1 {
 /* Start Game Area */
 
 .start-game-area {
-  background-color: orange;
+  background-color: var(--clr-game-canvas);
   opacity: 0.97;
   height: 590px;
   max-width: 1000px;
@@ -796,7 +796,7 @@ textarea {
 
 /* Media Queries */
 
-@media screen and (max-width: 1190px), screen and (max-height: 500px) {
+@media screen and (max-width: 1190px) {
   * {
     font-size: 17px;
   }
@@ -1001,7 +1001,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 700px), screen and (max-height: 500px) {
+@media screen and (max-width: 700px) {
   button {
     height: 40px;
     font-size: 14px;
@@ -1277,179 +1277,4 @@ textarea {
   .results-page i {
     margin-top: 64px;
   }
-}
-
-@media screen and (max-height: 500px) {
-  * {
-    font-size: 14px;
-  }
-
-  h1 {
-    font-size: 15px;
-  }
-
-  button {
-    width: 140px;
-    height: 50px;
-  }
-  
-  .game-bar {
-    width: 600px;
-    height: 60px;
-  }
-
-  .audio-icon-logo {
-    left: 12%;
-    top: 6%;
-  }
-
-  .menu {
-    width: 600px;
-    height: 280px;
-  }
-
-  .menu button:nth-child(1) {
-    margin-top: 15px;
-  }
-
-  .menu button {
-    margin: 15px auto;
-  }
-  
-  .start-game-area {
-    width: 600px;
-    height: 350px;
-  }
-
-  .start-title-text {
-    margin-top: 0px;
-  }
-
-  .start-main-text {
-    margin-top: 40px;
-  }
-
-  .start-input-name {
-    margin-top: 30px;
-  }
-
-  .start-game-area-btn {
-    margin-top: 40px;
-  }
-
-  .difficulty-game-area {
-    width: 600px;
-    height: 350px;
-  }
-
-  .difficulty-title-text {
-    margin-top: 0px;
-    margin-bottom: 20px;
-  }
-
-  .difficulty-main-text {
-    padding: 0px;
-    margin-bottom: 20px;
-  }
-
-  .difficulty-btn button {
-    margin: 7px auto;
-  }
-
-  .question-game-area {
-    width: 600px;
-    height: 350px;
-  }
-
-  .answer-buttons {
-    grid-template-columns: repeat(2, auto);
-    gap: 20px;
-  }
-
-  .next-question {
-    left: 46.5%;
-  }
-
-  .timer-icon {
-    right: 25%;
-    top: 6%;
-  }
-
-  .trophy-icon {
-    right: 5%;
-    top: 6%;
-  }
-
-  .question-score {
-    right: 11%;
-    top: 5.5%;
-  }
-
-  #timer {
-    right: 30%;
-    top: 5.5%;
-  }
-
-  .rules-game-area {
-    width: 600px;
-    height: 350px;
-  }
-
-  .hiscores-game-area {
-    width: 600px;
-    height: 350px;
-  }
-
-  .contact-game-area {
-    width: 600px;
-    height: 350px;
-  }
-
-  .results-game-area {
-    width: 600px;
-    height: 350px;
-  }
-
-  .results-title-text {
-    margin-top: 0px;
-  }
-
-  .results-main-text {
-    margin-top: 25px;
-  }
-
-  .results-page i {
-    margin-top: 30px;
-    font-size: 25px;
-  }
-
-  #result-score {
-    font-size: 25px;
-  }
-
-  .results-page button {
-    left: 38.5%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .start-game-area {
-    max-width: 300px;
-  }
-  
-  .contact-game-area {
-    max-width: 300px;
-  }
-
-}
-
-@media screen and (max-height: 400px) {
-  .start-game-area {
-    max-height: 200px;
-  }
-
-  .contact-game-area {
-    display: none;
-  }
-
 }

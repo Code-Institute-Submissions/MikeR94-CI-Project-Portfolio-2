@@ -22,7 +22,7 @@ let isPlaying = true;
 let answeredCorrect = 0;
 let answeredWrong = 0;
 let regEx = /^(?! )[A-Za-z\s\xC0-\uFFFF]*$/;
-let gameState = 'start-game-area';
+let gameState = "start-game-area";
 
 // Event Listeners
 document.getElementById("next-btn").addEventListener("click", toDifficultyGameArea);
@@ -31,79 +31,71 @@ document.getElementById("difficulty-easy").addEventListener("click", runQuiz);
 document.getElementById("difficulty-hard").addEventListener("click", runQuiz);
 nextQuestionIcon.addEventListener("click", nextQuestion);
 
-window.onload = function() {
+window.addEventListener("resize", checkForLandscapeOnMobile);
+
+window.onload = function () {
   checkForLandscapeOnMobile();
 };
 
-window.addEventListener('resize', checkForLandscapeOnMobile);
-
 function addLandscapeMobileMessage() {
-  if (gameState === 'start-game-area') {
-    document.getElementById("start-game-area").classList.add("hide")
+  if (gameState === "start-game-area") {
+    document.getElementById("start-game-area").classList.add("hide");
   }
-
-  if (gameState === 'contact-game-area') {
-    document.getElementById("contact-game-area").classList.add("hide")
+  if (gameState === "contact-game-area") {
+    document.getElementById("contact-game-area").classList.add("hide");
   }
-
-  if (gameState === 'rules-game-area') {
-    document.getElementById("rules-game-area").classList.add("hide")
+  if (gameState === "rules-game-area") {
+    document.getElementById("rules-game-area").classList.add("hide");
   }
-
-  if (gameState === 'hiscores-game-area') {
-    document.getElementById("hiscores-game-area").classList.add("hide")
+  if (gameState === "hiscores-game-area") {
+    document.getElementById("hiscores-game-area").classList.add("hide");
   }
-
-  if (gameState === 'difficulty-game-area') {
-    document.getElementById("difficulty-game-area").classList.add("hide")
+  if (gameState === "difficulty-game-area") {
+    document.getElementById("difficulty-game-area").classList.add("hide");
   }
-
-  if (gameState === 'question-game-area') {
-    document.getElementById("question-game-area").classList.add("hide")
+  if (gameState === "question-game-area") {
+    document.getElementById("question-game-area").classList.add("hide");
   }
-
-  if (gameState === 'results-game-area') {
-    document.getElementById("results-game-area").classList.add("hide")
+  if (gameState === "results-game-area") {
+    document.getElementById("results-game-area").classList.add("hide");
   }
-
-  document.getElementById("size-error").classList.remove("hide")
+  document.getElementById("size-error").classList.remove("hide");
 }
 
-function removeLandscapeMobileMessage() { 
-  if (gameState === 'start-game-area') {
-    document.getElementById("start-game-area").classList.remove("hide")
+function removeLandscapeMobileMessage() {
+  if (gameState === "start-game-area") {
+    document.getElementById("start-game-area").classList.remove("hide");
   }
-  if (gameState === 'contact-game-area') {
-    document.getElementById("contact-game-area").classList.remove("hide")
+  if (gameState === "contact-game-area") {
+    document.getElementById("contact-game-area").classList.remove("hide");
   }
-  if (gameState === 'rules-game-area') {
-    document.getElementById("rules-game-area").classList.remove("hide")
+  if (gameState === "rules-game-area") {
+    document.getElementById("rules-game-area").classList.remove("hide");
   }
-  if (gameState === 'hiscores-game-area') {
-    document.getElementById("hiscores-game-area").classList.remove("hide")
+  if (gameState === "hiscores-game-area") {
+    document.getElementById("hiscores-game-area").classList.remove("hide");
   }
-  if (gameState === 'difficulty-game-area') {
-    document.getElementById("difficulty-game-area").classList.remove("hide")
+  if (gameState === "difficulty-game-area") {
+    document.getElementById("difficulty-game-area").classList.remove("hide");
   }
-  if (gameState === 'question-game-area') {
-    document.getElementById("question-game-area").classList.remove("hide")
+  if (gameState === "question-game-area") {
+    document.getElementById("question-game-area").classList.remove("hide");
   }
-  if (gameState === 'results-game-area') {
-    document.getElementById("results-game-area").classList.remove("hide")
+  if (gameState === "results-game-area") {
+    document.getElementById("results-game-area").classList.remove("hide");
   }
-  document.getElementById("size-error").classList.add("hide")
+  document.getElementById("size-error").classList.add("hide");
 }
-
 
 function checkForLandscapeOnMobile() {
   let landscape = window.innerWidth > window.innerHeight;
-  let mobileDevice = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  let mobileDevice = /Android|iPhone|webOS|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
   if (mobileDevice) {
     if (landscape) {
       addLandscapeMobileMessage();
     } else {
-      removeLandscapeMobileMessage()
+      removeLandscapeMobileMessage();
     }
   }
 }
@@ -203,7 +195,9 @@ function buildQuestions() {
     document.getElementById("question-game-area").classList.add("hide");
     document.getElementById("results-game-area").classList.remove("hide");
     let player = playerName.value;
-    document.getElementById("results-main-text").innerText = `${player}, you managed to answer ${answeredCorrect} ${playerDifficulty} questions correctly resulting in the total score below.`;
+    document.getElementById(
+      "results-main-text"
+    ).innerText = `${player}, you managed to answer ${answeredCorrect} ${playerDifficulty} questions correctly resulting in the total score below.`;
     updateHiscore();
   } else {
     gameState = "question-game-area";
@@ -272,7 +266,7 @@ function checkAnswer() {
  * game screen. If the player does not enter a name, display the error text
  */
 function toDifficultyGameArea() {
-  gameState = "difficulty-game-area"
+  gameState = "difficulty-game-area";
   buttonSound();
   if (playerName.value.match(regEx) && playerName.value != null && playerName.value != undefined && playerName.value != "") {
     document.getElementById("start-game-area").classList.add("hide");
@@ -431,7 +425,7 @@ for (let i = 0; i < goContact.length; i++) {
 /**
  *  Passes in the selected menu, splice it from the array and then add the hide class to all remaining items in the array but remove the
  *  hide class for the item that has been spliced
- * @param {Takes the string of the game-areas as an argument} selectedMenu 
+ * @param {Takes the string of the game-areas as an argument} selectedMenu
  */
 
 function selectMenu(selectedMenu) {
