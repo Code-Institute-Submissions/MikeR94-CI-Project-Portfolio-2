@@ -322,11 +322,11 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
 * ### HTML Validation Image
 
-    ![HTML Validation](assets/readme-images/html-validation-image.png)
+    ![HTML Validation](assets/images/readme-images/html-validation-image.png)
 
 * ### CSS Validation Image
 
-    ![CSS Validation](assets/readme-images/css-validation-image.png)
+    ![CSS Validation](assets/images/readme-images/css-validation-image.png)
 
 * ### JS Validation Image
 
