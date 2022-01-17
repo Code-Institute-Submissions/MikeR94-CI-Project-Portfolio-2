@@ -121,12 +121,33 @@ h1 {
 .trophy-icon {
   position: absolute;
   right: 5%;
-  top: 4.5%;
+  top: 4.3%;
 }
 
 .trophy-icon i {
   font-size: 21px;
   color: gold;
+}
+
+.current-question {
+  position: absolute;
+  right: 28%;
+  top: 4.1%;
+}
+
+.current-question i {
+  font-size: 21px;
+}
+
+#current-question {
+  position: absolute;
+  right: 31%;
+  top: 3.8%;
+  font-size: 20px;
+}
+
+#current-question span {
+  font-size: 20px;
 }
 
 .hamburger {
@@ -903,6 +924,16 @@ textarea {
     right: 9.8%;
   }
 
+  .current-question {
+    right: 33%;
+    top: 4.5%;
+  }
+  
+  #current-question {
+    right: 37.5%;
+    top: 4%;
+  }
+
   .planet-bar {
     left: 6.5%;
   }
@@ -1055,39 +1086,62 @@ textarea {
   }
 
   .home-icon-logo i {
-    font-size: 23px;
+    font-size: 20px;
   }
 
   .audio-icon-logo {
-    left: 20%;
-    top: 4.2%;
+    left: 18%;
+    top: 4.1%;
   }
 
   .sound-on i {
-    font-size: 22px;
+    font-size: 19px;
   }
 
   .sound-off i {
-    font-size: 22px;
+    font-size: 19px;
   }
 
   #timer {
-    right: 43%;
-    font-size: 17px;
+    right: 39%;
+    font-size: 15px;
   }
 
   .timer-icon {
-    right: 35%;
+    right: 31%;
     top: 4.2%;
   }
 
   .timer-icon i {
-    font-size: 21.5px;
+    font-size: 19px;
+  }
+
+  .trophy-icon i {
+    font-size: 19px;
   }
 
   .question-score {
-    font-size: 17px;
+    font-size: 15px;
     right: 18%;
+  }
+
+  .current-question {
+    right: 50%;
+    top: 4.3%;
+  }
+  
+  .current-question i {
+    font-size: 17px;
+  }
+  
+  #current-question {
+    right: 58%;
+    top: 4%;
+    font-size: 15px;
+  }
+
+  #current-question span {
+    font-size: 15px;
   }
 
   .question-main-text {
@@ -1309,7 +1363,7 @@ textarea {
   }
 
   .audio-icon-logo {
-    left: 22%;
+    left: 20%;
   }
 
   #timer {
@@ -1317,11 +1371,23 @@ textarea {
   }
 
   .timer-icon {
-    right: 36%;
+    right: 32%;
+  }
+
+  #timer {
+    right: 40%;
   }
 
   .question-score {
-    right: 19%;
+    right: 18%;
+  }
+
+  .current-question {
+    right: 50%;
+  }
+  
+  #current-question {
+    right: 58%;
   }
 
   .difficulty-game-area {
