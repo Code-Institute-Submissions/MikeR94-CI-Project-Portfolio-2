@@ -312,6 +312,9 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 * [GitBash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) - Terminal used to push changes to the GitHub repository.
 * [EmailJS](https://www.emailjs.com/) - Used to implement a working email system.
 * [removebg](https://www.remove.bg/) - Used to remove background images.
+* [Mobile Simulator](https://chrome.google.com/webstore/detail/mobile-simulator-responsi/ckejmhbmlajgoklhgbapkiccekfoccmk) - Used to test the quiz whilst on a mobile device
+* [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/) - Used to test responsiveness and debug
+* [Responsive Design Checker](https://www.responsivedesignchecker.com/) - Used to test responsiveness
 
 [Back to top](<#contents>)
 
@@ -367,7 +370,12 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 * ## Responsiveness Testing
     * The responsive design tests were carried out manually with [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/) and [Responsive Design Checker](https://www.responsivedesignchecker.com/).<br /><br />
 
-    ![Responsive Test Sheet](assets/readme-images/responsive-test-image.png)
+    ![Responsive Test Sheet](assets/images/readme-images/responsive-design-checker-image.png)
+
+* ## Real World Testing
+    * Although checking the responsiveness via [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/) and [Responsive Design Checker](https://www.responsivedesignchecker.com/), I quickly noticed that these tests, whilst still vital and good, don't actually give me 100% accurate results as they don't show mobile keyboards and how that effects the website. After running into a bug (explained below), I downloaded a Google Chrome Extension called [Mobile Simulator](https://chrome.google.com/webstore/detail/mobile-simulator-responsi/ckejmhbmlajgoklhgbapkiccekfoccmk) which can simulate mobile devices which will show the keyboard and the effect it has on the website<br /><br />
+
+    ![Responsive Test Sheet](assets/images/readme-images/mobile-simulator-results-image.png)
 
 * ## Compressing Images
     * All images have been compressed with [Compressor](https://compressor.io/) and I managed to save a total of 1568 KB.<br /><br />
