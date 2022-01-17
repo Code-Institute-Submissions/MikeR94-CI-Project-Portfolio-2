@@ -322,7 +322,7 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
 * ## Code Validation
 
-    * The Astronomy Quiz has been thoroughly tested. All the code has been validated via the [W3C HTML Validator](https://validator.w3.org/), the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and the [JSHint Validator](https://jshint.com/). 4 HTML and 2 CSS minor errors were found when tested on [HTML Validation](https://validator.w3.org/) and [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) but were fixed immediately and documented below.<br /><br />
+    * The Astronomy Quiz has been thoroughly tested. All the code has been validated via the [W3C HTML Validator](https://validator.w3.org/), the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and the [JSHint Validator](https://jshint.com/). 3 HTML errors, 1 HTML warning and 4 CSS warnings were found when tested on [HTML Validation](https://validator.w3.org/) and [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) but were fixed immediately and documented below.<br /><br />
 
 * ### HTML Validation Image
 
@@ -506,11 +506,21 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
     ![HTML Error 3](assets/images/readme-images/duplicate-menu-error.png)
 
-    ![HTML Error 4](assets/images/readme-images/javascript-type-error.png)
+    ![HTML Warning 1](assets/images/readme-images/javascript-type-error.png)
 
-    * The above errors were very simple to rectify as I only had to remove anything that had been duplicated or anything that was not allowed. After removing anything that was prompted, I was presented with no warnings and errors <br /><br />
+    * The above warning and errors were very simple to rectify as I only had to remove anything that had been duplicated or anything that was not allowed. After removing anything that was prompted, I was presented with no warnings and errors <br /><br />
 
     ![HTML Validation Solved](assets/images/readme-images/html-validation-image.png)
+
+     ### CSS Validation
+    
+    * After putting the website through [W3C CSS Validator](https://jigsaw.w3.org/css-validator/), I was presented with the following warnings below:<br /><br />
+
+    ![CSS Warning](assets/images/readme-images/css-warning-image.png)
+
+    * The above warnings identified that where I had used -webkit-background-size, -moz-background-size and -o-background-size, these are vendor extensions. After removing them, those 3 warnings had been fixed. As for the first warning (line 11), this was caused by me using **color: var(--clr-text);** to apply the colour. After I had changed this to **#faf9f6**, the warning error had been fixed. <br /><br />
+
+    ![CSS Validation Solved](assets/images/readme-images/css-validation-image.png)
 
 
 * ## Bugs Unresolved  
