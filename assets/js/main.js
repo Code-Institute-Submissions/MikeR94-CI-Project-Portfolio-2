@@ -4,10 +4,12 @@ let answer1 = document.getElementById("answer1-btn");
 let answer2 = document.getElementById("answer2-btn");
 let answer3 = document.getElementById("answer3-btn");
 let answer4 = document.getElementById("answer4-btn");
+let currentQuestionNumber = document.getElementById("show-current-question");
 let questionText = document.getElementById("question-text");
 let audioOffIcon = document.getElementsByClassName("sound-off");
 let audioOnIcon = document.getElementsByClassName("sound-on");
 let playerName = document.getElementById("player-name");
+let displayedQuestionNumber = 1;
 let currentQuestion = 0;
 let answerClicked = false;
 let shuffledQuestions = 0;
@@ -130,7 +132,9 @@ function checkForLandscapeOnMobile() {
  * any styles that have been added on checkAnswer()
  */
 function nextQuestion() {
+  displayedQuestionNumber++;
   document.getElementById("timer").innerHTML = 30;
+  currentQuestionNumber.innerText = displayedQuestionNumber;
   currentQuestion++;
   buildQuestions();
   startTimer();
