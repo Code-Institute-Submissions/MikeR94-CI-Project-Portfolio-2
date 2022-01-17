@@ -86,7 +86,8 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
       * This is the first part of the quiz the user will see when visiting and is designed to allow the user to immediately get started with playing the quiz.
       * In the middle of the website the player will see the quiz application complimented by a beautiful space background.
-      * Within the quiz application, the user will be greeted and then asked to submit a name and then click next to be directed to select a difficulty.<br /><br />
+      * Within the quiz application, the user will be greeted and then asked to submit a name and then click next to be directed to select a difficulty.
+      * If the user inputs a name that doesn't meet validation, the user will be given feedback on how to fill the name input correctly<br /><br />
 
 <details><summary><b>Desktop Home/Landing Page Image</b></summary>
 
@@ -102,7 +103,7 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
   * ### Navigation Bar
 
-    * Located at the top of the quiz application and provides the user the ability to navigate back to the home page, enter the menu and turn the game sounds on or off. Whilst the player is currently playing the quiz, additional features show like the time left and the players current score.<br /><br />
+    * Located at the top of the quiz application and provides the user the ability to navigate back to the home page, enter the menu and turn the game sounds on or off. Whilst the player is currently playing the quiz, the hamburger icon will disappear and will be replaced with additional features such as "Current Question Number", "Time Left" and "Score" to give the user more information and provide a better user experience<br /><br />
 
 <details><summary><b>Desktop Navigation Bar Image</b></summary>
 
