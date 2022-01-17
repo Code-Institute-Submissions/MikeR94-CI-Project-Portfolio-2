@@ -385,10 +385,43 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
 
    * ### Manual Tests Conducted
-      * Feature Manual Tested
-        * Verify step here
-      * Feature Manual Tested
-        * Verify step here
+      * Home/Landing Section
+        * Verify that clicking on the home icon reloads the website to the home page
+        * Verify that clicking the sound icon will toggle the audio
+        * Verify that clicking the hamburger icon will open the menu
+        * Verify that clicking the next button without a valid name will prompt the user and not go to the difficulty page
+        * Verify that clicking the next button with a valid name will go to the difficulty page
+        * Verify that hovering over the tooltip will show the user some helpful information on how to enter a correct name
+      * Menu/Navigation Section
+        * Verify that clicking the hamburger icon will open the menu and the hamburger icon will become a cross icon
+        * Verify that clicking the cross icon will close the menu and the cross icon become a hamburger icon
+        * Verify that clicking the home button within the menu will reload the website to the home page
+        * Verify that clicking the rules button within the menu will load the rules page
+        * Verify that clicking the hiscores button within menu will load the hiscores page
+        * Verify that clicking the contact button within the menu will load the contact page
+        * Verify that clicking any of the aforementioned menu buttons will hide the menu and show the correct page
+      * Difficulty Section
+        * Verify that clicking the easy button will load the easy questions in a random order
+        * Verify that clicking the medium button will load the medium questions in a random order
+        * Verify that clicking the hard button will load the hard questions in a random order
+      * Question Section
+        * Verify that the question and the answers are displayed correctly
+        * Verify that the hamburger icon will disappear
+        * Verify that the score icon will show and will accurately increase score
+        * Verify that the timer will show and will count down from 30 seconds to 0 seconds
+        * Verify that the timer will turn red when the time left is 10 seconds or less
+        * Verify that the timer will reset back to 30 seconds when the next question is loaded
+        * Verify that the users selected answer is highlighted correctly (green = correct / red = incorrect)
+        * Verify that if the user selects a correct answer the "correct" audio sound will play
+        * Verify that if the user selects an incorrect answer the "incorrect" audio sound will play
+        * Verify that if the user doesn't select an answer and runs out of time, the correct answer is shown and the user doesn't score points
+        * Verify that the next question icon is greyed out and un-clickable whilst the question is unanswered and there is time remaining
+        * Verify that the next question icon returns to colour and is clickable if the question is answered and if there is no time remaining
+        * Verify that the next question icon correctly loads the next question if there are questions remaining
+        * Verify that the next question icon correctly loads the results page if there are no more questions remaining
+        * Verify that the planet icons turn to colour if the player answers a question correctly and remain greyed out if they get it wrong or don't answer
+        * Verify that the answer buttons become un-clickable when the question has been answered or the time has run out
+        * Verify that the answer buttons become clickable when the next question is loaded
         <br /><br />
 
 * ## Browser Compatibility
