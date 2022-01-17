@@ -482,7 +482,7 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
     ![Size Error Flicker](assets/videos/screen-error-flicker.gif)
     </details><br />
 
-    * After spending many hours trying to debug this issue on my own and then with Code Institute Tutor Rebecca, it was my brother [Jack Ralph](https://www.linkedin.com/in/jackthomasralph/) that quickly noticed that the problem wasn't as complicated as I once thought. The error was showing because I had a media query that displayed an error message if the users screen width and height wasn't large enough to support the quiz. As soon as I removed that media query, the bug was fixed, however I've noticed in programming that you fix 1 bug it can then generate multiple other bugs or problems. In my case, I now didn't have anything detecting if the device was too small to support the quiz. So I was stuck with a problem, I needed to remove the media query to allow keyboards so users can enter information and I needed the quiz to be fully responsive across all devices. After many hours of theorising and coming up with multiple solutions, I decided that having the quiz in landscape mode whilst on a mobile device was not practical for the user experience and decided to implement JavaScript that would detect if the user is on a mobile device and is also in landscape mode. If those two conditions are true, display an error message to the user, if those two conditions aren't true, then do not display the error message. Whilst not the most absolutely ideal solution, it was the best solution given the time constraints.<br /><br />
+    * After spending many hours trying to debug this issue on my own and then with Code Institute Tutor Rebecca, it was my brother [Jack Ralph](https://www.linkedin.com/in/jackthomasralph/) that quickly noticed that the problem wasn't as complicated as I once thought. The error was showing because I had a media query that displayed an error message if the users screen width and height wasn't large enough to support the quiz. As soon as I removed that media query, the bug was fixed, however I've noticed in programming that you fix one bug it can then generate multiple other bugs or problems. In my case, I now didn't have anything detecting if the device was too small to support the quiz. So I was stuck with a problem, I needed to remove the media query to allow keyboards so users can enter information and I needed the quiz to be fully responsive across all devices. After many hours of theorising and coming up with multiple solutions, I decided that having the quiz in landscape mode whilst on a mobile device was not practical for the user experience and decided to implement JavaScript that would detect if the user is on a mobile device and is also in landscape mode. If those two conditions are true, display an error message to the user, if those two conditions aren't true, then do not display the error message. Whilst not the most absolutely ideal solution, it was the best solution given the time constraints.<br /><br />
 
     ![P30 Pro Fixed](assets/images/readme-images/size-error-flicker-solved-image.png)
 
@@ -498,14 +498,21 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
     ![FavIcon Solved](assets/images/readme-images/favicon-solved-image.png)
 
-    ### Bug 2
+     ### HTML Validation
+    
+    * After putting the website through [HTML Validation](https://validator.w3.org/), I was presented with the following errors below:<br /><br />
 
-    ![Issue]()
+    ![HTML Error 1](assets/images/readme-images/aria-placeholder-error.png)
 
-     * Insert text here<br /><br />
+    ![HTML Error 2](assets/images/readme-images/duplicate-hamburger-error.png)
 
-    ![Solved](assets/readme-images/favicon-solved-image.png)
+    ![HTML Error 3](assets/images/readme-images/duplicate-menu-error.png)
 
+    ![HTML Error 4](assets/images/readme-images/javascript-type-error.png)
+
+    * The above errors were very simple to rectify as I only had to remove anything that had been duplicated or anything that was not allowed. After removing anything that was prompted, I was presented with no warnings and errors <br /><br />
+
+    ![HTML Validation Solved](assets/images/readme-images/html-validation-image.png)
 
 
 * ## Bugs Unresolved  
