@@ -404,6 +404,7 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
         * Verify that clicking the easy button will load the easy questions in a random order
         * Verify that clicking the medium button will load the medium questions in a random order
         * Verify that clicking the hard button will load the hard questions in a random order
+        * Verify that the users name is displayed within the "Great stuff" message
       * Question Section
         * Verify that the question and the answers are displayed correctly
         * Verify that the hamburger icon will disappear
@@ -422,6 +423,27 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
         * Verify that the planet icons turn to colour if the player answers a question correctly and remain greyed out if they get it wrong or don't answer
         * Verify that the answer buttons become un-clickable when the question has been answered or the time has run out
         * Verify that the answer buttons become clickable when the next question is loaded
+        * Verify that the current question icon correctly shows the user what question number they are on
+      * Results Section
+        * Verify that the users name is displayed in the "you managed" message
+        * Verify that the correct amount of answers is displayed in the "you managed" message
+        * Verify that the correct difficulty level is displayed in the "you managed" message
+        * Verify that the users score is displayed correctly
+        * Verify that the "Play Again" button will reload the website and go to the home page when clicked
+     * Rules Section
+        * Verify that the rules page is displayed correctly
+        * Verify that any icons used within the rules page are not clickable
+     * Hiscores Section
+        * Verify that the hiscores list gets updated when a player has completed the quiz and has refreshed the website
+        * Verify that the "Clear Hiscores" button reloads the website and then clears the hiscores list so that it is empty
+     * Contact Section
+        * Verify that the name input gives the user feedback if the name input doesn't validate
+        * Verify that the email input gives the user feedback if the email input doesn't validate
+        * Verify that the message input gives the user feedback if the message input doesn't validate
+        * Verify that the "Sent Message" page is displayed if the contact form has been filled in correctly and the message as been successfully sent
+        * Verify that hovering over the tooltip next to name input will show the user some helpful information on how to enter a correct name
+        * Verify that hovering over the tooltip next to email input will show the user some helpful information on how to enter a correct email
+        * Verify that hovering over the tooltip next to message input will show the user some helpful information on how to enter a correct message
         <br /><br />
 
 * ## Browser Compatibility
