@@ -488,6 +488,16 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
     ![Solved](assets/images/readme-images/landscape-error-message.png)
 
+    ### Console Error
+        
+    * A console error appeared when inspecting the website with [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/) and stated "Failed to load resource: the server responded with a status of 404 () /favicon.ico:1. Because I had encountered this error on my Portfolio Project 1, I knew that this was simply due to the website not having a favicon.<br /><br />
+
+    ![FavIcon Issue](assets/images/readme-images/favicon-error-image.png)
+
+     * After implementing the favicon, the console error had disappeared.<br /><br />
+
+    ![FavIcon Solved](assets/images/readme-images/favicon-solved-image.png)
+
     ### Bug 2
 
     ![Issue]()
