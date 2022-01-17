@@ -369,8 +369,6 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
     ![Chrome Mobile Lighthouse](assets/images/readme-images/chrome-mobile-lighthouse.png)
 
-    * Insert text here<br /><br />
-
 * ## Accessibility Testing
     * I also put the website through [a11y](https://color.a11y.com/Contrast/) to further test the contrast and found no issues.  <br /><br />
 
