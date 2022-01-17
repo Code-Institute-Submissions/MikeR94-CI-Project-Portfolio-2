@@ -524,9 +524,11 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
 
 * ## Bugs Unresolved  
-    * Insert text here<br /><br />
+    * When inspecting the website with [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/), the website is showing 1 issue which is the same issue I had on my Project Portfolio 1 so I'm familiar with it. <br /><br />
 
-    ![Issue](assets/readme-images/site-issues-image.png)
+    ![Site Issue](assets/images/readme-images/navigator-agent-issue.png)
+    
+    * I've done some research and apparently this is a Google Chrome issue as per this [source](https://forum.codewithmosh.com/t/the-ultimate-javascript-console-issue-at-beginning-of-course/6535) and has been reported [here](https://githubmemory.com/repo/zalmoxisus/redux-devtools-extension/issues/808). Additionally, I have tested this website with Microsoft Edge and the issue doesn't show.
     
 
 [Back to top](<#contents>)
