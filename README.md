@@ -322,7 +322,7 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
 * ## Code Validation
 
-    * Insert text here <br /><br />
+    * The Astronomy Quiz has been thoroughly tested. All the code has been validated via the [W3C HTML Validator](https://validator.w3.org/), the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and the [JSHint Validator](https://jshint.com/). 4 HTML and 2 CSS minor errors were found on the index.html when tested on [HTML Validation](https://validator.w3.org/) and [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) but were fixed immediately and documented below.<br /><br />
 
 * ### HTML Validation Image
 
@@ -334,7 +334,16 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
 * ### JS Validation Image
 
-    ![JS Validation](assets/readme-images/js-validation-image.png)
+    * As for JavaScript, I have multiple JavaScript files which provide the functionality for specific features within the quiz. I decided to do this to provide better readability for anyone who wishes to read the code behind this project. When I put each individual file through [JSHint Validator](https://jshint.com/), I noticed a few errors that were showing such as unused variables and undefined variables however I realised that is because I have not exported and imported variables and functions. I did look into this and found some very good documentation on it at [JavaScript.Info](https://javascript.info/import-export) but after speaking with my mentor, he said that it was not mandatory as the course has not yet covered it. To further solidify that I did not have any unused variables or undefined variables, I decided to create a file called combined.js which has all the JavaScript code for the quiz and put that one file through the [JSHint Validator](https://jshint.com/) <br /><br />
+
+    ![JS Validation](assets/images/readme-images/combinedjs-jshint.png)
+
+* Undefined Variable - emailjs 
+    * I tried multiple times to fix this issue but because I was using [EmailJS](https://www.emailjs.com/) for my contact form, I was unable to declare these variables or change them. <br /><br />
+* Warning 1 
+    * ***Expected an assignment or function call and instead saw an expression***. This warning is caused by line 10 in audio.js. I have spoken to my mentor about this warning and he has said that this is absolutely fine. <br /><br />
+* Warning 2 
+    * ***Functions declared within loops referencing an outer scoped variable may lead to confusing semantics***. This warning is caused by the for loops I have which loop through a class and then add a click event listener which will toggle the hide class on and off. This allows me to have more concise HTML as I only need to reference one class instead of having multiple different ID's for each different game section but for the same element. I have spoken to my mentor about this warning and he has said that this is also fine and will cause no problems. <br /><br />
 
 * ## Lighthouse Testing 
 
@@ -476,7 +485,7 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
     * After spending many hours trying to debug this issue on my own and then with Code Institute Tutor Rebecca, it was my brother [Jack Ralph](https://www.linkedin.com/in/jackthomasralph/) that quickly noticed that the problem wasn't as complicated as I once thought. The error was showing because I had a media query that displayed an error message if the users screen width and height wasn't large enough to support the quiz. As soon as I removed that media query, the bug was fixed, however I've noticed in programming that you fix 1 bug it can then generate multiple other bugs or problems. In my case, I now didn't have anything detecting if the device was too small to support the quiz. So I was stuck with a problem, I needed to remove the media query to allow keyboards so users can enter information and I needed the quiz to be fully responsive across all devices. After many hours of theorising and coming up with multiple solutions, I decided that having the quiz in landscape mode whilst on a mobile device was not practical for the user experience and decided to implement JavaScript that would detect if the user is on a mobile device and is also in landscape mode. If those two conditions are true, display an error message to the user, if those two conditions aren't true, then do not display the error message. Whilst not the most absolutely ideal solution, it was the best solution given the time constraints.<br /><br />
 
     ![Solved](assets/images/readme-images/size-error-flicker-solved-image.png)
-    
+
     ![Solved](assets/images/readme-images/landscape-error-message.png)
 
     ### Bug 2
