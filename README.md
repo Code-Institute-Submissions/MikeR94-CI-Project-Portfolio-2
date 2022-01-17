@@ -464,11 +464,24 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
 * ## Bugs Fixed 
 
-    ### Console Error
+    ### Size Error Flicker
         
-    * Insert text here<br /><br />
+    * After testing the quiz via website tools, I decided to test it on my iPhone 7 Plus and had no errors whatsoever. I then sent it to my friend who has a Huawei P30 Pro and he was presented with the below issue<br /><br />
 
-    ![Issue](assets/readme-images/favicon-issue-image.png)
+    <details><summary><b>Size Error Flicker GIF (EPILEPSY WARNING)</b></summary>
+
+    ![Size Error Flicker](assets/videos/screen-error-flicker.gif)
+    </details><br />
+
+    * After spending many hours trying to debug this issue on my own and then with Code Institute Tutor Rebecca, it was my brother [Jack Ralph](https://www.linkedin.com/in/jackthomasralph/) that quickly noticed that the problem wasn't as complicated as I once thought. The error was showing because I had a media query that displayed an error message if the users screen width and height wasn't large enough to support the quiz. As soon as I removed that media query, the bug was fixed, however I've noticed in programming that you fix 1 bug it can then generate multiple other bugs or problems. In my case, I now didn't have anything detecting if the device was too small to support the quiz. So I was stuck with a problem, I needed to remove the media query to allow keyboards so users can enter information and I needed the quiz to be fully responsive across all devices. After many hours of theorising and coming up with multiple solutions, I decided that having the quiz in landscape mode whilst on a mobile device was not practical for the user experience and decided to implement JavaScript that would detect if the user is on a mobile device and is also in landscape mode. If those two conditions are true, display an error message to the user, if those two conditions aren't true, then do not display the error message. Whilst not the most absolutely ideal solution, it was the best solution given the time constraints.<br /><br />
+
+    ![Solved](assets/images/readme-images/size-error-flicker-solved-image.png)
+    
+    ![Solved](assets/images/readme-images/landscape-error-message.png)
+
+    ### Bug 2
+
+    ![Issue]()
 
      * Insert text here<br /><br />
 
