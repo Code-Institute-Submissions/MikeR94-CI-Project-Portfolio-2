@@ -301,7 +301,7 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
 * ### Current Question Indicator
     
-    * Add Current Question information here <br /><br />
+    * Provides the user with a clear indication as to which question number they are currently on<br /><br />
     
 <details><summary><b>Desktop Contact Image</b></summary>
 
@@ -310,7 +310,11 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
 * ### Audio
     
-    * Add Audio information here <br /><br />
+    * Gives the user additional information and feedback when navigating the quiz
+    * Correct sound audio played only when an answer is answered correctly
+    * Incorrect sound audio played only when an answer is answered incorrectly 
+    * Button Click sound audio played only when the user clicks on a button
+    * Can be toggled off and on by clicking the sound icon in the top left<br /><br />
     
 <details><summary><b>Desktop Contact Image</b></summary>
 
