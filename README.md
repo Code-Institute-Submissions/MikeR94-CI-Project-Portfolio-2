@@ -9,7 +9,7 @@ You can view the live site here - <a href="https://miker94.github.io/CI-Project-
 # Contents
 
 * [**Objective**](<#objective>)
-* [**User Experience UX**](<#user-experience-ux>)
+* [**player Experience UX**](<#player-experience-ux>)
     * [Design Prototype](<#design-prototype>)
     * [Site Structure](<#site-structure>)
     * [Design Choices](<#design-choices>)
@@ -41,11 +41,11 @@ You can view the live site here - <a href="https://miker94.github.io/CI-Project-
 
 # Objective
 
-In my second project, I intend to create a challenging, interactive and fun quiz game for user to test their knowledge on Astronomy. The main objective is to demonstrate competency in HTML, CSS and JavaScript alongside showcasing attention to detail and the importance of thorough testing.
+In my second project, I intend to create a challenging, interactive and fun quiz game for player to test their knowledge on Astronomy. The main objective is to demonstrate competency in HTML, CSS and JavaScript alongside showcasing attention to detail and the importance of thorough testing.
 
 [Back to top](<#contents>)
 
-# User Experience (UX)
+# player Experience (UX)
 
 ## Design Prototype
 
@@ -59,14 +59,14 @@ The design prototype for The Astronomy Quiz was produced in [Figma](https://www.
 
 ## Site Structure
 
-The Astronomy Quiz is a one-page website which has been designed to look like an application. When a user visits the website, they are instantly greeted on the [Home Page](index.html) and asked to enter a username. The quiz is very linear and clear so that the player is never left confused on how to play or what to do. The quiz also has a hamburger menu which the player can select to navigate to additional pages such as **Home**, **Rules**, **Hiscores** and **Contact**. When the player has finished the quiz, they will be presented with a score and then the option to play again which, if clicked, will take the player back to the [Home Page](index.html).
+The Astronomy Quiz is a one-page website which has been designed to look like an application. When a player visits the website, they are instantly greeted on the [Home Page](index.html) and asked to enter a username. The quiz is very linear and clear so that the player is never left confused on how to play or what to do. The quiz also has a hamburger menu which the player can select to navigate to additional pages such as **Home**, **Rules**, **Hiscores** and **Contact**. When the player has finished the quiz, they will be presented with a score and then the option to play again which, if clicked, will take the player back to the [Home Page](index.html).
 
 [Back to top](<#contents>)
 ## Design Choices
 
  * ### Typography
       The fonts chosen were 'Poppins' for the headings and for the body text however different font-weights and font-sizes were used to give further clarity. They fall back to sans-serif respectively if the Poppins font can't be loaded. 
-     *  'Poppins' was chosen for the primarily to give the user an initial welcoming feel. The font-style is very modern and clean and gives a professional and inviting feeling to the website.
+     *  'Poppins' was chosen for the primarily to give the player an initial welcoming feel. The font-style is very modern and clean and gives a professional and inviting feeling to the website.
 
 
  * ### Colour Scheme
@@ -79,22 +79,22 @@ The Astronomy Quiz is a one-page website which has been designed to look like an
 [Back to top](<#contents>)
 # Features
 
-The Astronomy Quiz website is set up to be very easy to use and visually appealing for the player. It was designed with user-experience in mind. The player should feel like they are doing an Astronomy Quiz just by the visual theme and feel encouraged to keep playing to try and beat their current hiscore.
+The Astronomy Quiz website is set up to be very easy to use and visually appealing for the player. It was designed with player-experience in mind. The player should feel like they are doing an Astronomy Quiz just by the visual theme and feel encouraged to keep playing to try and beat their current hiscore.
 
 ## Existing Features
   * ### Home Section
 
-      * This is the first part of the quiz the user will see when visiting and is designed to allow the user to immediately get started with playing the quiz.
+      * This is the first part of the quiz the player will see when visiting and is designed to allow the player to immediately get started with playing the quiz.
       * In the middle of the website the player will see the quiz application complimented by a beautiful space background.
-      * Within the quiz application, the user will be greeted and then asked to submit a name and then click next to be directed to select a difficulty.
-      * If the user inputs a name that doesn't meet validation, the user will be given feedback on how to fill the name input correctly<br /><br />
+      * Within the quiz application, the player will be greeted and then asked to submit a name and then click next to be directed to select a difficulty.
+      * If the player inputs a name that doesn't meet validation, the player will be given feedback on how to fill the name input correctly.<br /><br />
 
 <details><summary><b>Desktop Home/Landing Page Image</b></summary>
 
 ![Desktop Home Image](assets/images/readme-images/desktop-home-page-image.png)
 </details><br />
 
-<details><summary><b>Desktop Home/Landing Page Responsive Image</b></summary>
+<details><summary><b>Responsive Home/Landing Page Image</b></summary>
 
 ![Responsive Home Image](assets/images/readme-images/responsive-home-page-image.png)
 </details><br />
@@ -103,29 +103,29 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
   * ### Navigation Bar
 
-    * Located at the top of the quiz application and provides the user the ability to navigate back to the home page, enter the menu and turn the game sounds on or off. Whilst the player is currently playing the quiz, the hamburger icon will disappear and will be replaced with additional features such as "Current Question Number", "Time Left" and "Score" to give the user more information and provide a better user experience<br /><br />
+    * Located at the top of the quiz application and provides the player the ability to navigate back to the home page, enter the menu and turn the game sounds on or off. Whilst the player is currently playing the quiz, the hamburger icon will disappear and will be replaced with additional features such as "Current Question Number", "Time Left" and "Score" to give the player more information and provide a better player experience.<br /><br />
 
 <details><summary><b>Desktop Navigation Bar Image</b></summary>
 
-![Navigation Bar Desktop Image](assets/images/readme-images/nav-bar-desktop-image.png)
+![Navigation Bar Desktop Image](assets/images/readme-images/desktop-nav-bar-image.png)
 </details><br />
 
-<details><summary><b>Desktop Navigation Bar Image (Timer & Score)</b></summary>
+<details><summary><b>Desktop Navigation Bar Image (During Quiz)</b></summary>
 
-![Navigation Bar Responsive Image](assets/images/readme-images/nav-bar-desktop-additional-image.png)
+![Navigation Bar Responsive Image](assets/images/readme-images/desktop-nav-bar-quiz-image.png)
 </details><br />
 
-<details><summary><b>Responsive Navigation Bar Image (Timer & Score)</b></summary>
+<details><summary><b>Responsive Navigation Bar Image (During Quiz)</b></summary>
 
-![Navigation Bar Responsive Image](assets/images/readme-images/responsive-nav-bar-additional-image.png)
+![Navigation Bar Responsive Image](assets/images/readme-images/responsive-nav-bar-quiz-image.png)
 </details><br />
 
 [Back to top](<#contents>)
 
   * ### Menu Section
-    * I implemented a menu that the user can access at all times by pressing the 3 white lines in the top right. When pressed, these 3 white lines will disappear, a cross will be shown and then the menu will appear.
-    * The user will have access to 4 navigation buttons **Home**, **Rules**, **Hiscores** and **Contact**.
-    * If the user opens the menu during answering quiz questions, the game will not pause. This should promote fair play for all users <br /><br /> 
+    * I implemented a menu that the player can access at all times by pressing the 3 white lines in the top right. When pressed, these 3 white lines will disappear, a cross will be shown and then the menu will appear.
+    * The player will have access to 4 navigation buttons **Home**, **Rules**, **Hiscores** and **Contact**.
+    * If the player opens the menu during answering quiz questions, the game will not pause. This should promote fair play for all players. <br /><br /> 
 
 <details><summary><b>Desktop Menu Image</b></summary>
 
@@ -141,7 +141,8 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
   * ### Difficulty Section
 
-    * After the user has entered their name and clicked the next button on the home page, they will then be directed to this page where they can select a difficulty.
+    * After the player has entered their name and clicked the next button on the home page, they will then be directed to this page where they can select a difficulty.
+    * The name that the player entered on the home page will be saved as a variable and used throughout the quiz to display personal messages.
     * The quiz has 3 difficulty levels to choose from. Selecting easy will give 10 points per correct answers, medium will give 20 points per correct answer and hard will give 40 points per correct answer.<br /><br />
 
 <details><summary><b>Desktop Difficulty Image</b></summary>
@@ -159,11 +160,12 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
 * ### Question Section
     
-    * This is the core of the game. The user is asked to answer 8 questions that are Astronomy related and the difficulty of the questions will be determined by what difficulty the user selects in the difficulty section
-    * I decided to do 8 questions as there are 8 planets in our solar system. It's a small niche addition that hopefully the user may spot.
+    * This is the core of the game. The player is asked to answer 8 questions that are Astronomy related and the difficulty of the questions will be determined by what difficulty the player selects in the difficulty section
+    * I decided to do 8 questions as there are 8 planets in our solar system. It's a small niche addition that hopefully the player may spot.
     * Each question is randomly displayed from a list of pre-determined questions created from questions.js.
-    * If the player answers a correct answer, a "correct sound" noise will play, the correct answer will highlight green, the planet icon will light up, the time will pause and the player will receive points determined by difficulty for answering the question plus additional points equal to the time left. The next question icon will then show after 0.5 seconds.
-    * If the players answers incorrectly, an "incorrect sound" noise will play, the correct answer will highlight green, the users selected answer will highlight red and the user will not score points. The next question icon will then show after 0.5 seconds.<br /><br />
+    * If the player answers a correct answer, a "correct sound" noise will play, the correct answer will highlight green, the planet icon will light up, the time will pause and the player will receive points determined by difficulty for answering the question plus additional points equal to the time left. The next question icon will then become clickable after 0.5 seconds.
+    * If the players answers incorrectly, an "incorrect sound" noise will play, the correct answer will highlight green, the players selected answer will highlight red and the player will not score points. The next question icon will then become clickable after 0.5 seconds.
+    * If the players fails to answer within 30 seconds, the correct answer will highlight green, the incorrect answers will highlight red and the player will not score points. The next question icon will then become clickable after 0.5 seconds.<br /><br />
     
 <details><summary><b>Desktop Question Image</b></summary>
 
@@ -172,12 +174,17 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
 <details><summary><b>Desktop Question Correct Answer Image</b></summary>
 
-![Desktop Question Image](assets/images/readme-images/desktop-question-correct-image.png)
+![Desktop Correct Image](assets/images/readme-images/desktop-question-correct-image.png)
 </details><br />
 
 <details><summary><b>Desktop Question Wrong Answer Image</b></summary>
 
-![Desktop Question Image](assets/images/readme-images/desktop-question-incorrect-image.png)
+![Desktop Incorrect Image](assets/images/readme-images/desktop-question-incorrect-image.png)
+</details><br />
+
+<details><summary><b>Desktop Question No Time Left Image</b></summary>
+
+![Desktop Unanswered Image](assets/images/readme-images/desktop-question-unanswered-image.png)
 </details><br />
 
 <details><summary><b>Responsive Question Image</b></summary>
@@ -187,19 +194,25 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
 <details><summary><b>Responsive Question Correct Answer Image</b></summary>
 
-![Responsive Question Image](assets/images/readme-images/responsive-question-correct-image.png)
+![Responsive Correct Image](assets/images/readme-images/responsive-question-correct-image.png)
 </details><br />
 
 <details><summary><b>Responsive Question Wrong Answer Image</b></summary>
 
-![Responsive Question Image](assets/images/readme-images/responsive-question-incorrect-image.png)
+![Responsive Incorrect Image](assets/images/readme-images/responsive-question-incorrect-image.png)
+</details><br />
+
+<details><summary><b>Responsive Question No Time Left Image</b></summary>
+
+![Responsive Unanswered Image](assets/images/readme-images/responsive-question-unanswered-image.png)
 </details><br />
 
 [Back to top](<#contents>)
 
 * ### Results Section
     
-    * When the user finishes the quiz, they will then presented with a results page which will display the users score and then give them the option to play again if they wish to.<br /><br />
+    * When the player finishes the quiz, they will then presented with a results page which will display the players score and then give them the option to play again if they wish to.
+    * The players name that was entered prior to the quiz starting will be used to display a personal message at the end along with giving the player further information in the personal message such as difficulty level, correct questions answered and the final score.<br /><br />
     
 <details><summary><b>Desktop Results Image</b></summary>
 
@@ -215,8 +228,8 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
 * ### Rules Section
     
-    * Created to give the user a further understanding of the game and can be access via the menu.
-    * As well as having informative text, additional icons have been added to further aid the user in understanding.<br /><br />
+    * Created to give the player a further understanding of the game and can be accessed via the menu.
+    * As well as having informative text, additional icons have been added to further aid the player in understanding.<br /><br />
     
 <details><summary><b>Desktop Rules Image</b></summary>
 
@@ -232,28 +245,28 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
 * ### Hiscore Section
     
-    * Shows the user the current top 3 hiscores.
-    * All scores are saved in local storage so users can only compete with anyone who attempts the quiz on the same machine.
-    * The user has the ability to clear the hiscores and start fresh if they wish to do so.<br /><br />
+    * Shows the player the current top 3 hiscores.
+    * All scores are saved in local storage so players can only compete with anyone who attempts the quiz on the same machine.
+    * The player has the ability to clear the hiscores and start fresh if they wish to do so.<br /><br />
     
-<details><summary><b>Desktop Hiscore Image</b></summary>
+<details><summary><b>Desktop Hiscores Image</b></summary>
 
-![Desktop Hiscore Image](assets/images/readme-images/desktop-hiscore-image.png)
+![Desktop Hiscore Image](assets/images/readme-images/desktop-hiscores-image.png)
 </details><br />
 
-<details><summary><b>Responsive Hiscore Image</b></summary>
+<details><summary><b>Responsive Hiscores Image</b></summary>
 
-![Responsive Hiscore Image](assets/images/readme-images/responsive-hiscore-image.png)
+![Responsive Hiscore Image](assets/images/readme-images/responsive-hiscores-image.png)
 </details><br />
 
 [Back to top](<#contents>)
 
 * ### Contact Section
     
-    * Allows the user to submit any feedback, questions or concerns they may have.
+    * Allows the player to submit any feedback, questions or concerns they may have.
     * Created with [Email.JS](https://www.emailjs.com/) and allows for emails to be sent directly to a new email address created for this project.
-    * Additional functionality added to provide the user some visual feedback if their message fails to send
-    * Confirmation "Sent Message" screen to give the user confidence that their message has been successfully sent <br /><br />
+    * Additional functionality added to provide the player some visual feedback if their message fails to send.
+    * Confirmation "Sent Message" screen to give the player confidence that their message has been successfully sent.<br /><br />
     
 <details><summary><b>Desktop Contact Image</b></summary>
 
@@ -262,12 +275,7 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
 <details><summary><b>Desktop Contact Sent Image</b></summary>
 
-![Desktop Contact Image](assets/images/readme-images/desktop-contact-sent-image.png)
-</details><br />
-
-<details><summary><b>Desktop Contact Error Image</b></summary>
-
-![Desktop Contact Image](assets/images/readme-images/desktop-contact-error-image.png)
+![Desktop Contact Sent Image](assets/images/readme-images/desktop-contact-sent-image.png)
 </details><br />
 
 <details><summary><b>Responsive Contact Image</b></summary>
@@ -275,58 +283,73 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 ![Responsive Contact Image](assets/images/readme-images/responsive-contact-image.png)
 </details><br />
 
+<details><summary><b>Responsive Contact Sent Image</b></summary>
+
+![Responsive Contact Sent Image](assets/images/readme-images/responsive-contact-sent-image.png)
+</details><br />
+
 [Back to top](<#contents>)
 
 * ### Timer
     
-    * Implemented to add a further dynamic to the quiz
-    * Works in tandem with the score system. Remaining time is added to the score
-    * Time will visibly turn red when the time left is 10 seconds or left
-    * The player will have 30 seconds to answer any question regardless of difficulty level
-    * Time will reset back to 30 seconds upon loading the next question <br /><br />
+    * Implemented to add a further dynamic to the quiz.
+    * Works in tandem with the score system. Remaining time is added to the score.
+    * Time will visibly turn red when the time left is 10 seconds or less.
+    * The player will have 30 seconds to answer any question regardless of difficulty level.
+    * Time will reset back to 30 seconds upon loading the next question. <br /><br />
     
-<details><summary><b>Desktop Timer Image</b></summary>
+<details><summary><b>Timer Image (Time left above 10 seconds)</b></summary>
 
-![Desktop Timer Image](assets/images/readme-images/desktop-contact-image.png)
+![Timer Image White](assets/images/readme-images/timer-white-image.png)
+</details><br />
+
+<details><summary><b>Timer Image (Time left below 10 seconds)</b></summary>
+
+![Timer Image White](assets/images/readme-images/timer-red-image.png)
 </details><br />
 
 [Back to top](<#contents>)
 
 * ### Score
     
-    * Enhances user experience and increases replayability as players might wish to try beat their current score
-    * The points awarded is determined by the current level selected + time left remaining. Adding the remaining time to the score adds yet another dynamic to the game, encouraging the player to answer fast
-    * The score system has been thoroughly tested and there are no known bugs which the player can exploit to manipulate their score  <br /><br />
+    * Enhances player experience and increases replayability as players might wish to try beat their current score.
+    * The points awarded is determined by the current level selected + time left remaining. Adding the remaining time to the score adds yet another dynamic to the game, encouraging the player to answer fast.
+    * The score system has been thoroughly tested and there are no known bugs which the player can exploit to manipulate their score.  <br /><br />
     
-<details><summary><b>Desktop Score Image</b></summary>
+<details><summary><b>Score Image</b></summary>
 
-![Desktop Score Image](assets/images/readme-images/desktop-contact-image.png)
+![Score Image](assets/images/readme-images/score-image.png)
 </details><br />
 
 [Back to top](<#contents>)
 
 * ### Current Question Indicator
     
-    * Provides the user with a clear indication as to which question number they are currently on<br /><br />
+    * Provides the player with a clear indication as to which question number they are currently on.<br /><br />
     
-<details><summary><b>Desktop Current Question Image</b></summary>
+<details><summary><b>Current Question Image</b></summary>
 
-![Desktop Current Question Image](assets/images/readme-images/desktop-contact-image.png)
+![Current Question Image](assets/images/readme-images/current-question-image.png)
 </details><br />
 
 [Back to top](<#contents>)
 
 * ### Audio
     
-    * Gives the user additional information and feedback when navigating the quiz
-    * Correct sound audio played only when an answer is answered correctly
-    * Incorrect sound audio played only when an answer is answered incorrectly 
-    * Button Click sound audio played only when the user clicks on a button
-    * Can be toggled off and on by clicking the sound icon in the top left<br /><br />
+    * Gives the player additional information and feedback when navigating the quiz.
+    * Correct sound audio played only when an answer is answered correctly.
+    * Incorrect sound audio played only when an answer is answered incorrectly.
+    * Button Click sound audio played only when the player clicks on a button.
+    * Can be toggled off and on by clicking the sound icon in the top left.<br /><br />
     
-<details><summary><b>Desktop Audio Image</b></summary>
+<details><summary><b>Audio On Image</b></summary>
 
-![Desktop Audio Image](assets/images/readme-images/desktop-contact-image.png)
+![Desktop Audio Image](assets/images/readme-images/audio-on-image.png)
+</details><br />
+
+<details><summary><b>Audio Off Image</b></summary>
+
+![Desktop Audio Image](assets/images/readme-images/audio-off-image.png)
 </details><br />
 
 [Back to top](<#contents>)
@@ -335,7 +358,7 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
 * ### Global Hiscores
 
-    * Instead of hiscores saving locally, having the hiscores save globally would be much engaging for the user as they would be able to compete with others around the world to test their knowledge.
+    * Instead of hiscores saving locally, having the hiscores save globally would be much engaging for the player as they would be able to compete with others around the world to test their knowledge.
 
 * ### Fact Of The Week
 
@@ -347,7 +370,7 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
 * ### Global Sound Settings
 
-    * I believe it would be much more intuitive to save the users sound settings in local storage so that when the user refreshes the page, they don't have to keep turning the sound off every time if they don't wish to hear sound.
+    * I believe it would be much more intuitive to save the players sound settings in local storage so that when the player refreshes the page, they don't have to keep turning the sound off every time if they don't wish to hear sound.
 
 
 [Back to top](<#contents>)
@@ -402,7 +425,7 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
     * Furthermore the website has been through the [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) and [Microsoft Edge Dev Tools](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/open/?tabs=cmd-Windows) Lighthouse Testing which tests the website for the following:
         * Performance - How the page performs whilst loading.
-        * Accessibility - Is the site accessible for all users and how can it be improved.
+        * Accessibility - Is the site accessible for all players and how can it be improved.
         * Best Practices - Site conforms to industry best practices.
         * SEO - Search Engine Optimisation. Is the site optimised for search engine result rankings.<br /><br />
 
@@ -458,9 +481,9 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
         * Verify that clicking on the home icon reloads the website to the home page
         * Verify that clicking the sound icon will toggle the audio
         * Verify that clicking the hamburger icon will open the menu
-        * Verify that clicking the next button without a valid name will prompt the user and not go to the difficulty page
+        * Verify that clicking the next button without a valid name will prompt the player and not go to the difficulty page
         * Verify that clicking the next button with a valid name will go to the difficulty page
-        * Verify that hovering over the tooltip will show the user some helpful information on how to enter a correct name
+        * Verify that hovering over the tooltip will show the player some helpful information on how to enter a correct name
       * Menu/Navigation Section
         * Verify that clicking the hamburger icon will open the menu and the hamburger icon will become a cross icon
         * Verify that clicking the cross icon will close the menu and the cross icon become a hamburger icon
@@ -473,7 +496,7 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
         * Verify that clicking the easy button will load the easy questions in a random order
         * Verify that clicking the medium button will load the medium questions in a random order
         * Verify that clicking the hard button will load the hard questions in a random order
-        * Verify that the users name is displayed within the "Great stuff" message
+        * Verify that the players name is displayed within the "Great stuff" message
       * Question Section
         * Verify that the question and the answers are displayed correctly
         * Verify that the hamburger icon will disappear
@@ -481,10 +504,10 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
         * Verify that the timer will show and will count down from 30 seconds to 0 seconds
         * Verify that the timer will turn red when the time left is 10 seconds or less
         * Verify that the timer will reset back to 30 seconds when the next question is loaded
-        * Verify that the users selected answer is highlighted correctly (green = correct / red = incorrect)
-        * Verify that if the user selects a correct answer the "correct" audio sound will play
-        * Verify that if the user selects an incorrect answer the "incorrect" audio sound will play
-        * Verify that if the user doesn't select an answer and runs out of time, the correct answer is shown and the user doesn't score points
+        * Verify that the players selected answer is highlighted correctly (green = correct / red = incorrect)
+        * Verify that if the player selects a correct answer the "correct" audio sound will play
+        * Verify that if the player selects an incorrect answer the "incorrect" audio sound will play
+        * Verify that if the player doesn't select an answer and runs out of time, the correct answer is shown and the player doesn't score points
         * Verify that the next question icon is greyed out and un-clickable whilst the question is unanswered and there is time remaining
         * Verify that the next question icon returns to colour and is clickable if the question is answered and if there is no time remaining
         * Verify that the next question icon correctly loads the next question if there are questions remaining
@@ -492,12 +515,12 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
         * Verify that the planet icons turn to colour if the player answers a question correctly and remain greyed out if they get it wrong or don't answer
         * Verify that the answer buttons become un-clickable when the question has been answered or the time has run out
         * Verify that the answer buttons become clickable when the next question is loaded
-        * Verify that the current question icon correctly shows the user what question number they are on
+        * Verify that the current question icon correctly shows the player what question number they are on
       * Results Section
-        * Verify that the users name is displayed in the "you managed" message
+        * Verify that the players name is displayed in the "you managed" message
         * Verify that the correct amount of answers is displayed in the "you managed" message
         * Verify that the correct difficulty level is displayed in the "you managed" message
-        * Verify that the users score is displayed correctly
+        * Verify that the players score is displayed correctly
         * Verify that the "Play Again" button will reload the website and go to the home page when clicked
      * Rules Section
         * Verify that the rules page is displayed correctly
@@ -506,13 +529,13 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
         * Verify that the hiscores list gets updated when a player has completed the quiz and has refreshed the website
         * Verify that the "Clear Hiscores" button reloads the website and then clears the hiscores list so that it is empty
      * Contact Section
-        * Verify that the name input gives the user feedback if the name input doesn't validate
-        * Verify that the email input gives the user feedback if the email input doesn't validate
-        * Verify that the message input gives the user feedback if the message input doesn't validate
+        * Verify that the name input gives the player feedback if the name input doesn't validate
+        * Verify that the email input gives the player feedback if the email input doesn't validate
+        * Verify that the message input gives the player feedback if the message input doesn't validate
         * Verify that the "Sent Message" page is displayed if the contact form has been filled in correctly and the message as been successfully sent
-        * Verify that hovering over the tooltip next to name input will show the user some helpful information on how to enter a correct name
-        * Verify that hovering over the tooltip next to email input will show the user some helpful information on how to enter a correct email
-        * Verify that hovering over the tooltip next to message input will show the user some helpful information on how to enter a correct message
+        * Verify that hovering over the tooltip next to name input will show the player some helpful information on how to enter a correct name
+        * Verify that hovering over the tooltip next to email input will show the player some helpful information on how to enter a correct email
+        * Verify that hovering over the tooltip next to message input will show the player some helpful information on how to enter a correct message
         <br /><br />
 
 * ## Browser Compatibility
@@ -533,7 +556,7 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
     ![Size Error Flicker](assets/videos/screen-error-flicker.gif)
     </details><br />
 
-    * After spending many hours trying to debug this issue on my own and then with Code Institute Tutor Rebecca, it was my brother [Jack Ralph](https://www.linkedin.com/in/jackthomasralph/) that quickly noticed that the problem wasn't as complicated as I once thought. The error was showing because I had a media query that displayed an error message if the users screen width and height wasn't large enough to support the quiz. As soon as I removed that media query, the bug was fixed, however I've noticed in programming that you fix one bug it can then generate multiple other bugs or problems. In my case, I now didn't have anything detecting if the device was too small to support the quiz. So I was stuck with a problem, I needed to remove the media query to allow keyboards so users can enter information and I needed the quiz to be fully responsive across all devices. After many hours of theorising and coming up with multiple solutions, I decided that having the quiz in landscape mode whilst on a mobile device was not practical for the user experience and decided to implement JavaScript that would detect if the user is on a mobile device and is also in landscape mode. If those two conditions are true, display an error message to the user, if those two conditions aren't true, then do not display the error message. Whilst not the most absolutely ideal solution, it was the best solution given the time constraints.<br /><br />
+    * After spending many hours trying to debug this issue on my own and then with Code Institute Tutor Rebecca, it was my brother [Jack Ralph](https://www.linkedin.com/in/jackthomasralph/) that quickly noticed that the problem wasn't as complicated as I once thought. The error was showing because I had a media query that displayed an error message if the players screen width and height wasn't large enough to support the quiz. As soon as I removed that media query, the bug was fixed, however I've noticed in programming that you fix one bug it can then generate multiple other bugs or problems. In my case, I now didn't have anything detecting if the device was too small to support the quiz. So I was stuck with a problem, I needed to remove the media query to allow keyboards so players can enter information and I needed the quiz to be fully responsive across all devices. After many hours of theorising and coming up with multiple solutions, I decided that having the quiz in landscape mode whilst on a mobile device was not practical for the player experience and decided to implement JavaScript that would detect if the player is on a mobile device and is also in landscape mode. If those two conditions are true, display an error message to the player, if those two conditions aren't true, then do not display the error message. Whilst not the most absolutely ideal solution, it was the best solution given the time constraints.<br /><br />
 
     ![P30 Pro Fixed](assets/images/readme-images/size-error-flicker-solved-image.png)
 
@@ -647,10 +670,10 @@ The live link to the Github repository can be found here - https://github.com/Mi
 * The photos were compressed using [Compressor](https://compressor.io/)
 
 ### Code
-* The code for the hiscores was based off guidance and inspiration from a user name [Minna N](https://dev.to/minna_xd). I used this link [DevTo](https://dev.to/minna_xd/adding-a-high-score-table-to-javascript30-whack-a-mole-4adk) to gain a good understanding of what is required to create a hiscores system using local storage and then implemented a version of my own for The Astronomy Quiz.
-* For the contact form, I wanted to be able to actually receive emails and understand how that can be achieved. I stumbled upon a brilliant website called [EmailJS](https://www.emailjs.com/docs/user-guide/creating-email-templates/) that has some very clear and informative documentation which explains how you can embed a working email system on your website.
+* The code for the hiscores was based off guidance and inspiration from a player name [Minna N](https://dev.to/minna_xd). I used this link [DevTo](https://dev.to/minna_xd/adding-a-high-score-table-to-javascript30-whack-a-mole-4adk) to gain a good understanding of what is required to create a hiscores system using local storage and then implemented a version of my own for The Astronomy Quiz.
+* For the contact form, I wanted to be able to actually receive emails and understand how that can be achieved. I stumbled upon a brilliant website called [EmailJS](https://www.emailjs.com/docs/player-guide/creating-email-templates/) that has some very clear and informative documentation which explains how you can embed a working email system on your website.
 * When searching how I could implement audio through JavaScript, I found this [StackOverflow](https://stackoverflow.com/questions/9419263/how-to-play-audio) post which explained some basic concepts on how to achieve it. After managing to implement audio on my quiz, I decided to refactor the code to make it more readable and also reusable.
-* I feel like adding a timer on a quiz can make it more engaging for the user and provide a better user experience. After searching online for some information, I found this [StackOverflow](https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz) post which shows a basic example of a countdown timer. After understanding the fundamentals behind it, I decided to implement it but refactor it to suit my needs.
+* I feel like adding a timer on a quiz can make it more engaging for the player and provide a better player experience. After searching online for some information, I found this [StackOverflow](https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz) post which shows a basic example of a countdown timer. After understanding the fundamentals behind it, I decided to implement it but refactor it to suit my needs.
 
 [Back to top](<#contents>)
 
