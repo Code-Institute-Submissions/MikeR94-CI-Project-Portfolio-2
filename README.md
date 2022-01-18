@@ -352,6 +352,22 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 ![Desktop Audio Image](assets/images/readme-images/audio-off-image.png)
 </details><br />
 
+* ### Planet Bar
+    
+    * Located at the bottom of the quiz, the planet tracker will initially start with all the planets greyed out. If the player answers a question correctly, the planet will then have colour.
+    * If the player answers incorrectly or fails to answer within time, the planet will remain greyed out.
+    * A small visual addition to encourage the player to answer all questions correctly to see all the planets light up.<br /><br />
+    
+<details><summary><b>Greyscale Planet Bar Image</b></summary>
+
+![Desktop Audio Image](assets/images/readme-images/grey-planets-image.png)
+</details><br />
+
+<details><summary><b>Colour Planet Bar Image</b></summary>
+
+![Desktop Audio Image](assets/images/readme-images/colour-planets-image.png)
+</details><br />
+
 [Back to top](<#contents>)
 
 * ## Future Features 
