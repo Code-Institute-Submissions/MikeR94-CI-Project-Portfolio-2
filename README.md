@@ -386,7 +386,7 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
 * ### Global Sound Settings
 
-    * I believe it would be much more intuitive to save the players sound settings in local storage so that when the player refreshes the page, they don't have to keep turning the sound off every time if they don't wish to hear sound.
+    * I believe it would be much more intuitive to save the players sound settings so that when the player refreshes the page, they don't have to keep turning the sound off every time if they don't wish to hear sound.
 
 
 [Back to top](<#contents>)
