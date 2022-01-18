@@ -195,8 +195,6 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 ![Responsive Question Image](assets/images/readme-images/responsive-question-incorrect-image.png)
 </details><br />
 
-
-
 [Back to top](<#contents>)
 
 * ### Results Section
@@ -279,7 +277,11 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
 * ### Timer
     
-    * Add Timer information here <br /><br />
+    * Implemented to add a further dynamic to the quiz
+    * Works in tandem with the score system. Remaining time is added to the score
+    * Time will visibly turn red when the time left is 10 seconds or left
+    * The player will have 30 seconds to answer any question regardless of difficulty level
+    * Time will reset back to 30 seconds upon loading the next question <br /><br />
     
 <details><summary><b>Desktop Contact Image</b></summary>
 
