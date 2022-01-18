@@ -275,6 +275,8 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 ![Responsive Contact Image](assets/images/readme-images/responsive-contact-image.png)
 </details><br />
 
+[Back to top](<#contents>)
+
 * ### Timer
     
     * Implemented to add a further dynamic to the quiz
@@ -283,10 +285,12 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
     * The player will have 30 seconds to answer any question regardless of difficulty level
     * Time will reset back to 30 seconds upon loading the next question <br /><br />
     
-<details><summary><b>Desktop Contact Image</b></summary>
+<details><summary><b>Desktop Timer Image</b></summary>
 
-![Desktop Contact Image](assets/images/readme-images/desktop-contact-image.png)
+![Desktop Timer Image](assets/images/readme-images/desktop-contact-image.png)
 </details><br />
+
+[Back to top](<#contents>)
 
 * ### Score
     
@@ -294,19 +298,23 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
     * The points awarded is determined by the current level selected + time left remaining. Adding the remaining time to the score adds yet another dynamic to the game, encouraging the player to answer fast
     * The score system has been thoroughly tested and there are no known bugs which the player can exploit to manipulate their score  <br /><br />
     
-<details><summary><b>Desktop Contact Image</b></summary>
+<details><summary><b>Desktop Score Image</b></summary>
 
-![Desktop Contact Image](assets/images/readme-images/desktop-contact-image.png)
+![Desktop Score Image](assets/images/readme-images/desktop-contact-image.png)
 </details><br />
+
+[Back to top](<#contents>)
 
 * ### Current Question Indicator
     
     * Provides the user with a clear indication as to which question number they are currently on<br /><br />
     
-<details><summary><b>Desktop Contact Image</b></summary>
+<details><summary><b>Desktop Current Question Image</b></summary>
 
-![Desktop Contact Image](assets/images/readme-images/desktop-contact-image.png)
+![Desktop Current Question Image](assets/images/readme-images/desktop-contact-image.png)
 </details><br />
+
+[Back to top](<#contents>)
 
 * ### Audio
     
@@ -316,9 +324,9 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
     * Button Click sound audio played only when the user clicks on a button
     * Can be toggled off and on by clicking the sound icon in the top left<br /><br />
     
-<details><summary><b>Desktop Contact Image</b></summary>
+<details><summary><b>Desktop Audio Image</b></summary>
 
-![Desktop Contact Image](assets/images/readme-images/desktop-contact-image.png)
+![Desktop Audio Image](assets/images/readme-images/desktop-contact-image.png)
 </details><br />
 
 [Back to top](<#contents>)
