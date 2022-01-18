@@ -254,7 +254,8 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
     
     * Allows the user to submit any feedback, questions or concerns they may have.
     * Created with [Email.JS](https://www.emailjs.com/) and allows for emails to be sent directly to a new email address created for this project.
-    * Additional functionality added to provide the user some visual information as to whether their message has been successfully sent or not. <br /><br />
+    * Additional functionality added to provide the user some visual feedback if their message fails to send
+    * Confirmation "Sent Message" screen to give the user confidence that their message has been successfully sent <br /><br />
     
 <details><summary><b>Desktop Contact Image</b></summary>
 
@@ -274,6 +275,42 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 <details><summary><b>Responsive Contact Image</b></summary>
 
 ![Responsive Contact Image](assets/images/readme-images/responsive-contact-image.png)
+</details><br />
+
+* ### Timer
+    
+    * Add Timer information here <br /><br />
+    
+<details><summary><b>Desktop Contact Image</b></summary>
+
+![Desktop Contact Image](assets/images/readme-images/desktop-contact-image.png)
+</details><br />
+
+* ### Score
+    
+    * Add Score information here <br /><br />
+    
+<details><summary><b>Desktop Contact Image</b></summary>
+
+![Desktop Contact Image](assets/images/readme-images/desktop-contact-image.png)
+</details><br />
+
+* ### Current Question Indicator
+    
+    * Add Current Question information here <br /><br />
+    
+<details><summary><b>Desktop Contact Image</b></summary>
+
+![Desktop Contact Image](assets/images/readme-images/desktop-contact-image.png)
+</details><br />
+
+* ### Audio
+    
+    * Add Audio information here <br /><br />
+    
+<details><summary><b>Desktop Contact Image</b></summary>
+
+![Desktop Contact Image](assets/images/readme-images/desktop-contact-image.png)
 </details><br />
 
 [Back to top](<#contents>)
