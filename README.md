@@ -290,7 +290,9 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
 * ### Score
     
-    * Add Score information here <br /><br />
+    * Enhances user experience and increases replayability as players might wish to try beat their current score
+    * The points awarded is determined by the current level selected + time left remaining. Adding the remaining time to the score adds yet another dynamic to the game, encouraging the player to answer fast
+    * The score system has been thoroughly tested and there are no known bugs which the player can exploit to manipulate their score  <br /><br />
     
 <details><summary><b>Desktop Contact Image</b></summary>
 
