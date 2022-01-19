@@ -662,7 +662,7 @@ The site was deployed to GitHub pages. The steps to deploy a site are as follows
 
 <details><summary><b>Git Deploy Preview Image</b></summary>
 
-![Git Deploy Image](assets/readme-images/git-deploy-image.png)
+![Git Deploy Image](assets/images/readme-images/git-deploy-image.png)
 </details><hr>
 
 ### **To fork the repository on GitHub**
@@ -672,7 +672,7 @@ A copy of the GitHub Repository can be made by forking the GitHub account. This 
 
 <details><summary><b>Git Fork Preview Image</b></summary>
 
-![Git Fork Image](assets/readme-images/git-fork-image.png)
+![Git Fork Image](assets/images/readme-images/git-fork-image.png)
 </details><hr>
 
 ### **To create a local clone of this project**
@@ -687,7 +687,7 @@ The method from cloning a project from GitHub is below:
 
 <details><summary><b>Git Clone Preview Image</b></summary>
 
-![Git Clone Image](assets/readme-images/git-clone-image.png)
+![Git Clone Image](assets/images/readme-images/git-clone-image.png)
 </details><hr>
 
 The live link to the Github repository can be found here - https://github.com/MikeR94/CI-Project-Portfolio-2
