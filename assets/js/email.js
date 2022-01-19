@@ -5,6 +5,7 @@ let userMessage = document.getElementById("message");
 let regExEmail = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 let regExName = /^(?! )[A-Za-z\s\xC0-\uFFFF]*$/;
 let sendButton = document.getElementById("contact-submit");
+let regExEmpty = /^((?!\s{2}).)*$/;
 
 // Event Listeners
 sendButton.addEventListener("click", sendMail);
@@ -32,7 +33,8 @@ function sendMail() {
     userName.value != undefined &&
     userName.value != "" &&
     userEmail.value.match(regExEmail) &&
-    userMessage.value.length > 10
+    userMessage.value.length > 10 &&
+    userMessage.value.match(regExEmpty)
   ) {
     emailjs.send("service_al2h1zo", "template_xqi4jaf", emailProperties).then(
       function (response) {
@@ -73,8 +75,8 @@ function sendMail() {
     userEmail.setCustomValidity("");
   }
 
-  if (userMessage.value.length < 10) {
-    userMessage.setCustomValidity("Please enter at least 10 characters");
+  if (!userMessage.value.match(regExEmpty) || userMessage.value.length < 10) {
+    userMessage.setCustomValidity("Please remove any double spaces and make sure to enter at least 10 characters");
     sendButton.removeAttribute("disabled", "disabled");
     sendButton.classList.add("hover");
     sendButton.innerHTML = "Submit"
