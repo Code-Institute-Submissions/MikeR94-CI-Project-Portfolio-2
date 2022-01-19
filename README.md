@@ -282,7 +282,8 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
     * Allows the player to submit any feedback, questions or concerns they may have.
     * Created with [Email.JS](https://www.emailjs.com/) and allows for emails to be sent directly to a new email address created for this project.
     * Additional functionality added to provide the player some visual feedback if their message fails to send.
-    * Confirmation "Sent Message" screen to give the player confidence that their message has been successfully sent.<br /><br />
+    * Confirmation "Sent Message" screen to give the player confidence that their message has been successfully sent.
+    * A GitHub icon will be visible on this page for players to see the repository in a new window<br /><br />
     
 <details><summary><b>Desktop Contact Image</b></summary>
 
