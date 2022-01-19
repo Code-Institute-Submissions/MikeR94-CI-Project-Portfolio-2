@@ -453,12 +453,12 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
 * ### JS Validation Image
 
-    * As for JavaScript, I have multiple JavaScript files which provide the functionality for specific features within the quiz. I decided to do this to provide better readability for anyone who wishes to read the code behind this project. When I put each individual file through [JSHint Validator](https://jshint.com/), I noticed a few errors that were showing such as unused variables and undefined variables however I realised that is because I have not exported and imported variables and functions. I did look into this and found some very good documentation on it at [JavaScript.Info](https://javascript.info/import-export) but after speaking with my mentor, he said that it was not mandatory as the course has not yet covered it. To further solidify that I did not have any unused variables or undefined variables, I decided to create a file called combined.js which has all the JavaScript code for the quiz and put that one file through the [JSHint Validator](https://jshint.com/) <br /><br />
+    * As for JavaScript, I have multiple JavaScript files which provide the functionality for specific features within the quiz. I decided to do this to provide better readability for anyone who wishes to read the code behind this project. When I put each individual file through [JSHint Validator](https://jshint.com/), I noticed a few warnings that were showing such as unused variables and undefined variables however I realised that is because I have not exported and imported variables and functions. I did look into this and found some very good documentation on it at [JavaScript.Info](https://javascript.info/import-export) but after speaking with my mentor, he said that it was not mandatory as the course has not yet covered it. To further solidify that I did not have any unused variables or undefined variables, I decided to create a file called combined.js which has all the JavaScript code for the quiz and put that one file through the [JSHint Validator](https://jshint.com/) <br /><br />
 
     ![JS Validation](assets/images/readme-images/combinedjs-jshint.png)
 
 * Undefined Variable - emailjs 
-    * I tried multiple times to fix this issue but because I was using [EmailJS](https://www.emailjs.com/) for my contact form, I was unable to declare these variables or change them. <br /><br />
+    * I tried multiple times to fix this but because I was using [EmailJS](https://www.emailjs.com/) for my contact form, I was unable to declare these variables or change them. <br /><br />
 * Warning 1 
     * ***Expected an assignment or function call and instead saw an expression***. This warning is caused by line 10 in audio.js. I have spoken to my mentor about this warning and he has said that this is absolutely fine. <br /><br />
 * Warning 2 
