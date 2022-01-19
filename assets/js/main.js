@@ -369,6 +369,36 @@ function reload() {
 }
 
 /**
+ *  Passes in the selected menu, splice it from the array and then add the hide class to all remaining items in the array but remove the
+ *  hide class for the item that has been spliced
+ * @param {Takes the string of the game-areas as an argument} selectedMenu
+ */
+
+function selectMenu(selectedMenu) {
+  gameState = selectedMenu;
+
+  let gameAreas = [
+    "contact-game-area",
+    "rules-game-area",
+    "hiscores-game-area",
+    "results-game-area",
+    "start-game-area",
+    "question-game-area",
+    "difficulty-game-area",
+  ];
+
+  let indexOfSelectedMenu = gameAreas.indexOf(selectedMenu);
+
+  gameAreas.splice(indexOfSelectedMenu, 1);
+
+  for (let i = 0; i < gameAreas.length; i++) {
+    document.getElementById(gameAreas[i]).classList.add("hide");
+  }
+
+  document.getElementById(selectedMenu).classList.remove("hide");
+}
+
+/**
  * Loop through the home-icon-logo situated on the game-bar and add an event listener to reload the
  * website if clicked
  */
@@ -463,32 +493,3 @@ for (let i = 0; i < goContact.length; i++) {
   });
 }
 
-/**
- *  Passes in the selected menu, splice it from the array and then add the hide class to all remaining items in the array but remove the
- *  hide class for the item that has been spliced
- * @param {Takes the string of the game-areas as an argument} selectedMenu
- */
-
-function selectMenu(selectedMenu) {
-  gameState = selectedMenu;
-
-  let gameAreas = [
-    "contact-game-area",
-    "rules-game-area",
-    "hiscores-game-area",
-    "results-game-area",
-    "start-game-area",
-    "question-game-area",
-    "difficulty-game-area",
-  ];
-
-  let indexOfSelectedMenu = gameAreas.indexOf(selectedMenu);
-
-  gameAreas.splice(indexOfSelectedMenu, 1);
-
-  for (let i = 0; i < gameAreas.length; i++) {
-    document.getElementById(gameAreas[i]).classList.add("hide");
-  }
-
-  document.getElementById(selectedMenu).classList.remove("hide");
-}
