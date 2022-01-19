@@ -481,9 +481,9 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
     ![Responsive Test Sheet](assets/images/readme-images/mobile-simulator-results-image.png)
 
 * ## Compressing Images
-    * All images have been compressed with [Compressor](https://compressor.io/) and I managed to save a total of 1568 KB.<br /><br />
+    * All images have been compressed with [Compressor](https://compressor.io/) and I managed to save a total of 735 KB.<br /><br />
 
-    ![Compressed Image 1](assets/readme-images/compressed-1.png)
+    ![Compressed Image 1](assets/images/readme-images/compressed-1.png)
 
 
 * ## Manual Testing
