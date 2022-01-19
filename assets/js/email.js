@@ -25,7 +25,7 @@ function sendMail() {
 
   sendButton.setAttribute("disabled", "disabled");
   sendButton.classList.remove("hover");
-  sendButton.innerHTML = "Sending..."
+  sendButton.innerHTML = "Sending...";
 
   if (
     userName.value.match(regExName) &&
@@ -49,10 +49,10 @@ function sendMail() {
       },
       function (error) {
         console.log("Failed", error);
-        alert("Your message failed to send, please reload the website and try again")
+        alert("Your message failed to send, please reload the website and try again");
         sendButton.removeAttribute("disabled", "disabled");
         sendButton.classList.add("hover");
-        sendButton.innerHTML = "Submit"
+        sendButton.innerHTML = "Submit";
       }
     );
   }
@@ -61,7 +61,7 @@ function sendMail() {
     userName.setCustomValidity("Your name can only include letters and spaces");
     sendButton.removeAttribute("disabled", "disabled");
     sendButton.classList.add("hover");
-    sendButton.innerHTML = "Submit"
+    sendButton.innerHTML = "Submit";
   } else {
     userName.setCustomValidity("");
   }
@@ -70,7 +70,7 @@ function sendMail() {
     userEmail.setCustomValidity("Your email should address should follow the correct format. (test123@gmail.com)");
     sendButton.removeAttribute("disabled", "disabled");
     sendButton.classList.add("hover");
-    sendButton.innerHTML = "Submit"
+    sendButton.innerHTML = "Submit";
   } else {
     userEmail.setCustomValidity("");
   }
@@ -79,7 +79,7 @@ function sendMail() {
     userMessage.setCustomValidity("Please remove any double spaces and make sure to enter at least 10 characters");
     sendButton.removeAttribute("disabled", "disabled");
     sendButton.classList.add("hover");
-    sendButton.innerHTML = "Submit"
+    sendButton.innerHTML = "Submit";
   } else {
     userMessage.setCustomValidity("");
   }
