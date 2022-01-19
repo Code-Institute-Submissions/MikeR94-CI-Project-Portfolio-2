@@ -9,7 +9,7 @@ You can view the live site here - <a href="https://miker94.github.io/CI-Project-
 # Contents
 
 * [**Objective**](<#objective>)
-* [**player Experience UX**](<#player-experience-ux>)
+* [**User Experience UX**](<#user-experience-ux>)
     * [Design Prototype](<#design-prototype>)
     * [Site Structure](<#site-structure>)
     * [Design Choices](<#design-choices>)
@@ -24,6 +24,10 @@ You can view the live site here - <a href="https://miker94.github.io/CI-Project-
     * [Rules](<#rules-section>)
     * [Hiscore](<#hiscore-section>)
     * [Contact](<#contact-section>)
+    * [Timer](<#timer>)
+    * [Score](<#score>)
+    * [Audio](<#audio>)
+    * [Planet Bar](<#planet-bar>)
 * [**Future Features**](<#future-features>)
     * [Global Hiscores](<#global-hiscores>)
     * [Fact Of The Week](<#fact-of-the-week>)
@@ -45,7 +49,7 @@ In my second project, I intend to create a challenging, interactive and fun quiz
 
 [Back to top](<#contents>)
 
-# player Experience (UX)
+# User Experience (UX)
 
 ## Design Prototype
 
