@@ -485,12 +485,6 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
     ![Compressed Image 1](assets/readme-images/compressed-1.png)
 
-    ![Compressed Image 2](assets/readme-images/compressed-2.png)
-
-    ![Compressed Image 3](assets/readme-images/compressed-3.png)
-
-    ![Compressed Image 4](assets/readme-images/compressed-4.png)
-
 
 * ## Manual Testing
     * In addition to the other tests, I have conducted a manual check list for myself to carry out to make sure that everything is working as intended.
