@@ -119,11 +119,17 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
   * ### Navigation Bar
 
-    * Located at the top of the quiz application and provides the player the ability to navigate back to the home page, enter the menu and turn the game sounds on or off. Whilst the player is currently playing the quiz, the hamburger icon will disappear and will be replaced with additional features such as "Current Question Number", "Time Left" and "Score" to give the player more information and provide a better player experience.<br /><br />
+    * Located at the top of the quiz application and provides the player the ability to navigate back to the home page, enter the menu and turn the game sounds on or off. Whilst the player is currently playing the quiz, the hamburger icon will disappear and will be replaced with additional features such as "Current Question Number", "Time Left" and "Score" to give the player more information and provide a better player experience.
+    * An additional GitHub icon will be visible on the contact page for players to see the repository in a new window.<br /><br />
 
 <details><summary><b>Desktop Navigation Bar Image</b></summary>
 
 ![Navigation Bar Desktop Image](assets/images/readme-images/desktop-nav-bar-image.png)
+</details><br />
+
+<details><summary><b>Desktop Navigation Bar Image (Contact Page)</b></summary>
+
+![Navigation Bar Desktop Contact Image](assets/images/readme-images/desktop-nav-bar-contact-image.png)
 </details><br />
 
 <details><summary><b>Desktop Navigation Bar Image (During Quiz)</b></summary>
