@@ -42,6 +42,7 @@ You can view the live site here - <a href="https://miker94.github.io/CI-Project-
     * [**Media**](<#media>)
     * [**Code**](<#code>)
 *  [**Acknowledgments**](<#acknowledgements>)
+*  [**Personal Development**](<#personal-development>)
 
 
 # Objective
@@ -54,7 +55,17 @@ In my second project, I intend to create a challenging, interactive and fun quiz
 
 ## Design Prototype
 
-The design prototype for The Astronomy Quiz was produced in [Figma](https://www.figma.com/). There are design prototypes for Desktop and Mobile. The reason that the design prototype looks very similar to the finished product is because I've learnt that being able to visually see your design before you spend the time implementing it is a very efficient method when it comes to creating something in software development. Being able to use a tool like [Figma](https://www.figma.com/) to "drag and drop" elements will save a large amount of time as apposed to trying to design through CSS, therefore before I implemented something, I made sure to design it on [Figma](https://www.figma.com/) first.<br /><br />
+The very first design prototype was created using [Balsamiq](https://balsamiq.com/). I only designed the very bare minimum using this program so that I could have a basic idea of what I wanted to achieve without having to worry about the colour theme, font style, button styles, icons and much more. When I had the basic fundamentals I then moved to [Figma](https://www.figma.com/) to further develop my idea.
+
+![Balsamiq Start Prototype](assets/images/readme-images/balsamiq-start-prototype.png)
+
+![Balsamiq Difficulty Prototype](assets/images/readme-images/balsamiq-difficulty-prototype.png)
+
+![Balsamiq Quiz Prototype](assets/images/readme-images/balsamiq-quiz-prototype.png)
+
+![Balsamiq Result Prototype](assets/images/readme-images/balsamiq-result-prototype.png)
+
+The main design prototype for The Astronomy Quiz was produced in [Figma](https://www.figma.com/). There are design prototypes for Desktop and Mobile. The reason that the design prototype looks very similar to the finished product is because I've learnt that being able to visually see your design before you spend the time implementing it is a very efficient method when it comes to creating something in software development. Being able to use a tool like [Figma](https://www.figma.com/) to "drag and drop" elements will save a large amount of time as apposed to trying to design through CSS, therefore before I implemented something, I made sure to design it on [Figma](https://www.figma.com/) first.<br /><br />
 
 
 ![Design Prototype Preview](assets/images/readme-images/design-prototype.png)
@@ -704,6 +715,13 @@ The live link to the Github repository can be found here - https://github.com/Mi
 # Acknowledgments
 The site was completed as a part of a Full Stack Software Developer Diploma at the [Code Institute](https://codeinstitute.net/) and is my Portfolio Project 2. I would like to thank my mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/), my educator [Luke Walters](https://www.linkedin.com/in/luke-walters-leatherbarrow-531107101/), and my brother [Jack Ralph](https://www.linkedin.com/in/jackthomasralph/), the Slack community, and all at the Code Institute for their help and support.
 
-Mike Ralph 2021.
+# Personal Development
+Creating this project was incredibly fun, challenging and also very rewarding in terms of educating myself further. I encountered so many things that forced me out of my comfort zone, making me spend hours scratching my head and then eventually, after persisting and approaching problems at different angles, I was able to solve these problems. I've learnt that sometimes it helps to just take a step back, clear your mind and attack the problem from the very beginning. Sometimes when your deep within the zone and have written hundreds of lines of code and all of a sudden something breaks, don't get frustrated, these things happen. Retrace your steps and try to identify the point of failure. Failing to do that, take 5 minutes, get some fresh air, get the notepad out and start breaking everything down from the very beginning to the end.
+
+When I first saw JavaScript, like anyone, I was overwhelmed but like everyone has been saying, persisting with it, trying different approaches and accepting that it is challenging helps so much and now when I see a large JavaScript file, I don't feel overwhelmed, I start to dissect everything into smaller pieces so I can understand the bigger picture.
+
+Everything I have learnt during this project will help me tremendously throughout my career and I am very grateful for every head scratching bug that I have encountered and I'm yet to encounter.
+
+Mike Ralph 2022.
 
 [Back to top](<#contents>)
