@@ -611,6 +611,10 @@ h1 {
   cursor: pointer;
 }
 
+a:visited {
+  text-decoration: none;
+}
+
 .contact-title-text {
   text-align: center;
   margin-top: 20px;
