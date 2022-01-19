@@ -599,6 +599,17 @@ h1 {
   border-radius: 30px;
 }
 
+.github-icon-logo i {
+  font-size: 30px;
+}
+
+.github-icon-logo {
+  position: absolute;
+  top: 3.5%;
+  left: 13%;
+  cursor: pointer;
+}
+
 .contact-title-text {
   text-align: center;
   margin-top: 20px;
@@ -980,6 +991,11 @@ textarea {
     height: 490px;
     width: 700px;
   }
+  
+  .github-icon-logo {
+    top: 4.1%;
+    left: 17%;
+  }
 
   .contact-form {
     width: 420px;
@@ -1286,6 +1302,15 @@ textarea {
     width: 310px;
   }
 
+  .github-icon-logo i {
+    font-size: 20px;
+  }
+  
+  .github-icon-logo {
+    top: 4.2%;
+    left: 29%;
+  }
+
   .sent-message {
     width: 250px;
     top: 110px;
@@ -1429,6 +1454,10 @@ textarea {
 
   .contact-game-area {
     width: 270px;
+  }
+
+  .github-icon-logo {
+    left: 32%;
   }
 
   .contact-form button {
