@@ -641,6 +641,19 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
     ![CSS Validation Solved](assets/images/readme-images/css-validation-image.png)
 
+     ### Duplicate Emails Sent
+    
+    * After asking the kind Slack community to peer review my project, I checked my EmailJS inbox to see if I was receiving emails from others correctly and I was which was brilliant. What I actually noticed was the same email from the same person but 4 times. <br /><br />
+
+    ![CSS Warning](assets/images/readme-images/multiple-email-sent.png)
+
+    * When I saw this, I thought it was too odd that this person had sent 4 separate emails that had the exact same message of "Tyggffffffffff", so I decided to look into it further. What was happening is because there is delay from the user clicking the send button to them seeing the sent message screen, if the user then clicks that button again whilst it is still visible and clickable, it will send that message as many times as that button has been clicked. What I did to prevent this from happening was disable the send button from being clicked again and provide the user some feedback letting them know that their message is currently sending (Line 26, 27 and 28) <br /><br />
+
+    ![CSS Validation Solved](assets/images/readme-images/multiple-email-sent-fix-1.png)
+
+    * If the email failed to send, then make the send button active again and reset the "Sending..." text back to "Submit" to give the user further feedback that they can attempt again. (Line 62, 63, 64, 72, 72, 73, 80, 81 and 82).
+    
+    ![CSS Validation Solved](assets/images/readme-images/multiple-email-sent-fix-2.png)
 
 * ## Bugs Unresolved  
     * When inspecting the website with [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/), the website is showing 1 issue which is the same issue I had on my Project Portfolio 1 so I'm familiar with it. <br /><br />
