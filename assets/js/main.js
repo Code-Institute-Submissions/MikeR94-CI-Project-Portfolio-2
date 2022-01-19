@@ -9,6 +9,7 @@ let questionText = document.getElementById("question-text");
 let audioOffIcon = document.getElementsByClassName("sound-off");
 let audioOnIcon = document.getElementsByClassName("sound-on");
 let playerName = document.getElementById("player-name");
+let gameTimer = document.getElementById("timer");
 let displayedQuestionNumber = 1;
 let currentQuestion = 0;
 let answerClicked = false;
@@ -133,13 +134,13 @@ function checkForLandscapeOnMobile() {
  */
 function nextQuestion() {
   displayedQuestionNumber++;
-  document.getElementById("timer").innerHTML = 30;
+  gameTimer.innerHTML = 30;
   currentQuestionNumber.innerText = displayedQuestionNumber;
   currentQuestion++;
   buildQuestions();
   startTimer();
   buttonSound();
-  document.getElementById("timer").style.color = "#faf9f6";
+  gameTimer.style.color = "#faf9f6";
   nextQuestionIcon.classList.add("greyscale");
   nextQuestionIcon.setAttribute("disabled", "disabled");
   nextQuestionIcon.classList.remove("hover");

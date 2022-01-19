@@ -6,11 +6,11 @@ function startTimer() {
   timeLeft = 30;
   timer = setInterval(function () {
     countdown();
-    document.getElementById("timer").innerHTML = timeLeft;
+    gameTimer.innerHTML = timeLeft;
     if (timeLeft < 11) {
-      document.getElementById("timer").style.color = "red";
+      gameTimer.style.color = "red";
     } else {
-      document.getElementById("timer").style.color = "#faf9f6";
+      gameTimer.style.color = "#faf9f6";
     }
   }, 1000);
 }
@@ -26,17 +26,17 @@ function countdown() {
 
   if (timeLeft === 0) {
     stopTimer();
-    document.getElementById("next-question").classList.remove("greyscale");
-    document.getElementById("next-question").removeAttribute("disabled", "disabled");
-    document.getElementById("next-question").classList.add("hover");
-    document.getElementById("answer1-btn").setAttribute("disabled", "disabled");
-    document.getElementById("answer2-btn").setAttribute("disabled", "disabled");
-    document.getElementById("answer3-btn").setAttribute("disabled", "disabled");
-    document.getElementById("answer4-btn").setAttribute("disabled", "disabled");
-    document.getElementById("answer1-btn").classList.remove("answer-buttons-hover");
-    document.getElementById("answer2-btn").classList.remove("answer-buttons-hover");
-    document.getElementById("answer3-btn").classList.remove("answer-buttons-hover");
-    document.getElementById("answer4-btn").classList.remove("answer-buttons-hover");
+    nextQuestionIcon.classList.remove("greyscale");
+    nextQuestionIcon.removeAttribute("disabled", "disabled");
+    nextQuestionIcon.classList.add("hover");
+    answer1.setAttribute("disabled", "disabled");
+    answer2.setAttribute("disabled", "disabled");
+    answer3.setAttribute("disabled", "disabled");
+    answer4.setAttribute("disabled", "disabled");
+    answer1.classList.remove("answer-buttons-hover");
+    answer2.classList.remove("answer-buttons-hover");
+    answer3.classList.remove("answer-buttons-hover");
+    answer4.classList.remove("answer-buttons-hover");
   } else {
     timeLeft -= 1;
   }
