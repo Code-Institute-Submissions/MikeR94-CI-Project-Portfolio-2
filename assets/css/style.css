@@ -926,12 +926,11 @@ textarea {
 
   .current-question {
     right: 33%;
-    top: 4.5%;
+    top: 4.3%;
   }
   
   #current-question {
     right: 37.5%;
-    top: 4%;
   }
 
   .planet-bar {
@@ -1086,7 +1085,7 @@ textarea {
   }
 
   .home-icon-logo i {
-    font-size: 20px;
+    font-size: 21px;
   }
 
   .audio-icon-logo {
@@ -1127,7 +1126,7 @@ textarea {
 
   .current-question {
     right: 50%;
-    top: 4.3%;
+    top: 4.5%;
   }
   
   .current-question i {
