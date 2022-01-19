@@ -480,6 +480,9 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
     ![Responsive Test Sheet](assets/images/readme-images/mobile-simulator-results-image.png)
 
+* ## Future Responsive Updates
+    * Whilst every effort has been made to account for any and all devices, due to the nature of the quiz application, some devices may be too small to fully support the quiz. The devices that will be unable to support the quiz at the moment will be older devices, devices with very small screens and smart watches. Future updates would consider the "business benefit" of making these devices compatible given the time and resources it could potentially consume.<br /><br />
+
 * ## Compressing Images
     * All images have been compressed with [Compressor](https://compressor.io/) and I managed to save a total of 735 KB.<br /><br />
 
