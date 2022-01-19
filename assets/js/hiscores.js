@@ -1,5 +1,6 @@
 // Variables
 let hiscores = JSON.parse(localStorage.getItem("hiscores")) || [];
+let hiscoreBoard = document.getElementById("hiscore");
 
 // Event Listeners
 document.getElementById("clear-hiscores").addEventListener("click", clearHiscores);
@@ -7,7 +8,6 @@ document.getElementById("clear-hiscores").addEventListener("click", clearHiscore
 /**
  * Gets the hiscore list from the HTML and then creates a new list item with the players score
  */
-let hiscoreBoard = document.getElementById("hiscore");
 hiscoreBoard.innerHTML = hiscores
   .map((playerScore) => {
     return `<li>${playerScore.name} - ${playerScore.score} points</li>`;

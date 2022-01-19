@@ -10,6 +10,17 @@ let audioOffIcon = document.getElementsByClassName("sound-off");
 let audioOnIcon = document.getElementsByClassName("sound-on");
 let playerName = document.getElementById("player-name");
 let gameTimer = document.getElementById("timer");
+let difficultyEasyBtn = document.getElementById("difficulty-easy");
+let difficultyMediumBtn = document.getElementById("difficulty-medium");
+let difficultyHardBtn = document.getElementById("difficulty-hard");
+let startGameArea = document.getElementById("start-game-area");
+let difficultyGameArea = document.getElementById("difficulty-game-area");
+let questionGameArea = document.getElementById("question-game-area");
+let rulesGameArea = document.getElementById("rules-game-area");
+let hiscoresGameArea = document.getElementById("hiscores-game-area");
+let contactGameArea = document.getElementById("contact-game-area");
+let resultsGameArea = document.getElementById("results-game-area");
+let resultScore = document.getElementById("result-score");
 let displayedQuestionNumber = 1;
 let currentQuestion = 0;
 let answerClicked = false;
@@ -28,12 +39,12 @@ let regEx = /^(?! )[A-Za-z\s\xC0-\uFFFF]*$/;
 let gameState = "start-game-area";
 
 // Event Listeners
+difficultyEasyBtn.addEventListener("click", runQuiz);
+difficultyMediumBtn.addEventListener("click", runQuiz);
+difficultyHardBtn.addEventListener("click", runQuiz);
+nextQuestionIcon.addEventListener("click", nextQuestion);
 document.getElementById("next-btn").addEventListener("click", toDifficultyGameArea);
 document.getElementById("play-again-btn").addEventListener("click", reload);
-document.getElementById("difficulty-easy").addEventListener("click", runQuiz);
-document.getElementById("difficulty-medium").addEventListener("click", runQuiz);
-document.getElementById("difficulty-hard").addEventListener("click", runQuiz);
-nextQuestionIcon.addEventListener("click", nextQuestion);
 window.addEventListener("resize", checkForLandscapeOnMobile);
 
 /**
@@ -48,25 +59,25 @@ window.onload = function () {
  */
 function addLandscapeMobileMessage() {
   if (gameState === "start-game-area") {
-    document.getElementById("start-game-area").classList.add("hide");
+    startGameArea.classList.add("hide");
   }
   if (gameState === "contact-game-area") {
-    document.getElementById("contact-game-area").classList.add("hide");
+    contactGameArea.classList.add("hide");
   }
   if (gameState === "rules-game-area") {
-    document.getElementById("rules-game-area").classList.add("hide");
+    rulesGameArea.classList.add("hide");
   }
   if (gameState === "hiscores-game-area") {
-    document.getElementById("hiscores-game-area").classList.add("hide");
+    hiscoresGameArea.classList.add("hide");
   }
   if (gameState === "difficulty-game-area") {
-    document.getElementById("difficulty-game-area").classList.add("hide");
+    difficultyGameArea.classList.add("hide");
   }
   if (gameState === "question-game-area") {
-    document.getElementById("question-game-area").classList.add("hide");
+    questionGameArea.classList.add("hide");
   }
   if (gameState === "results-game-area") {
-    document.getElementById("results-game-area").classList.add("hide");
+    resultsGameArea.classList.add("hide");
   }
   document.getElementById("size-error").classList.remove("hide");
 }
@@ -76,25 +87,25 @@ function addLandscapeMobileMessage() {
  */
 function removeLandscapeMobileMessage() {
   if (gameState === "start-game-area") {
-    document.getElementById("start-game-area").classList.remove("hide");
+    startGameArea.classList.remove("hide");
   }
   if (gameState === "contact-game-area") {
-    document.getElementById("contact-game-area").classList.remove("hide");
+    contactGameArea.classList.remove("hide");
   }
   if (gameState === "rules-game-area") {
-    document.getElementById("rules-game-area").classList.remove("hide");
+    rulesGameArea.classList.remove("hide");
   }
   if (gameState === "hiscores-game-area") {
-    document.getElementById("hiscores-game-area").classList.remove("hide");
+    hiscoresGameArea.classList.remove("hide");
   }
   if (gameState === "difficulty-game-area") {
-    document.getElementById("difficulty-game-area").classList.remove("hide");
+    difficultyGameArea.classList.remove("hide");
   }
   if (gameState === "question-game-area") {
-    document.getElementById("question-game-area").classList.remove("hide");
+    questionGameArea.classList.remove("hide");
   }
   if (gameState === "results-game-area") {
-    document.getElementById("results-game-area").classList.remove("hide");
+    resultsGameArea.classList.remove("hide");
   }
   document.getElementById("size-error").classList.add("hide");
 }
@@ -183,31 +194,31 @@ function runQuiz(event) {
     shuffledQuestions = easyQuestions.sort(() => Math.random() - 0.5);
     currentQuestionSet = shuffledQuestions;
     playerDifficulty = "easy";
-    document.getElementById("difficulty-easy").innerText = "Loading...";
+    difficultyEasyBtn.innerText = "Loading...";
   } else if (difficulty === "medium") {
     shuffledQuestions = mediumQuestions.sort(() => Math.random() - 0.5);
     currentQuestionSet = shuffledQuestions;
     playerDifficulty = "medium";
-    document.getElementById("difficulty-medium").innerText = "Loading...";
+    difficultyMediumBtn.innerText = "Loading...";
   } else if (difficulty === "hard") {
     shuffledQuestions = hardQuestions.sort(() => Math.random() - 0.5);
     currentQuestionSet = shuffledQuestions;
     playerDifficulty = "hard";
-    document.getElementById("difficulty-hard").innerText = "Loading...";
+    difficultyHardBtn.innerText = "Loading...";
   }
 
   buttonSound();
 
-  document.getElementById("difficulty-easy").setAttribute("disabled", "disabled");
-  document.getElementById("difficulty-medium").setAttribute("disabled", "disabled");
-  document.getElementById("difficulty-hard").setAttribute("disabled", "disabled");
-  document.getElementById("difficulty-easy").classList.remove("hover");
-  document.getElementById("difficulty-medium").classList.remove("hover");
-  document.getElementById("difficulty-hard").classList.remove("hover");
+  difficultyEasyBtn.setAttribute("disabled", "disabled");
+  difficultyMediumBtn.setAttribute("disabled", "disabled");
+  difficultyHardBtn.setAttribute("disabled", "disabled");
+  difficultyEasyBtn.classList.remove("hover");
+  difficultyMediumBtn.classList.remove("hover");
+  difficultyHardBtn.classList.remove("hover");
 
   setTimeout(function () {
-    document.getElementById("difficulty-game-area").classList.add("hide");
-    document.getElementById("question-game-area").classList.remove("hide");
+    difficultyGameArea.classList.add("hide");
+    questionGameArea.classList.remove("hide");
     nextQuestionIcon.setAttribute("disabled", "disabled");
     buildQuestions();
     startTimer();
@@ -222,8 +233,8 @@ function runQuiz(event) {
 function buildQuestions() {
   if (currentQuestion >= quizLength) {
     gameState = "results-game-area";
-    document.getElementById("question-game-area").classList.add("hide");
-    document.getElementById("results-game-area").classList.remove("hide");
+    questionGameArea.classList.add("hide");
+    resultsGameArea.classList.remove("hide");
     let player = playerName.value;
     document.getElementById(
       "results-main-text"
@@ -298,8 +309,8 @@ function checkAnswer() {
 function toDifficultyGameArea() {
   buttonSound();
   if (playerName.value.match(regEx) && playerName.value != null && playerName.value != undefined && playerName.value != "") {
-    document.getElementById("start-game-area").classList.add("hide");
-    document.getElementById("difficulty-game-area").classList.remove("hide");
+    startGameArea.classList.add("hide");
+    difficultyGameArea.classList.remove("hide");
     gameState = "difficulty-game-area";
     let player = playerName.value;
     let difficultyText = document.getElementById("difficulty-main-text");
@@ -318,11 +329,11 @@ function toDifficultyGameArea() {
  */
 function incrementScore() {
   if (currentQuestionSet === easyQuestions) {
-    document.getElementById("result-score").innerText = score += 10 + timeLeft;
+    resultScore.innerText = score += 10 + timeLeft;
   } else if (currentQuestionSet === mediumQuestions) {
-    document.getElementById("result-score").innerText = score += 20 + timeLeft;
+    resultScore.innerText = score += 20 + timeLeft;
   } else if (currentQuestionSet === hardQuestions) {
-    document.getElementById("result-score").innerText = score += 40 + timeLeft;
+    resultScore.innerText = score += 40 + timeLeft;
   }
 }
 
