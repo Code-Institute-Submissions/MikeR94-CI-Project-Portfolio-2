@@ -29,16 +29,21 @@ function sendMail() {
     userEmail.value.match(regExEmail) &&
     userMessage.value.length > 10
   ) {
-    emailjs.send("service_al2h1zo", "template_xqi4jaf", emailProperties).then(function (respond) {
-      console.log("Success", respond);
-      document.getElementById("contact-form").classList.add("hide");
-      document.getElementById("contact-name-question").classList.add("hide");
-      document.getElementById("contact-email-question").classList.add("hide");
-      document.getElementById("contact-message-question").classList.add("hide");
-      document.getElementById("contact-title-text").classList.add("hide");
-      document.getElementById("contact-go-home").classList.remove("hide");
-      document.getElementById("sent-message").classList.remove("hide");
-    });
+    emailjs.send("service_al2h1zo", "template_xqi4jaf", emailProperties).then(
+      function (response) {
+        console.log("Success", response.status, response.text);
+        document.getElementById("contact-form").classList.add("hide");
+        document.getElementById("contact-name-question").classList.add("hide");
+        document.getElementById("contact-email-question").classList.add("hide");
+        document.getElementById("contact-message-question").classList.add("hide");
+        document.getElementById("contact-title-text").classList.add("hide");
+        document.getElementById("contact-go-home").classList.remove("hide");
+        document.getElementById("sent-message").classList.remove("hide");
+      },
+      function (error) {
+        console.log("Failed", error);
+      }
+    );
   }
 
   if (!userName.value.match(regExName)) {
