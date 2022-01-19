@@ -576,6 +576,7 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
         * Verify that hovering over the tooltip next to name input will show the player some helpful information on how to enter a correct name
         * Verify that hovering over the tooltip next to email input will show the player some helpful information on how to enter a correct email
         * Verify that hovering over the tooltip next to message input will show the player some helpful information on how to enter a correct message
+        * Verify that clicking the GitHub icon opens the repo in a new window
         <br /><br />
 
 * ## Browser Compatibility
