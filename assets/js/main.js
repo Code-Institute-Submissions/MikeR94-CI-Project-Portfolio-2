@@ -306,7 +306,7 @@ function toDifficultyGameArea() {
   }
 
   if (!playerName.value.match(regEx)) {
-    playerName.setCustomValidity("Your name can only include letters and spaces");
+    playerName.setCustomValidity("Your name can only include letters and spaces. Check there are no spaces before the first letter");
   } else {
     playerName.setCustomValidity("");
   }
