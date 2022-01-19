@@ -392,6 +392,10 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
     * I believe it would be much more intuitive to save the players sound settings so that when the player refreshes the page, they don't have to keep turning the sound off every time if they don't wish to hear sound.
 
+* ### Submit Your Own Questions
+
+    * Having a section where a player could submit their own question to be displayed within the quiz would increase user interaction and entice the player to keep returning to see if their question has been successfully added. Each question submitted would have to be factually validated before implementing it.
+
 
 [Back to top](<#contents>)
 
