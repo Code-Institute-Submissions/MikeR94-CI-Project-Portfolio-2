@@ -601,6 +601,7 @@ h1 {
 
 .github-icon-logo i {
   font-size: 30px;
+  color: var(--clr-text);
 }
 
 .github-icon-logo {
