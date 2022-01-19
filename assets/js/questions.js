@@ -1,6 +1,6 @@
 // All questions for the quiz are stored below
 
-let easyQuestions = [
+const easyQuestions = [
   {
     question: "What is the largest planet in the Solar System?",
     a: "Jupiter",
@@ -163,7 +163,7 @@ let easyQuestions = [
   },
 ];
 
-let mediumQuestions = [
+const mediumQuestions = [
   {
     question: "What is the name of the nearest known star to the Sun?",
     a: "Barnard's Star",
@@ -326,7 +326,7 @@ let mediumQuestions = [
   },
 ];
 
-let hardQuestions = [
+const hardQuestions = [
   {
     question: "Which astronomer proposed an equation to work out how many civilizations there could be in our galaxy?",
     a: "Frank Drake",

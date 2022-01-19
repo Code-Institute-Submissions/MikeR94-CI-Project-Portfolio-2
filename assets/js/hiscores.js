@@ -1,6 +1,6 @@
 // Variables
-let hiscores = JSON.parse(localStorage.getItem("hiscores")) || [];
-let hiscoreBoard = document.getElementById("hiscore");
+const hiscores = JSON.parse(localStorage.getItem("hiscores")) || [];
+const hiscoreBoard = document.getElementById("hiscore");
 
 // Event Listeners
 document.getElementById("clear-hiscores").addEventListener("click", clearHiscores);
