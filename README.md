@@ -55,7 +55,7 @@ In my second project, I intend to create a challenging, interactive and fun quiz
 
 ## Design Prototype
 
-The very first design prototype was created using [Balsamiq](https://balsamiq.com/). I only designed the very bare minimum using this program so that I could have a basic idea of what I wanted to achieve without having to worry about the colour theme, font style, button styles, icons and much more. When I had the basic fundamentals I then moved to [Figma](https://www.figma.com/) to further develop my idea.
+The very first design prototype was created using [Balsamiq](https://balsamiq.com/). I only designed the very bare minimum using this program so that I could have a basic idea of what I wanted to achieve without having to worry about the colour theme, font style, button styles, icons and much more. When I had the basic fundamentals I then moved to [Figma](https://www.figma.com/) to further develop my idea.<br /><br />
 
 ![Balsamiq Start Prototype](assets/images/readme-images/balsamiq-start-prototype.png)
 
