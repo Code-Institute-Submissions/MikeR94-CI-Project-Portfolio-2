@@ -328,7 +328,7 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
 <details><summary><b>Timer Image (Time left below 10 seconds)</b></summary>
 
-![Timer Image White](assets/images/readme-images/timer-red-image.png)
+![Timer Image Red](assets/images/readme-images/timer-red-image.png)
 </details><br />
 
 [Back to top](<#contents>)
@@ -367,12 +367,12 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
     
 <details><summary><b>Audio On Image</b></summary>
 
-![Desktop Audio Image](assets/images/readme-images/audio-on-image.png)
+![Audio On Image](assets/images/readme-images/audio-on-image.png)
 </details><br />
 
 <details><summary><b>Audio Off Image</b></summary>
 
-![Desktop Audio Image](assets/images/readme-images/audio-off-image.png)
+![Audio Off Image](assets/images/readme-images/audio-off-image.png)
 </details><br />
 
 * ### Planet Bar
@@ -383,12 +383,12 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
     
 <details><summary><b>Greyscale Planet Bar Image</b></summary>
 
-![Desktop Audio Image](assets/images/readme-images/grey-planets-image.png)
+![Greyscale Planet Bar Image](assets/images/readme-images/grey-planets-image.png)
 </details><br />
 
 <details><summary><b>Colour Planet Bar Image</b></summary>
 
-![Desktop Audio Image](assets/images/readme-images/colour-planets-image.png)
+![Colour Planet Bar Image](assets/images/readme-images/colour-planets-image.png)
 </details><br />
 
 [Back to top](<#contents>)
@@ -646,15 +646,15 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
     
     * After asking the kind Slack community to peer review my project, I checked my EmailJS inbox to see if I was receiving emails from others correctly and I was which was brilliant. What I actually noticed was the same email from the same person but 4 times. <br /><br />
 
-    ![CSS Warning](assets/images/readme-images/multiple-email-sent.png)
+    ![Multiple Email Image](assets/images/readme-images/multiple-email-sent.png)
 
     * When I saw this, I thought it was too odd that this person had sent 4 separate emails that had the exact same message of "Tyggffffffffff", so I decided to look into it further. What was happening is because there is delay from the user clicking the send button to them seeing the sent message screen, if the user then clicks that button again whilst it is still visible and clickable, it will send that message as many times as that button has been clicked. What I did to prevent this from happening was disable the send button from being clicked again and provide the user some feedback letting them know that their message is currently sending (Line 26, 27 and 28) <br /><br />
 
-    ![CSS Validation Solved](assets/images/readme-images/multiple-email-sent-fix-1.png)
+    ![Multiple Email Fix 1](assets/images/readme-images/multiple-email-sent-fix-1.png)
 
     * If the email failed to send, then make the send button active again and reset the "Sending..." text back to "Submit" to give the user further feedback that they can attempt again. (Line 62, 63, 64, 72, 72, 73, 80, 81 and 82).
     
-    ![CSS Validation Solved](assets/images/readme-images/multiple-email-sent-fix-2.png)
+    ![Multiple Email Fix 2](assets/images/readme-images/multiple-email-sent-fix-2.png)
 
 * ## Bugs Unresolved
 
