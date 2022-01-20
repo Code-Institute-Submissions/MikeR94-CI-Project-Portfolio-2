@@ -35,10 +35,10 @@
         <div class="cross hide"></div>
       </div>
       <div class="menu hide">
-        <button class="home-icon hover">Home</button>
-        <button class="rules-btn hover">Rules</button>
-        <button class="hiscores-btn hover">Hiscores</button>
-        <button class="contact-btn hover">Contact</button>
+        <button aria-label="Home" class="home-icon hover">Home</button>
+        <button aria-label="Rules" class="rules-btn hover">Rules</button>
+        <button aria-label="Hiscores" class="hiscores-btn hover">Hiscores</button>
+        <button aria-label="Contact" class="contact-btn hover">Contact</button>
       </div>
       <div class="start-title-text">
         <h1>Welcome to the Astronomy Quiz!</h1>
@@ -51,7 +51,7 @@
           <label for="player-name"></label>
           <input type="text" id="player-name" placeholder="Name" maxlength="10" required />
           <div class="start-game-area-btn">
-            <button id="next-btn" class="hover">Next</button>
+            <button aria-label="next-button" id="next-btn" class="hover">Next</button>
           </div>
         </form>
         <div class="start-name-question">
@@ -79,10 +79,10 @@
         <div class="cross hide"></div>
       </div>
       <div class="menu hide">
-        <button class="home-icon hover">Home</button>
-        <button class="rules-btn hover">Rules</button>
-        <button class="hiscores-btn hover">Hiscores</button>
-        <button class="contact-btn hover">Contact</button>
+        <button aria-label="Home" class="home-icon hover">Home</button>
+        <button aria-label="Rules" class="rules-btn hover">Rules</button>
+        <button aria-label="Hiscores" class="hiscores-btn hover">Hiscores</button>
+        <button aria-label="Contact" class="contact-btn hover">Contact</button>
       </div>
       <div class="difficulty-title-text">
         <h1>Select Difficulty</h1>
@@ -91,9 +91,9 @@
         <p>Great stuff ${user-name}, how difficult would you like your questions?</p>
       </div>
       <div class="difficulty-btn">
-        <button class="hover" value="easy" id="difficulty-easy">Easy</button>
-        <button class="hover" value="medium" id="difficulty-medium">Medium</button>
-        <button class="hover" value="hard" id="difficulty-hard">Hard</button>
+        <button aria-label="Difficulty Easy" class="hover" value="easy" id="difficulty-easy">Easy</button>
+        <button aria-label="Difficulty Medium" class="hover" value="medium" id="difficulty-medium">Medium</button>
+        <button aria-label="Difficulty Hard" class="hover" value="hard" id="difficulty-hard">Hard</button>
       </div>
     </section>
 
@@ -121,22 +121,22 @@
         <div class="cross hide"></div>
       </div>
       <div class="menu hide">
-        <button class="home-icon hover">Home</button>
-        <button class="rules-btn hover">Rules</button>
-        <button class="hiscores-btn hover">Hiscores</button>
-        <button class="contact-btn hover">Contact</button>
+        <button aria-label="Home" class="home-icon hover">Home</button>
+        <button aria-label="Rules" class="rules-btn hover">Rules</button>
+        <button aria-label="Hiscores" class="hiscores-btn hover">Hiscores</button>
+        <button aria-label="Contact" class="contact-btn hover">Contact</button>
       </div>
       <div>
         <h2 class="question-main-text" id="question-text">Unfortunately the questions didn't load. Please reload the quiz and try again.</h2>
       </div>
       <div class="answer-buttons">
-        <button id="answer1-btn" class="answer-btn answer-buttons-hover" value="A">Answer 1</button>
-        <button id="answer2-btn" class="answer-btn answer-buttons-hover" value="B">Answer 2</button>
-        <button id="answer3-btn" class="answer-btn answer-buttons-hover" value="C">Answer 3</button>
-        <button id="answer4-btn" class="answer-btn answer-buttons-hover" value="D">Answer 4</button>
+        <button aria-label="Answer Button 1" id="answer1-btn" class="answer-btn answer-buttons-hover" value="A">Answer 1</button>
+        <button aria-label="Answer Button 2" id="answer2-btn" class="answer-btn answer-buttons-hover" value="B">Answer 2</button>
+        <button aria-label="Answer Button 3" id="answer3-btn" class="answer-btn answer-buttons-hover" value="C">Answer 3</button>
+        <button aria-label="Answer Button 4" id="answer4-btn" class="answer-btn answer-buttons-hover" value="D">Answer 4</button>
       </div>
       <div class="next-question">
-        <button id="next-question" class="greyscale"><i class="fas fa-arrow-right"></i></button>
+        <button aria-label="Next Question" id="next-question" class="greyscale"><i class="fas fa-arrow-right"></i></button>
       </div>
       <div class="planet-bar hide" id="answer-planets">
         <div class="answer-planet" id="mercury"><img src="assets/images/planets/mercury-removebg.png" alt="Small Mercury icon" /></div>
@@ -168,10 +168,10 @@
         <div class="cross hide"></div>
       </div>
       <div class="menu hide">
-        <button class="home-icon hover">Home</button>
-        <button class="rules-btn hover">Rules</button>
-        <button class="hiscores-btn hover">Hiscores</button>
-        <button class="contact-btn hover">Contact</button>
+        <button aria-label="Home" class="home-icon hover">Home</button>
+        <button aria-label="Rules" class="rules-btn hover">Rules</button>
+        <button aria-label="Hiscores" class="hiscores-btn hover">Hiscores</button>
+        <button aria-label="Contact" class="contact-btn hover">Contact</button>
       </div>
       <div class="rules-title-text">
         <h1>Rules</h1>
@@ -184,8 +184,8 @@
         </p>
         <p>
           If you answer a question correctly, a planet &nbsp; &nbsp; &nbsp; &nbsp;
-          <img class="rules-planet-1" src="assets/images/planets/earth-removebg.png" alt="Small Earth icon" /> will light up but if you answer
-          incorrectly or don't answer then the planet will remain greyed out.&nbsp;<img
+          <img class="rules-planet-1" src="assets/images/planets/earth-removebg.png" alt="Small Earth icon" /> will light up but if you answer incorrectly or
+          don't answer then the planet will remain greyed out.&nbsp;<img
             class="rules-planet-2"
             src="assets/images/planets/earth-removebg.png"
             alt="Small Earth icon"
@@ -196,9 +196,10 @@
           to hear them. Please note that clicking the <i class="fas fa-home"></i> button will reset your settings and default the sound back to on.
         </p>
         <p>
-          When you have answered a question or have run out of time, this <button class="rules-next-question"><i class="fas fa-arrow-right"></i></button> icon
-          will show. Click this to go to the next question. Otherwise, you will see this
-          <button class="rules-next-question greyscale"><i class="fas fa-arrow-right"></i></button> icon.
+          When you have answered a question or have run out of time, this
+          <button aria-label="Rules Next Question Colour" class="rules-next-question"><i class="fas fa-arrow-right"></i></button> icon will show. Click this to
+          go to the next question. Otherwise, you will see this
+          <button aria-label="Rules Next Question Grey" class="rules-next-question greyscale"><i class="fas fa-arrow-right"></i></button> icon.
         </p>
       </div>
       <div class="rules-text-responsive">
@@ -209,7 +210,8 @@
         </p>
         <p>You can toggle audio on <i class="fas fa-volume-up"></i> and audio off <i class="fas fa-volume-mute"></i></p>
         <p>
-          Click this icon <button class="rules-next-question"><i class="fas fa-arrow-right"></i></button> to go to the next question when it appears
+          Click this icon <button aria-label="Rules Next Question Colour" class="rules-next-question"><i class="fas fa-arrow-right"></i></button> to go to the
+          next question when it appears
         </p>
       </div>
     </section>
@@ -232,10 +234,10 @@
         <div class="cross hide"></div>
       </div>
       <div class="menu hide">
-        <button class="home-icon hover">Home</button>
-        <button class="rules-btn hover">Rules</button>
-        <button class="hiscores-btn hover">Hiscores</button>
-        <button class="contact-btn hover">Contact</button>
+        <button aria-label="Home" class="home-icon hover">Home</button>
+        <button aria-label="Rules" class="rules-btn hover">Rules</button>
+        <button aria-label="Hiscores" class="hiscores-btn hover">Hiscores</button>
+        <button aria-label="Contact" class="contact-btn hover">Contact</button>
       </div>
       <div class="hiscores-title-text">
         <h1>Hiscores</h1>
@@ -244,7 +246,7 @@
       <div class="ribbon-1"><img src="assets/images/ribbons/1st-ribbon.png" alt="1st place gold ribbon icon" /></div>
       <div class="ribbon-2"><img src="assets/images/ribbons/2nd-ribbon.png" alt="2nd place silver ribbon icon" /></div>
       <div class="ribbon-3"><img src="assets/images/ribbons/3rd-ribbon.png" alt="3rd place bronze ribbon icon" /></div>
-      <div class="clear-hiscores-btn"><button class="hover" id="clear-hiscores">Clear Hiscores</button></div>
+      <div class="clear-hiscores-btn"><button aria-label="Clear Hiscores" class="hover" id="clear-hiscores">Clear Hiscores</button></div>
       <div class="hiscores-list">
         <ul id="hiscore"></ul>
       </div>
@@ -271,10 +273,10 @@
         <div class="cross hide"></div>
       </div>
       <div class="menu hide">
-        <button class="home-icon hover">Home</button>
-        <button class="rules-btn hover">Rules</button>
-        <button class="hiscores-btn hover">Hiscores</button>
-        <button class="contact-btn hover">Contact</button>
+        <button aria-label="Home" class="home-icon hover">Home</button>
+        <button aria-label="Rules" class="rules-btn hover">Rules</button>
+        <button aria-label="Hiscores" class="hiscores-btn hover">Hiscores</button>
+        <button aria-label="Contact" class="contact-btn hover">Contact</button>
       </div>
       <div class="contact-title-text" id="contact-title-text">
         <h1>Contact</h1>
@@ -288,7 +290,7 @@
             <input type="email" id="email" class="input" placeholder="Email Address" required />
             <label for="message"></label>
             <textarea id="message" cols="50" rows="4" placeholder="Message" required></textarea>
-            <button id="contact-submit" class="hover">Submit</button>
+            <button aria-label="Submit Message" id="contact-submit" class="hover">Submit</button>
           </form>
         </div>
       </div>
@@ -310,7 +312,7 @@
         <p>Thank you for your message, your message has been successfully sent. We will aim to respond as soon as possible</p>
         <br />
         <p>In the meantime, how about a quick game?</p>
-        <button class="home-icon hover hide" id="contact-go-home">Home</button>
+        <button aria-label="Home" class="home-icon hover hide" id="contact-go-home">Home</button>
       </div>
     </section>
 
@@ -332,10 +334,10 @@
         <div class="cross hide"></div>
       </div>
       <div class="menu hide">
-        <button class="home-icon hover">Home</button>
-        <button class="rules-btn hover">Rules</button>
-        <button class="hiscores-btn hover">Hiscores</button>
-        <button class="contact-btn hover">Contact</button>
+        <button aria-label="Home" class="home-icon hover">Home</button>
+        <button aria-label="Rules" class="rules-btn hover">Rules</button>
+        <button aria-label="Hiscores" class="hiscores-btn hover">Hiscores</button>
+        <button aria-label="Contact" class="contact-btn hover">Contact</button>
       </div>
       <div class="results-page">
         <div class="results-title-text">
@@ -345,7 +347,7 @@
           <p>Nice attempt ${user-name}, you managed to answer ${4} ${easy} questions correctly resulting in ${40 points}</p>
         </div>
         <i class="fas fa-trophy"></i><span id="result-score"> 0 </span>
-        <button class="play-again-btn hover" id="play-again-btn">Play Again</button>
+        <button aria-label="Play Again" class="play-again-btn hover" id="play-again-btn">Play Again</button>
       </div>
     </section>
 
