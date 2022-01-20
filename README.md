@@ -65,7 +65,7 @@ The very first design prototype was created using [Balsamiq](https://balsamiq.co
 
 ![Balsamiq Result Prototype](assets/images/readme-images/balsamiq-result-prototype.png)
 
-The main design prototype for The Astronomy Quiz was produced in [Figma](https://www.figma.com/). There are design prototypes for Desktop and Mobile. The reason that the design prototype looks very similar to the finished product is because I've learnt that being able to visually see your design before you spend the time implementing it is a very efficient method when it comes to creating something in software development. Being able to use a tool like [Figma](https://www.figma.com/) to "drag and drop" elements will save a large amount of time as apposed to trying to design through CSS, therefore before I implemented something, I made sure to design it on [Figma](https://www.figma.com/) first.<br /><br />
+The main design prototype for The Astronomy Quiz was produced in [Figma](https://www.figma.com/). There are design prototypes for Desktop and Mobile. The reason that the design prototype looks very similar to the finished product is because I've learnt that being able to visually see your design before you spend the time implementing it is a very efficient method when it comes to creating something in software development. Being able to use a tool like [Figma](https://www.figma.com/) to "drag and drop" elements will save a large amount of time as opposed to trying to design through CSS, therefore before I implemented something, I made sure to design it on [Figma](https://www.figma.com/) first.<br /><br />
 
 
 ![Design Prototype Preview](assets/images/readme-images/design-prototype.png)
@@ -335,7 +335,7 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
 * ### Score
     
-    * Enhances player experience and increases replayability as players might wish to try beat their current score.
+    * Enhances player experience and increases re-playability as players might wish to try beat their current score.
     * The points awarded is determined by the current level selected + time left remaining. Adding the remaining time to the score adds yet another dynamic to the game, encouraging the player to answer fast.
     * The score system has been thoroughly tested and there are no known bugs which the player can exploit to manipulate their score.  <br /><br />
     
@@ -441,7 +441,7 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
 * ## Code Validation
 
-    * The Astronomy Quiz has been thoroughly tested. All the code has been validated via the [W3C HTML Validator](https://validator.w3.org/), the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and the [JSHint Validator](https://jshint.com/). 3 HTML errors, 1 HTML warning and 4 CSS warnings were found when tested on [HTML Validation](https://validator.w3.org/) and [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) but were fixed immediately and documented below.<br /><br />
+    * The Astronomy Quiz has been thoroughly tested. All the code has been validated via the [W3C HTML Validator](https://validator.w3.org/), the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and the [JSHint Validator](https://jshint.com/). 3 HTML errors, 1 HTML warning, and 4 CSS warnings were found when tested on [HTML Validation](https://validator.w3.org/) and [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) but were fixed immediately and documented below.<br /><br />
 
 * ### HTML Validation Image
 
@@ -460,9 +460,9 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 * Undefined Variable - emailjs 
     * I tried multiple times to fix this but because I was using [EmailJS](https://www.emailjs.com/) for my contact form, I was unable to declare these variables or change them. <br /><br />
 * Warning 1 
-    * ***Expected an assignment or function call and instead saw an expression***. This warning is caused by line 10 in audio.js. I have spoken to my mentor about this warning and he has said that this is absolutely fine. <br /><br />
+    * ***Expected an assignment or function call and instead saw an expression***. This warning is caused by line 10 in audio.js. I have spoken to my mentor about this warning, and he has said that this is absolutely fine. <br /><br />
 * Warning 2 
-    * ***Functions declared within loops referencing an outer scoped variable may lead to confusing semantics***. This warning is caused by the for loops I have which loop through a class and then add a click event listener which will toggle the hide class on and off. This allows me to have more concise HTML as I only need to reference one class instead of having multiple different ID's for each different game section but for the same element. I have spoken to my mentor about this warning and he has said that this is also fine and will cause no problems. <br /><br />
+    * ***Functions declared within loops referencing an outer scoped variable may lead to confusing semantics***. This warning is caused by the for loops I have which loop through a class and then add a click event listener which will toggle the hide class on and off. This allows me to have more concise HTML as I only need to reference one class instead of having multiple different ID's for each different game section but for the same element. I have spoken to my mentor about this warning, and he has said that this is also fine and will cause no problems. <br /><br />
 
 * ## Lighthouse Testing 
 
@@ -499,7 +499,7 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
     ![Responsive Test Sheet](assets/images/readme-images/responsive-design-checker-image.png)
 
 * ## Real World Testing
-    * Although checking the responsiveness via [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/) and [Responsive Design Checker](https://www.responsivedesignchecker.com/), I quickly noticed that these tests, whilst still vital and good, don't actually give me 100% accurate results as they don't show mobile keyboards and how that effects the website. After running into a bug ([explained here](<#bugs-fixed>)), I downloaded a Google Chrome Extension called [Mobile Simulator](https://chrome.google.com/webstore/detail/mobile-simulator-responsi/ckejmhbmlajgoklhgbapkiccekfoccmk) which can simulate mobile devices which will show the keyboard and the effect it has on the website<br /><br />
+    * Although checking the responsiveness via [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/) and [Responsive Design Checker](https://www.responsivedesignchecker.com/), I quickly noticed that these tests, whilst still vital and good, don't actually give me 100% accurate results as they don't show mobile keyboards and how that effects the website. After running into a bug ([explained here](<#bugs-fixed>)), I downloaded a Google Chrome Extension called [Mobile Simulator](https://chrome.google.com/webstore/detail/mobile-simulator-responsi/ckejmhbmlajgoklhgbapkiccekfoccmk) which can simulate mobile devices which will show the keyboard and the effect it has on the website.<br /><br />
 
     ![Responsive Test Sheet](assets/images/readme-images/mobile-simulator-results-image.png)
 
@@ -548,12 +548,12 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
         * Verify that if the player selects a correct answer the "correct" audio sound will play
         * Verify that if the player selects an incorrect answer the "incorrect" audio sound will play
         * Verify that if the player doesn't select an answer and runs out of time, the correct answer is shown and the player doesn't score points
-        * Verify that the next question icon is greyed out and un-clickable whilst the question is unanswered and there is time remaining
+        * Verify that the next question icon is greyed out and not clickable whilst the question is unanswered and there is time remaining
         * Verify that the next question icon returns to colour and is clickable if the question is answered and if there is no time remaining
         * Verify that the next question icon correctly loads the next question if there are questions remaining
         * Verify that the next question icon correctly loads the results page if there are no more questions remaining
         * Verify that the planet icons turn to colour if the player answers a question correctly and remain greyed out if they get it wrong or don't answer
-        * Verify that the answer buttons become un-clickable when the question has been answered or the time has run out
+        * Verify that the answer buttons become not clickable when the question has been answered or the time has run out
         * Verify that the answer buttons become clickable when the next question is loaded
         * Verify that the current question icon correctly shows the player what question number they are on
       * Results Section
@@ -591,7 +591,7 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
     ### Size Error Flicker
         
-    * After testing the quiz via website tools, I decided to test it on my iPhone 7 Plus and had no errors whatsoever. I then sent it to my friend who has a Huawei P30 Pro and he was presented with the below issue<br /><br />
+    * After testing the quiz via website tools, I decided to test it on my iPhone 7 Plus and had no errors whatsoever. I then sent it to my friend who has a Huawei P30 Pro and he was presented with the below issue.<br /><br />
 
     <details><summary><b>Size Error Flicker GIF (EPILEPSY WARNING)</b></summary>
 
@@ -628,7 +628,7 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
     ![HTML Warning 1](assets/images/readme-images/javascript-type-error.png)
 
-    * The above warning and errors were very simple to rectify as I only had to remove anything that had been duplicated or anything that was not allowed. After removing anything that was prompted, I was presented with no warnings and errors <br /><br />
+    * The above warning and errors were very simple to rectify as I only had to remove anything that had been duplicated or anything that was not allowed. After removing anything that was prompted, I was presented with no warnings and errors. <br /><br />
 
     ![HTML Validation Solved](assets/images/readme-images/html-validation-image.png)
 
@@ -644,11 +644,11 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
 
      ### Duplicate Emails Sent
     
-    * After asking the kind Slack community to peer review my project, I checked my EmailJS inbox to see if I was receiving emails from others correctly and I was which was brilliant. What I actually noticed was the same email from the same person but 4 times. <br /><br />
+    * After asking the kind Slack community to peer review my project, I checked my EmailJS inbox to see if I was receiving emails from others correctly, and I was which was brilliant. What I actually noticed was the same email from the same person but 4 times. <br /><br />
 
     ![Multiple Email Image](assets/images/readme-images/multiple-email-sent.png)
 
-    * When I saw this, I thought it was too odd that this person had sent 4 separate emails that had the exact same message of "Tyggffffffffff", so I decided to look into it further. What was happening is because there is delay from the user clicking the send button to them seeing the sent message screen, if the user then clicks that button again whilst it is still visible and clickable, it will send that message as many times as that button has been clicked. What I did to prevent this from happening was disable the send button from being clicked again and provide the user some feedback letting them know that their message is currently sending (Line 26, 27 and 28) <br /><br />
+    * When I saw this, I thought it was too odd that this person had sent 4 separate emails that had the exact same message of "Tyggffffffffff", so I decided to look into it further. What was happening is because there is delay from the user clicking the send button to them seeing the sent message screen, if the user then clicks that button again whilst it is still visible and clickable, it will send that message as many times as that button has been clicked. What I did to prevent this from happening, I disabled the send button from being clicked again and provided the user some feedback letting them know that their message is currently sending (Line 26, 27 and 28). <br /><br />
 
     ![Multiple Email Fix 1](assets/images/readme-images/multiple-email-sent-fix-1.png)
 
@@ -751,9 +751,9 @@ The site was completed as a part of a Full Stack Software Developer Diploma at t
 # Personal Development
 Creating this project was incredibly fun, challenging and also very rewarding in terms of educating myself further. I encountered so many things that forced me out of my comfort zone, making me spend hours scratching my head and then eventually, after persisting and approaching problems at different angles, I was able to solve these problems. I've learnt that sometimes it helps to just take a step back, clear your mind and attack the problem from the very beginning. Sometimes when your deep within the zone and have written hundreds of lines of code and all of a sudden something breaks, don't get frustrated, these things happen. Retrace your steps and try to identify the point of failure. Failing to do that, take 5 minutes, get some fresh air, get the notepad out and start breaking everything down from the very beginning to the end.
 
-When I first saw JavaScript, like anyone, I was overwhelmed but like everyone has been saying, persisting with it, trying different approaches and accepting that it is challenging helps so much and now when I see a large JavaScript file, I don't feel overwhelmed, I start to dissect everything into smaller pieces so I can understand the bigger picture.
+When I first saw JavaScript, like anyone, I was overwhelmed but like everyone has been saying, persisting with it, trying different approaches and accepting that it is challenging helps so much and now when I see a large JavaScript file, I don't feel overwhelmed, I start to dissect everything into smaller pieces, so I can understand the bigger picture.
 
-Everything I have learnt during this project will help me tremendously throughout my career and I am very grateful for every head scratching bug that I have encountered and I'm yet to encounter.
+Everything I have learnt during this project will help me tremendously throughout my career, and I am very grateful for every head scratching bug that I have encountered and I'm yet to encounter.
 
 Mike Ralph 2022.
 
