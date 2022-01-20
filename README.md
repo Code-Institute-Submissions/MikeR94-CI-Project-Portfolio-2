@@ -656,12 +656,23 @@ The Astronomy Quiz website is set up to be very easy to use and visually appeali
     
     ![CSS Validation Solved](assets/images/readme-images/multiple-email-sent-fix-2.png)
 
-* ## Bugs Unresolved  
+* ## Bugs Unresolved
+
+    ### navigator.userAgent/appVersion and platform
+    
     * When inspecting the website with [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/), the website is showing 1 issue which is the same issue I had on my Project Portfolio 1 so I'm familiar with it. <br /><br />
 
     ![Site Issue](assets/images/readme-images/navigator-agent-issue.png)
     
     * I've done some research and apparently this is a Google Chrome issue as per this [source](https://forum.codewithmosh.com/t/the-ultimate-javascript-console-issue-at-beginning-of-course/6535) and has been reported [here](https://githubmemory.com/repo/zalmoxisus/redux-devtools-extension/issues/808). Additionally, I have tested this website with Microsoft Edge and the issue doesn't show.
+
+    ### 'interest-cohort'
+
+    * When inspecting the website with [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/), the website is showing 1 warning when I refresh the deployed project. <br /><br />
+
+    ![Interest Cohort](assets/images/readme-images/interest-cohort-warning.png)
+    
+    * Upon browsing the internet, I found this post on [StackOverflow](https://stackoverflow.com/questions/69619035/error-with-permissions-policy-header-unrecognized-feature-interest-cohort) which explains that "***GitHub hosted pages disable FLoC, which is Google's 3rd party cookie alternative. GitHub, Microsoft, doesn't seems to like it.*** There is also a link to an official GitHub blog about it [here](https://github.blog/changelog/2021-04-27-github-pages-permissions-policy-interest-cohort-header-added-to-all-pages-sites/).
     
 
 [Back to top](<#contents>)
